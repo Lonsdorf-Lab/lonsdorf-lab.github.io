@@ -14,20 +14,20 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {%
   include button.html
   type="email"
-  text="jane@smith.com"
-  link="jane@smith.com"
+  text="sekretariat-ae14@uni-bielefeld.de"
+  link="sekretariat-ae14@uni-bielefeld.de"
 %}
 {%
   include button.html
   type="phone"
-  text="(555) 867-5309"
-  link="+1-555-867-5309"
+  text="+49-521-106-4482"
+  link="+49-521-106-4482"
 %}
 {%
   include button.html
   type="address"
   tooltip="Our location on Google Maps for easy navigation"
-  link="https://www.google.com/maps"
+  link="https://www.google.com/maps/place/Bielefeld+University/@52.0367271,8.4926664,17z/data=!3m2!4b1!5s0x47ba980fd0e9d4bb:0x2cc7502b92aebcec!4m6!3m5!1s0x47ba22b5ad10b98f:0xa128cd4b4ccac32d!8m2!3d52.0367238!4d8.4952413!16zL20vMDU5YmJj?entry=ttu&g_ep=EgoyMDI1MDIwOS4wIKXMDSoASAFQAw%3D%3D"
 %}
 
 {% include section.html %}
@@ -37,7 +37,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {%
   include figure.html
   image="images/photo.jpg"
-  caption="Lorem ipsum"
+  caption="Lab Pic 1"
 %}
 
 {% endcapture %}
@@ -47,7 +47,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 {%
   include figure.html
   image="images/photo.jpg"
-  caption="Lorem ipsum"
+  caption="Lab Pic 2"
 %}
 
 {% endcapture %}

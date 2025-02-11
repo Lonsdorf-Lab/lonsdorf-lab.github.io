@@ -9,10 +9,11 @@ proofer: false
 # site social media and other links
 links:
   email: sekretariat-ae14@uni-bielefeld.de
-  orcid: 0000-0003-1501-4846
-  google-scholar: UWLcKcIAAAAJ
-  twitter: tinalonsdorf
-  bluesky: tinalonsdorf.bsky.social
+  phone: +49-521-106-4482
+  #orcid: 0000-0003-1501-4846
+  #google-scholar: UWLcKcIAAAAJ
+  #twitter: tinalonsdorf
+  #bluesky: tinalonsdorf.bsky.social
 
 ### jekyll settings
 
