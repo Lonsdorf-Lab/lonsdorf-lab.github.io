@@ -1,15 +1,15 @@
-- title: Cool Dataset
-  subtitle: a subtitle
+- title: Project 1
+  subtitle: Defensive responding under threat and stress- dynamic adaptation to adverse events across the lifespan and response heterogeneity profiles  subtitle: Experimental model for anxiety and stress-related disorders
   group: featured
   image: images/photo.jpg
   link: https://github.com/
-  description: Lorem ipsum _dolor sit amet_, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+  description: ...
   repo: greenelab/lab-website-template
   tags:
     - resource
 
-- title: Cool Package
-  subtitle: a subtitle
+- title: Project 2
+  subtitle: Experimental model for anxiety and stress-related disorders
   group: featured
   image: images/photo.jpg
   link: https://github.com/
