@@ -1,0 +1,1 @@
+Sitemap: https://bruntsch.github.io/lonsdorflab-website/sitemap.xml
