@@ -12,6 +12,7 @@ links:
   bluesky: mbruntsch.bsky.social
   linkedin: maria-bruntsch-642b49309
   orcid: 0009-0007-4933-6305
+  google-scholar: gVluQDoAAAAJ
   github: bruntsch
 ---
 
