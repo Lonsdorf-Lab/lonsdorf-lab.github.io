@@ -1,247 +1,1464 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
-- id: doi:10.1093/nar/gkad1082
-  title: "The Monarch Initiative in 2024: an analytic platform integrating phenotypes,\
-    \ genes\_and diseases across species"
+- id: doi:10.1038/s41380-024-02600-x
+  title: 'Neuropsychobiology of fear-induced bradycardia in humans: progress and pitfalls'
   authors:
-  - Tim E Putman
-  - Kevin Schaper
-  - Nicolas Matentzoglu
-  - "Vincent\_P Rubinetti"
-  - "Faisal\_S Alquaddoomi"
-  - Corey Cox
-  - J Harry Caufield
-  - Glass Elsarboukh
-  - Sarah Gehrke
-  - Harshad Hegde
-  - "Justin\_T Reese"
-  - Ian Braun
-  - "Richard\_M Bruskiewich"
-  - Luca Cappelletti
-  - Seth Carbon
-  - "Anita\_R Caron"
-  - "Lauren\_E Chan"
-  - "Christopher\_G Chute"
-  - "Katherina\_G Cortes"
-  - "Vin\xEDcius De\_Souza"
-  - Tommaso Fontana
-  - "Nomi\_L Harris"
-  - "Emily\_L Hartley"
-  - Eric Hurwitz
-  - "Julius\_O B Jacobsen"
-  - Madan Krishnamurthy
-  - "Bryan\_J Laraway"
-  - "James\_A McLaughlin"
-  - "Julie\_A McMurry"
-  - "Sierra\_A T Moxon"
-  - "Kathleen\_R Mullen"
-  - "Shawn\_T O\u2019Neil"
-  - "Kent\_A Shefchek"
-  - Ray Stefancsik
-  - Sabrina Toro
-  - "Nicole\_A Vasilevsky"
-  - "Ramona\_L Walls"
-  - "Patricia\_L Whetzel"
-  - David Osumi-Sutherland
-  - Damian Smedley
-  - "Peter\_N Robinson"
-  - "Christopher\_J Mungall"
-  - "Melissa\_A Haendel"
-  - "Monica\_C Munoz-Torres"
-  publisher: Nucleic Acids Research
-  date: '2023-11-24'
-  link: https://doi.org/gs6kmr
-  orcid: 0000-0002-4655-3773
+  - Simone Battaglia
+  - Claudio Nazzi
+  - Tina B. Lonsdorf
+  - Julian F. Thayer
+  publisher: Molecular Psychiatry
+  date: '2024-06-11'
+  link: https://doi.org/g84qqw
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2023.10.11.560955
-  title: Integration of 168,000 samples reveals global patterns of the human gut microbiome
+- id: doi:10.15626/MP.2023.3958
+  title: many faces of early life adversity - Content overlap in validated assessment
+    instruments as well as in fear and reward learning research
   authors:
-  - Richard J. Abdill
-  - Samantha P. Graham
-  - Vincent Rubinetti
-  - Frank W. Albert
-  - Casey S. Greene
-  - Sean Davis
-  - Ran Blekhman
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-10-11'
-  link: https://doi.org/gsvf5z
-  orcid: 0000-0002-4655-3773
+  - Alina Koppold
+  - Julia Ruge
+  - Tobias Hecker
+  - Tina Lonsdorf
+  publisher: Meta-Psychology
+  date: '2024-08-07'
+  link: https://doi.org/g84qqx
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1093/nar/gkad289
-  title: 'MyGeneset.info: an interactive and programmatic platform for community-curated
-    and user-created collections of genes'
+- id: doi:10.7554/eLife.92700
+  title: 'How adverse childhood experiences get under the skin: A systematic review,
+    integration and methodological discussion on threat and reward learning mechanisms'
   authors:
-  - Ricardo Avila
-  - Vincent Rubinetti
-  - Xinghua Zhou
-  - Dongbo Hu
-  - Zhongchao Qian
-  - Marco Alvarado Cano
-  - Everaldo Rodolpho
-  - Ginger Tsueng
-  - Casey Greene
-  - Chunlei Wu
-  publisher: Nucleic Acids Research
-  date: '2023-04-18'
-  link: https://doi.org/gr5hb5
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2023.01.05.522941
-  title: Hetnet connectivity search provides rapid insights into how two biomedical
-    entities are related
-  authors:
-  - Daniel S. Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J. Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N. Nicholson
-  - Yun Hao
-  - Blair D. Sullivan
-  - Michael W. Nagle
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2023-01-07'
-  link: https://doi.org/grmcb9
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1093/gigascience/giad047
-  title: Hetnet connectivity search provides rapid insights into how biomedical entities
-    are related
-  authors:
-  - Daniel S Himmelstein
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Kyle Kloster
-  - Benjamin J Heil
-  - Faisal Alquaddoomi
-  - Dongbo Hu
-  - David N Nicholson
-  - Yun Hao
-  - Blair D Sullivan
-  - Michael W Nagle
-  - Casey S Greene
-  publisher: GigaScience
-  date: '2022-12-28'
-  link: https://doi.org/gsd85n
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1101/2022.02.18.461833
-  title: 'MolEvolvR: A web-app for characterizing proteins using molecular evolution
-    and phylogeny'
-  authors:
-  - Jacob D Krol
-  - Joseph T Burke
-  - Samuel Z Chen
-  - Lo M Sosinski
-  - Faisal S Alquaddoomi
-  - Evan P Brenner
-  - Ethan P Wolfe
-  - Vincent P Rubinetti
-  - Shaddai Amolitos
-  - Kellen M Reason
-  - John B Johnston
-  - Janani Ravi
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-02-22'
-  link: https://doi.org/gstx7j
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1186/s13059-020-02021-3
-  title: Compressing gene expression data using multiple latent space dimensionalities
-    learns complementary biological representations
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Genome Biology
-  date: '2020-05-11'
-  link: https://doi.org/gg2mjh
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1371/journal.pcbi.1007128
-  title: Open collaborative writing with Manubot
-  authors:
-  - Daniel S. Himmelstein
-  - Vincent Rubinetti
-  - David R. Slochower
-  - Dongbo Hu
-  - Venkat S. Malladi
-  - Casey S. Greene
-  - Anthony Gitter
-  publisher: PLOS Computational Biology
-  date: '2020-12-04'
-  link: https://doi.org/c7np
-  orcid: 0000-0002-4655-3773
-  plugin: sources.py
-  file: sources.yaml
-  type: paper
-  description: Lorem ipsum _dolor_ **sit amet**, consectetur adipiscing elit, sed
-    do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-  image: https://journals.plos.org/ploscompbiol/article/figure/image?size=inline&id=info:doi/10.1371/journal.pcbi.1007128.g001&rev=2
-  buttons:
-  - type: manubot
-    link: https://greenelab.github.io/meta-review/
-  - type: source
-    text: Manuscript Source
-    link: https://github.com/greenelab/meta-review
-  - type: website
-    link: http://manubot.org/
-  tags:
-  - open science
-  - collaboration
-  repo: greenelab/meta-review
-- id: doi:10.1101/573782
-  title: Sequential compression of gene expression across dimensionalities and methods
-    reveals no single best method or dimensionality
-  authors:
-  - Gregory P. Way
-  - Michael Zietz
-  - Vincent Rubinetti
-  - Daniel S. Himmelstein
-  - Casey S. Greene
-  publisher: Cold Spring Harbor Laboratory
-  date: '2019-03-11'
-  link: https://doi.org/gfxjxf
-  orcid: 0000-0002-4655-3773
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.1016/j.csbj.2020.05.017
-  title: Constructing knowledge graphs and their biomedical applications
-  authors:
-  - David N. Nicholson
-  - Casey S. Greene
-  publisher: Computational and Structural Biotechnology Journal
-  date: '2020-01-01'
-  link: https://doi.org/gg7m48
-  image: https://ars.els-cdn.com/content/image/1-s2.0-S2001037020302804-gr1.jpg
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.7554/eLife.32822
-  title: Sci-Hub provides access to nearly all scholarly literature
-  authors:
-  - Daniel S Himmelstein
-  - Ariel Rodriguez Romero
-  - Jacob G Levernier
-  - Thomas Anthony Munro
-  - Stephen Reid McLaughlin
-  - Bastian Greshake Tzovaras
-  - Casey S Greene
+  - Julia Ruge
+  - Mana R Ehlers
+  - Alexandros Kastrinogiannis
+  - "Maren Klingelh\xF6fer-Jens"
+  - Alina Koppold
+  - Rany Abend
+  - Tina B Lonsdorf
   publisher: eLife
-  date: '2018-03-01'
-  link: https://doi.org/ckcj
-  image: https://iiif.elifesciences.org/lax:32822%2Felife-32822-fig8-v3.tif/full/863,/0/default.webp
-  plugin: sources.py
-  file: sources.yaml
+  date: '2024-07-16'
+  link: https://doi.org/g84qqz
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/fk26y
+  title: How to Measure Fear Generalization? Reliability and Validity of Commonly
+    Used Indices
+  authors:
+  - Yannik Stegmann
+  - Mario Reutter
+  - Katharina Hutterer
+  - Lea Hildebrandt
+  - "J\xFCrgen Deckert"
+  - Lorenz Deserno
+  - Tina B Lonsdorf
+  - Katharina Domschke
+  - Paul Pauli
+  - Andreas Reif
+  - Karoline Rosenkranz
+  - "Dirk Sch\xFCmann"
+  - Miriam Schiele
+  - Peter Zwanzger
+  - Marta Andreatta
+  - Matthias Gamer
+  publisher: Center for Open Science
+  date: '2024-05-17'
+  link: https://doi.org/g84qq2
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.14364
+  title: "Recent advances in studying brain\u2010behavior interactions using functional\
+    \ imaging: The primary startle response pathway and its affective modulation in\
+    \ humans"
+  authors:
+  - Julia Wendt
+  - Manuel Kuhn
+  - Alfons O. Hamm
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2023-07-04'
+  link: https://doi.org/gsfp9c
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.21203/rs.3.rs-3410491/v1
+  title: 'Bad days build better days: mental health improvement after the COVID-19
+    pandemic in individuals with psychosocial distress'
+  authors:
+  - Mario Reutter
+  - Katharina Hutterer
+  - "Marthe Gr\xFCndahl"
+  - Dominik Gall
+  - Udo Dannlowski
+  - Katharina Domschke
+  - Elisabeth Leehr
+  - Tina Lonsdorf
+  - Ulrike Lueken
+  - Andreas Reif
+  - Miriam Schiele
+  - Peter Zwanzger
+  - Paul Pauli
+  - Grit Hein
+  - Matthias Gamer
+  publisher: Research Square Platform LLC
+  date: '2023-10-11'
+  link: https://doi.org/g84qq3
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/g6qku
+  title: Within-subject reliability, occasion specificity, and validity of fluctuations
+    of the Stroop and Go/No-Go tasks in ecological momentary assessment
+  authors:
+  - Justin Hachenberger
+  - Axel Mayer
+  - Denny Kerkhoff
+  - Friederike Eyssel
+  - Stefan Fries
+  - Tina B Lonsdorf
+  - Hilmar G Zech
+  - Lorenz Deserno
+  - Sakari Lemola
+  publisher: Center for Open Science
+  date: '2023-09-18'
+  link: https://doi.org/g84qq4
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.14253
+  title: 'Watching with Argus eyes: Characterization of emotional and physiological
+    responding in adults exposed to childhood maltreatment and/or recent adversity'
+  authors:
+  - Alina Koppold
+  - Alexandros Kastrinogiannis
+  - Manuel Kuhn
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2023-02-02'
+  link: https://doi.org/g84qq5
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/m9abu
+  title: The many faces of early life adversity - Content overlap in validated assessment
+    instruments as well as in fear and reward learning research
+  authors:
+  - Alina Koppold
+  - Julia Ruge
+  - Tobias Hecker
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2023-05-24'
+  link: https://doi.org/g84qq6
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/nfpbj
+  title: 'How adverse childhood experiences get under the skin: A systematic review,
+    integration and methodological discussion on threat and reward learning mechanisms'
+  authors:
+  - Julia Ruge
+  - Mana R Ehlers
+  - Alexandros Kastrinogiannis
+  - "Maren Klingelh\xF6fer-Jens"
+  - Alina Koppold
+  - Rany Abend
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2023-05-17'
+  link: https://doi.org/g84qq7
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1027/2151-2604/a000523
+  title: Prediction of Changes in Negative Affect During the COVID-19 Pandemic by
+    Experimental Fear           Conditioning and Generalization Measures
+  authors:
+  - Celina Imholze
+  - Katharina Hutterer
+  - Dominik Gall
+  - Udo Dannlowski
+  - Katharina Domschke
+  - Elisabeth J. Leehr
+  - Tina B. Lonsdorf
+  - Ulrike Lueken
+  - Andreas Reif
+  - Karoline Rosenkranz
+  - Miriam A. Schiele
+  - Peter Zwanzger
+  - Paul Pauli
+  - Matthias Gamer
+  publisher: "Zeitschrift f\xFCr Psychologie"
+  date: '2023-05-01'
+  link: https://doi.org/g84qq8
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.brat.2023.104256
+  title: Systematically investigating the role of context on effect replicability
+    in reinstatement of fear in humans
+  authors:
+  - R. Sjouwerman
+  - T.B. Lonsdorf
+  publisher: Behaviour Research and Therapy
+  date: '2023-03-01'
+  link: https://doi.org/g84qq9
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41562-022-01508-2
+  title: Quality research needs good working conditions
+  authors:
+  - Rima-Maria Rahal
+  - Susann Fiedler
+  - Adeyemi Adetula
+  - Ronnie P.-A. Berntsson
+  - Ulrich Dirnagl
+  - Gordon B. Feld
+  - Christian J. Fiebach
+  - Samsad Afrin Himi
+  - Aidan J. Horner
+  - Tina B. Lonsdorf
+  - "Felix Sch\xF6nbrodt"
+  - Miguel Alejandro A. Silan
+  - Michael Wenzler
+  - "Fl\xE1vio Azevedo"
+  publisher: Nature Human Behaviour
+  date: '2023-02-08'
+  link: https://doi.org/grvjcp
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.14130
+  title: "A data multiverse analysis investigating non\u2010model based <scp>SCR</scp>\
+    \ quantification approaches"
+  authors:
+  - Rachel Sjouwerman
+  - Sabrina Illius
+  - Manuel Kuhn
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2022-07-02'
+  link: https://doi.org/g84qrb
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7554/eLife.78717
+  title: Robust group- but limited individual-level (longitudinal) reliability and
+    insights into cross-phases response prediction of conditioned fear
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Mana R Ehlers
+  - Manuel Kuhn
+  - Vincent Keyaniyan
+  - Tina B Lonsdorf
+  publisher: eLife
+  date: '2022-09-13'
+  link: https://doi.org/g36c9v
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.14058
+  title: "Navigating the manyverse of skin conductance response quantification approaches\
+    \ \u2013 A direct comparison of <scp>trough\u2010to\u2010peak</scp>, baseline\
+    \ correction, and model\u2010based approaches in Ledalab and <scp>PsPM</scp>"
+  authors:
+  - Manuel Kuhn
+  - Anna M. V. Gerlicher
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2022-04-02'
+  link: https://doi.org/g6mhdm
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/8crk3
+  title: 'Data sharing in experimental fear and anxiety research: From challenges
+    to a dynamically growing database in 10 simple steps'
+  authors:
+  - Mana R Ehlers
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2022-07-22'
+  link: https://doi.org/g84qrc
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.brat.2022.104072
+  title: Multiverse analyses in fear conditioning research
+  authors:
+  - Tina B. Lonsdorf
+  - Anna Gerlicher
+  - "Maren Klingelh\xF6fer-Jens"
+  - Angelos-Miltiadis Krypotos
+  publisher: Behaviour Research and Therapy
+  date: '2022-06-01'
+  link: https://doi.org/grtxfz
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/gtasm
+  title: 'Recent advances in studying brain-behaviour interactions using functional
+    imaging: The primary startle response pathway and its affective modulation in
+    humans'
+  authors:
+  - Julia Wendt
+  - Manuel Kuhn
+  - Alfons O. Hamm
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2022-05-13'
+  link: https://doi.org/g84qrd
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/mubgv
+  title: Assessing the long-term Stability of the Spielberger State-Trait Inventory
+    trait scale over 3.5 Years
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Franziska Werner
+  - Naemi Brandt
+  - "Dirk Sch\xFCmann"
+  - Matthias Gamer
+  - Raffael Kalisch
+  - Tobias Sommer
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2022-05-06'
+  link: https://doi.org/g84qrf
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/wjeyg
+  title: 'Watching with Argus Eyes: Characterization of emotional and physiological
+    responding in adults exposed to childhood maltreatment and/or recent adversity'
+  authors:
+  - Alina Koppold
+  - Alexandros Kastrinogiannis
+  - Manuel Kuhn
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2022-04-27'
+  link: https://doi.org/g84qrg
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/d2zvc
+  title: 'Open and reproducible science practices in psychoneuroendocrinology: opportunities
+    to foster scientific progress'
+  authors:
+  - Maria Meier
+  - Tina B Lonsdorf
+  - Sonia Lupien
+  - Tobias Stalder
+  - Sebastian Tristan Laufer
+  - Maurizio Sicorello
+  - Roman Linz
+  - Lara Puhlmann
+  publisher: Center for Open Science
+  date: '2022-03-30'
+  link: https://doi.org/g84qrh
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/2022.03.15.484434
+  title: Robust group- but limited individual-level (longitudinal) reliability and
+    insights into cross-phases response prediction of conditioned fear
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Mana R. Ehlers
+  - Manuel Kuhn
+  - Vincent Keyaniyan
+  - Tina B. Lonsdorf
+  publisher: Cold Spring Harbor Laboratory
+  date: '2022-03-18'
+  link: https://doi.org/gsz6jb
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/hj5gt
+  title: Effects of intolerance of uncertainty on subjective and psychophysiological
+    measures during fear acquisition and delayed extinction
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Jayne Morriss
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2021-11-25'
+  link: https://doi.org/g84qrj
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/65njk
+  title: Systematically investigating the role of context on effect replicability
+    in reinstatement of fear in humans
+  authors:
+  - Tina B Lonsdorf
+  - Rachel Sjouwerman
+  publisher: Center for Open Science
+  date: '2021-11-15'
+  link: https://doi.org/g84qrk
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/cp52v
+  title: "Mehr als nur fragw\xFCrdig: Reproduzierbarkeit und Open Science in der Lehre\
+    \ aus Sicht der Biologischen Psychologie und Neuropsychologie"
+  authors:
+  - Tina B Lonsdorf
+  - Gesa Hartwigsen
+  - "Andrea K\xFCbler"
+  - Christian J. Merz
+  - Barbara Schmidt
+  - Matthias F.J. Sperl
+  - Gordon Feld
+  publisher: Center for Open Science
+  date: '2021-09-08'
+  link: https://doi.org/g84qrm
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/q24t8
+  title: A data multiverse analysis investigating non-model based SCR quantification
+    approaches
+  authors:
+  - Rachel Sjouwerman
+  - Sabrina Illius
+  - Manuel Kuhn
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2021-06-28'
+  link: https://doi.org/g84qrn
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/9h2kd
+  title: "Navigating the manifold of skin conductance response quantification approaches\
+    \ \u2013 a direct comparison of Trough-to-Peak, Baseline-correction and model-based\
+    \ approaches in Ledalab and PsPM"
+  authors:
+  - Manuel Kuhn
+  - Anna Gerlicher
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2021-04-30'
+  link: https://doi.org/g84qrp
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/2z6pd
+  title: Multiverse analyses in fear conditioning research
+  authors:
+  - Tina B Lonsdorf
+  - Anna Gerlicher
+  - "Maren Klingelh\xF6fer-Jens"
+  - Angelos-Miltiadis Krypotos
+  publisher: Center for Open Science
+  date: '2021-03-03'
+  link: https://doi.org/g84qrq
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41598-020-76683-1
+  title: Revisiting potential associations between brain morphology, fear acquisition
+    and extinction through new data and a literature review
+  authors:
+  - Mana R. Ehlers
+  - Janne Nold
+  - Manuel Kuhn
+  - "Maren Klingelh\xF6fer-Jens"
+  - Tina B. Lonsdorf
+  publisher: Scientific Reports
+  date: '2020-11-16'
+  link: https://doi.org/g84qrr
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.13549
+  title: "Experimental boundary conditions of reinstatement\u2010induced return of\
+    \ fear in humans: Is reinstatement in humans what we think it is?"
+  authors:
+  - Rachel Sjouwerman
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2020-02-19'
+  link: https://doi.org/ghtz7f
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.7554/eLife.52465
+  title: Navigating the garden of forking paths for data exclusions in fear conditioning
+    research
+  authors:
+  - Tina B Lonsdorf
+  - "Maren Klingelh\xF6fer-Jens"
+  - Marta Andreatta
+  - Tom Beckers
+  - Anastasia Chalkia
+  - Anna Gerlicher
+  - Valerie L Jentsch
+  - Shira Meir Drexler
+  - Gaetan Mertens
+  - Jan Richter
+  - Rachel Sjouwerman
+  - Julia Wendt
+  - Christian J Merz
+  publisher: eLife
+  date: '2019-12-16'
+  link: https://doi.org/gj6d76
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/4myk8
+  title: 'Experimental boundary conditions of reinstatement induced return of fear
+    in humans:  Is reinstatement in humans what we think it is?'
+  authors:
+  - Rachel Sjouwerman
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2019-12-03'
+  link: https://doi.org/g84qrs
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1038/s41398-019-0415-8
+  title: 'Orexin in the anxiety spectrum: association of a HCRTR1 polymorphism with
+    panic disorder/agoraphobia, CBT treatment response and fear-related intermediate
+    phenotypes'
+  authors:
+  - Michael G. Gottschalk
+  - Jan Richter
+  - Christiane Ziegler
+  - Miriam A. Schiele
+  - Julia Mann
+  - Maximilian J. Geiger
+  - Christoph Schartner
+  - "Gy\xF6rgy A. Homola"
+  - Georg W. Alpers
+  - "Christian B\xFCchel"
+  - Lydia Fehm
+  - Thomas Fydrich
+  - Alexander L. Gerlach
+  - Andrew T. Gloster
+  - Sylvia Helbig-Lang
+  - Raffael Kalisch
+  - Tilo Kircher
+  - Thomas Lang
+  - Tina B. Lonsdorf
+  - "Christiane A. Pan\xE9-Farr\xE9"
+  - "Andreas Str\xF6hle"
+  - Heike Weber
+  - Peter Zwanzger
+  - Volker Arolt
+  - Marcel Romanos
+  - Hans-Ulrich Wittchen
+  - Alfons Hamm
+  - Paul Pauli
+  - Andreas Reif
+  - "J\xFCrgen Deckert"
+  - Susanne Neufang
+  - "Michael H\xF6fler"
+  - Katharina Domschke
+  publisher: Translational Psychiatry
+  date: '2019-02-04'
+  link: https://doi.org/gg3spf
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/6m72g
+  title: Navigating the garden of forking paths for data exclusions in fear conditioning
+    research
+  authors:
+  - Tina B Lonsdorf
+  - "Maren Klingelh\xF6fer-Jens"
+  - Marta Andreatta
+  - Tom Beckers
+  - Anastasia Chalkia
+  - Anna Gerlicher
+  - Valerie Jentsch
+  - "Ga\xEBtan Mertens"
+  - Shira Meir Drexler
+  - Jan Richter
+  - Rachel Sjouwerman
+  - Julia Wendt
+  - Christian J. Merz
+  publisher: Center for Open Science
+  date: '2019-09-02'
+  link: https://doi.org/g84qrt
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.biopsych.2019.02.011
+  title: 'Fear Extinction Retention: Is It What We Think It Is?'
+  authors:
+  - Tina B. Lonsdorf
+  - Christian J. Merz
+  - Miquel A. Fullana
+  publisher: Biological Psychiatry
+  date: '2019-06-01'
+  link: https://doi.org/ggw7x6
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1111/psyp.13307
+  title: Latency of skin conductance responses across stimulus modalities
+  authors:
+  - R. Sjouwerman
+  - T. B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2018-11-21'
+  link: https://doi.org/gfnvzk
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1101/567032
+  title: "The neurofunctional basis of affective startle modulation in humans \u2013\
+    \ evidence from combined facial EMG-fMRI"
+  authors:
+  - Manuel Kuhn
+  - Julia Wendt
+  - Rachel Sjouwerman
+  - "Christian B\xFCchel"
+  - Alfons Hamm
+  - Tina B. Lonsdorf
+  publisher: Cold Spring Harbor Laboratory
+  date: '2019-03-05'
+  link: https://doi.org/ghnr5g
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1016/j.brat.2018.09.003
+  title: Does US expectancy mediate the additive effects of CS-US pairings on contingency
+    instructions? Results from subjective, psychophysiological and neural measures
+  authors:
+  - "Ga\xEBtan Mertens"
+  - Senne Braem
+  - Manuel Kuhn
+  - Tina B. Lonsdorf
+  - Marcel A. van den Hout
+  - Iris M. Engelhard
+  publisher: Behaviour Research and Therapy
+  date: '2018-11-01'
+  link: https://doi.org/gfjk25
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.3389/fpsyg.2017.02368
+  title: 'Visual Complexity and Affect: Ratings Reflect More Than Meets the Eye'
+  authors:
+  - Christopher R. Madan
+  - Janine Bayer
+  - Matthias Gamer
+  - Tina B. Lonsdorf
+  - Tobias Sommer
+  publisher: Frontiers in Psychology
+  date: '2018-01-18'
+  link: https://doi.org/gcvwv6
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1186/s12915-017-0463-6
+  title: An elevated plus-maze in mixed reality for studying human anxiety-related
+    behavior
+  authors:
+  - Sarah V. Biedermann
+  - Daniel G. Biedermann
+  - Frederike Wenzlaff
+  - Tim Kurjak
+  - Sawis Nouri
+  - Matthias K. Auer
+  - Klaus Wiedemann
+  - Peer Briken
+  - Jan Haaker
+  - Tina B. Lonsdorf
+  - Johannes Fuss
+  publisher: BMC Biology
+  date: '2017-12-01'
+  link: https://doi.org/gg9bfn
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28872638
+  title: 'Modulation of defensive reactivity by GLRB allelic variation: converging
+    evidence from an intermediate phenotype approach.'
+  authors:
+  - U Lueken
+  - M Kuhn
+  - Y Yang
+  - B Straube
+  - T Kircher
+  - H-U Wittchen
+  - B Pfleiderer
+  - V Arolt
+  - A Wittmann
+  - "A Str\xF6hle"
+  - H Weber
+  - A Reif
+  - K Domschke
+  - J Deckert
+  - T B Lonsdorf
+  publisher: Translational psychiatry
+  date: '2017-09-05'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28872638
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.1027/2151-2604/a000304
+  title: "Effects of an Anxiety-Specific Psychometric Factor on Fear \t\t\t\t\tConditioning\
+    \ and Fear Generalization"
+  authors:
+  - Christian Baumann
+  - Miriam A. Schiele
+  - Martin J. Herrmann
+  - Tina B. Lonsdorf
+  - Peter Zwanzger
+  - Katharina Domschke
+  - Andreas Reif
+  - "J\xFCrgen Deckert"
+  - Paul Pauli
+  publisher: "Zeitschrift f\xFCr Psychologie"
+  date: '2017-07-01'
+  link: https://doi.org/g84qrv
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28764976
+  title: 'More than just noise: Inter-individual differences in fear acquisition,
+    extinction and return of fear in humans - Biological, experiential, temperamental
+    factors, and methodological pitfalls.'
+  authors:
+  - Tina B Lonsdorf
+  - Christian J Merz
+  publisher: Neuroscience and biobehavioral reviews
+  date: '2017-07-29'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28764976
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28120933
+  title: Where There is Smoke There is Fear-Impaired Contextual Inhibition of Conditioned
+    Fear in Smokers.
+  authors:
+  - Jan Haaker
+  - Tina B Lonsdorf
+  - "Dirk Sch\xFCmann"
+  - Nico Bunzeck
+  - Jan Peters
+  - Tobias Sommer
+  - Raffael Kalisch
+  publisher: 'Neuropsychopharmacology : official publication of the American College
+    of Neuropsychopharmacology'
+  date: '2017-01-25'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28120933
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28263758
+  title: 'Don''t fear ''fear conditioning'': Methodological considerations for the
+    design and analysis of studies on human fear acquisition, extinction, and return
+    of fear.'
+  authors:
+  - Tina B Lonsdorf
+  - Mareike M Menz
+  - Marta Andreatta
+  - Miguel A Fullana
+  - Armita Golkar
+  - Jan Haaker
+  - Ivo Heitland
+  - Andrea Hermann
+  - Manuel Kuhn
+  - Onno Kruse
+  - Shira Meir Drexler
+  - Ann Meulders
+  - Frauke Nees
+  - Andre Pittig
+  - Jan Richter
+  - "Sonja R\xF6mer"
+  - Youssef Shiban
+  - Anja Schmitz
+  - Benjamin Straube
+  - Bram Vervliet
+  - Julia Wendt
+  - Johanna M P Baas
+  - Christian J Merz
+  publisher: Neuroscience and biobehavioral reviews
+  date: '2017-03-03'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28263758
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:28167838
+  title: 'GLRB allelic variation associated with agoraphobic cognitions, increased
+    startle response and fear network activation: a potential neurogenetic pathway
+    to panic disorder.'
+  authors:
+  - J Deckert
+  - H Weber
+  - C Villmann
+  - T B Lonsdorf
+  - J Richter
+  - M Andreatta
+  - A Arias-Vasquez
+  - L Hommers
+  - L Kent
+  - C Schartner
+  - S Cichon
+  - C Wolf
+  - N Schaefer
+  - C R von Collenberg
+  - B Wachter
+  - R Blum
+  - "D Sch\xFCmann"
+  - R Scharfenort
+  - J Schumacher
+  - A J Forstner
+  - C Baumann
+  - M A Schiele
+  - S Notzon
+  - P Zwanzger
+  - J G E Janzing
+  - T Galesloot
+  - L A Kiemeney
+  - A Gajewska
+  - E Glotzbach-Schoon
+  - "A M\xFChlberger"
+  - G Alpers
+  - T Fydrich
+  - L Fehm
+  - A L Gerlach
+  - T Kircher
+  - T Lang
+  - "A Str\xF6hle"
+  - V Arolt
+  - H-U Wittchen
+  - R Kalisch
+  - "C B\xFCchel"
+  - A Hamm
+  - "M M N\xF6then"
+  - M Romanos
+  - K Domschke
+  - P Pauli
+  - A Reif
+  publisher: Molecular psychiatry
+  date: '2017-02-07'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/28167838
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27628268
+  title: Don't startle me-Interference of startle probe presentations and intermittent
+    ratings with fear acquisition.
+  authors:
+  - Rachel Sjouwerman
+  - Johanna Niehaus
+  - Manuel Kuhn
+  - Tina B Lonsdorf
+  publisher: Psychophysiology
+  date: '2016-09-15'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27628268
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27496367
+  title: State anxiety modulates the return of fear.
+  authors:
+  - Manuel Kuhn
+  - Gaetan Mertens
+  - Tina B Lonsdorf
+  publisher: 'International journal of psychophysiology : official journal of the
+    International Organization of Psychophysiology'
+  date: '2016-08-03'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27496367
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:25966279
+  title: Fear expression and return of fear following threat instruction with or without
+    direct contingency experience.
+  authors:
+  - "Ga\xEBtan Mertens"
+  - Manuel Kuhn
+  - An K Raes
+  - Raffael Kalisch
+  - Jan De Houwer
+  - Tina B Lonsdorf
+  publisher: Cognition & emotion
+  date: '2015-05-12'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/25966279
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26746182
+  title: Converging evidence for an impact of a functional NOS gene variation on anxiety-related
+    processes.
+  authors:
+  - Manuel Kuhn
+  - Jan Haaker
+  - Evelyn Glotzbach-Schoon
+  - "Dirk Sch\xFCmann"
+  - Marta Andreatta
+  - Marie-Luise Mechias
+  - Karolina Raczka
+  - Nina Gartmann
+  - "Christian B\xFCchel"
+  - "Andreas M\xFChlberger"
+  - Paul Pauli
+  - Andreas Reif
+  - Raffael Kalisch
+  - Tina B Lonsdorf
+  publisher: Social cognitive and affective neuroscience
+  date: '2016-01-08'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26746182
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26568620
+  title: Mismatch or allostatic load? Timing of life adversity differentially shapes
+    gray matter volume and anxious temperament.
+  authors:
+  - Manuel Kuhn
+  - Robert Scharfenort
+  - "Dirk Sch\xFCmann"
+  - Miriam A Schiele
+  - "Anna L M\xFCnsterk\xF6tter"
+  - "J\xFCrgen Deckert"
+  - Katharina Domschke
+  - Jan Haaker
+  - Raffael Kalisch
+  - Paul Pauli
+  - Andreas Reif
+  - Marcel Romanos
+  - Peter Zwanzger
+  - Tina B Lonsdorf
+  publisher: Social cognitive and affective neuroscience
+  date: '2015-11-13'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26568620
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26612681
+  title: Neural correlates of and processes underlying generalized and differential
+    return of fear.
+  authors:
+  - Robert Scharfenort
+  - Tina B Lonsdorf
+  publisher: Social cognitive and affective neuroscience
+  date: '2015-11-25'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26612681
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:27434492
+  title: 'Adversity-induced relapse of fear: neural mechanisms and implications for
+    relapse prevention from a study on experimentally induced return-of-fear following
+    fear conditioning and extinction.'
+  authors:
+  - R Scharfenort
+  - M Menz
+  - T B Lonsdorf
+  publisher: Translational psychiatry
+  date: '2016-07-19'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/27434492
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26107163
+  title: 'Sex differences in conditioned stimulus discrimination during context-dependent
+    fear learning and its retrieval in humans: the role of biological sex, contraceptives
+    and menstrual cycle phases.'
+  authors:
+  - Tina B Lonsdorf
+  - Jan Haaker
+  - "Dirk Sch\xFCmann"
+  - Tobias Sommer
+  - Janine Bayer
+  - Stefanie Brassen
+  - Nico Bunzeck
+  - Matthias Gamer
+  - Raffael Kalisch
+  publisher: 'Journal of psychiatry & neuroscience : JPN'
+  date: '2015-11-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26107163
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26219601
+  title: 'Deficient inhibitory processing in trait anxiety: Evidence from context-dependent
+    fear learning, extinction recall and renewal.'
+  authors:
+  - J Haaker
+  - T B Lonsdorf
+  - "D Sch\xFCmann"
+  - M Menz
+  - S Brassen
+  - N Bunzeck
+  - M Gamer
+  - R Kalisch
+  publisher: Biological psychology
+  date: '2015-07-26'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26219601
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26238968
+  title: Effects of post-extinction l-DOPA administration on the spontaneous recovery
+    and reinstatement of fear in a human fMRI study.
+  authors:
+  - Jan Haaker
+  - Tina B Lonsdorf
+  - Raffael Kalisch
+  publisher: 'European neuropsychopharmacology : the journal of the European College
+    of Neuropsychopharmacology'
+  date: '2015-07-21'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26238968
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:25847876
+  title: MicroRNA hsa-miR-4717-5p regulates RGS2 and may be a risk factor for anxiety-related
+    traits.
+  authors:
+  - Leif Hommers
+  - Annette Raab
+  - Alexandra Bohl
+  - Heike Weber
+  - "Claus-J\xFCrgen Scholz"
+  - Angelika Erhardt
+  - Elisabeth Binder
+  - Volker Arolt
+  - Alexander Gerlach
+  - Andrew Gloster
+  - Raffael Kalisch
+  - Tilo Kircher
+  - Tina Lonsdorf
+  - "Andreas Str\xF6hle"
+  - Peter Zwanzger
+  - Manuel Mattheisen
+  - Sven Cichon
+  - Klaus-Peter Lesch
+  - Katharina Domschke
+  - Andreas Reif
+  - Martin J Lohse
+  - "J\xFCrgen Deckert"
+  publisher: 'American journal of medical genetics. Part B, Neuropsychiatric genetics
+    : the official publication of the International Society of Psychiatric Genetics'
+  date: '2015-04-02'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/25847876
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:25103087
+  title: BDNFval66met affects neural activation pattern during fear conditioning and
+    24 h delayed fear recall.
+  authors:
+  - Tina B Lonsdorf
+  - Armita Golkar
+  - "Kara M Lindstr\xF6m"
+  - Jan Haaker
+  - "Arne \xD6hman"
+  - Martin Schalling
+  - Martin Ingvar
+  publisher: Social cognitive and affective neuroscience
+  date: '2014-08-07'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/25103087
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:26696855
+  title: Contextual Change After Fear Acquisition Affects Conditioned Responding and
+    the Time Course of Extinction Learning-Implications for Renewal Research.
+  authors:
+  - Rachel Sjouwerman
+  - Johanna Niehaus
+  - Tina B Lonsdorf
+  publisher: Frontiers in behavioral neuroscience
+  date: '2015-12-08'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/26696855
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:24493848
+  title: 'Long-term expression of human contextual fear and extinction memories involves
+    amygdala, hippocampus and ventromedial prefrontal cortex: a reinstatement study
+    in two independent samples.'
+  authors:
+  - Tina B Lonsdorf
+  - Jan Haaker
+  - Raffael Kalisch
+  publisher: Social cognitive and affective neuroscience
+  date: '2014-02-03'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/24493848
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:25128533
+  title: 'A review on human reinstatement studies: an overview and methodological
+    challenges.'
+  authors:
+  - Jan Haaker
+  - Armita Golkar
+  - Dirk Hermans
+  - Tina B Lonsdorf
+  publisher: Learning & memory (Cold Spring Harbor, N.Y.)
+  date: '2014-08-15'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/25128533
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:24193372
+  title: No evidence for enhanced extinction memory consolidation through noradrenergic
+    reuptake inhibition-delayed memory test and reinstatement in human fMRI.
+  authors:
+  - Tina B Lonsdorf
+  - Jan Haaker
+  - Tahmine Fadai
+  - Raffael Kalisch
+  publisher: Psychopharmacology
+  date: '2013-11-06'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/24193372
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:23943515
+  title: Attention biases and habituation of attention biases are associated with
+    5-HTTLPR and COMTval158met.
+  authors:
+  - Tina B Lonsdorf
+  - Pernilla Juth
+  - Christin Rohde
+  - Martin Schalling
+  - "Arne \xD6hman"
+  publisher: Cognitive, affective & behavioral neuroscience
+  date: '2014-03-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/23943515
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:24495968
+  title: Higher anxiety and larger amygdala volumes in carriers of a TMEM132D risk
+    variant for panic disorder.
+  authors:
+  - J Haaker
+  - T B Lonsdorf
+  - K A Raczka
+  - M-L Mechias
+  - N Gartmann
+  - R Kalisch
+  publisher: Translational psychiatry
+  date: '2014-02-04'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/24495968
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:23754384
+  title: Single dose of L-dopa makes extinction memories context-independent and prevents
+    the return of fear.
+  authors:
+  - Jan Haaker
+  - Stefano Gaburro
+  - Anupam Sah
+  - Nina Gartmann
+  - Tina B Lonsdorf
+  - Kolja Meier
+  - Nicolas Singewald
+  - Hans-Christian Pape
+  - Fabio Morellini
+  - Raffael Kalisch
+  publisher: Proceedings of the National Academy of Sciences of the United States
+    of America
+  date: '2013-06-10'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/23754384
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:24116095
+  title: Multimodal assessment of long-term memory recall and reinstatement in a combined
+    cue and context fear conditioning and extinction paradigm in humans.
+  authors:
+  - Jan Haaker
+  - Tina B Lonsdorf
+  - Alexandra Thanellou
+  - Raffael Kalisch
+  publisher: PloS one
+  date: '2013-10-07'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/24116095
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:23144849
+  title: Distinct contributions of the dorsolateral prefrontal and orbitofrontal cortex
+    during emotion regulation.
+  authors:
+  - Armita Golkar
+  - Tina B Lonsdorf
+  - Andreas Olsson
+  - Kara M Lindstrom
+  - Jonathan Berrebi
+  - Peter Fransson
+  - Martin Schalling
+  - Martin Ingvar
+  - "Arne \xD6hman"
+  publisher: PloS one
+  date: '2012-11-07'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/23144849
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:21356267
+  title: 5-HTTLPR and COMTval158met genotype gate amygdala reactivity and habituation.
+  authors:
+  - Tina B Lonsdorf
+  - Armita Golkar
+  - "Kara M Lindst\xF6m"
+  - Peter Fransson
+  - Martin Schalling
+  - Arne Ohman
+  - Martin Ingvar
+  publisher: Biological psychology
+  date: '2011-02-26'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/21356267
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:22832657
+  title: A review on experimental and clinical genetic associations studies on fear
+    conditioning, extinction and cognitive-behavioral treatment.
+  authors:
+  - T B Lonsdorf
+  - R Kalisch
+  publisher: Translational psychiatry
+  date: '2011-09-20'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/22832657
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:21464942
+  title: Conditioned pain modulation is associated with common polymorphisms in the
+    serotonin transporter gene.
+  authors:
+  - Fredrik Lindstedt
+  - Jonathan Berrebi
+  - Erik Greayer
+  - Tina B Lonsdorf
+  - Martin Schalling
+  - Martin Ingvar
+  - Eva Kosek
+  publisher: PloS one
+  date: '2011-03-28'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/21464942
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:21423614
+  title: Perception of thermal pain and the thermal grill illusion is associated with
+    polymorphisms in the serotonin transporter gene.
+  authors:
+  - Fredrik Lindstedt
+  - Tina B Lonsdorf
+  - Martin Schalling
+  - Eva Kosek
+  - Martin Ingvar
+  publisher: PloS one
+  date: '2011-03-15'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/21423614
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:21110842
+  title: The COMTval158met polymorphism is associated with symptom relief during exposure-based
+    cognitive-behavioral treatment in panic disorder.
+  authors:
+  - Tina B Lonsdorf
+  - "Christian R\xFCck"
+  - "Jan Bergstr\xF6m"
+  - Gerhard Andersson
+  - Arne Ohman
+  - Nils Lindefors
+  - Martin Schalling
+  publisher: BMC psychiatry
+  date: '2010-11-26'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/21110842
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:20141276
+  title: Amygdala-dependent fear conditioning in humans is modulated by the BDNFval66met
+    polymorphism.
+  authors:
+  - Tina B Lonsdorf
+  - Almut I Weike
+  - Armita Golkar
+  - Martin Schalling
+  - Alfons O Hamm
+  - "Arne \xD6hman"
+  publisher: Behavioral neuroscience
+  date: '2010-02-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/20141276
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:19683026
+  title: The symptomatic profile of panic disorder is shaped by the 5-HTTLPR polymorphism.
+  authors:
+  - Tina B Lonsdorf
+  - "Christian R\xFCck"
+  - "Jan Bergstr\xF6m"
+  - Gerhard Andersson
+  - Arne Ohman
+  - Martin Schalling
+  - Nils Lindefors
+  publisher: Progress in neuro-psychopharmacology & biological psychiatry
+  date: '2009-08-12'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/19683026
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:19175757
+  title: 'Genetic gating of human fear learning and extinction: possible implications
+    for gene-environment interaction in anxiety disorder.'
+  authors:
+  - Tina B Lonsdorf
+  - Almut I Weike
+  - Pernilla Nikamo
+  - Martin Schalling
+  - Alfons O Hamm
+  - Arne Ohman
+  publisher: Psychological science
+  date: '2009-01-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/19175757
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:19570226
+  title: Genetic variation in the serotonin transporter gene (5-HTTLPR, rs25531) influences
+    the analgesic response to the short acting opioid Remifentanil in humans.
+  authors:
+  - Eva Kosek
+  - Karin B Jensen
+  - Tina B Lonsdorf
+  - Martin Schalling
+  - Martin Ingvar
+  publisher: Molecular pain
+  date: '2009-07-01'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/19570226
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:19547755
+  title: Increased sensitivity to thermal pain following a single opiate dose is influenced
+    by the COMT val(158)met polymorphism.
+  authors:
+  - Karin B Jensen
+  - Tina B Lonsdorf
+  - Martin Schalling
+  - Eva Kosek
+  - Martin Ingvar
+  publisher: PloS one
+  date: '2009-06-23'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/19547755
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: pmid:16901644
+  title: 'Imaging gene-substance interactions: the effect of the DRD2 TaqIA polymorphism
+    and the dopamine agonist bromocriptine on the brain activation during the anticipation
+    of reward.'
+  authors:
+  - Peter Kirsch
+  - Martin Reuter
+  - Daniela Mier
+  - Tina Lonsdorf
+  - Rudolf Stark
+  - Bernd Gallhofer
+  - Dieter Vaitl
+  - "J\xFCrgen Hennig"
+  publisher: Neuroscience letters
+  date: '2006-08-08'
+  link: https://www.ncbi.nlm.nih.gov/pubmed/16901644
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
