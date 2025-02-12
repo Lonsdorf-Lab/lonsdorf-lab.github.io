@@ -1,5 +1,5 @@
 ---
-name: Firtz Becker
+name: Fritz Becker
 image: images/becker.jpg
 role: postdoc
 affiliation: University Bielefeld
