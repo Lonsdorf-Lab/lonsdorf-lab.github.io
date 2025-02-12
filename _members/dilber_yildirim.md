@@ -1,6 +1,6 @@
 ---
 name: Dilber Yildirim
-image: images/yildirim.jpg
+image: images/yildirim.png
 affiliation: University Bielefeld
 aliases:
   - D. Yildirim

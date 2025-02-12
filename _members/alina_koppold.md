@@ -1,6 +1,6 @@
 ---
 name: Alina Koppold
-image: 
+image: images/photo.jpg
 role: postdoc
 affiliation: University Bielefeld
 aliases:

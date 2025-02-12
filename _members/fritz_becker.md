@@ -8,10 +8,12 @@ aliases:
 
 links:
   email: fritz.becker@uni-bielefeld.de
-  orcid: 0000-0003-3889-206X
-  github: Fritz-theCat
+  bluesky: fritzbecker.bsky.social
   linkedin: fritz-becker-32ab671a9/
+  orcid: 0000-0003-3889-206X
+  google-scholar: vZ0xrZoAAAAJ
+  github: Fritz-theCat
 ---
 
-Fritz started in January 2025 as a Post-Doc on the FEARBASE project funded by the Volkswagen Stiftung. He is supervises and works on the technical and academic execution of the project's goals.
+Fritz Becker started in January 2025 as a Post-Doc on the FEARBASE project funded by the Volkswagen Stiftung. He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and is in the process of acquiring his PhD in Tübingen.
 

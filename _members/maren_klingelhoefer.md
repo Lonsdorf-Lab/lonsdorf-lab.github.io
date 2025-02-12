@@ -11,6 +11,7 @@ links:
   bluesky: mklingelhoeferj.bsky.social
   linkedin: maren-klingelh%C3%B6fer-jens-318347312/
   orcid: 0000-0002-5393-7871
+  google-scholar: rhHlSxAAAAAJ
   github: m-klingelhoefer-j
 ---
 
