@@ -1,6 +1,6 @@
 ---
 name: Mana Ehlers
-image: images/ehlers.jpeg
+image: images/ehlers.JPG
 role: postdoc
 affiliation: University Hamburg
 aliases:

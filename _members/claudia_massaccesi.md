@@ -1,6 +1,6 @@
 ---
 name: Claudia Massacessi
-image: images/massaccesi.jpg
+image: images/massaccesi.jpeg
 role: postdoc
 affiliation: University Bielefeld
 aliases:

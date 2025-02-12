@@ -46,7 +46,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
   include figure.html
-  image="images/photo.jpg"
+  image="images/contact1.jpg"
   caption="Lab Pic 2"
 %}
 

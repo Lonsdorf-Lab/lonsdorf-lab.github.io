@@ -1,6 +1,6 @@
 ---
 name: Tina Barbara Lonsdorf
-image: image/lonsdorf.jpeg
+image: image/lonsdorf.jpg
 role: principal-investigator
 affiliation: University Bielefeld
 aliases:
