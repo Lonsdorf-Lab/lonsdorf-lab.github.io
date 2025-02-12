@@ -5,6 +5,11 @@ role: postdoc
 affiliation: University Hamburg
 aliases:
   - M. Ehlers
+  - Mana Ehlers 
+  - M. R. Ehlers 
+  - M R Ehlers 
+  - Mana R. Ehlers 
+  - Mana R Ehlers
 
 links:
   email: mana.ehlers@uni-bielefeld.de

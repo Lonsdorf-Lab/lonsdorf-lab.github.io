@@ -5,6 +5,7 @@ role: postdoc
 affiliation: UKE Hamburg
 aliases:
   - M. Klingelhöfer-Jens
+  - Maren Klingelhöfer-Jens
 
 links:
   email: m.klingelhoefer-jens@uke.de

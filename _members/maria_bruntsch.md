@@ -6,6 +6,8 @@ affiliation: University Bielefeld
 
 aliases:
   - M. Bruntsch 
+  - M Bruntsch 
+  - Maria Bruntsch 
 
 links:
   email: maria.bruntsch@uni-bielefeld.de

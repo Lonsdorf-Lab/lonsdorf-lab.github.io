@@ -1,11 +1,15 @@
 ---
 name: Tina Barbara Lonsdorf
-image: image/lonsdorf.jpg
+image: images/lonsdorf.jpg
 role: principal-investigator
 affiliation: University Bielefeld
 aliases:
   - T. Lonsdorf
+  - Tina Lonsdorf
   - T. B. Lonsdorf 
+  - Tina B Lonsdorf
+  - Tina B. Lonsdorf 
+  
 
 links:
   email: tina.lonsdorf@uni-bielefeld.de
