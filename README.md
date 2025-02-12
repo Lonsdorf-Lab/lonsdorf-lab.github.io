@@ -3,7 +3,7 @@
   ![on-pull-request](../../actions/workflows/on-pull-request.yaml/badge.svg)
   ![on-schedule](../../actions/workflows/on-schedule.yaml/badge.svg)
 
-  # bruntsch's Website
+  # Website of Lonsdorf Lab
 
   Visit **[bruntsch.github.io/lonsdorflab-website](https://bruntsch.github.io/lonsdorflab-website)** 🚀
 
