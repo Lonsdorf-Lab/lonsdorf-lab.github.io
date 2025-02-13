@@ -1,6 +1,7 @@
 ---
 name: Dilber Yildirim
 image: images/yildirim.png
+role: secretary
 affiliation: University Bielefeld
 
 links:

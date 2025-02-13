@@ -26,6 +26,10 @@ mascot:
   icon: fa-solid fa-dog
   description: Mascot
 
+secretary:
+  icon: fa-solid fa-user-tie
+  description: Secretary
+
 # general
 
 link:
