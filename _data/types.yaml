@@ -130,6 +130,18 @@ linkedin:
   tooltip: LinkedIn
   link: https://www.linkedin.com/in/$VALUE
 
+researchgate:
+  icon: fa-brands fa-researchgate
+  text: ReserearchGate
+  tooltip: ResearchGate
+  link: https://www.researchgate.net/profile/$VALUE
+
+osf:
+  icon: fa-brands fa-osf
+  text: OSF
+  tooltip: OSF
+  link: https://osf.io/$VALUE
+
 # alerts
 
 tip:
