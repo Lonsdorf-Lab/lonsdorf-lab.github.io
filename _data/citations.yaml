@@ -1,5 +1,126 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1080/00223891.2025.2513936
+  title: Assessing the Long-Term Stability of the Spielberger State-Trait Inventory
+    Trait Scale over 3.5 Years
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Franziska Reiser
+  - Naemi D. Brandt
+  - "Dirk Sch\xFCmann"
+  - Matthias Gamer
+  - Raffael Kalisch
+  - Tobias Sommer
+  - Tina B. Lonsdorf
+  publisher: Journal of Personality Assessment
+  date: '2025-06-24'
+  link: https://doi.org/g9rsbk
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/mubgv_v4
+  title: Assessing the Long-Term Stability of the Spielberger State-Trait Inventory
+    Trait Scale Over 3.5 Years
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Franziska Reiser
+  - Naemi Brandt
+  - "Dirk Sch\xFCmann"
+  - Matthias Gamer
+  - Raffael Kalisch
+  - Tobias Sommer
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2025-06-05'
+  link: https://doi.org/g9k85t
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/mubgv_v2
+  title: Assessing the long-term Stability of the Spielberger State-Trait Inventory
+    trait scale over 3.5 Years
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Franziska Werner
+  - Naemi Brandt
+  - "Dirk Sch\xFCmann"
+  - Matthias Gamer
+  - Raffael Kalisch
+  - Tobias Sommer
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2025-04-29'
+  link: https://doi.org/g9hcnz
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/mubgv_v3
+  title: Assessing the long-term Stability of the Spielberger State-Trait Inventory
+    trait scale over 3.5 Years
+  authors:
+  - "Maren Klingelh\xF6fer-Jens"
+  - Franziska Reiser
+  - Naemi Brandt
+  - "Dirk Sch\xFCmann"
+  - Matthias Gamer
+  - Raffael Kalisch
+  - Tobias Sommer
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2025-04-29'
+  link: https://doi.org/g9hcn2
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/p84qz_v1
+  title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
+    Freezing Responses
+  authors:
+  - Alina Koppold
+  - Mana R Ehlers
+  - Alexandros Kastrinogiannis
+  - Felix H. Klaassen
+  - Karin Roelofs
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2025-04-28'
+  link: https://doi.org/g9hcn3
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31219/osf.io/rju75_v1
+  title: "There is no research on a dead planet \u2013 Fostering ecologically sustainable\
+    \ open science practices in neuroscience"
+  authors:
+  - Lara Puhlmann
+  - Alina Koppold
+  - Gordon Feld
+  - Tina B Lonsdorf
+  - Kirsten Hilger
+  - Susanne Vogel
+  - "\xC7a\u011Fatay Necati G\xFCrsoy"
+  - Alexandros Kastrinogiannis
+  - Louisa Kulke
+  - Alexander Lischke
+  - Anett Mueller-Alcazar
+  - Julian Packheiser
+  - Matthias F.J. Sperl
+  - Yu-Fang Yang
+  - Laura Bechtold
+  - Sebastian Ocklenburg
+  - Helena Hartmann
+  publisher: Center for Open Science
+  date: '2025-04-08'
+  link: https://doi.org/g9fdt7
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1038/s41380-024-02600-x
   title: 'Neuropsychobiology of fear-induced bradycardia in humans: progress and pitfalls'
   authors:
@@ -109,7 +230,7 @@
   - Paul Pauli
   - Grit Hein
   - Matthias Gamer
-  publisher: Research Square Platform LLC
+  publisher: Springer Science and Business Media LLC
   date: '2023-10-11'
   link: https://doi.org/g84qq3
   orcid: 0000-0003-1501-4846
@@ -151,6 +272,21 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.31234/osf.io/m9abu_v1
+  title: The many faces of early life adversity - Content overlap in validated assessment
+    instruments as well as in fear and reward learning research
+  authors:
+  - Alina Koppold
+  - Julia Ruge
+  - Tobias Hecker
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2023-05-24'
+  link: https://doi.org/g9dkxf
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/m9abu
   title: The many faces of early life adversity - Content overlap in validated assessment
     instruments as well as in fear and reward learning research
@@ -162,6 +298,24 @@
   publisher: Center for Open Science
   date: '2023-05-24'
   link: https://doi.org/g84qq6
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/nfpbj_v1
+  title: 'How adverse childhood experiences get under the skin: A systematic review,
+    integration and methodological discussion on threat and reward learning mechanisms'
+  authors:
+  - Julia Ruge
+  - Mana R Ehlers
+  - Alexandros Kastrinogiannis
+  - "Maren Klingelh\xF6fer-Jens"
+  - Alina Koppold
+  - Rany Abend
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2023-05-17'
+  link: https://doi.org/g9dkxg
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
@@ -350,6 +504,21 @@
   publisher: Center for Open Science
   date: '2022-05-06'
   link: https://doi.org/g84qrf
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/wjeyg_v1
+  title: 'Watching with Argus Eyes: Characterization of emotional and physiological
+    responding in adults exposed to childhood maltreatment and/or recent adversity'
+  authors:
+  - Alina Koppold
+  - Alexandros Kastrinogiannis
+  - Manuel Kuhn
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2022-04-27'
+  link: https://doi.org/g9dkxh
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
