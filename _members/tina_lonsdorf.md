@@ -1,5 +1,5 @@
 ---
-name: Tina Barbara Lonsdorf
+name: Tina Lonsdorf
 image: images/lonsdorf.jpg
 role: principal-investigator
 affiliation: University Bielefeld
@@ -19,4 +19,7 @@ links:
   github: tinalonsdorf
 ---
 
-Dr. Tina Lonsdorf holds a Diploma in Psychology from the University of Giessen (Germany) and a PhD in Clinical Neuroscience from Karolinska Institutet (Stockholm, Sweden). After her PhD, she joined the institute of Systems Neurosience at the University Medical Center in Hamburg-Eppendorf as a Post-doc and later established her own independent group there. Since 2023, she is a professor of Biological Psychology and Cognitive Neuroscience at University of Bielefeld and head of the Emmy Nöther Independent Junior Research group (“Fear Profiles“).  Since 2022 she holds a shared seat (with Gordon Feld) in the steering committe of the German Reproducibility Network (GRN) and since 2023, she is the Division Chair of the Division “Biological Psychology and Neuropsychology” of the German Psychological Society (DGPs).
+Tina's academic journey began with studies in Psychology at the University of Trier and Justus Liebig University Giessen with a minor in Medicine, followed by a PhD in Clinical Neuroscience at Karolinska Institutet in Stockholm.
+She then moved to the University Medical Center Hamburg-Eppendorf, where she worked as a postdoc and later led her own research group within the Collaborative Research Center CRC 58 “Fear, Anxiety, Anxiety Disorders”.
+In 2013, Tina established the Emmy-Noether Research Group “Fear Profiles”, funded by the German Research Foundation. Since 2023, she has been Professor of Biological Psychology and Cognitive Neuroscience at Bielefeld University, while continuing her affiliation with the University Medical Center Hamburg-Eppendorf as a guest researcher.
+Tina is also actively involved in several collaborative initiatives: she’s a PI in the RTG “Emotional Learning and Memory” at the University of Hamburg and serves on the program committee of the DFG Priority Program “META-REP”. In addition, she chairs the Division of Biological Psychology and Neuropsychology within the German Psychological Society (DGPs).

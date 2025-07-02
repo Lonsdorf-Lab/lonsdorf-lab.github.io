@@ -8,4 +8,4 @@ links:
   email: c-sultan.yildirim@uni-bielefeld.de
 ---
 
-Dilber supports our team since 2023. She serves as the contact person for all questions and task related to administration.
+As our Team Coordinator, Dilber ensures daily functioning of the lab. From managing communication, organizing meetings and travel, to handling administrative processes and supporting project logistics, her work ensures that everything runs efficiently. With a clear overview of both people and processes, she provides essential support that keeps the team running smoothly.
