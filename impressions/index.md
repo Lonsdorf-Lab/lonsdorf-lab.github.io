@@ -7,31 +7,26 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
-##EMHFC 2024
-
-{% include section.html %}
-
-{% capture col1 %}
-
-{%
-  include figure.html
-  image="images/events/team1.jpg"
-  caption="PUG 2024"
-%}
-
+# PUG 2024
+{% capture content %}
+  {% include figure.html image="images/events/24pug/pic1.jpg" %}
+  {% include figure.html image="images/events/24pug/pic2.jpg" width = "100%" %}
 {% endcapture %}
 
-{% capture col2 %}
-
 {%
-  include figure.html
-  image="images/events/team2.jpg"
-  caption="EMHFC 2024"
+  include grid.html
+  content=content
+  style="square"
 %}
 
+# EMHFC 2024
+{% capture content %}
+  ![](images/events/24emhfc/pic1.jpg)
+  ![](images/events/24emhfc/pic2.jpg)
+  ![](images/events/24emhfc/pic3.jpg)
 {% endcapture %}
 
-{% include cols.html col1=col1 col2=col2 %}
+{% include grid.html content=content %}
 
 {% include section.html %}
 

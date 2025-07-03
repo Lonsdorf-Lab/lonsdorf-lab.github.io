@@ -15,12 +15,12 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {% include section.html %}
 
-## Featured
+## Current Projects
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+{% include list.html component="card" data="projects" filter="group == 'on-going'" %}
 
 {% include section.html %}
 
-## More
+## Past Projects
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+{% include list.html component="card" data="projects" filter="group == 'finished'" style="small" %}
