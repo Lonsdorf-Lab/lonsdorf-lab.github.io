@@ -1,6 +1,6 @@
 ---
 name: Fritz Becker
-image: images/becker.jpg
+image: images/members/becker.jpg
 role: postdoc
 affiliation: University Bielefeld
 aliases:

@@ -1,6 +1,6 @@
 ---
 name: Dilber Yildirim
-image: images/yildirim.png
+image: images/members/yildirim.png
 role: team-coordinator
 affiliation: University Bielefeld
 

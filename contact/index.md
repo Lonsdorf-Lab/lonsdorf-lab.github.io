@@ -36,7 +36,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
   include figure.html
-  image="images/team1.jpg"
+  image="images/events/team1.jpg"
   caption="PUG 2024"
 %}
 
@@ -46,7 +46,7 @@ nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 
 {%
   include figure.html
-  image="images/team2.jpg"
+  image="images/events/team2.jpg"
   caption="EMHFC 2024"
 %}
 

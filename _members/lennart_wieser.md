@@ -1,6 +1,6 @@
 ---
 name: Lennart Wieser
-image: images/wieser.png
+image: images/members/wieser.png
 role: phd
 affiliation: University Bielefeld
 aliases:

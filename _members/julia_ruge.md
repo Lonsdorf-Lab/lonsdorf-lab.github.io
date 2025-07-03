@@ -1,6 +1,6 @@
 ---
 name: Julia Ruge
-image: images/ruge.jpg
+image: images/members/ruge.jpg
 role: phd
 affiliation: UKE Hamburg
 aliases:

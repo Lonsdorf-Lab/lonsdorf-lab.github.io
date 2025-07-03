@@ -1,6 +1,6 @@
 ---
 name: Maren Klingelhöfer-Jens
-image: images/klingelhoefer.jpg
+image: images/members/klingelhoefer.jpg
 role: postdoc
 affiliation: UKE Hamburg
 aliases:

@@ -3,7 +3,7 @@
 
 # Website of the Lonsdorf Lab
 
-An engaging 1-3 sentence description of your lab.
+At the Lonsdorf Lab, we investigate the mechanisms underlying fear, anxiety, and their regulation in humans. Combining cognitive neuroscience, psychophysiology, and behavioral science, our interdisciplinary research aims to uncover how individual differences and environmental factors shape learning and memory processes relevant to mental health.
 
 {% include section.html %}
 
@@ -26,7 +26,7 @@ Find here all our publications.
 
 {%
   include feature.html
-  image="images/rof.png"
+  image="images/projects/rof.png"
   link="publications"
   title="Our Publications"
   text=text
@@ -49,7 +49,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {%
   include feature.html
-  image="images/fearbase.jpg"
+  image="images/projects/fearbase.jpg"
   link="projects"
   title="Our Projects"
   flip=true
@@ -74,7 +74,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 {%
   include feature.html
-  image="images/team1.jpg"
+  image="images/events/team1.jpg"
   link="team"
   title="Our Team"
   text=text

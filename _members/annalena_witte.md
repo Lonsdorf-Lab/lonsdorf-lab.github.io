@@ -1,6 +1,6 @@
 ---
 name: Annalena Witte
-image: images/witte.jpg
+image: images/members/witte.jpg
 role: phd
 affiliation: University Bielefeld
 aliases:

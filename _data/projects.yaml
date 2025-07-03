@@ -22,7 +22,7 @@
 - title: FEARBASE
   subtitle: Team - Annalena, Fritz, Maria, Mana
   group: featured
-  image: images/fearbase.jpg
+  image: images/projects/fearbase.jpg
   link: https://rdc-psychology.org/fearbase/en
   fundingg: Volkswagen Stiftung, Profile Area „Understanding Research – Evaluation and Science Practice “ 
   description: It is our vision to facilitate cumulative science in the field of human fear conditioning research by gathering datasets and hence generating new information while at the same time ensure sustainability of research investments.To achieve this aim, we are developing a cooperative, sustainable, living and dynamically growing database with living analyses and building up a community consortium. The database will initially be based on ‘open data’ and will be enriched with new data sets in the long term. To this end, we develop a data curation and metadata tool that will allow researchers to contribute datasets with minimal effort. The infrastructural tools are developed in collaboration with the Leibniz Institute for Psychology (ZPID, Trier) and are currently in a beta-testing phase. We expect community involvement to start by late summer 2025. First analyses will cover temporal dynamics and investigate the impact of procedural heterogeneity by using individual-participant meta-analytical approaches as well as computational modelling
@@ -63,7 +63,7 @@
 - title: EIFEL-ROF
   subtitle: Team - [Christian Merz] (https://www.neuro.ruhr-uni-bochum.de/rdn/personen/Christian_Merz.html.de), and the fear conditioning community
   group: featured
-  image: images/eifel-rof.jpg
+  image: images/projects/eifel-rof.jpg
   link: https://gepris.dfg.de/gepris/projekt/273022965
   funding: DFG Scientific network grant
   description: The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets. 
