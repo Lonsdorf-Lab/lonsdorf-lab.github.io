@@ -13,11 +13,18 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 {% include section.html %}
 
+# Current Lab Members
+
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'team-coordinator' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'postdoc' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'phd' and group != 'alum'" %}
-{% include list.html data="members" component="portrait" filter="role == 'undergrad' and group != 'alum'" %}
+
+{% include section.html %}
+
+# Student Assistants & Research Interns
+
+{% include list.html data="members" component="portrait" filter="role == 'undergrad' and group != 'alum'" style="small" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
 

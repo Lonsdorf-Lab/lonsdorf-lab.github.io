@@ -2,7 +2,7 @@
 name: Lukas Schniedergers
 image: 
 role: undergrad
-affiliation: University Hamburg
+affiliation: UKE Hamburg
 aliases:
   - L. schniedergers
 

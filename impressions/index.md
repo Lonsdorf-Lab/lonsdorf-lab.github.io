@@ -7,6 +7,8 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
+##EMHFC 2024
+
 {% include section.html %}
 
 {% capture col1 %}
