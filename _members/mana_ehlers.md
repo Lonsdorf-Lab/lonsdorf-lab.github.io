@@ -2,7 +2,7 @@
 name: Mana Ehlers
 image: images/members/ehlers.JPG
 role: postdoc
-affiliation: University Hamburg
+affiliation: University Bielefeld
 aliases:
   - M. Ehlers
   - Mana Ehlers 
