@@ -5,9 +5,9 @@ nav:
   tooltip: Published works
 ---
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Research
+# {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
-Here you can find all our publications ordered by year. Below you filter for specific lab members
+Here you can find all our publications ordered by year. Below you can filter for specific lab members.
 
 {% include section.html %}
 

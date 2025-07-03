@@ -5,22 +5,34 @@ nav:
   tooltip: pictures
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
-
-Get a glimpse into the work we do: from ongoing investigations to completed projects.
-
-{% include tags.html tags="publication, resource, website" %}
-
-{% include search-info.html %}
+# {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
 {% include section.html %}
 
-## Featured
+{% capture col1 %}
 
-{% include list.html component="card" data="projects" filter="group == 'featured'" %}
+{%
+  include figure.html
+  image="images/events/team1.jpg"
+  caption="PUG 2024"
+%}
+
+{% endcapture %}
+
+{% capture col2 %}
+
+{%
+  include figure.html
+  image="images/events/team2.jpg"
+  caption="EMHFC 2024"
+%}
+
+{% endcapture %}
+
+{% include cols.html col1=col1 col2=col2 %}
 
 {% include section.html %}
 
-## More
+# {% include icon.html icon="fa-solid fa-microscope" %}Impressions of the Lab
 
-{% include list.html component="card" data="projects" filter="!group" style="small" %}
+This part is currently under construction.
