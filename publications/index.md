@@ -7,13 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications
 
-Here you can find all our publications ordered by year. Below you can filter for specific lab members.
-
-{% include section.html %}
-
-## Highlighted
-
-{% include citation.html lookup="Open collaborative writing with Manubot" style="rich" %}
+Here you can find all our publications ordered by year. You can filter for specific lab members.
 
 {% include section.html %}
 

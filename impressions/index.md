@@ -29,7 +29,7 @@ nav:
 {%
   include grid.html
   content=content
-  style="square"
+  style="rectangle"
 %}
 
 {% include section.html %}
