@@ -1,5 +1,5 @@
 ---
-title: Research
+title: Publications
 nav:
   order: 1
   tooltip: Published works
@@ -7,7 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Research
 
-Here are all papers from our lab listed.
+Here you can find all our publications ordered by year. Below you filter for specific lab members
 
 {% include section.html %}
 
