@@ -15,5 +15,5 @@ links:
   github: Fritz-theCat
 ---
 
-Fritz Becker started in January 2025 as a Post-Doc on the FEARBASE project funded by the Volkswagen Stiftung. He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and is in the process of acquiring his PhD in Tübingen.
+Fritz started in January 2025 as a Post-Doc on the FEARBASE project funded by the Volkswagen Stiftung. He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and is in the process of acquiring his PhD in Tübingen.
 
