@@ -1,7 +1,7 @@
 ---
 name: Alexandros Kastrinogiannis
 image: images/photo.jpg
-role: undergrad
+role: phd
 group: alum
 ---
 

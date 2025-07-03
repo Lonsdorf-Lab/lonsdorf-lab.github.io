@@ -7,8 +7,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-feather-pointed" %}Blog
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Welcome to our lab blog! Here, we offer a behind-the-scenes look at our work, sharing research insights, reflections on science in progress, and stories from our everyday scientific life.
 
 {% include section.html %}
 

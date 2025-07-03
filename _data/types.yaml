@@ -22,9 +22,9 @@ programmer:
   icon: fa-solid fa-code
   description: Programmer
 
-secretary:
+team-coordinator:
   icon: fa-solid fa-user-tie
-  description: Secretary
+  description: Team coordinator
 
 # general
 
