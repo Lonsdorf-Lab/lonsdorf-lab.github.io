@@ -14,7 +14,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% include section.html %}
 
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator' and group != 'alum'" %}
-{% include list.html data="members" component="portrait" filter="role == 'teem-coordinator' and group != 'alum'" %}
+{% include list.html data="members" component="portrait" filter="role == 'team-coordinator' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'postdoc' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'phd' and group != 'alum'" %}
 {% include list.html data="members" component="portrait" filter="role == 'undergrad' and group != 'alum'" %}
