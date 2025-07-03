@@ -13,11 +13,11 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 {% include section.html %}
 
-{% include list.html data="members" component="portrait" filter="role == 'principal-investigator'" %}
-{% include list.html data="members" component="portrait" filter="role == 'secretary'" %}
-{% include list.html data="members" component="portrait" filter="role == 'postdoc'" %}
-{% include list.html data="members" component="portrait" filter="role == 'phd'" %}
-{% include list.html data="members" component="portrait" filter="role == 'undergrad'" %}
+{% include list.html data="members" component="portrait" filter="role == 'principal-investigator' and group != 'alum'" %}
+{% include list.html data="members" component="portrait" filter="role == 'secretary' and group != 'alum'" %}
+{% include list.html data="members" component="portrait" filter="role == 'postdoc' and group != 'alum'" %}
+{% include list.html data="members" component="portrait" filter="role == 'phd' and group != 'alum'" %}
+{% include list.html data="members" component="portrait" filter="role == 'undergrad' and group != 'alum'" %}
 
 {% include section.html background="images/background.jpg" dark=true %}
 
@@ -28,9 +28,7 @@ We always seek motivated postdoctoral researchers, PhD students and Master stude
 
 {% capture content %}
 
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
-{% include figure.html image="images/photo.jpg" %}
+{% include list.html data="members" component="portrait" filter="group == 'alum'" style="small" %}
 
 {% endcapture %}
 
