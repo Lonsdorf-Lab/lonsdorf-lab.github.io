@@ -1,5 +1,6 @@
 ---
-name: Maria Bruntsch
+name: Maria
+full-name: Maria Bruntsch
 image: images/members/bruntsch.jpg
 role: phd
 affiliation: University Bielefeld
