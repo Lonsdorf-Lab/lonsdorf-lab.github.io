@@ -1,0 +1,59 @@
+---
+---
+
+.card {
+  display: flex; /* changed from inline-flex to flex */
+  flex-direction: row; /* horizontal layout */
+  justify-content: stretch;
+  align-items: stretch;
+  width: 1000px;
+  max-width: calc(100% - 40px);
+  margin: 20px;
+  background: var(--background);
+  border-radius: var(--rounded);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+}
+
+.card[data-style="small"] {
+  width: 400px;
+  flex-direction: column; /* optionally keep small cards vertical */
+}
+
+.card-image {
+  flex: 1 1 40%; /* give it 40% of space */
+  max-width: 400px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: auto; /* remove forced aspect-ratio */
+  object-fit: cover;
+  display: block;
+}
+
+.card-text {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card-text > * {
+  margin: 0 !important;
+}
+
+.card-title {
+  font-family: var(--heading);
+  font-weight: var(--semi-bold);
+}
+
+.card-subtitle {
+  font-style: italic;
+  margin-top: -5px !important;
+}
