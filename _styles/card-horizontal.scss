@@ -29,10 +29,10 @@
 
 .card-image img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   display: block;
-  aspect-ratio: auto; /* Remove fixed aspect-ratio */
+  aspect-ratio: auto;
 }
 
 /* Text content section */
