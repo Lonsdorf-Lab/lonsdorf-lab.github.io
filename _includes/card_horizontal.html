@@ -1,0 +1,34 @@
+{{ " " }}
+<div class="card-text">
+  <div class="card-main">
+    {% if include.title %}
+      <a
+        {% if include.link %}
+          href="{{ include.link | relative_url | uri_escape }}"
+        {% endif %}
+        {% if include.tooltip %}
+          data-tooltip="{{ include.tooltip | xml_escape }}"
+        {% endif %}
+        class="card-title"
+      >
+        {{ include.title }}
+      </a>
+    {% endif %}
+
+    {% if include.subtitle %}
+      <span class="card-subtitle">{{ include.subtitle }}</span>
+    {% endif %}
+
+    {% if include.description %}
+      <p>
+        {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
+      </p>
+    {% endif %}
+  </div>
+
+  {% if include.tags or include.repo %}
+    <div class="card-tags">
+      {% include tags.html tags=include.tags repo=include.repo %}
+    </div>
+  {% endif %}
+</div>
