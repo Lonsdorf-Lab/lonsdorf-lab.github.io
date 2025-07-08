@@ -17,7 +17,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ## Current Projects
 
-{% include list.html component="card_horizontal" data="projects" filter="group == 'on-going'" %}
+{% include list.html component="card-horizontal" data="projects" filter="group == 'on-going'" %}
 
 {% include section.html %}
 
