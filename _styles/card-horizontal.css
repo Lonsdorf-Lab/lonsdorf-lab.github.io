@@ -1,4 +1,4 @@
-.card {
+.card-horizontal {
   display: flex;
   flex-direction: row; /* Horizontal layout */
   justify-content: stretch;
@@ -26,10 +26,9 @@
 
 .card-image img {
   width: 100%;
-  height: 100%;
+  height: 300px;
   object-fit: cover;
   display: block;
-  aspect-ratio: auto; /* Remove fixed aspect-ratio */
 }
 
 /* Text content section */
@@ -95,4 +94,4 @@
   }
 }
 
-/*# sourceMappingURL=card_horizontal.css.map */
+/*# sourceMappingURL=card-horizontal.css.map */
