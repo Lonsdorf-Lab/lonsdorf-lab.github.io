@@ -28,8 +28,6 @@
   width: 100%;
   height: 100%;
   object-fit: block;
-  display: block;
-  max-width: 300px;
 }
 
 /* Text content section */
