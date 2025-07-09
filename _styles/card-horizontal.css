@@ -3,7 +3,7 @@
   flex-direction: row; /* Horizontal layout */
   justify-content: stretch;
   align-items: center;
-  width: 1000px;
+  width: 1200px;
   max-width: calc(100% - 40px);
   margin: 20px;
   background: var(--background);
@@ -13,7 +13,7 @@
 }
 
 .card[data-style=small] {
-  width: 400px;
+  width: 500px;
   flex-direction: column; /* Keep small cards vertical */
 }
 
@@ -29,6 +29,7 @@
   height: 100%;
   object-fit: block;
   display: block;
+  max-width: 300px;
 }
 
 /* Text content section */
