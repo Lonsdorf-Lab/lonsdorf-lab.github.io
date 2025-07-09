@@ -35,7 +35,7 @@ Interested in joining the lab? Want to collaborate with us? Any questions regard
 {%
   include figure.html
   image="images/events/team1.jpg"
-  caption="PUG 2024"
+  caption="PUG 2025"
 %}
 
 {% endcapture %}
@@ -45,7 +45,7 @@ Interested in joining the lab? Want to collaborate with us? Any questions regard
 {%
   include figure.html
   image="images/events/team2.jpg"
-  caption="EMHFC 2024"
+  caption="EMHFC 2025"
 %}
 
 {% endcapture %}
