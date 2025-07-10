@@ -34,10 +34,6 @@
       <span class="card-subtitle">{{ include.subtitle }}</span>
     {% endif %}
 
-    {% if include.funding %}
-      <span class="card-funding">{{ include.funding }}</span>
-    {% endif %}
-
     {% if include.description %}
       <p>
         {{ include.description | markdownify | remove: "<p>" | remove: "</p>" }}
