@@ -35,8 +35,4 @@ We always seek motivated postdoctoral researchers, PhD students and Master stude
 
 # Alumni
 
-{% capture content %}
-
 {% include list.html data="members" component="portrait" filter="group == 'alum'" style="small" %}
-
-{% endcapture %}
