@@ -1,5 +1,5 @@
 ---
-name: Larissa Nelle
+name: Larissa Marie Nelle
 image: images/members/nelle.jpg
 role: undergrad
 affiliation: University Bielefeld
