@@ -1,6 +1,6 @@
 ---
 name: Paul Pfaff
-image: images/photo.jpg
+image: images/members/pfaff.jpeg
 role: phd
 affiliation: UKE Hamburg
 aliases:
@@ -10,5 +10,5 @@ links:
   email: 
 ---
 
-Paul studied Psychology a the the Universities of Jena and Bochum. After his Master thesis at the University of Amsterdam with Lotte Stemerding and Merel Kindt, he joined the University of Utrecht as a research assistant working with Iris Engelhard and Woulter Cox. He is an incoming PhD student joining the RTG Emotional Learning and Memory at University of Hamburg.
+Paul studied Psychology at the Universities of Jena and Bochum. After that, he completed his Research Master at the University of Amsterdam, focusing on experimental psychopathology and the processes underlying anxiety disorders. He is an incoming PhD student joining the at the Institute of Systems Neuroscience of the UKE Hamburg, where he will look into the effects of early adversity on fear and reward learning, including physiological and neural processes. 
 
