@@ -1,6 +1,6 @@
 ---
 name: Ondrej Zika
-image: images/photo.jpg
+image: images/members/zika.jpg
 role: postdoc
 affiliation: University Bielefeld
 aliases:
