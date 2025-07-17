@@ -15,7 +15,7 @@ Find here all our publications.
 
 {%
   include button.html
-  link="publications"
+  link="research"
   text="See our publications"
   icon="fa-solid fa-arrow-right"
   flip=true
