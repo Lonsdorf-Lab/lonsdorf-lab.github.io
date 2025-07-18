@@ -23,3 +23,14 @@ Tina's academic journey began with studies in Psychology at the University of Tr
 She then moved to the University Medical Center Hamburg-Eppendorf, where she worked as a postdoc and later led her own research group within the Collaborative Research Center CRC 58 “Fear, Anxiety, Anxiety Disorders”.
 In 2013, Tina established the Emmy-Noether Research Group “Fear Profiles”, funded by the German Research Foundation. Since 2023, she has been Professor of Biological Psychology and Cognitive Neuroscience at Bielefeld University, while continuing her affiliation with the University Medical Center Hamburg-Eppendorf as a guest researcher.
 Tina is also actively involved in several collaborative initiatives: she’s a PI in the RTG “Emotional Learning and Memory” at the University of Hamburg and serves on the program committee of the DFG Priority Program “META-REP”. In addition, she chairs the Division of Biological Psychology and Neuropsychology within the German Psychological Society (DGPs).
+
+
+## All papers under Tina's ORCID:
+
+{% capture content %}
+
+{% include list.html data="citation" component="citation" filters="member: tina_lonsdorf" %}
+
+{% endcapture %}
+
+{% include grid.html content=content %}
