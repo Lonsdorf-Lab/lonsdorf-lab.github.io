@@ -25,7 +25,7 @@ In 2013, Tina established the Emmy-Noether Research Group “Fear Profiles”, f
 Tina is also actively involved in several collaborative initiatives: she’s a PI in the RTG “Emotional Learning and Memory” at the University of Hamburg and serves on the program committee of the DFG Priority Program “META-REP”. In addition, she chairs the Division of Biological Psychology and Neuropsychology within the German Psychological Society (DGPs).
 
 
-## Tina's Papers:
+# Tina's Papers:
 
 {% capture content %}
 
