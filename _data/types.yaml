@@ -26,6 +26,10 @@ team-coordinator:
   icon: fa-solid fa-user-tie
   description: Team Coordinator
 
+lab-manager:
+  icon: fa-solid fa-user-tie
+  description: Lab Manager
+
 # general
 
 link:
