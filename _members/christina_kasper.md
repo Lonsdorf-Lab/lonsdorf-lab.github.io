@@ -1,6 +1,6 @@
 ---
 name: Christina Kasper
-image: 
+image: images/members/kasper.jpeg
 role: undergrad
 affiliation: University Bielefeld
 
