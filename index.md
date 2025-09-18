@@ -26,7 +26,7 @@ Find here all our publications.
 
 {%
   include feature.html
-  image="images/scholar_googler_lonsdorf.png"
+  image="images/scholar_goggler_lonsdorf.png"
   link="publications"
   title="Our Publications"
   text=text
