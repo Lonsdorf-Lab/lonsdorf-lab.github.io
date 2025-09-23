@@ -11,14 +11,14 @@
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
     - type: preprint
-      text: Preprint Version 1
+      text: "Preprint v1"
       link: https://doi.org/10.31234/osf.io/mubgv
     - type: preprint
-      text: Preprint Version 2
+      text: "Preprint v2"
       link: https://doi.org/10.31234/osf.io/mubgv_v2
     - type: preprint
-      text: Preprint Version 3
+      text: "Preprint v3"
       link: https://doi.org/10.31234/osf.io/mubgv_v3
     - type: preprint
-      text: Preprint Version 4
+      text: "Preprint v4"
       link: https://doi.org/10.31234/osf.io/mubgv_v4
