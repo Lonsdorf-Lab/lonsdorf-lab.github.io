@@ -20,17 +20,17 @@
   plugin: sources.py
   file: sources.yaml
   buttons:
-  - type: source
-    text: Preprint Version 1
+  - type: preprint
+    text: Preprint v1
     link: https://doi.org/10.31234/osf.io/mubgv
-  - type: source
-    text: Preprint Version 2
+  - type: preprint
+    text: Preprint v2
     link: https://doi.org/10.31234/osf.io/mubgv_v2
-  - type: source
-    text: Preprint Version 3
+  - type: preprint
+    text: Preprint v3
     link: https://doi.org/10.31234/osf.io/mubgv_v3
-  - type: source
-    text: Preprint Version 4
+  - type: preprint
+    text: Preprint v4
     link: https://doi.org/10.31234/osf.io/mubgv_v4
 - id: doi:10.31234/osf.io/p84qz_v1
   title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
