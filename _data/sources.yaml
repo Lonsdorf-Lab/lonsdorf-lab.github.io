@@ -8,6 +8,12 @@
 - id:  doi:10.31234/osf.io/mubgv_v2
   remove: true
 
+- id: doi:10.31234/osf.io/m9abu
+  remove: true
+
+- id: doi:10.31234/osf.io/m9abu_v1
+  remove: true
+
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
     - type: preprint
@@ -22,3 +28,16 @@
     - type: preprint
       text: "Preprint v4"
       link: https://doi.org/10.31234/osf.io/mubgv_v4
+
+- id:  doi:10.15626/MP.2023.3958
+  title: "The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research" 
+  type: paper
+  buttons:
+    - type: preprint
+      text: "Preprint v1"
+      link:  doi:10.31234/osf.io/m9abu
+    - type: preprint
+      text: "Preprint v2"
+      link: doi:10.31234/osf.io/m9abu_v1
+      
+  
