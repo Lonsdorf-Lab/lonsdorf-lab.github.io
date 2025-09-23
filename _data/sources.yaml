@@ -14,6 +14,7 @@
 - id: doi:10.31234/osf.io/m9abu_v1
   remove: true
 
+# Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
     - type: preprint
@@ -29,6 +30,7 @@
       text: "Preprint v4"
       link: https://doi.org/10.31234/osf.io/mubgv_v4
 
+# The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research
 - id:  doi:10.15626/MP.2023.3958
   title: "The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research" 
   type: paper
