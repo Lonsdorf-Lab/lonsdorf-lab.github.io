@@ -1,4 +1,5 @@
-# Suppress vitations via remove: true
+## Suppress vitations via remove: true
+# Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.31234/osf.io/mubgv_v4
   remove: true
 
@@ -8,12 +9,51 @@
 - id:  doi:10.31234/osf.io/mubgv_v2
   remove: true
 
+- id: doi:10.31234/osf.io/mubgv
+  remove: true
+
+# The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research
 - id: doi:10.31234/osf.io/m9abu
   remove: true
 
 - id: doi:10.31234/osf.io/m9abu_v1
   remove: true
 
+# How adverse childhood experiences get under the skin
+- id: doi:10.31234/osf.io/nfpbj
+  remove: true
+
+- id: doi:10.31234/osf.io/nfpbj_v1
+  remove: true
+
+# Systematically investigating the role of context on effect replicability in reinstatement of fear in humans
+- id: doi:10.31234/osf.io/65njk
+  remove: true
+
+# Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity
+- id: doi:10.31234/osf.io/wjeyg
+  remove: true
+
+- id: doi:10.31234/osf.io/wjeyg_v1
+  remove: true
+
+# Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear
+- id: doi:10.1101/2022.03.15.484434
+  remove: true
+
+# A data multiverse analysis investigating non‐model based SCR quantification approaches
+- id: doi:10.31234/osf.io/q24t8
+  remove: true
+
+# Multiverse analyses in fear conditioning research 
+- id: doi:10.31234/osf.io/2z6pd
+  remove: true
+
+# Navigating the garden of forking paths for data exclusions in fear conditioning research
+- id: doi:10.31234/osf.io/6m72g
+  remove: true
+
+## Add preprints as buttons for each of the citations with multiple entries per publication
 # Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
@@ -36,10 +76,54 @@
   type: paper
   buttons:
     - type: preprint
-      text: "Preprint v1"
-      link:  doi:10.31234/osf.io/m9abu
-    - type: preprint
-      text: "Preprint v2"
-      link: doi:10.31234/osf.io/m9abu_v1
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/m9abu
       
-  
+# How adverse childhood experiences get under the skin
+- id: doi:10.7554/eLife.92700
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/nfpbj_v1
+
+# Systematically investigating the role of context on effect replicability in reinstatement of fear in humans
+- id:  doi:10.1016/j.brat.2023.104256
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/65njk
+
+# Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity
+- id: doi:10.1111/psyp.14253
+  buttons:
+    type: preprint
+    text: "Preprint"
+    link: https://doi.org/10.31234/osf.io/wjeyg
+
+# Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear
+- id: doi:10.7554/eLife.78717
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.1101/2022.03.15.484434
+
+# A data multiverse analysis investigating non‐model based SCR quantification approaches 
+- id: doi:10.1111/psyp.14130
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/q24t8
+
+# Multiverse analyses in fear conditioning research 
+- id: doi:10.1016/j.brat.2022.104072
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/2z6pd
+
+# Navigating the garden of forking paths for data exclusions in fear conditioning research
+- id: doi:10.7554/eLife.52465
+  buttons:
+    - type: preprint
+      text: "Preprint"
+      link: https://doi.org/10.31234/osf.io/6m72g
