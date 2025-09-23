@@ -69,6 +69,9 @@
     - type: preprint
       text: "Preprint v4"
       link: https://doi.org/10.31234/osf.io/mubgv_v4
+    - type: data
+      text: "Data"
+      link: https://doi.org/https://doi.org/10.5281/zenodo.15494050
 
 # The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research
 - id:  doi:10.15626/MP.2023.3958
