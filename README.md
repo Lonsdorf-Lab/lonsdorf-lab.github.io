@@ -5,6 +5,6 @@
 
   # Website of Lonsdorf Lab
 
-  Visit **[lonsdorf-lab.github.io/](lonsdorf-lab.github.io/)** 🚀
+  Visit **[lonsdorf-lab.github.io](https://lonsdorf-lab.github.io)** 🚀
 
   _Built with [Lab Website Template](https://greene-lab.gitbook.io/lab-website-template-docs)_
