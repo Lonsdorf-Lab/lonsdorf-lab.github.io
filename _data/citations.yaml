@@ -109,11 +109,8 @@
   type: paper
   buttons:
   - type: preprint
-    text: Preprint v1
-    link: doi:10.31234/osf.io/m9abu
-  - type: preprint
-    text: Preprint v2
-    link: doi:10.31234/osf.io/m9abu_v1
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/m9abu
 - id: doi:10.7554/eLife.92700
   title: 'How adverse childhood experiences get under the skin: A systematic review,
     integration and methodological discussion on threat and reward learning mechanisms'
@@ -130,8 +127,12 @@
   link: https://doi.org/g84qqz
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/nfpbj_v1
 - id: doi:10.31234/osf.io/fk26y
   title: How to Measure Fear Generalization? Reliability and Validity of Commonly
     Used Indices
@@ -234,44 +235,12 @@
   link: https://doi.org/g84qq5
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/nfpbj_v1
-  title: 'How adverse childhood experiences get under the skin: A systematic review,
-    integration and methodological discussion on threat and reward learning mechanisms'
-  authors:
-  - Julia Ruge
-  - Mana R Ehlers
-  - Alexandros Kastrinogiannis
-  - "Maren Klingelh\xF6fer-Jens"
-  - Alina Koppold
-  - Rany Abend
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2023-05-17'
-  link: https://doi.org/g9dkxg
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/nfpbj
-  title: 'How adverse childhood experiences get under the skin: A systematic review,
-    integration and methodological discussion on threat and reward learning mechanisms'
-  authors:
-  - Julia Ruge
-  - Mana R Ehlers
-  - Alexandros Kastrinogiannis
-  - "Maren Klingelh\xF6fer-Jens"
-  - Alina Koppold
-  - Rany Abend
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2023-05-17'
-  link: https://doi.org/g84qq7
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+    type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/wjeyg
 - id: doi:10.1027/2151-2604/a000523
   title: Prediction of Changes in Negative Affect During the COVID-19 Pandemic by
     Experimental Fear           Conditioning and Generalization Measures
@@ -308,8 +277,12 @@
   link: https://doi.org/g84qq9
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/65njk
 - id: doi:10.1038/s41562-022-01508-2
   title: Quality research needs good working conditions
   authors:
@@ -347,8 +320,12 @@
   link: https://doi.org/g84qrb
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/q24t8
 - id: doi:10.7554/eLife.78717
   title: Robust group- but limited individual-level (longitudinal) reliability and
     insights into cross-phases response prediction of conditioned fear
@@ -363,8 +340,12 @@
   link: https://doi.org/g36c9v
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.1101/2022.03.15.484434
 - id: doi:10.1111/psyp.14058
   title: "Navigating the manyverse of skin conductance response quantification approaches\
     \ \u2013 A direct comparison of <scp>trough\u2010to\u2010peak</scp>, baseline\
@@ -405,8 +386,12 @@
   link: https://doi.org/grtxfz
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/2z6pd
 - id: doi:10.31234/osf.io/gtasm
   title: 'Recent advances in studying brain-behaviour interactions using functional
     imaging: The primary startle response pathway and its affective modulation in
@@ -419,55 +404,6 @@
   publisher: Center for Open Science
   date: '2022-05-13'
   link: https://doi.org/g84qrd
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/mubgv
-  title: Assessing the long-term Stability of the Spielberger State-Trait Inventory
-    trait scale over 3.5 Years
-  authors:
-  - "Maren Klingelh\xF6fer-Jens"
-  - Franziska Werner
-  - Naemi Brandt
-  - "Dirk Sch\xFCmann"
-  - Matthias Gamer
-  - Raffael Kalisch
-  - Tobias Sommer
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2022-05-06'
-  link: https://doi.org/g84qrf
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/wjeyg_v1
-  title: 'Watching with Argus Eyes: Characterization of emotional and physiological
-    responding in adults exposed to childhood maltreatment and/or recent adversity'
-  authors:
-  - Alina Koppold
-  - Alexandros Kastrinogiannis
-  - Manuel Kuhn
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2022-04-27'
-  link: https://doi.org/g9dkxh
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/wjeyg
-  title: 'Watching with Argus Eyes: Characterization of emotional and physiological
-    responding in adults exposed to childhood maltreatment and/or recent adversity'
-  authors:
-  - Alina Koppold
-  - Alexandros Kastrinogiannis
-  - Manuel Kuhn
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2022-04-27'
-  link: https://doi.org/g84qrg
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
@@ -491,22 +427,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.1101/2022.03.15.484434
-  title: Robust group- but limited individual-level (longitudinal) reliability and
-    insights into cross-phases response prediction of conditioned fear
-  authors:
-  - "Maren Klingelh\xF6fer-Jens"
-  - Mana R. Ehlers
-  - Manuel Kuhn
-  - Vincent Keyaniyan
-  - Tina B. Lonsdorf
-  publisher: Cold Spring Harbor Laboratory
-  date: '2022-03-18'
-  link: https://doi.org/gsz6jb
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.31234/osf.io/hj5gt
   title: Effects of intolerance of uncertainty on subjective and psychophysiological
     measures during fear acquisition and delayed extinction
@@ -517,19 +437,6 @@
   publisher: Center for Open Science
   date: '2021-11-25'
   link: https://doi.org/g84qrj
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/65njk
-  title: Systematically investigating the role of context on effect replicability
-    in reinstatement of fear in humans
-  authors:
-  - Tina B Lonsdorf
-  - Rachel Sjouwerman
-  publisher: Center for Open Science
-  date: '2021-11-15'
-  link: https://doi.org/g84qrk
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
@@ -552,21 +459,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.31234/osf.io/q24t8
-  title: A data multiverse analysis investigating non-model based SCR quantification
-    approaches
-  authors:
-  - Rachel Sjouwerman
-  - Sabrina Illius
-  - Manuel Kuhn
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2021-06-28'
-  link: https://doi.org/g84qrn
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.31234/osf.io/9h2kd
   title: "Navigating the manifold of skin conductance response quantification approaches\
     \ \u2013 a direct comparison of Trough-to-Peak, Baseline-correction and model-based\
@@ -578,20 +470,6 @@
   publisher: Center for Open Science
   date: '2021-04-30'
   link: https://doi.org/g84qrp
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/2z6pd
-  title: Multiverse analyses in fear conditioning research
-  authors:
-  - Tina B Lonsdorf
-  - Anna Gerlicher
-  - "Maren Klingelh\xF6fer-Jens"
-  - Angelos-Miltiadis Krypotos
-  publisher: Center for Open Science
-  date: '2021-03-03'
-  link: https://doi.org/g84qrq
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
@@ -647,8 +525,12 @@
   link: https://doi.org/gj6d76
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: preprint
+    text: Preprint
+    link: https://doi.org/10.31234/osf.io/6m72g
 - id: doi:10.31234/osf.io/4myk8
   title: 'Experimental boundary conditions of reinstatement induced return of fear
     in humans:  Is reinstatement in humans what we think it is?'
@@ -703,30 +585,6 @@
   publisher: Translational Psychiatry
   date: '2019-02-04'
   link: https://doi.org/gg3spf
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/6m72g
-  title: Navigating the garden of forking paths for data exclusions in fear conditioning
-    research
-  authors:
-  - Tina B Lonsdorf
-  - "Maren Klingelh\xF6fer-Jens"
-  - Marta Andreatta
-  - Tom Beckers
-  - Anastasia Chalkia
-  - Anna Gerlicher
-  - Valerie Jentsch
-  - "Ga\xEBtan Mertens"
-  - Shira Meir Drexler
-  - Jan Richter
-  - Rachel Sjouwerman
-  - Julia Wendt
-  - Christian J. Merz
-  publisher: Center for Open Science
-  date: '2019-09-02'
-  link: https://doi.org/g84qrt
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
