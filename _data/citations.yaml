@@ -351,8 +351,9 @@
     link: https://doi.org/10.1101/2022.03.15.484434
 - id: doi:10.1111/psyp.14058
   title: "Navigating the manyverse of skin conductance response quantification approaches\
-    \ \u2013 A direct comparison of <scp>trough\u2010to\u2010peak</scp>, baseline\
-    \ correction, and model\u2010based approaches in Ledalab and <scp>PsPM</scp>"
+    \ \u2013 A direct comparison of\n                    <scp>trough\u2010to\u2010\
+    peak</scp>\n                    , baseline correction, and model\u2010based approaches\
+    \ in Ledalab and\n                    <scp>PsPM</scp>"
   authors:
   - Manuel Kuhn
   - Anna M. V. Gerlicher
@@ -489,6 +490,22 @@
   publisher: Scientific Reports
   date: '2020-11-16'
   link: https://doi.org/g84qrr
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.31234/osf.io/q2kyf
+  title: Revisiting potential associations between brain morphology, fear acquisition
+    and extinction through new data and a literature review
+  authors:
+  - Mana R Ehlers
+  - Janne Nold
+  - Manuel Kuhn
+  - "Maren Klingelh\xF6fer-Jens"
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2020-07-01'
+  link: https://doi.org/hbb8nt
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
