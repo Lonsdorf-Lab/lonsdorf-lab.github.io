@@ -2,6 +2,7 @@
 title: Continued funding for our Fearbase approved!
 image: images/funding/dfg_fearbase.png
 author: tina_lonsdorf
+last_modified_at: ""
 tags: 
     - fearbase
     - funding
