@@ -1,5 +1,6 @@
 ---
 title: Projects
+schema_type: "project"
 nav:
   order: 2
   tooltip: Software, datasets, and more
