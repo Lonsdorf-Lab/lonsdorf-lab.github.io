@@ -19,7 +19,7 @@
   tina_lonsdorf: true
   plugin: sources.py
   file: sources.yaml
-  image: images/scroll-solid-full.svg
+  image: images/scroll-solid-full_small.svg
   buttons:
   - type: preprint
     text: Preprint v1
