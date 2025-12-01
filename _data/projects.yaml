@@ -11,7 +11,7 @@
 - title: Associations between exposure to early adversity and fear learning processes
   subtitle: Team - <a href="/members/julia_ruge.html">Julia Ruge</a>, <a href="/members/paul_pfaff.html">Paul Pfaff</a> 
   group: on-going
-  image: images/photo.jpg
+  image: images/diagram-project_small.svg
   link: https://elifesciences.org/articles/92700 
   description: This project investigates how early adversity—an important risk factor for a range of mental health disorders—affects fear learning, generalization and return of fear processes. While patients with anxiety disorders typically show heightened responses to safety cues, previous work suggests that individuals exposed to early adversity may instead be characterized by blunted responses to danger cues, leading to reduced discrimination between safety and threat (for a review see Ruge et al., 2024). In a large cohort (N=180), we combined psychophysiological (SCR, startle), neuroimaging (fMRI) while considering mental health diagnoses and the global assessment of functioning. Preliminary results confirm reduced fear discrimination driven by diminished CS+ responses in individuals exposed to early adversity, with no significant effect of lifetime mental health diagnoses was observed. In addition, we employed item-based content analyses exploring the item and hence content overlap across a wide range of questionnaires used to assess exposure to early adversity (Koppold, Ruge, Hecker & Lonsdorf, 2024). <br> Funding - [DFG, RTG „Emotional Learning and Memory“](https://www.emotionalmemory.de/projects/)
   tags:
@@ -31,7 +31,7 @@
 - title: Meta Science in Fear conditioning research (1 & 2)
   subtitle: Team - <a href="/members/maria_bruntsch.html">Maria Bruntsch (1)</a>, <a href="/members/maren_klingelhoefer.html">Maren Klingelhöfer-Jens</a>
   group: on-going
-  image: images/photo.jpg
+  image: images/diagram-project_small.svg
   link: https://rr.peercommunityin.org/articles/rec?id=743
   description: Dysregulated processing of fear and safety has been linked to anxiety symptoms and related traits, e.g., neuroticism, intolerance of uncertainty or negative emotionality. Yet, different studies focus on different aspects of fear acquisition and extinction, outcome measures, and anxiety-related traits, making an integrative approach to the association of anxiety-related traits and fear acquisition and extinction difficult. This limits effective translation of experimental insights on these etiology- and treatment-relevant processes to the clinic. To address this gap, a systematic literature search and meta-analysis of the associations between anxiety-related traits and fear acquisition and extinction will be conducted following PRISMA guidelines. A series of nested random effects models will be used to investigate associations between anxiety-related traits and frequently used outcome measures of fear acquisition and extinction (i.e., psychophysiological and self-reports). Different questionnaires used in these studies to assess anxiety-related traits will be further used as moderators to investigate whether identified associations between fear acquisition and extinction performance and traits are contingent on the specific questionnaire used. Furthermore, an item-based content analysis of the questionnaires used in the identified studies will be conducted to assess content overlap between the different anxiety-related traits. This analysis will help to evaluate the content-based similarities (or dissimilarities) between different anxiety-related traits as assessed through different questionnaires and hence further inform the interpretation of the meta-analytical results. <br> Funding - [Individual Research Grant (1)](https://gepris.dfg.de/gepris/projekt/501533638) & [Individual Research Grant (2)](https://gepris.dfg.de/gepris/projekt/451328127)
   tags:
@@ -57,6 +57,6 @@
 - title: CRC 58 Fear Anxiety Anxiety Disorders
   subtitle: Team - <a href="/members/maren_klingelhoefer.html">Maren Klingelhöfer-Jens</a>, <a href="/members/manuel_kuhn.html">Manuel Kuhn</a>, <a href="/members/robert_schafenort.html">Robert Schafenort</a>
   group: finished
-  image: images/photo.jpg
+  image: images/diagram-project_small.svg
   link: https://gepris.dfg.de/gepris/projekt/234587233
   description: Funding - [DFG CRC 58 Fear, Anxiety, Anxiety Disorders](https://gepris.dfg.de/gepris/projekt/78148948)
