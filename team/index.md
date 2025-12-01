@@ -1,5 +1,6 @@
 ---
 title: Team
+schema_type: "team"
 nav:
   order: 3
   tooltip: About our team
