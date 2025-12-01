@@ -16,6 +16,7 @@
 {% if site.title and site.title != "" %}
   {% assign fulltitle = fulltitle | push: site.title %}
 {% endif %}
+{% assign fulltitle = fulltitle | push: "Prof. Dr. Tina B. Lonsdorf" %}
 {% assign fulltitle = fulltitle | join: " | " %}
 
 {% assign subtitle = site.subtitle %}
