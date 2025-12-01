@@ -53,6 +53,7 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  image: images/scroll-solid-full_small.svg
 - id: doi:10.31219/osf.io/rju75_v1
   title: "There is no research on a dead planet \u2013 Fostering ecologically sustainable\
     \ open science practices in neuroscience"
@@ -81,6 +82,7 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  image: images/scroll-solid-full_small.svg
 - id: doi:10.1038/s41380-024-02600-x
   title: 'Neuropsychobiology of fear-induced bradycardia in humans: progress and pitfalls'
   authors:
@@ -95,6 +97,7 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  image: images/scroll-solid-full_small.svg
 - id: doi:10.15626/MP.2023.3958
   title: The many faces of early life adversity - Content overlap in validated assessment
     instruments as well as in fear and reward learning research
@@ -115,6 +118,7 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/m9abu
+  image: images/scroll-solid-full_small.svg
 - id: doi:10.7554/eLife.92700
   title: 'How adverse childhood experiences get under the skin: A systematic review,
     integration and methodological discussion on threat and reward learning mechanisms'
