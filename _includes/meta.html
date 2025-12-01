@@ -78,26 +78,4 @@
   <meta property="og:type" content="website">
 {% endif %}
 
-<script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    {% if page.author %}
-      "@type": "BlogPosting",
-      "author": { "@type": "Person", "name": "{{ title }}" },
-      "datePublished": "{{ published }}",
-      "dateModified": "{{ updated }}",
-    {% else %}
-      "@type": "WebSite",
-    {% endif %}
-    "name": "{{ title }}",
-    "description": "{{ description }}",
-    "headline": "{{ title }}",
-    "publisher": {
-      "@type": "Organization",
-      "logo": { "@type": "ImageObject", "url": "{{ icon }}" }
-    },
-    "url": "{{ url }}"
-  }
-</script>
-
 <link rel="alternate" type="application/rss+xml" href="{{ feed }}">
