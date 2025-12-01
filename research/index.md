@@ -3,6 +3,7 @@ title: Publications
 nav:
   order: 1
   tooltip: Published works
+image: images/scroll-solid-full_small.svg
 ---
 
 # {% include icon.html icon="fa-solid fa-microscope" %}Publications
