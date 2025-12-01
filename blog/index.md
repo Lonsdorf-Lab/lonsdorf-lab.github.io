@@ -17,6 +17,6 @@ Welcome to our lab blog! Here, we offer a behind-the-scenes look at our work, sh
 
 {% include search-info.html %}
 
-{% raw %}
+{% raw %} 
 {% include list.html data="posts" component="post-excerpt" %}
 {% endraw %}
