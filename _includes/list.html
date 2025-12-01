@@ -5,25 +5,73 @@
   | data_filter: include.filter
 %}
 
-{% assign years = data
-  | group_by_exp: "d", "d.date | date: '%Y'"
-  | sort: "name"
-  | reverse
-%}
+{% if include.data == "members" %}
+  {%- comment -%}
+    Custom sorting for team members:
+    1. Define explicit role order.
+    2. Extract last names.
+    3. Assign numeric rank per role.
+    4. Sort by rank, then by last name.
+  {%- endcomment -%}
 
-{% for year in years %}
-  {% assign data = year.items %}
+  {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
 
-  {% if years.size > 1 %}
-    {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
-    {% assign data = data | sort: "date" | reverse %}
-  {% endif %}
+  {% assign members = "" | split: "," %}
+  {% for d in data %}
+    {% assign lastname = d.name | split: " " | last %}
+    {% assign rank = role_order | index_of: d.role %}
+    {% if rank == -1 %}
+      {% assign rank = 999 %}
+    {% endif %}
+    {% capture member_json %}
+      {
+        "name": "{{ d.name | escape }}",
+        "role": "{{ d.role | escape }}",
+        "lastname": "{{ lastname | escape }}",
+        "rank": {{ rank }},
+        "affiliation": "{{ d.affiliation | escape }}",
+        "author": "{{ d.author | escape }}",
+        "authors": "{{ d.authors | escape }}",
+        "buttons": "{{ d.buttons | escape }}",
+        "caption": "{{ d.caption | escape }}",
+        "content": "{{ d.content | escape }}",
+        "date": "{{ d.date }}",
+        "description": "{{ d.description | escape }}",
+        "excerpt": "{{ d.excerpt | escape }}",
+        "height": "{{ d.height | escape }}",
+        "icon": "{{ d.icon | escape }}",
+        "id": "{{ d.id | escape }}",
+        "image": "{{ d.image | escape }}",
+        "last_modified_at": "{{ d.last_modified_at }}",
+        "link": "{{ d.link | escape }}",
+        "lookup": "{{ d.lookup | escape }}",
+        "publisher": "{{ d.publisher | escape }}",
+        "repo": "{{ d.repo | escape }}",
+        "slug": "{{ d.slug | escape }}",
+        "style": "{{ d.style | escape }}",
+        "subtitle": "{{ d.subtitle | escape }}",
+        "tags": "{{ d.tags | escape }}",
+        "text": "{{ d.text | escape }}",
+        "title": "{{ d.title | escape }}",
+        "tooltip": "{{ d.tooltip | escape }}",
+        "type": "{{ d.type | escape }}",
+        "url": "{{ d.url | escape }}",
+        "width": "{{ d.width | escape }}"
+      }
+    {% endcapture %}
+    {% assign member_obj = member_json | parse_json %}
+    {% assign members = members | push: member_obj %}
+  {% endfor %}
+
+  {%- comment -%}
+    Sort first by last name, then by rank (role order).
+    Liquid’s `sort` is stable, so the second sort preserves the previous order.
+  {%- endcomment -%}
+  {% assign data = members | sort: "lastname" | sort: "rank" %}
 
   {% for d in data %}
     {% assign style = d.style | default: include.style %}
-
-    {%
-      include {{ include.component | append: ".html" }}
+    {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
       author=d.author
       authors=d.authors
@@ -56,4 +104,59 @@
       width=d.width
     %}
   {% endfor %}
-{% endfor %}
+
+{% else %}
+  {%- comment -%}
+    Default behavior for non-member lists (e.g., publications).
+    Groups by year and sorts by date.
+  {%- endcomment -%}
+  {% assign years = data
+    | group_by_exp: "d", "d.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+
+  {% for year in years %}
+    {% assign data = year.items %}
+    {% if years.size > 1 %}
+      <h3 id="{{ year.name }}">{{ year.name }}</h3>
+      {% assign data = data | sort: "date" | reverse %}
+    {% endif %}
+
+    {% for d in data %}
+      {% assign style = d.style | default: include.style %}
+      {% include {{ include.component | append: ".html" }}
+        affiliation=d.affiliation
+        author=d.author
+        authors=d.authors
+        buttons=d.buttons
+        caption=d.caption
+        content=d.content
+        date=d.date
+        description=d.description
+        excerpt=d.excerpt
+        height=d.height
+        icon=d.icon
+        id=d.id
+        image=d.image
+        last_modified_at=d.last_modified_at
+        link=d.link
+        lookup=d.lookup
+        name=d.name
+        publisher=d.publisher
+        repo=d.repo
+        role=d.role
+        slug=d.slug
+        style=style
+        subtitle=d.subtitle
+        tags=d.tags
+        text=d.text
+        title=d.title
+        tooltip=d.tooltip
+        type=d.type
+        url=d.url
+        width=d.width
+      %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
