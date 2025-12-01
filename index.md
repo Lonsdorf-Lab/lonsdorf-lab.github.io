@@ -6,7 +6,7 @@ schema_type: "homepage"
 
 # Website of the Lonsdorf Lab
 
-At the Lonsdorf Lab, we investigate the mechanisms underlying fear, anxiety, and their regulation in humans. Combining cognitive neuroscience, psychophysiology, and behavioral science, our interdisciplinary research aims to uncover how individual differences and environmental factors shape learning and memory processes relevant to mental health.
+At the Lonsdorf Lab, led by <a href="/members/tina_lonsdorf.html">Prof. Dr. Tina Lonsdorf</a>, we investigate the mechanisms underlying fear, anxiety, and their regulation in humans. Combining cognitive neuroscience, psychophysiology, and behavioral science, our interdisciplinary research aims to uncover how individual differences and environmental factors shape learning and memory processes relevant to mental health.
 
 {% include section.html %}
 
