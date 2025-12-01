@@ -3,36 +3,27 @@
   | default: site[include.data]
   | default: emptyarray
   | data_filter: include.filter
-%}  
+%}
 
-{% if include.data == "members" %}
-  {%- comment -%}
-    Custom sorting for team members:
-    1. Define explicit role order.
-    2. Derive last names.
-    3. Assign numeric rank per role.
-    4. Sort by rank, then by last name.
-  {%- endcomment -%}
+{% assign years = data
+  | group_by_exp: "d", "d.date | date: '%Y'"
+  | sort: "name"
+  | reverse
+%}
 
-  {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
+{% for year in years %}
+  {% assign data = year.items %}
 
-  {% assign members = "" | split: "," %}
-  {% for d in data %}
-    {% assign lastname = d.name | split: " " | last %}
-    {% assign rank = role_order | index_of: d.role %}
-    {% assign d = d | merge: {"lastname": lastname, "rank": rank} %}
-    {% assign members = members | push: d %}
-  {% endfor %}
-
-  {%- comment -%}
-    Sort first by last name, then by rank (role order).
-    Liquid's sort is stable, so the second sort preserves the previous order.
-  {%- endcomment -%}
-  {% assign data = members | sort: "lastname" | sort: "rank" %}
+  {% if years.size > 1 %}
+    {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
+    {% assign data = data | sort: "date" | reverse %}
+  {% endif %}
 
   {% for d in data %}
     {% assign style = d.style | default: include.style %}
-    {% include {{ include.component | append: ".html" }}
+
+    {%
+      include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
       author=d.author
       authors=d.authors
@@ -65,59 +56,4 @@
       width=d.width
     %}
   {% endfor %}
-
-{% else %}
-  {%- comment -%}
-    Default behavior for non-member lists (e.g., publications).
-    Groups by year and sorts by date.
-  {%- endcomment -%}
-  {% assign years = data
-    | group_by_exp: "d", "d.date | date: '%Y'"
-    | sort: "name"
-    | reverse
-  %}
-
-  {% for year in years %}
-    {% assign data = year.items %}
-    {% if years.size > 1 %}
-      {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
-      {% assign data = data | sort: "date" | reverse %}
-    {% endif %}
-
-    {% for d in data %}
-      {% assign style = d.style | default: include.style %}
-      {% include {{ include.component | append: ".html" }}
-        affiliation=d.affiliation
-        author=d.author
-        authors=d.authors
-        buttons=d.buttons
-        caption=d.caption
-        content=d.content
-        date=d.date
-        description=d.description
-        excerpt=d.excerpt
-        height=d.height
-        icon=d.icon
-        id=d.id
-        image=d.image
-        last_modified_at=d.last_modified_at
-        link=d.link
-        lookup=d.lookup
-        name=d.name
-        publisher=d.publisher
-        repo=d.repo
-        role=d.role
-        slug=d.slug
-        style=style
-        subtitle=d.subtitle
-        tags=d.tags
-        text=d.text
-        title=d.title
-        tooltip=d.tooltip
-        type=d.type
-        url=d.url
-        width=d.width
-      %}
-    {% endfor %}
-  {% endfor %}
-{% endif %}
+{% endfor %}
