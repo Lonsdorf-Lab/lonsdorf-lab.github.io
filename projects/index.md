@@ -6,7 +6,7 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-wrench" %}Projects
+# {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
 
 Get a glimpse into the work we do: from ongoing investigations to completed projects.
 
