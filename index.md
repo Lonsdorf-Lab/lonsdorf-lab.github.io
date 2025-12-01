@@ -1,4 +1,7 @@
 ---
+layout: default
+title: "Lonsdorf Lab"
+schema_type: "homepage"
 ---
 
 # Website of the Lonsdorf Lab

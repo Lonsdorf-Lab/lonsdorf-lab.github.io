@@ -1,0 +1,64 @@
+{% comment %}
+  Schema.org JSON-LD metadata for Lonsdorf Lab website
+  Automatically inserted based on page.schema_type
+{% endcomment %}
+
+{% if page.schema_type == "homepage" %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": ["ResearchOrganization", "WebSite"],
+  "name": "Lonsdorf Lab",
+  "alternateName": "Lab of Prof. Dr. Tina B. Lonsdorf",
+  "url": "{{ site.url }}",
+  "description": "{{ site.description | escape }}",
+  "keywords": [
+    "psychophysiology",
+    "fear conditioning",
+    "anxiety",
+    "metascience",
+    "open science",
+    "data harmonization",
+    "cognitive neuroscience",
+    "human learning"
+  ],
+  "logo": {
+    "@type": "ImageObject",
+    "url": "{{ site.url }}/images/icon.png"
+  },
+  "image": "{{ site.url }}/images/share.jpg",
+  "founder": {
+    "@type": "Person",
+    "name": "Prof. Dr. Tina Lonsdorf",
+    "jobTitle": "Professor of Psychophysiology",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "Bielefeld University",
+      "department": {
+        "@type": "CollegeOrUniversity",
+        "name": "Department of Psychology"
+      }
+    },
+    "email": "sekretariat-ae14@uni-bielefeld.de",
+    "telephone": "+49-521-106-4482",
+    "sameAs": [
+      "https://orcid.org/0000-0003-1501-4846",
+      "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
+      "https://bsky.app/profile/tinalonsdorf.bsky.social"
+    ]
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Academic inquiries",
+    "email": "sekretariat-ae14@uni-bielefeld.de",
+    "telephone": "+49-521-106-4482"
+  },
+  "publisher": {
+    "@type": "CollegeOrUniversity",
+    "name": "Bielefeld University",
+    "url": "https://www.uni-bielefeld.de"
+  },
+  "inLanguage": "en"
+}
+</script>
+{% endif %}
