@@ -9,36 +9,27 @@
   {%- comment -%}
     Custom sorting for team members:
     1. Define explicit role order.
-    2. Build a helper array with rank and lastname.
-    3. Sort by rank, then by lastname.
+    2. Derive last names.
+    3. Assign numeric rank per role.
+    4. Sort by rank, then by last name.
   {%- endcomment -%}
 
   {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
 
-  {% assign helper = "" | split: "," %}
+  {% assign enriched = "" | split: "," %}
   {% for d in data %}
     {% assign lastname = d.name | split: " " | last %}
     {% assign rank = role_order | index_of: d.role %}
     {% if rank == -1 %}
       {% assign rank = 999 %}
     {% endif %}
-    {% capture item %}
-      {"index": {{ forloop.index0 }}, "rank": {{ rank }}, "lastname": "{{ lastname | downcase }}"}
-    {% endcapture %}
-    {% assign helper = helper | push: item | map: "to_s" %}
+    {% assign d = d | merge: {"lastname": lastname, "rank": rank} %}
+    {% assign enriched = enriched | push: d %}
   {% endfor %}
 
-  {%- comment -%}
-    Parse helper JSON array and sort it.
-  {%- endcomment -%}
-  {% assign helper = helper | join: "," | prepend: "[" | append: "]" | parse_json %}
-  {% assign helper = helper | sort: "lastname" | sort: "rank" %}
+  {% assign data = enriched | sort: "lastname" | sort: "rank" %}
 
-  {%- comment -%}
-    Render members in sorted order.
-  {%- endcomment -%}
-  {% for h in helper %}
-    {% assign d = data[h.index] %}
+  {% for d in data %}
     {% assign style = d.style | default: include.style %}
     {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
@@ -77,6 +68,7 @@
 {% else %}
   {%- comment -%}
     Default behavior for non-member lists (e.g., publications).
+    Groups by year and sorts by date.
   {%- endcomment -%}
   {% assign years = data
     | group_by_exp: "d", "d.date | date: '%Y'"
