@@ -7,29 +7,41 @@
 
 {% if include.data == "members" %}
   {%- comment -%}
-    Custom sorting for team members:
-    1. Define explicit role order.
-    2. Derive last names.
-    3. Assign numeric rank per role.
-    4. Sort by rank, then by last name.
+    Custom sorting for team members (GitHub Pages safe)
   {%- endcomment -%}
 
   {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
 
-  {% assign enriched = "" | split: "," %}
+  {%- comment -%}
+    Build a comma-separated list of keys rank_lastname_index
+  {%- endcomment -%}
+  {% assign helper_string = "" %}
   {% for d in data %}
-    {% assign lastname = d.name | split: " " | last %}
+    {% assign lastname = d.name | split: " " | last | downcase %}
     {% assign rank = role_order | index_of: d.role %}
     {% if rank == -1 %}
       {% assign rank = 999 %}
     {% endif %}
-    {% assign d = d | merge: {"lastname": lastname, "rank": rank} %}
-    {% assign enriched = enriched | push: d %}
+    {% assign key = rank | append: "_" | append: lastname | append: "_" | append: forloop.index0 %}
+    {% if forloop.first %}
+      {% assign helper_string = key %}
+    {% else %}
+      {% assign helper_string = helper_string | append: "," | append: key %}
+    {% endif %}
   {% endfor %}
 
-  {% assign data = enriched | sort: "lastname" | sort: "rank" %}
+  {%- comment -%}
+    Convert to array and sort alphabetically
+  {%- endcomment -%}
+  {% assign helper = helper_string | split: "," | sort %}
 
-  {% for d in data %}
+  {%- comment -%}
+    Render members in sorted order
+  {%- endcomment -%}
+  {% for key in helper %}
+    {% assign parts = key | split: "_" %}
+    {% assign index = parts | last | plus: 0 %}
+    {% assign d = data[index] %}
     {% assign style = d.style | default: include.style %}
     {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
@@ -67,8 +79,7 @@
 
 {% else %}
   {%- comment -%}
-    Default behavior for non-member lists (e.g., publications).
-    Groups by year and sorts by date.
+    Default behavior for non-member lists (e.g., publications)
   {%- endcomment -%}
   {% assign years = data
     | group_by_exp: "d", "d.date | date: '%Y'"
