@@ -6,15 +6,8 @@
 %}
 
 {% if include.data == "members" %}
-  {%- comment -%}
-    Custom sorting for team members (GitHub Pages safe)
-  {%- endcomment -%}
-
   {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
 
-  {%- comment -%}
-    Build a comma-separated list of keys rank_lastname_index
-  {%- endcomment -%}
   {% assign helper_string = "" %}
   {% for d in data %}
     {% assign lastname = d.name | split: " " | last | downcase %}
@@ -22,7 +15,11 @@
     {% if rank == -1 %}
       {% assign rank = 999 %}
     {% endif %}
-    {% assign key = rank | append: "_" | append: lastname | append: "_" | append: forloop.index0 %}
+    {# pad rank to 3 digits so lexicographic sort = numeric sort #}
+    {% capture rank_padded %}
+      {% if rank < 10 %}00{{ rank }}{% elsif rank < 100 %}0{{ rank }}{% else %}{{ rank }}{% endif %}
+    {% endcapture %}
+    {% assign key = rank_padded | append: "_" | append: lastname | append: "_" | append: forloop.index0 %}
     {% if forloop.first %}
       {% assign helper_string = key %}
     {% else %}
@@ -30,14 +27,8 @@
     {% endif %}
   {% endfor %}
 
-  {%- comment -%}
-    Convert to array and sort alphabetically
-  {%- endcomment -%}
   {% assign helper = helper_string | split: "," | sort %}
 
-  {%- comment -%}
-    Render members in sorted order
-  {%- endcomment -%}
   {% for key in helper %}
     {% assign parts = key | split: "_" %}
     {% assign index = parts | last | plus: 0 %}
@@ -76,6 +67,58 @@
       width=d.width
     %}
   {% endfor %}
+{% else %}
+  {% assign years = data
+    | group_by_exp: "d", "d.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+
+  {% for year in years %}
+    {% assign data = year.items %}
+    {% if years.size > 1 %}
+      <h3 id="{{ year.name }}">{{ year.name }}</h3>
+      {% assign data = data | sort: "date" | reverse %}
+    {% endif %}
+
+    {% for d in data %}
+      {% assign style = d.style | default: include.style %}
+      {% include {{ include.component | append: ".html" }}
+        affiliation=d.affiliation
+        author=d.author
+        authors=d.authors
+        buttons=d.buttons
+        caption=d.caption
+        content=d.content
+        date=d.date
+        description=d.description
+        excerpt=d.excerpt
+        height=d.height
+        icon=d.icon
+        id=d.id
+        image=d.image
+        last_modified_at=d.last_modified_at
+        link=d.link
+        lookup=d.lookup
+        name=d.name
+        publisher=d.publisher
+        repo=d.repo
+        role=d.role
+        slug=d.slug
+        style=style
+        subtitle=d.subtitle
+        tags=d.tags
+        text=d.text
+        title=d.title
+        tooltip=d.tooltip
+        type=d.type
+        url=d.url
+        width=d.width
+      %}
+    {% endfor %}
+  {% endfor %}
+{% endif %}
+
 
 {% else %}
   {%- comment -%}
