@@ -1,5 +1,6 @@
 ---
 title: Funding
+schema_type: "funding"
 nav:
   order: 4
   tooltip: funding
