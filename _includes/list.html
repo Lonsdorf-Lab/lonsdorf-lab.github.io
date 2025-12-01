@@ -15,7 +15,6 @@
     {% if rank == -1 %}
       {% assign rank = 999 %}
     {% endif %}
-    {# pad rank to 3 digits so lexicographic sort = numeric sort #}
     {% capture rank_padded %}
       {% if rank < 10 %}00{{ rank }}{% elsif rank < 100 %}0{{ rank }}{% else %}{{ rank }}{% endif %}
     {% endcapture %}
