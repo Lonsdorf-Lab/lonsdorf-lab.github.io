@@ -52,7 +52,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31219/osf.io/rju75_v1
   title: "There is no research on a dead planet \u2013 Fostering ecologically sustainable\
     \ open science practices in neuroscience"
@@ -81,7 +80,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1038/s41380-024-02600-x
   title: 'Neuropsychobiology of fear-induced bradycardia in humans: progress and pitfalls'
   authors:
@@ -96,7 +94,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.15626/MP.2023.3958
   title: The many faces of early life adversity - Content overlap in validated assessment
     instruments as well as in fear and reward learning research
@@ -117,7 +114,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/m9abu
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.7554/eLife.92700
   title: 'How adverse childhood experiences get under the skin: A systematic review,
     integration and methodological discussion on threat and reward learning mechanisms'
@@ -140,7 +136,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/nfpbj_v1
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/fk26y
   title: How to Measure Fear Generalization? Reliability and Validity of Commonly
     Used Indices
@@ -168,7 +163,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.14364
   title: "Recent advances in studying brain\u2010behavior interactions using functional\
     \ imaging: The primary startle response pathway and its affective modulation in\
@@ -185,7 +179,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.21203/rs.3.rs-3410491/v1
   title: 'Bad days build better days: mental health improvement after the COVID-19
     pandemic in individuals with psychosocial distress'
@@ -212,7 +205,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/g6qku
   title: Within-subject reliability, occasion specificity, and validity of fluctuations
     of the Stroop and Go/No-Go tasks in ecological momentary assessment
@@ -233,7 +225,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.14253
   title: 'Watching with Argus eyes: Characterization of emotional and physiological
     responding in adults exposed to childhood maltreatment and/or recent adversity'
@@ -253,7 +244,6 @@
     type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/wjeyg
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1027/2151-2604/a000523
   title: Prediction of Changes in Negative Affect During the COVID-19 Pandemic by
     Experimental Fear           Conditioning and Generalization Measures
@@ -279,7 +269,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1016/j.brat.2023.104256
   title: Systematically investigating the role of context on effect replicability
     in reinstatement of fear in humans
@@ -297,7 +286,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/65njk
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1038/s41562-022-01508-2
   title: Quality research needs good working conditions
   authors:
@@ -322,7 +310,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.14130
   title: "A data multiverse analysis investigating non\u2010model based <scp>SCR</scp>\
     \ quantification approaches"
@@ -342,7 +329,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/q24t8
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.7554/eLife.78717
   title: Robust group- but limited individual-level (longitudinal) reliability and
     insights into cross-phases response prediction of conditioned fear
@@ -363,7 +349,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.1101/2022.03.15.484434
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.14058
   title: "Navigating the manyverse of skin conductance response quantification approaches\
     \ \u2013 A direct comparison of\n                    <scp>trough\u2010to\u2010\
@@ -380,7 +365,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/8crk3
   title: 'Data sharing in experimental fear and anxiety research: From challenges
     to a dynamically growing database in 10 simple steps'
@@ -394,7 +378,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1016/j.brat.2022.104072
   title: Multiverse analyses in fear conditioning research
   authors:
@@ -413,7 +396,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/2z6pd
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/gtasm
   title: 'Recent advances in studying brain-behaviour interactions using functional
     imaging: The primary startle response pathway and its affective modulation in
@@ -430,7 +412,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/d2zvc
   title: 'Open and reproducible science practices in psychoneuroendocrinology: opportunities
     to foster scientific progress'
@@ -450,7 +431,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/hj5gt
   title: Effects of intolerance of uncertainty on subjective and psychophysiological
     measures during fear acquisition and delayed extinction
@@ -465,7 +445,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/cp52v
   title: "Mehr als nur fragw\xFCrdig: Reproduzierbarkeit und Open Science in der Lehre\
     \ aus Sicht der Biologischen Psychologie und Neuropsychologie"
@@ -484,7 +463,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/9h2kd
   title: "Navigating the manifold of skin conductance response quantification approaches\
     \ \u2013 a direct comparison of Trough-to-Peak, Baseline-correction and model-based\
@@ -500,7 +478,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1038/s41598-020-76683-1
   title: Revisiting potential associations between brain morphology, fear acquisition
     and extinction through new data and a literature review
@@ -517,7 +494,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/q2kyf
   title: Revisiting potential associations between brain morphology, fear acquisition
     and extinction through new data and a literature review
@@ -534,7 +510,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.13549
   title: "Experimental boundary conditions of reinstatement\u2010induced return of\
     \ fear in humans: Is reinstatement in humans what we think it is?"
@@ -548,7 +523,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.7554/eLife.52465
   title: Navigating the garden of forking paths for data exclusions in fear conditioning
     research
@@ -577,7 +551,6 @@
   - type: preprint
     text: Preprint
     link: https://doi.org/10.31234/osf.io/6m72g
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/4myk8
   title: 'Experimental boundary conditions of reinstatement induced return of fear
     in humans:  Is reinstatement in humans what we think it is?'
@@ -591,7 +564,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1038/s41398-019-0415-8
   title: 'Orexin in the anxiety spectrum: association of a HCRTR1 polymorphism with
     panic disorder/agoraphobia, CBT treatment response and fear-related intermediate
@@ -637,7 +609,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1016/j.biopsych.2019.02.011
   title: 'Fear Extinction Retention: Is It What We Think It Is?'
   authors:
@@ -651,7 +622,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1111/psyp.13307
   title: Latency of skin conductance responses across stimulus modalities
   authors:
@@ -664,7 +634,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1101/567032
   title: "The neurofunctional basis of affective startle modulation in humans \u2013\
     \ evidence from combined facial EMG-fMRI"
@@ -682,7 +651,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1016/j.brat.2018.09.003
   title: Does US expectancy mediate the additive effects of CS-US pairings on contingency
     instructions? Results from subjective, psychophysiological and neural measures
@@ -700,7 +668,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.3389/fpsyg.2017.02368
   title: 'Visual Complexity and Affect: Ratings Reflect More Than Meets the Eye'
   authors:
@@ -716,7 +683,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1186/s12915-017-0463-6
   title: An elevated plus-maze in mixed reality for studying human anxiety-related
     behavior
@@ -739,7 +705,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:28872638
   title: 'Modulation of defensive reactivity by GLRB allelic variation: converging
     evidence from an intermediate phenotype approach.'
@@ -766,7 +731,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: doi:10.1027/2151-2604/a000304
   title: "Effects of an Anxiety-Specific Psychometric Factor on Fear \t\t\t\t\tConditioning\
     \ and Fear Generalization"
@@ -787,7 +751,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:28764976
   title: 'More than just noise: Inter-individual differences in fear acquisition,
     extinction and return of fear in humans - Biological, experiential, temperamental
@@ -802,7 +765,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:28120933
   title: Where There is Smoke There is Fear-Impaired Contextual Inhibition of Conditioned
     Fear in Smokers.
@@ -822,7 +784,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:28263758
   title: 'Don''t fear ''fear conditioning'': Methodological considerations for the
     design and analysis of studies on human fear acquisition, extinction, and return
@@ -858,7 +819,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:28167838
   title: 'GLRB allelic variation associated with agoraphobic cognitions, increased
     startle response and fear network activation: a potential neurogenetic pathway
@@ -918,7 +878,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:27628268
   title: Don't startle me-Interference of startle probe presentations and intermittent
     ratings with fear acquisition.
@@ -934,7 +893,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:27496367
   title: State anxiety modulates the return of fear.
   authors:
@@ -949,7 +907,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:25966279
   title: Fear expression and return of fear following threat instruction with or without
     direct contingency experience.
@@ -967,7 +924,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26746182
   title: Converging evidence for an impact of a functional NOS gene variation on anxiety-related
     processes.
@@ -993,7 +949,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26568620
   title: Mismatch or allostatic load? Timing of life adversity differentially shapes
     gray matter volume and anxious temperament.
@@ -1019,7 +974,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26612681
   title: Neural correlates of and processes underlying generalized and differential
     return of fear.
@@ -1033,7 +987,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:27434492
   title: 'Adversity-induced relapse of fear: neural mechanisms and implications for
     relapse prevention from a study on experimentally induced return-of-fear following
@@ -1049,7 +1002,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26107163
   title: 'Sex differences in conditioned stimulus discrimination during context-dependent
     fear learning and its retrieval in humans: the role of biological sex, contraceptives
@@ -1071,7 +1023,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26219601
   title: 'Deficient inhibitory processing in trait anxiety: Evidence from context-dependent
     fear learning, extinction recall and renewal.'
@@ -1091,7 +1042,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26238968
   title: Effects of post-extinction l-DOPA administration on the spontaneous recovery
     and reinstatement of fear in a human fMRI study.
@@ -1107,7 +1057,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:25847876
   title: MicroRNA hsa-miR-4717-5p regulates RGS2 and may be a risk factor for anxiety-related
     traits.
@@ -1142,7 +1091,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:25103087
   title: BDNFval66met affects neural activation pattern during fear conditioning and
     24 h delayed fear recall.
@@ -1161,7 +1109,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:26696855
   title: Contextual Change After Fear Acquisition Affects Conditioned Responding and
     the Time Course of Extinction Learning-Implications for Renewal Research.
@@ -1176,7 +1123,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:24493848
   title: 'Long-term expression of human contextual fear and extinction memories involves
     amygdala, hippocampus and ventromedial prefrontal cortex: a reinstatement study
@@ -1192,7 +1138,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:25128533
   title: 'A review on human reinstatement studies: an overview and methodological
     challenges.'
@@ -1208,7 +1153,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:24193372
   title: No evidence for enhanced extinction memory consolidation through noradrenergic
     reuptake inhibition-delayed memory test and reinstatement in human fMRI.
@@ -1224,7 +1168,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:23943515
   title: Attention biases and habituation of attention biases are associated with
     5-HTTLPR and COMTval158met.
@@ -1241,7 +1184,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:24495968
   title: Higher anxiety and larger amygdala volumes in carriers of a TMEM132D risk
     variant for panic disorder.
@@ -1259,7 +1201,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:23754384
   title: Single dose of L-dopa makes extinction memories context-independent and prevents
     the return of fear.
@@ -1282,7 +1223,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:24116095
   title: Multimodal assessment of long-term memory recall and reinstatement in a combined
     cue and context fear conditioning and extinction paradigm in humans.
@@ -1298,7 +1238,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:23144849
   title: Distinct contributions of the dorsolateral prefrontal and orbitofrontal cortex
     during emotion regulation.
@@ -1319,7 +1258,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:21356267
   title: 5-HTTLPR and COMTval158met genotype gate amygdala reactivity and habituation.
   authors:
@@ -1337,7 +1275,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:22832657
   title: A review on experimental and clinical genetic associations studies on fear
     conditioning, extinction and cognitive-behavioral treatment.
@@ -1351,7 +1288,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:21464942
   title: Conditioned pain modulation is associated with common polymorphisms in the
     serotonin transporter gene.
@@ -1370,7 +1306,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:21423614
   title: Perception of thermal pain and the thermal grill illusion is associated with
     polymorphisms in the serotonin transporter gene.
@@ -1387,7 +1322,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:21110842
   title: The COMTval158met polymorphism is associated with symptom relief during exposure-based
     cognitive-behavioral treatment in panic disorder.
@@ -1406,7 +1340,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:20141276
   title: Amygdala-dependent fear conditioning in humans is modulated by the BDNFval66met
     polymorphism.
@@ -1424,7 +1357,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:19683026
   title: The symptomatic profile of panic disorder is shaped by the 5-HTTLPR polymorphism.
   authors:
@@ -1442,7 +1374,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:19175757
   title: 'Genetic gating of human fear learning and extinction: possible implications
     for gene-environment interaction in anxiety disorder.'
@@ -1460,7 +1391,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:19570226
   title: Genetic variation in the serotonin transporter gene (5-HTTLPR, rs25531) influences
     the analgesic response to the short acting opioid Remifentanil in humans.
@@ -1477,7 +1407,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:19547755
   title: Increased sensitivity to thermal pain following a single opiate dose is influenced
     by the COMT val(158)met polymorphism.
@@ -1494,7 +1423,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
 - id: pmid:16901644
   title: 'Imaging gene-substance interactions: the effect of the DRD2 TaqIA polymorphism
     and the dopamine agonist bromocriptine on the brain activation during the anticipation
@@ -1515,4 +1443,3 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-  image: images/scroll-solid-full_small.svg
