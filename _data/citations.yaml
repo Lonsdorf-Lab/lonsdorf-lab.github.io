@@ -35,6 +35,7 @@
   - type: data
     text: Data
     link: https://doi.org/https://doi.org/10.5281/zenodo.15494050
+    image: images/scroll-solid-full_small.svg
 - id: doi:10.31234/osf.io/p84qz_v1
   title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
     Freezing Responses
