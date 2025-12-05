@@ -46,25 +46,26 @@
 
 {% assign feed = "feed.xml" | absolute_url %}
 
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>{{ fulltitle }}</title>
+<title>Lonsdorf Lab | Prof. Dr. Tina B. Lonsdorf</title>
 
 <link rel="icon" href="{{ icon }}">
 
-<meta name="title" content="{{ title }}">
-<meta name="description" content="{{ description }}">
+<meta name="title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
+<meta name="description" content="The Lonsdorf Lab investigates fear, anxiety, and their regulation using cognitive neuroscience, psychophysiology, and behavioral science to understand mental health.">
+<!-- <meta name="description" content="{{ description }}"> -->
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="{{ page.title }} | Lonsdorf Lab - Prof. Dr. Tina B. Lonsdorf">
-<meta property="og:site_title" content="{{ site.title | xml_escape }}">
-<meta property="og:description" content="{{ page.description | default: site.description }}">
+<meta property="og:title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
+<meta property="og:site_name" content="Lonsdorf Lab">
+<!-- <meta property="og:description" content="{{ page.description | default: site.description }}"> -->
+<meta property="og:description" content="The Lonsdorf Lab investigates fear, anxiety, and their regulation using cognitive neuroscience, psychophysiology, and behavioral science to understand mental health.">
 <meta property="og:url" content="https://lonsdorf-lab.github.io{{ page.url }}">
 <meta property="og:image" content="https://lonsdorf-lab.github.io/images/share.jpg">
 <meta property="og:locale" content="en_US">
-<meta property="og:site_name" content="Lonsdorf Lab">
 
-<meta name="twitter:title" content="{{ page.title }} | Lonsdorf Lab - Prof. Dr. Tina B. Lonsdorf">
+<meta name="twitter:title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
@@ -72,10 +73,10 @@
 
 {% if page.author %}
   <meta name="author" content="{{ page.author | xml_escape }}">
-  <meta property="og:type" content="article">
-  <meta property="og:updated_time" content="{{ updated }}">
-  <meta property="article:published_time" content="{{ published }}">
-  <meta property="article:modified_time" content="{{ updated }}">
+  <meta name="og:type" content="article">
+  <meta name="og:updated_time" content="{{ updated }}">
+  <meta name="article:published_time" content="{{ published }}">
+  <meta name="article:modified_time" content="{{ updated }}">
   <meta name="revised" content="{{ updated }}">
 {% else %}
   <meta property="og:type" content="website">
