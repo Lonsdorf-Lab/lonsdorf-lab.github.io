@@ -6,6 +6,10 @@ principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
 
+professor:
+  icon: fa-solid fa-chalkboard-user
+  description: Professor / Head of department
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
