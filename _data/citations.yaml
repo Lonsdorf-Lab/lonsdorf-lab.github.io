@@ -1,5 +1,22 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.31234/osf.io/p84qz_v2
+  title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
+    Freezing Responses
+  authors:
+  - Alina Koppold
+  - Mana R Ehlers
+  - Alexandros Kastrinogiannis
+  - Felix H. Klaassen
+  - Karin Roelofs
+  - Tina B Lonsdorf
+  publisher: Center for Open Science
+  date: '2025-12-05'
+  link: https://doi.org/hbdt22
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/tw3jf_v1
   title: 'Navigating the approach-avoidance matrix: A novel task in a foraging task
     in virtual reality'
