@@ -8,6 +8,4 @@ links:
   email: larissa.nelle@uni-bielefeld.de
 ---
 
-Larissa joined the team in May 2023 as a student assistant to support the experimental-empirical project of the psychology studies in Bielefeld. She is finishing her Bachelor's degree in Psychology currently and wants to start as a Masters's student in Bielefeld soon.
-
-
+Larissa is a Master's student of Experimental Psychology and Neuroscience at Bielefeld University. She started to support the experimental-empirical project course in Biopsychology and Cognitive Neuroscience in May 2023 and is currently part of Dr. Claudia Massaccesi's project that examines the effects of childhood adversity on social learning.
