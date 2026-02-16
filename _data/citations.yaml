@@ -1,5 +1,21 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.31234/osf.io/dfx9k_v1
+  title: 'The role of fear learning in the development of psychosis: An EEG study
+    utilizing a differential fear conditioning paradigm in people with psychotic vulnerability.'
+  authors:
+  - "Metin \xD6zyagcilar"
+  - Nilay Esin Ahrens-Demirdal
+  - Anja Riesel
+  - Tina B Lonsdorf
+  - Tania Marie Lincoln
+  publisher: Center for Open Science
+  date: '2026-02-10'
+  link: https://doi.org/hbpjrx
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.1080/00223891.2025.2513936
   title: Assessing the Long-Term Stability of the Spielberger State-Trait Inventory
     Trait Scale over 3.5 Years
@@ -35,6 +51,22 @@
   - type: data
     text: Data
     link: https://doi.org/https://doi.org/10.5281/zenodo.15494050
+- id: doi:10.1111/psyp.70224
+  title: Intraindividual Variability Matters for the Correspondence Between Subjective
+    Arousal, Valence, and Physiological Responses
+  authors:
+  - Alina Koppold
+  - Tina B. Lonsdorf
+  - Manuel Kuhn
+  - Mathias Weymar
+  - "Carlos Ventura\u2010Bort"
+  publisher: Psychophysiology
+  date: '2026-01-01'
+  link: https://doi.org/hbkdrt
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/p84qz_v2
   title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
     Freezing Responses
