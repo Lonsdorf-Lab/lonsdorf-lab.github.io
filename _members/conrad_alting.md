@@ -4,7 +4,7 @@ image: images/members/alting.jpg
 role: lab-manager
 affiliation: University Bielefeld
 aliases:
-  - C. Alting 
+  - C. Alting
   - C Alting
 
 links:
