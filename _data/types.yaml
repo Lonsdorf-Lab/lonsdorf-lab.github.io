@@ -7,7 +7,7 @@ principal-investigator:
   description: Principal Investigator
 
 professor:
-  icon: images/icons/professor.svg
+  icon: fa-solid fa-microscope
   description: Professor / Head of department
 
 postdoc:
