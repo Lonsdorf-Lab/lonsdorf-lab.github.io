@@ -1,6 +1,8 @@
 ---
 name: Alexandros Kastrinogiannis
 image: images/members/kastrinogiannis.jpg
+links:
+    orcid: 0000-0001-6248-7385
 role: postdoc
 group: alum
 ---
