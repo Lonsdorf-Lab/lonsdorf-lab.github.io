@@ -37,7 +37,7 @@
 {% assign jpg = "images/icon.jpg" | file_exists %}
 {% assign icon = png | default: jpg | relative_url %}
 
-{% assign jpg = "images/share.jpg" | file_exists %}
+{% assign jpg = "images/misc/share.jpg" | file_exists %}
 {% assign png = "images/share.png" | file_exists %}
 {% assign share = jpg | default: png | relative_url %}
 
@@ -62,14 +62,14 @@
 <!-- <meta property="og:description" content="{{ page.description | default: site.description }}"> -->
 <meta property="og:description" content="The Lonsdorf Lab investigates fear, anxiety, and their regulation using cognitive neuroscience, psychophysiology, and behavioral science to understand mental health.">
 <meta property="og:url" content="https://lonsdorf-lab.github.io{{ page.url }}">
-<meta property="og:image" content="https://lonsdorf-lab.github.io/images/share.jpg">
+<meta property="og:image" content="https://lonsdorf-lab.github.io/images/misc/share.jpg">
 <meta property="og:locale" content="en_US">
 
 <meta name="twitter:title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
 <meta name="twitter:description" content="{{ page.description | default: site.description }}">
 <meta property="twitter:url" content="{{ url }}">
 <meta property="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://lonsdorf-lab.github.io/images/share.jpg">
+<meta name="twitter:image" content="https://lonsdorf-lab.github.io/images/misc/share.jpg">
 
 {% if page.author %}
   <meta name="author" content="{{ page.author | xml_escape }}">

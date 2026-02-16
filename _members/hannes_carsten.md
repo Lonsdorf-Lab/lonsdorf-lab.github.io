@@ -1,6 +1,6 @@
 ---
 name: Hannes Carsten
-image: images/photo.jpg
+image: images/misc/default_member_photo.jpg
 role: undergrad
 group: alum
 ---

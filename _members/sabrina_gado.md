@@ -1,6 +1,6 @@
 ---
 name: Sabrina Gado
-image: images/photo.jpg
+image: images/misc/default_member_photo.jpg
 role: postdoc
 group: alum
 ---

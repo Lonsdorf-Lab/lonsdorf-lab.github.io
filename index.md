@@ -29,7 +29,7 @@ Find here all our publications.
 
 {%
   include feature.html
-  image="images/scholar_goggler_lonsdorf.png"
+  image="images/misc/scholar_goggler_lonsdorf.png"
   link="research"
   title="Our Publications"
   text=text
