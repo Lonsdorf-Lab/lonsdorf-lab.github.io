@@ -10,6 +10,10 @@ professor:
   icon: fa-solid fa-microscope
   description: Professor / Head of department
 
+assistant-professor:
+  icon: fa-solid fa-microscope
+  description: Assistant Professor
+
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
