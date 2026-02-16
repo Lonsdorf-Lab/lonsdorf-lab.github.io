@@ -2,6 +2,7 @@
 name: Ondřej Zíka
 image: images/members/zika.jpg
 role: professor
+group: alum
 affiliation: University College Dublin, Ireland
 aliases:
   - O. Zika
