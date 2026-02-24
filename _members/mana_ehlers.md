@@ -20,4 +20,3 @@ links:
 ---
 
 Mana studied Biology and Neuroscience in Oldenburg and Bremen before completing her PhD in Neuroscience at the University of British Columbia, Vancouver. She joined the team as Post-Doc in 2019 working on the Emmy-Noether funded project "Fear Profiles" before her posititon at Bielefeld University. Her work focuses on (individual differences in) fear conditioning and meta-scientific projects like the FEARBASE.
-
