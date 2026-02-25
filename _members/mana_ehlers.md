@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Mana Ehlers
-id: mana_ehlers
+member_id: mana_ehlers
 image: images/members/ehlers.JPG
 role: postdoc
 affiliation: Bielefeld University

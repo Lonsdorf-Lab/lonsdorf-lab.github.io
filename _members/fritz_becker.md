@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Fritz Becker
-id: fritz_becker
+member_id: fritz_becker
 image: images/members/becker.jpg
 role: postdoc
 affiliation: Bielefeld University

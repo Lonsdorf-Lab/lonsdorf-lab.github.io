@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Hannah Stiffel
-id: hannah_stiffel
+member_id: hannah_stiffel
 image: images/members/stiffel.jpg
 role: undergrad
 affiliation: Bielefeld University

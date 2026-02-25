@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Dilber Yildirim
-id: dilber_yildirim
+member_id: dilber_yildirim
 image: images/members/yildirim.png
 role: team-coordinator
 affiliation: Bielefeld University

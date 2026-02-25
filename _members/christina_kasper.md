@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Christina Kasper
-id: christina_kasper
+member_id: christina_kasper
 image: images/members/kasper.jpeg
 role: undergrad
 affiliation: Bielefeld University

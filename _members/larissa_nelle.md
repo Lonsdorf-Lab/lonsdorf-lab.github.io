@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Larissa Marie Nelle
-id: larissa_nelle
+member_id: larissa_nelle
 image: images/members/nelle.jpg
 role: undergrad
 affiliation: Bielefeld University

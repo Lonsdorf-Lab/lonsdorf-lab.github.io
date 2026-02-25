@@ -2,7 +2,7 @@
 group: member
 internal: true
 name: Claudia Massaccesi
-id: claudia_massaccesi
+member_id: claudia_massaccesi
 image: images/members/massaccesi.jpeg
 role: postdoc
 affiliation: Bielefeld University

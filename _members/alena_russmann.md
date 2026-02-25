@@ -1,7 +1,7 @@
 ---
 group: alum
 name: Alena Russmann
-id: alena_russmann
+member_id: alena_russmann
 image: images/misc/default_member_photo.jpg
 role: phd
 affiliation: Hamburg University

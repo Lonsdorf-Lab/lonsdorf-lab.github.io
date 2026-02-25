@@ -21,7 +21,7 @@ layout: default
     <h2>Team</h2>
     <ul>
         {% for member_id in page.members %}
-        {% assign member = site.members | where: "id", member_id | first %}
+        {% assign member = site.members | where: "member_id", member_id | first %}
         {% if member %}
             <li>
             <a href="{{ member.url | relative_url }}">

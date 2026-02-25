@@ -1,7 +1,7 @@
 ---
 group: coming-soon
 name: Celine Samaey
-id: celine_samaey
+member_id: celine_samaey
 image: images/members/samaey.jpg
 role: postdoc
 affiliation: KU Leuven

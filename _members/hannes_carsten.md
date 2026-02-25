@@ -1,7 +1,7 @@
 ---
 group: alum
 name: Hannes Carsten
-id: hannes_carsten
+member_id: hannes_carsten
 image: images/misc/default_member_photo.jpg
 role: postdoc
 affiliation: University of Hamburg
