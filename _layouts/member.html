@@ -18,7 +18,10 @@ layout: default
 
 {% include float.html content=floatcontent %}
 
-{{ content }}
+{% if content and content != "" %}
+  <h2>Bio</h2>
+  {{ content }}
+{% endif %}
 
 {% assign aliases = page.aliases
   | default: page.name
