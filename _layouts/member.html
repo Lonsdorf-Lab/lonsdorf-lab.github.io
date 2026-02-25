@@ -33,16 +33,14 @@ layout: default
 {% assign member_projects = site.projects | where_exp: "p", "p.members contains member_slug" %}
 
 {% if member_projects.size > 0 %}
-
-## Projects
-
-<ul>
-{% for p in member_projects %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-  </li>
-{% endfor %}
-</ul>
+  <h2>Projects</h2>
+  <ul>
+  {% for p in member_projects %}
+    <li>
+      <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+    </li>
+  {% endfor %}
+  </ul>
 {% endif %}
 
 
