@@ -100,7 +100,11 @@
     "sameAs": [
       "https://orcid.org/0000-0003-1501-4846",
       "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-      "https://bsky.app/profile/tinalonsdorf.bsky.social"
+      "https://bsky.app/profile/tinalonsdorf.bsky.social",
+      "https://de.linkedin.com/in/tina-lonsdorf-3840a731a",
+      "https://gepris.dfg.de/gepris/person/234587475",
+      "https://www.dasgehirn.info/autor/lonsdorf",
+      "https://www.researchgate.net/profile/Tina-Lonsdorf"
     ]
   },
   "contactPoint": {
@@ -119,8 +123,9 @@
 </script>
 {% endif %}
 
-{% if page.schema_type == "project" %}
 
+
+{% if page.schema_type == "project" %}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -297,7 +302,6 @@
 
 
 {% if page.schema_type == "team" %}
-
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -331,7 +335,11 @@
         "sameAs": [
           "https://orcid.org/0000-0003-1501-4846",
           "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-          "https://bsky.app/profile/tinalonsdorf.bsky.social"
+          "https://bsky.app/profile/tinalonsdorf.bsky.social",
+          "https://de.linkedin.com/in/tina-lonsdorf-3840a731a",
+          "https://gepris.dfg.de/gepris/person/234587475",
+          "https://www.dasgehirn.info/autor/lonsdorf",
+          "https://www.researchgate.net/profile/Tina-Lonsdorf"
         ]
       },
       {
@@ -351,7 +359,8 @@
         "url": "https://lonsdorf-lab.github.io/members/conrad_alting.html",
         "image": "https://lonsdorf-lab.github.io/images/members/alting.jpg",
         "sameAs": [
-            "https://orcid.org/0009-0002-3287-4418"]
+            "https://orcid.org/0009-0002-3287-4418"
+        ]
       },
       {
         "@type": "Person",
@@ -431,24 +440,6 @@
       },
       {
         "@type": "Person",
-        "name": "Ondrej Zika",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/ondrej_zika.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/zika.jpg",
-        "sameAs": [
-            "https://twitter.com/OndrejZika",
-            "https://bsky.app/profile/ondrejzika.bsky.social",
-            "https://www.linkedin.com/in/dr-ondrej-zika-68594540",
-            "https://orcid.org/0000-0003-0483-4443",
-            "https://scholar.google.com/citations?user=lk5DtbEAAAAJ",
-            "https://github.com/ozika",
-            "https://www.researchgate.net/profile/Ondrej-Zika",
-            "https://osf.io/c4vyb"
-        ]
-      },
-      {
-        "@type": "Person",
         "name": "Annalena Witte",
         "jobTitle": "PhD Student",
         "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
@@ -501,13 +492,29 @@
       },
       {
         "@type": "Person",
+        "name": "Celine Samaey",
+        "jobTitle": "Postdoctoral Researcher",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "KU Leuven" },
+        "url": "https://lonsdorf-lab.github.io/members/celine-samaey.html",
+        "image": "https://lonsdorf-lab.github.io/images/members/samaey.jpg",
+        "sameAs": [
+            "https://www.linkedin.com/in/celine-samaey-886b7a138",
+            "https://orcid.org/0000-0003-0032-7962",
+            "https://scholar.google.com/citations?user=rylY2U_DCBIC",
+            "https://www.researchgate.net/profile/Celine-Samaey",
+        ]
+      },
+      {
+        "@type": "Person",
         "name": "Paul Pfaff",
         "jobTitle": "PhD Student",
         "affiliation": { "@type": "CollegeOrUniversity", "name": "UKE Hamburg" },
         "url": "https://lonsdorf-lab.github.io/members/paul_pfaff.html",
         "image": "https://lonsdorf-lab.github.io/images/members/pfaff.jpeg",
         "sameAs": []
-      },
+      }
+    ],
+    "student assistants": [
           {
         "@type": "Person",
         "name": "Christina Kasper",
@@ -555,16 +562,10 @@
         "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
         "url": "https://lonsdorf-lab.github.io/members/larissa_nelle.html",
         "image": "https://lonsdorf-lab.github.io/images/members/nelle.jpg"
-      },
-      {
-        "@type": "Person",
-        "name": "Lukas Schniedergers",
-        "jobTitle": "Research Intern",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "UKE Hamburg" },
-        "url": "https://lonsdorf-lab.github.io/members/lukas_schniedergers.html"
       }
     ],
     "alumni": [
+      { "@type": "Person", "name": "Ondjey Zika", "jobTitle": "Assistant Professor"},
       { "@type": "Person", "name": "Alena Russmann", "jobTitle": "PhD Student" },
       { "@type": "Person", "name": "Alexandros Kastrinogiannis", "jobTitle": "PhD Student" },
       { "@type": "Person", "name": "Hannes Carsten", "jobTitle": "Undergraduate Student" },
@@ -572,8 +573,7 @@
       { "@type": "Person", "name": "Rachel Sjouwerman", "jobTitle": "PhD Student" },
       { "@type": "Person", "name": "Robert Schafenort", "jobTitle": "PhD Student" },
       { "@type": "Person", "name": "Sabrina Gado", "jobTitle": "Postdoctoral Researcher" }
-    ],
-    "student assistants"
+    ]
   }
 }
 </script>
@@ -673,4 +673,61 @@
 }
 </script>
 
+{% endif %}
+
+
+
+
+{% comment %}
+  Schema.org JSON-LD metadata for members of Lonsdorf Lab website
+  Automatically inserted based on page.schema_type
+{% endcomment %}
+
+{% assign filename = page.path | split: "/" | last %}
+{% if page.name and filename == "Fritz Becker" %}
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "AboutPage",
+  "name": "Team - Lonsdorf Lab",
+  "url": "https://lonsdorf-lab.github.io/team",
+  "description": "Meet the interdisciplinary team of the Lonsdorf Lab, including current members, student assistants, and alumni working on the neurobiological foundations of fear, anxiety, adversity, and stress-related processes.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "url": "https://lonsdorf-lab.github.io"
+  },
+  "publisher": {
+    "@type": "CollegeOrUniversity",
+    "name": "Bielefeld University",
+    "url": "https://www.uni-bielefeld.de"
+  },
+  "inLanguage": "en",
+  "about": {
+    "@type": "ResearchOrganization",
+    "name": "Lonsdorf Lab",
+    "alternateName": "Psychophysiology Experimental Labs - Prof. Dr. Tina Lonsdorf",
+    "url": "https://lonsdorf-lab.github.io",
+    "member": [
+      {
+        "@type": "Person",
+        "name": "Fritz Becker",
+        "jobTitle": "Postdoctoral Researcher",
+        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
+        "url": "https://lonsdorf-lab.github.io/members/fritz_becker.html",
+        "image": "https://lonsdorf-lab.github.io/images/members/becker.jpg",
+        "sameAs": [
+            "https://bsky.app/profile/fritzbecker.bsky.social",
+            "https://www.linkedin.com/in/fritz-becker-32ab671a9/",
+            "https://orcid.org/0000-0003-3889-206X",
+            "https://scholar.google.com/citations?user=vZ0xrZoAAAAJ",
+            "https://github.com/Fritz-theCat"
+        ]
+      }
+    }
+  }
+
+{% elsif page.title %}
+  {% assign title = page.title %}
+{% else %}
+  {% assign title = nil %}
 {% endif %}
