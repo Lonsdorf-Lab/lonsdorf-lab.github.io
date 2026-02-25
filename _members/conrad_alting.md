@@ -1,12 +1,13 @@
 ---
+group: member
+internal: true
 name: Conrad Alting
 image: images/members/alting.jpg
 role: lab-manager
-affiliation: University Bielefeld
+affiliation: Bielefeld University
 aliases:
   - C. Alting
   - C Alting
-
 links:
   email: conrad.alting@uni-bielefeld.de
   orcid: 0009-0002-3287-4418

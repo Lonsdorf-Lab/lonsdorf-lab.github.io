@@ -1,4 +1,5 @@
 ---
+type: page
 title: Team
 schema_type: "team"
 nav:

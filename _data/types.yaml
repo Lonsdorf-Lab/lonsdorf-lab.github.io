@@ -1,7 +1,6 @@
 # map general type to default/fallback icon, text, etc.
 
 # team member roles
-
 principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
@@ -39,7 +38,6 @@ lab-manager:
   description: Lab Manager
 
 # general
-
 link:
   icon: fa-solid fa-globe
   text: Link
@@ -50,12 +48,22 @@ website:
   text: Website
   tooltip: Website
 
+page:
+  icon: fa-solid fa-globe
+  text: Website
+  tooltip: Website
+
 external:
   icon: fa-solid fa-up-right-from-square
   text: External Link
   tooltip: External link
 
 home-page:
+  icon: fa-solid fa-house-user
+  text: Home Page
+  tooltip: Home page
+
+home:
   icon: fa-solid fa-house-user
   text: Home Page
   tooltip: Home page
@@ -83,7 +91,6 @@ search:
   tooltip: Search
 
 # social media
-
 orcid:
   icon: fa-brands fa-orcid
   text: ORCID
@@ -151,7 +158,6 @@ osf:
   link: https://osf.io/$VALUE
 
 # alerts
-
 tip:
   icon: fa-solid fa-lightbulb
   color: "#d946ef"
@@ -177,7 +183,6 @@ error:
   color: "#ef4444"
 
 # publications
-
 paper:
   icon: fa-solid fa-scroll
   text: Paper
@@ -214,7 +219,6 @@ manubot:
   tooltip: Manubot
 
 # software
-
 docs:
   icon: fa-solid fa-book
   text: Documentation

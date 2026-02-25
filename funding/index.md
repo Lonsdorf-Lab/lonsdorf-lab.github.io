@@ -1,4 +1,5 @@
 ---
+type: page
 title: Funding
 schema_type: "funding"
 nav:

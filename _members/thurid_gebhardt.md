@@ -1,5 +1,7 @@
 ---
+group: member
+internal: true
 name: Thurid Gebhardt
 role: undergrad
-affiliation: University Bielefeld
+affiliation: Bielefeld University
 ---

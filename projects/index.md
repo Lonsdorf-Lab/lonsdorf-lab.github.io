@@ -1,4 +1,5 @@
 ---
+type: page
 title: Projects
 schema_type: "project"
 nav:

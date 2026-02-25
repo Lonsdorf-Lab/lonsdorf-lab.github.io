@@ -1,5 +1,6 @@
 ---
 layout: default
+type: home
 title: "Lonsdorf Lab"
 schema_type: "homepage"
 ---

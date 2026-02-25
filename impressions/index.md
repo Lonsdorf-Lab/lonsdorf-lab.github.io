@@ -1,4 +1,5 @@
 ---
+type: page
 title: Impressions
 nav:
   order: 6

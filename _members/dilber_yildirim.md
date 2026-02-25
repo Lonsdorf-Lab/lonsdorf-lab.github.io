@@ -1,9 +1,13 @@
 ---
+group: member
+internal: true
 name: Dilber Yildirim
 image: images/members/yildirim.png
 role: team-coordinator
-affiliation: University Bielefeld
-
+affiliation: Bielefeld University
+aliases:
+  - D. Yildirim
+  - D Yildirim
 links:
   email: c-sultan.yildirim@uni-bielefeld.de
 ---

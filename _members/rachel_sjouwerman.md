@@ -1,10 +1,9 @@
 ---
+group: alum
 name: Rachel Sjouwerman
 image: images/misc/default_member_photo.jpg
-role: phd
-group: alum
+role: postdoc
+affiliation: University of Maastricht
 ---
 
-Rachel studied Psychology at Utrecht University (Netherlands) and joined us as a PhD student, later continuing as a postdoctoral researcher. She’s now at the University of Maastricht.
-
-
+Rachel studied Psychology at [Utrecht University (Netherlands)](https://www.uu.nl/en) and joined us as a PhD student, later continuing as a postdoctoral researcher. She’s now at the [University of Maastricht](https://www.maastrichtuniversity.nl/).

@@ -12,3 +12,4 @@ package-lock.json
 yarn.lock
 node_modules
 lonsdorf-lab.code-workspace
+.vscode/settings.json

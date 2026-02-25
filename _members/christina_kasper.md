@@ -1,9 +1,13 @@
 ---
+group: member
+internal: true
 name: Christina Kasper
 image: images/members/kasper.jpeg
 role: undergrad
-affiliation: University Bielefeld
-
+affiliation: Bielefeld University
+aliases:
+  - C. Kasper
+  - C Kasper
 links:
   email: christina.kasper@uni-bielefeld.de
 ---

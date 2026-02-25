@@ -1,4 +1,5 @@
 ---
+type: page
 title: Publications
 nav:
   order: 1

@@ -1,4 +1,5 @@
 ---
+type: page
 title: Blog
 nav:
   order: 5

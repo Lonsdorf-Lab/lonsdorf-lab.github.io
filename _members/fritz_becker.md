@@ -1,11 +1,13 @@
 ---
+group: member
+internal: true
 name: Fritz Becker
 image: images/members/becker.jpg
 role: postdoc
-affiliation: University Bielefeld
+affiliation: Bielefeld University
 aliases:
   - F. Becker
-
+  - F Becker
 links:
   email: fritz.becker@uni-bielefeld.de
   bluesky: fritzbecker.bsky.social
@@ -15,5 +17,4 @@ links:
   github: Fritz-theCat
 ---
 
-Fritz started in January 2025 as a Post-Doc on the FEARBASE project funded by the Volkswagen Stiftung. He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and is in the process of acquiring his PhD in Tübingen.
-
+Fritz started in January 2025 as a Post-Doc on the [fearbase](fearbase.org) project funded by the [Volkswagen Stiftung](https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem). He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and received his PhD from the [University of Tübingen](https://uni-tuebingen.de/).
