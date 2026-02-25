@@ -11,7 +11,6 @@ nav:
 
 Get a glimpse into the work we do: from ongoing investigations to completed projects.
 
----
 
 ## Current Projects
 
