@@ -103,7 +103,7 @@ group == "member" AND affiliation contains Bielefeld
 {% endcomment %}
 
 {% assign is_internal = false %}
-{% if page.group == "member" and page.affiliation contains "Bielefeld" %}
+{% if page.group == "member" and page.internal == true %}
   {% assign is_internal = true %}
 {% endif %}
 

@@ -1,298 +1,49 @@
 {% comment %}
-  Schema.org JSON-LD metadata for Lonsdorf Lab website
-  Automatically inserted based on page.schema_type
+============================================================
+DYNAMIC SCHEMA GRAPH ARCHITECTURE
+- No duplicates
+- Uses @id linking
+- Compatible with strict meta.html
+============================================================
 {% endcomment %}
 
-{%- assign site_url = site.url | default: "https://lonsdorf-lab.github.io" -%}
+{% assign site_url = site.url %}
+{% assign org_id = site_url | append: "#organization" %}
+{% assign website_id = site_url | append: "#website" %}
 
-<!-- Persistent Person entity for Prof. Dr. Tina Lonsdorf -->
+{% comment %}
+============================================================
+1) ORGANIZATION + WEBSITE (HOMEPAGE ONLY)
+============================================================
+{% endcomment %}
+
+{% if page.type == "home" %}
+
 <script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Prof. Dr. Tina Lonsdorf",
-    "jobTitle": "Professor of Psychophysiology",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Bielefeld University",
-      "url": "https://www.uni-bielefeld.de"
-    },
-    "worksFor": {
-      "@type": "ResearchOrganization",
+{
+  "@context": "https://schema.org",
+  "@graph": [
+
+    {
+      "@type": "WebSite",
+      "@id": "{{ website_id }}",
+      "url": "{{ site_url }}",
       "name": "Lonsdorf Lab",
-      "url": "{{ site_url }}"
+      "inLanguage": "en"
     },
-    "url": "{{ site_url }}/members/tina_lonsdorf.html",
-    "image": "{{ site_url }}/images/members/lonsdorf.jpg",
-    "sameAs": [
-      "https://orcid.org/0000-0003-1501-4846",
-      "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-      "https://bsky.app/profile/tinalonsdorf.bsky.social"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "{{ site_url }}"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Prof. Dr. Tina Lonsdorf",
-        "item": "{{ site_url }}/members/tina_lonsdorf.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Team",
-        "item": "{{ site_url }}/team"
-      }
-    ]
-  }
-]
-</script>
-
-
-{% if page.schema_type == "homepage" %} 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": ["ResearchOrganization", "WebSite"],
-  "name": "Lonsdorf Lab",
-  "alternateName": "Psychophysiology Experimental Labs - Prof. Dr. Tina B. Lonsdorf",
-  "url": "{{ site.url }}",
-  "description": "{{ site.description | escape }}",
-  "keywords": [
-    "psychophysiology",
-    "fear conditioning",
-    "anxiety",
-    "metascience",
-    "open science",
-    "data harmonization",
-    "cognitive neuroscience",
-    "human learning"
-  ],
-  "logo": {
-    "@type": "ImageObject",
-    "url": "{{ site.url }}/images/icon.png"
-  },
-  "image": "{{ site.url }}/images/misc/share.jpg",
-  "founder": {
-    "@type": "Person",
-    "name": "Prof. Dr. Tina Lonsdorf",
-    "jobTitle": "Professor of Psychophysiology",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Bielefeld University",
-      "department": {
+    {
+      "@type": "Organization",
+      "@id": "{{ org_id }}",
+      "name": "AE14 Biological Psychology and Cognitive Neuroscience",
+      "url": "{{ site_url }}",
+      "parentOrganization": {
         "@type": "CollegeOrUniversity",
-        "name": "Department of Psychology"
+        "name": "Bielefeld University",
+        "url": "https://www.uni-bielefeld.de"
+      },
+      "founder": {
+        "@id": "{{ site_url }}/members/tina_lonsdorf.html"
       }
-    },
-    "email": "sekretariat-ae14@uni-bielefeld.de",
-    "telephone": "+49-521-106-4482",
-    "sameAs": [
-      "https://orcid.org/0000-0003-1501-4846",
-      "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-      "https://bsky.app/profile/tinalonsdorf.bsky.social",
-      "https://de.linkedin.com/in/tina-lonsdorf-3840a731a",
-      "https://gepris.dfg.de/gepris/person/234587475",
-      "https://www.dasgehirn.info/autor/lonsdorf",
-      "https://www.researchgate.net/profile/Tina-Lonsdorf"
-    ]
-  },
-  "contactPoint": {
-    "@type": "ContactPoint",
-    "contactType": "Academic inquiries",
-    "email": "sekretariat-ae14@uni-bielefeld.de",
-    "telephone": "+49-521-106-4482"
-  },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
-  },
-  "inLanguage": "en"
-}
-</script>
-{% endif %}
-
-
-
-{% if page.schema_type == "project" %}
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "CollectionPage",
-  "name": "Research Projects of the Lonsdorf Lab",
-  "url": "https://lonsdorf-lab.github.io/projects",
-  "description": "Overview of ongoing and past research projects at the Lonsdorf Lab, investigating fear, anxiety, metascience, and open science.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "url": "https://lonsdorf-lab.github.io"
-  },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
-  },
-  "inLanguage": "en",
-  "hasPart": [
-    {
-      "@type": "ResearchProject",
-      "name": "Fear Profiles",
-      "url": "https://osf.io/preprints/psyarxiv/p84qz_v1",
-      "description": "The FEAR PROFILES project focuses on individual differences in fear and anxiety research using multi-method approaches such as fMRI, psychophysiology, and VR to identify distinct fear profiles and trajectories.",
-      "funder": {
-        "@type": "Organization",
-        "name": "German Research Foundation (DFG) - Emmy-Noether Independent Junior Research Group",
-        "url": "https://gepris.dfg.de/gepris/projekt/405663121?language=en"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "principalInvestigator": {
-         "@id": "https://lonsdorf-lab.github.io/members/tina_lonsdorf.html"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Alina Koppold" },
-        { "@type": "Person", "name": "Mana Ehlers" },
-        { "@type": "Person", "name": "Lennart Wieser" },
-        { "@type": "Person", "name": "Alexandros Kastrinogiannis" }
-      ],
-      "keywords": ["fear conditioning", "anxiety", "individual differences", "psychophysiology", "fMRI"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "Associations between exposure to early adversity and fear learning processes",
-      "url": "https://elifesciences.org/articles/92700",
-      "description": "Examines how early adversity affects fear learning, generalization, and return of fear, using psychophysiological and fMRI measures in a large cohort.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG RTG 'Emotional Learning and Memory'",
-        "url": "https://www.emotionalmemory.de/projects/"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Julia Ruge" },
-        { "@type": "Person", "name": "Paul Pfaff" }
-      ],
-      "keywords": ["fear learning", "early adversity", "anxiety", "fMRI", "psychophysiology"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "FEARBASE",
-      "url": "https://rdc-psychology.org/fearbase/en",
-      "description": "A cooperative, sustainable, and dynamically growing database for human fear conditioning research, promoting open data, metadata curation, and community-driven analyses.",
-      "funder": {
-        "@type": "Organization",
-        "name": "Volkswagen Stiftung - Profile Area 'Understanding Research - Evaluation and Science Practice'"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Annalena Witte" },
-        { "@type": "Person", "name": "Fritz Becker" },
-        { "@type": "Person", "name": "Maria Bruntsch" },
-        { "@type": "Person", "name": "Mana Ehlers" }
-      ],
-      "keywords": ["open science", "data sharing", "fear conditioning", "database", "meta-analysis"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "Meta Science in Fear Conditioning Research (1 & 2)",
-      "url": "https://rr.peercommunityin.org/articles/rec?id=743",
-      "description": "Two meta-scientific projects conducting systematic reviews and meta-analyses on the associations between anxiety-related traits and fear acquisition and extinction.",
-      "funder": [
-        {
-          "@type": "Organization",
-          "name": "DFG Individual Research Grant (1)",
-          "url": "https://gepris.dfg.de/gepris/projekt/501533638"
-        },
-        {
-          "@type": "Organization",
-          "name": "DFG Individual Research Grant (2)",
-          "url": "https://gepris.dfg.de/gepris/projekt/451328127"
-        }
-      ],
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Maria Bruntsch" },
-        { "@type": "Person", "name": "Maren Klingelhöfer-Jens" }
-      ],
-      "keywords": ["metascience", "fear conditioning", "meta-analysis", "anxiety", "PRISMA"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "Individual Differences in Fear Conditioning Research",
-      "description": "Explores how individual variability influences fear learning and conditioning processes.",
-      "funder": {
-        "@type": "CollegeOrUniversity",
-        "name": "Bielefeld University"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Mana Ehlers" }
-      ],
-      "keywords": ["fear conditioning", "individual differences", "psychophysiology"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "EIFEL-ROF",
-      "url": "https://gepris.dfg.de/gepris/projekt/273022965",
-      "description": "A scientific network that coordinated cross-laboratory replication tests, data pooling, and methodological harmonization in fear learning research.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG Scientific Network Grant"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Christian Merz" },
-        { "@type": "Person", "name": "Fear Conditioning Community" }
-      ],
-      "keywords": ["fear learning", "replication", "open science", "network"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "CRC 58 Fear, Anxiety, Anxiety Disorders",
-      "url": "https://gepris.dfg.de/gepris/projekt/234587233",
-      "description": "Part of the DFG Collaborative Research Center 58, investigating fear and anxiety mechanisms and their clinical relevance.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG CRC 58 Fear, Anxiety, Anxiety Disorders",
-        "url": "https://gepris.dfg.de/gepris/projekt/78148948"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Maren Klingelhöfer-Jens" },
-        { "@type": "Person", "name": "Manuel Kuhn" },
-        { "@type": "Person", "name": "Robert Schafenort" }
-      ],
-      "keywords": ["fear", "anxiety", "clinical neuroscience"]
     }
   ]
 }
@@ -300,279 +51,41 @@
 
 {% endif %}
 
+{% comment %}
+============================================================
+2) TEAM PAGE (Dynamic Member References)
+============================================================
+{% endcomment %}
 
 {% if page.schema_type == "team" %}
+
+{% assign active_members = site.pages | where: "group", "member" %}
+
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AboutPage",
+  "@id": "{{ site_url }}/team#about",
+  "url": "{{ site_url }}/team",
   "name": "Team - Lonsdorf Lab",
-  "url": "https://lonsdorf-lab.github.io/team",
-  "description": "Meet the interdisciplinary team of the Lonsdorf Lab, including current members, student assistants, and alumni working on the neurobiological foundations of fear, anxiety, adversity, and stress-related processes.",
   "isPartOf": {
-    "@type": "WebSite",
-    "url": "https://lonsdorf-lab.github.io"
+    "@id": "{{ website_id }}"
   },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
-  },
-  "inLanguage": "en",
   "about": {
-    "@type": "ResearchOrganization",
-    "name": "Lonsdorf Lab",
-    "alternateName": "Psychophysiology Experimental Labs - Prof. Dr. Tina Lonsdorf",
-    "url": "https://lonsdorf-lab.github.io",
-    "member": [
+    "@id": "{{ org_id }}"
+  },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      {% for m in active_members %}
       {
-        "@type": "Person",
-        "name": "Prof. Dr. Tina Lonsdorf",
-        "jobTitle": "Principal Investigator",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/tina_lonsdorf.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/lonsdorf.jpg",
-        "sameAs": [
-          "https://orcid.org/0000-0003-1501-4846",
-          "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-          "https://bsky.app/profile/tinalonsdorf.bsky.social",
-          "https://de.linkedin.com/in/tina-lonsdorf-3840a731a",
-          "https://gepris.dfg.de/gepris/person/234587475",
-          "https://www.dasgehirn.info/autor/lonsdorf",
-          "https://www.researchgate.net/profile/Tina-Lonsdorf"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Dilber Yildirim",
-        "jobTitle": "Team Coordinator",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/dilber_yildirim.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/yildirim.png",
-        "sameAs": []
-      },
-      {
-        "@type": "Person",
-        "name": "Conrad Alting",
-        "jobTitle": "Lab Manager",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/conrad_alting.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/alting.jpg",
-        "sameAs": [
-            "https://orcid.org/0009-0002-3287-4418"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Alina Koppold",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/alina_koppold.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/koppold.jpeg",
-        "sameAs": [
-            "https://twitter.com/alinakoppold",
-            "https://bsky.app/profile/alinakoppold.bsky.social",
-            "https://www.linkedin.com/in/alina-koppold-059b8923b",
-            "https://orcid.org/0000-0002-3164-3389",
-            "https://scholar.google.com/citations?user=s00AAAAJ",
-            "https://github.com/alkoppold",
-            "https://www.researchgate.net/profile/Alina-Koppold",
-            "https://osf.io/dyqm4"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Claudia Massacessi",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/claudia_massaccesi.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/massaccesi.jpeg",
-        "sameAs": [
-            "https://bsky.app/profile/clamassaccesi.bsky.social",
-            "https://orcid.org/0000-0003-0519-6324",
-            "https://scholar.google.com/citations?user=GTJBuNIAAAAJ",
-            "https://osf.io/kzdfm/"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Fritz Becker",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/fritz_becker.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/becker.jpg",
-        "sameAs": [
-            "https://bsky.app/profile/fritzbecker.bsky.social",
-            "https://www.linkedin.com/in/fritz-becker-32ab671a9/",
-            "https://orcid.org/0000-0003-3889-206X",
-            "https://scholar.google.com/citations?user=vZ0xrZoAAAAJ",
-            "https://github.com/Fritz-theCat"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Mana Ehlers",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/mana_ehlers.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/ehlers.JPG",
-        "sameAs": [
-            "https://www.linkedin.com/in/mana-ehlers-04a9a3ab/",
-            "https://orcid.org/0000-0002-1316-3787",
-            "https://scholar.google.com/citations?user=ICvux-oAAAAJ",
-            "https://github.com/manaehlers"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Maren Klingelhöfer-Jens",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "UKE Hamburg" },
-        "url": "https://lonsdorf-lab.github.io/members/maren_klingelhoefer.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/klingelhoefer.jpg",
-        "sameAs": [
-            "https://bsky.app/profile/mklingelhoeferj.bsky.social",
-            https://www.linkedin.com/in/maren-klingelh%C3%B6fer-jens-318347312/",
-            "https://orcid.org/0000-0002-5393-7871",
-            "https://scholar.google.com/citations?user=rhHlSxAAAAAJ",
-            "https://github.com/m-klingelhoefer-j"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Annalena Witte",
-        "jobTitle": "PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/annalena_witte.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/witte.jpg",
-        "sameAs": []
-      },
-      {
-        "@type": "Person",
-        "name": "Julia Ruge",
-        "jobTitle": "PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "UKE Hamburg" },
-        "url": "https://lonsdorf-lab.github.io/members/julia_ruge.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/ruge.jpeg",
-        "sameAs": [
-            "https://bsky.app/profile/juliaruge.bsky.social",
-            "https://www.linkedin.com/in/julia-ruge-0093a2290",
-            "https://orcid.org/0000-0001-5818-5683",
-            "https://scholar.google.com/citations?user=LrQs0B4AAAAJ",
-            "https://github.com/J-uliet",
-            "https://www.researchgate.net/profile/Julia-Ruge",
-            "https://osf.io/ruy9e"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Lennart Wieser",
-        "jobTitle": "PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/lennart_wieser.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/wieser.png",
-        "sameAs": []
-      },
-      {
-        "@type": "Person",
-        "name": "Maria Bruntsch",
-        "jobTitle": "PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/maria_bruntsch.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/bruntsch.jpg",
-        "sameAs": [
-            "https://bsky.app/profile/mbruntsch.bsky.social",
-            "https://www.linkedin.com/in/maria-bruntsch-642b49309",
-            "https://orcid.org/0009-0007-4933-6305",
-            "https://scholar.google.com/citations?user=gVluQDoAAAAJ",
-            "https://github.com/bruntsch",
-            "https://www.researchgate.net/profile/Maria-Bruntsch",
-            "https://osf.io/ruy9e"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Celine Samaey",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "KU Leuven" },
-        "url": "https://lonsdorf-lab.github.io/members/celine-samaey.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/samaey.jpg",
-        "sameAs": [
-            "https://www.linkedin.com/in/celine-samaey-886b7a138",
-            "https://orcid.org/0000-0003-0032-7962",
-            "https://scholar.google.com/citations?user=rylY2U_DCBIC",
-            "https://www.researchgate.net/profile/Celine-Samaey",
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Paul Pfaff",
-        "jobTitle": "PhD Student",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "UKE Hamburg" },
-        "url": "https://lonsdorf-lab.github.io/members/paul_pfaff.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/pfaff.jpeg",
-        "sameAs": []
-      }
-    ],
-    "student assistants": [
-          {
-        "@type": "Person",
-        "name": "Christina Kasper",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/christina_kasper.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/kasper.jpeg"
-      },
-      {
-        "@type": "Person",
-        "name": "Enna Körner",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/enna_koerner.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/koerner.JPG"
-      },
-      {
-        "@type": "Person",
-        "name": "Hannah Stiffel",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/hannah_stiffel.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/stiffel.jpg"
-      },
-      {
-        "@type": "Person",
-        "name": "Julia Senfft",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/julia_senfft.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/senfft.png"
-      },
-      {
-        "@type": "Person",
-        "name": "Katharina Möller",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/katharina_moeller.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/moeller.jpg"
-      },
-      {
-        "@type": "Person",
-        "name": "Larissa Marie Nelle",
-        "jobTitle": "Student Assistant",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/larissa_nelle.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/nelle.jpg"
-      }
-    ],
-    "alumni": [
-      { "@type": "Person", "name": "Ondjey Zika", "jobTitle": "Assistant Professor"},
-      { "@type": "Person", "name": "Alena Russmann", "jobTitle": "PhD Student" },
-      { "@type": "Person", "name": "Alexandros Kastrinogiannis", "jobTitle": "PhD Student" },
-      { "@type": "Person", "name": "Hannes Carsten", "jobTitle": "Undergraduate Student" },
-      { "@type": "Person", "name": "Manuel Kuhn", "jobTitle": "Postdoctoral Researcher" },
-      { "@type": "Person", "name": "Rachel Sjouwerman", "jobTitle": "PhD Student" },
-      { "@type": "Person", "name": "Robert Schafenort", "jobTitle": "PhD Student" },
-      { "@type": "Person", "name": "Sabrina Gado", "jobTitle": "Postdoctoral Researcher" }
+        "@type": "ListItem",
+        "position": {{ forloop.index }},
+        "item": {
+          "@id": "{{ site_url }}{{ m.url }}"
+        }
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
     ]
   }
 }
@@ -580,6 +93,52 @@
 
 {% endif %}
 
+{% comment %}
+============================================================
+3) PROJECTS PAGE (Dynamic)
+============================================================
+{% endcomment %}
+
+{% if page.schema_type == "project" %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  "@id": "{{ site.url }}/projects#collection",
+  "url": "{{ site.url }}/projects",
+  "name": "Research Projects - Lonsdorf Lab",
+  "hasPart": [
+    {% for p in site.projects %}
+    {
+      "@type": "ResearchProject",
+      "@id": "{{ site.url }}{{ p.url }}",
+      "name": "{{ p.title }}",
+      "description": "{{ p.description | escape }}",
+      "url": "{{ site.url }}{{ p.url }}"{% if p.funders %},
+      "funder": [
+        {% for f in p.funders %}
+        {
+          "@type": "Organization",
+          "name": "{{ f.name }}"{% if f.url %},
+          "url": "{{ f.url }}"{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]{% endif %}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}
+</script>
+
+{% endif %}
+
+
+{% comment %}
+============================================================
+4) FUNDING PAGE (Cleaned)
+============================================================
+{% endcomment %}
 
 {% if page.schema_type == "funding" %}
 
@@ -587,147 +146,16 @@
 {
   "@context": "https://schema.org",
   "@type": "WebPage",
+  "@id": "{{ site_url }}/funding#webpage",
+  "url": "{{ site_url }}/funding",
   "name": "Funding - Lonsdorf Lab",
-  "url": "https://lonsdorf-lab.github.io/funding",
-  "description": "Information about the funding sources supporting the Lonsdorf Lab's research, including grants from the German Research Foundation (DFG), Bielefeld University, the Volkswagen Stiftung, and the Research Training Group 'Emotional Learning and Memory'.",
   "isPartOf": {
-    "@type": "WebSite",
-    "url": "https://lonsdorf-lab.github.io"
+    "@id": "{{ website_id }}"
   },
-  "inLanguage": "en",
   "about": {
-    "@type": "ResearchOrganization",
-    "name": "Lonsdorf Lab",
-    "alternateName": "Psychophysiology Experimental Labs of Prof. Dr. Tina Lonsdorf",
-    "url": "https://lonsdorf-lab.github.io",
-    "parentOrganization": {
-      "@type": "CollegeOrUniversity",
-      "name": "Bielefeld University",
-      "url": "https://www.uni-bielefeld.de"
-    },
-    "funder": [
-      {
-        "@type": "Organization",
-        "name": "German Research Foundation (DFG)",
-        "url": "https://www.dfg.de/en",
-        "funderType": "ResearchFundingAgency",
-        "subOrganization": [
-          {
-            "@type": "Grant",
-            "name": "DFG Research Grant (Sachbeihilfe)",
-            "identifier": ["DFG LO/1980 7-1", "DFG LO/1980 10-1"],
-            "description": "Research grants supporting experimental psychophysiology and fear learning research at the Lonsdorf Lab."
-          },
-          {
-            "@type": "Grant",
-            "name": "DFG Emmy-Noether Independent Junior Research Group",
-            "identifier": "DFG LO/4-1",
-            "description": "Independent research group grant awarded to Prof. Dr. Tina Lonsdorf."
-          },
-          {
-            "@type": "Grant",
-            "name": "DFG Research Training Group 'Emotional Learning and Memory' (GRK 2753)",
-            "url": "https://www.emotionalmemory.de/",
-            "description": "Graduate research training group focusing on emotional learning and memory processes."
-          }
-        ]
-      },
-      {
-        "@type": "Organization",
-        "name": "Bielefeld University",
-        "url": "https://www.uni-bielefeld.de",
-        "funderType": "CollegeOrUniversity"
-      },
-      {
-        "@type": "Organization",
-        "name": "Volkswagen Stiftung",
-        "url": "https://www.volkswagenstiftung.de/en",
-        "funderType": "Foundation",
-        "subOrganization": {
-          "@type": "Grant",
-          "name": "Profile Area 'Understanding Research - Evaluation and Science Practice'",
-          "description": "Grant supporting open science and metascientific research at the Lonsdorf Lab."
-        }
-      }
-    ],
-    "founder": {
-      "@type": "Person",
-      "name": "Prof. Dr. Tina B. Lonsdorf",
-      "jobTitle": "Professor of Biopsychology and Cognitive Neuroscience",
-      "affiliation": {
-        "@type": "CollegeOrUniversity",
-        "name": "Bielefeld University"
-      },
-      "sameAs": [
-        "https://orcid.org/0000-0003-1501-4846",
-        "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-        "https://bsky.app/profile/tinalonsdorf.bsky.social"
-      ]
-    }
-  },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
+    "@id": "{{ org_id }}"
   }
 }
 </script>
 
-{% endif %}
-
-
-
-
-{% comment %}
-  Schema.org JSON-LD metadata for members of Lonsdorf Lab website
-  Automatically inserted based on page.schema_type
-{% endcomment %}
-
-{% assign filename = page.path | split: "/" | last %}
-{% if page.name and filename == "Fritz Becker" %}
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "AboutPage",
-  "name": "Team - Lonsdorf Lab",
-  "url": "https://lonsdorf-lab.github.io/team",
-  "description": "Meet the interdisciplinary team of the Lonsdorf Lab, including current members, student assistants, and alumni working on the neurobiological foundations of fear, anxiety, adversity, and stress-related processes.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "url": "https://lonsdorf-lab.github.io"
-  },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
-  },
-  "inLanguage": "en",
-  "about": {
-    "@type": "ResearchOrganization",
-    "name": "Lonsdorf Lab",
-    "alternateName": "Psychophysiology Experimental Labs - Prof. Dr. Tina Lonsdorf",
-    "url": "https://lonsdorf-lab.github.io",
-    "member": [
-      {
-        "@type": "Person",
-        "name": "Fritz Becker",
-        "jobTitle": "Postdoctoral Researcher",
-        "affiliation": { "@type": "CollegeOrUniversity", "name": "Bielefeld University" },
-        "url": "https://lonsdorf-lab.github.io/members/fritz_becker.html",
-        "image": "https://lonsdorf-lab.github.io/images/members/becker.jpg",
-        "sameAs": [
-            "https://bsky.app/profile/fritzbecker.bsky.social",
-            "https://www.linkedin.com/in/fritz-becker-32ab671a9/",
-            "https://orcid.org/0000-0003-3889-206X",
-            "https://scholar.google.com/citations?user=vZ0xrZoAAAAJ",
-            "https://github.com/Fritz-theCat"
-        ]
-      }
-    }
-  }
-  </script>
-{% elsif page.title %}
-  {% assign title = page.title %}
-{% else %}
-  {% assign title = nil %}
 {% endif %}

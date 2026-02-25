@@ -1,0 +1,18 @@
+---
+layout: default
+---
+
+{% if page.members %}
+## Team
+
+<ul>
+{% for slug in page.members %}
+  {% assign member = site.pages | where: "slug", slug | first %}
+  {% if member %}
+    <li>
+      <a href="{{ member.url | relative_url }}">{{ member.name }}</a>
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
+{% endif %}

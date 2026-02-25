@@ -1,28 +1,38 @@
 ---
 type: page
 title: Projects
-schema_type: "project"
+schema_type: project
 nav:
   order: 2
   tooltip: Software, datasets, and more
 ---
 
-# {% include icon.html icon="fa-solid fa-diagram-project" %}Projects
+# {% include icon.html icon="fa-solid fa-diagram-project" %} Projects
 
 Get a glimpse into the work we do: from ongoing investigations to completed projects.
 
-{% include tags.html tags="publication, resource, website" %}
-
-{% include search-info.html %}
-
-{% include section.html %}
+---
 
 ## Current Projects
 
-{% include list.html component="card-horizontal" data="projects" filter="group == 'on-going'" %}
+{% assign current_projects = site.projects | where: "group", "on-going" %}
 
-{% include section.html %}
+{% for project in current_projects %}
+### [{{ project.title }}]({{ project.url | relative_url }})
+
+{{ project.description }}
+
+{% endfor %}
+
+---
 
 ## Past Projects
 
-{% include list.html component="card" data="projects" filter="group == 'finished'" style="small" %}
+{% assign past_projects = site.projects | where: "group", "finished" %}
+
+{% for project in past_projects %}
+### [{{ project.title }}]({{ project.url | relative_url }})
+
+{{ project.description }}
+
+{% endfor %}
