@@ -48,58 +48,17 @@
 
 
 
-  <!-- Persistent Person entity for Prof. Dr. Tina Lonsdorf -->
-<script type="application/ld+json">
-[
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Prof. Dr. Tina Lonsdorf",
-    "jobTitle": "Professor of Psychophysiology",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Bielefeld University",
-      "url": "https://www.uni-bielefeld.de"
-    },
-    "worksFor": {
-      "@type": "ResearchOrganization",
-      "name": "Lonsdorf Lab",
-      "url": "https://lonsdorf-lab.github.io"
-    },
-    "url": "https://lonsdorf-lab.github.io/members/tina_lonsdorf.html",
-    "image": "https://lonsdorf-lab.github.io/images/members/lonsdorf.jpg",
-    "sameAs": [
-      "https://orcid.org/0000-0003-1501-4846",
-      "https://scholar.google.com/citations?user=UWLcKcIAAAAJ",
-      "https://bsky.app/profile/tinalonsdorf.bsky.social"
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://lonsdorf-lab.github.io"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Prof. Dr. Tina Lonsdorf",
-        "item": "https://lonsdorf-lab.github.io/members/tina_lonsdorf.html"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Team",
-        "item": "https://lonsdorf-lab.github.io/team"
-      }
-    ]
-  }
-]
-</script>
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -111,170 +70,137 @@
 {
   "@context": "https://schema.org",
   "@type": "CollectionPage",
-  "name": "Research Projects of the Lonsdorf Lab",
+  "@id": "https://lonsdorf-lab.github.io/projects#collection",
   "url": "https://lonsdorf-lab.github.io/projects",
-  "description": "Overview of ongoing and past research projects at the Lonsdorf Lab, investigating fear, anxiety, metascience, and open science.",
-  "isPartOf": {
-    "@type": "WebSite",
-    "url": "https://lonsdorf-lab.github.io"
-  },
-  "publisher": {
-    "@type": "CollegeOrUniversity",
-    "name": "Bielefeld University",
-    "url": "https://www.uni-bielefeld.de"
-  },
-  "inLanguage": "en",
+  "name": "Research Projects - Lonsdorf Lab",
   "hasPart": [
+    
     {
       "@type": "ResearchProject",
-      "name": "Fear Profiles",
-      "url": "https://osf.io/preprints/psyarxiv/p84qz_v1",
-      "description": "The FEAR PROFILES project focuses on individual differences in fear and anxiety research using multi-method approaches such as fMRI, psychophysiology, and VR to identify distinct fear profiles and trajectories.",
-      "funder": {
-        "@type": "Organization",
-        "name": "German Research Foundation (DFG) - Emmy-Noether Independent Junior Research Group",
-        "url": "https://gepris.dfg.de/gepris/projekt/405663121?language=en"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "principalInvestigator": {
-         "@id": "https://lonsdorf-lab.github.io/members/tina_lonsdorf.html"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Alina Koppold" },
-        { "@type": "Person", "name": "Mana Ehlers" },
-        { "@type": "Person", "name": "Lennart Wieser" },
-        { "@type": "Person", "name": "Alexandros Kastrinogiannis" }
-      ],
-      "keywords": ["fear conditioning", "anxiety", "individual differences", "psychophysiology", "fMRI"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "Associations between exposure to early adversity and fear learning processes",
-      "url": "https://elifesciences.org/articles/92700",
-      "description": "Examines how early adversity affects fear learning, generalization, and return of fear, using psychophysiological and fMRI measures in a large cohort.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG RTG 'Emotional Learning and Memory'",
-        "url": "https://www.emotionalmemory.de/projects/"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Julia Ruge" },
-        { "@type": "Person", "name": "Paul Pfaff" }
-      ],
-      "keywords": ["fear learning", "early adversity", "anxiety", "fMRI", "psychophysiology"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "FEARBASE",
-      "url": "https://rdc-psychology.org/fearbase/en",
-      "description": "A cooperative, sustainable, and dynamically growing database for human fear conditioning research, promoting open data, metadata curation, and community-driven analyses.",
-      "funder": {
-        "@type": "Organization",
-        "name": "Volkswagen Stiftung - Profile Area 'Understanding Research - Evaluation and Science Practice'"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Annalena Witte" },
-        { "@type": "Person", "name": "Fritz Becker" },
-        { "@type": "Person", "name": "Maria Bruntsch" },
-        { "@type": "Person", "name": "Mana Ehlers" }
-      ],
-      "keywords": ["open science", "data sharing", "fear conditioning", "database", "meta-analysis"]
-    },
-    {
-      "@type": "ResearchProject",
-      "name": "Meta Science in Fear Conditioning Research (1 & 2)",
-      "url": "https://rr.peercommunityin.org/articles/rec?id=743",
-      "description": "Two meta-scientific projects conducting systematic reviews and meta-analyses on the associations between anxiety-related traits and fear acquisition and extinction.",
+      "@id": "https://lonsdorf-lab.github.io/projects/associations-between-childhood-maltreatment-and-responding-to-signals-of-threat-and-safety-in-a-fear-conditioning-paradigm/",
+      "name": "Associations between childhood maltreatment and responding to signals of threat and safety in a fear conditioning paradigm",
+      "description": "This project investigates how early adversity—an important risk factor for a range of mental health disorders—affects fear learning, generalization and return of fear processes. While patients with anxiety disorders typically show heightened responses to safety cues, previous work suggests that individuals exposed to early adversity may instead be characterized by blunted responses to danger cues, leading to reduced discrimination between safety and threat (for a review see Ruge et al., 2024). In a large cohort (N=180), we combined psychophysiological (SCR, startle), neuroimaging (fMRI) while considering mental health diagnoses and the global assessment of functioning. Preliminary results confirm reduced fear discrimination driven by diminished CS+ responses in individuals exposed to early adversity, with no significant effect of lifetime mental health diagnoses was observed. In addition, we employed item-based content analyses exploring the item and hence content overlap across a wide range of questionnaires used to assess exposure to early adversity (Koppold, Ruge, Hecker &amp; Lonsdorf, 2024).
+",
+      "url": "https://lonsdorf-lab.github.io/projects/associations-between-childhood-maltreatment-and-responding-to-signals-of-threat-and-safety-in-a-fear-conditioning-paradigm/",
       "funder": [
+        
         {
           "@type": "Organization",
-          "name": "DFG Individual Research Grant (1)",
+          "name": "German Research Foundation (GRK 2753 - Emotional Learning and Memory)"
+        }
+        
+      ]
+    },
+    
+    {
+      "@type": "ResearchProject",
+      "@id": "https://lonsdorf-lab.github.io/projects/individual-differences-in-fear-conditioning-research/",
+      "name": "Individual differences in Fear conditioning research",
+      "description": "",
+      "url": "https://lonsdorf-lab.github.io/projects/individual-differences-in-fear-conditioning-research/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "Bielefeld University"
+        }
+        
+      ]
+    },
+    
+    {
+      "@type": "ResearchProject",
+      "@id": "https://lonsdorf-lab.github.io/projects/meta-science-in-fear-conditioning-research/",
+      "name": "Meta Science in Fear conditioning research",
+      "description": "Dysregulated processing of fear and safety has been linked to anxiety symptoms and related traits, e.g., neuroticism, intolerance of uncertainty or negative emotionality. Yet, different studies focus on different aspects of fear acquisition and extinction, outcome measures, and anxiety-related traits, making an integrative approach to the association of anxiety-related traits and fear acquisition and extinction difficult. This limits effective translation of experimental insights on these etiology- and treatment-relevant processes to the clinic. To address this gap, a systematic literature search and meta-analysis of the associations between anxiety-related traits and fear acquisition and extinction will be conducted following PRISMA guidelines. A series of nested random effects models will be used to investigate associations between anxiety-related traits and frequently used outcome measures of fear acquisition and extinction (i.e., psychophysiological and self-reports). Different questionnaires used in these studies to assess anxiety-related traits will be further used as moderators to investigate whether identified associations between fear acquisition and extinction performance and traits are contingent on the specific questionnaire used. Furthermore, an item-based content analysis of the questionnaires used in the identified studies will be conducted to assess content overlap between the different anxiety-related traits. This analysis will help to evaluate the content-based similarities (or dissimilarities) between different anxiety-related traits as assessed through different questionnaires and hence further inform the interpretation of the meta-analytical results. &lt;br&gt; Funding - [Individual Research Grant (1)](https://gepris.dfg.de/gepris/projekt/501533638) &amp; [Individual Research Grant (2)](https://gepris.dfg.de/gepris/projekt/451328127)
+",
+      "url": "https://lonsdorf-lab.github.io/projects/meta-science-in-fear-conditioning-research/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "German Research Foundation (Individual Research Grant 1)",
           "url": "https://gepris.dfg.de/gepris/projekt/501533638"
         },
+        
         {
           "@type": "Organization",
-          "name": "DFG Individual Research Grant (2)",
+          "name": "German Research Foundation (Individual Research Grant 2)",
           "url": "https://gepris.dfg.de/gepris/projekt/451328127"
         }
-      ],
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Maria Bruntsch" },
-        { "@type": "Person", "name": "Maren Klingelhöfer-Jens" }
-      ],
-      "keywords": ["metascience", "fear conditioning", "meta-analysis", "anxiety", "PRISMA"]
+        
+      ]
     },
+    
     {
       "@type": "ResearchProject",
-      "name": "Individual Differences in Fear Conditioning Research",
-      "description": "Explores how individual variability influences fear learning and conditioning processes.",
-      "funder": {
-        "@type": "CollegeOrUniversity",
-        "name": "Bielefeld University"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Mana Ehlers" }
-      ],
-      "keywords": ["fear conditioning", "individual differences", "psychophysiology"]
-    },
-    {
-      "@type": "ResearchProject",
+      "@id": "https://lonsdorf-lab.github.io/projects/eifel-rof/",
       "name": "EIFEL-ROF",
-      "url": "https://gepris.dfg.de/gepris/projekt/273022965",
-      "description": "A scientific network that coordinated cross-laboratory replication tests, data pooling, and methodological harmonization in fear learning research.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG Scientific Network Grant"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Christian Merz" },
-        { "@type": "Person", "name": "Fear Conditioning Community" }
-      ],
-      "keywords": ["fear learning", "replication", "open science", "network"]
+      "description": "The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets.
+",
+      "url": "https://lonsdorf-lab.github.io/projects/eifel-rof/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "German Research Foundation"
+        }
+        
+      ]
     },
+    
     {
       "@type": "ResearchProject",
-      "name": "CRC 58 Fear, Anxiety, Anxiety Disorders",
-      "url": "https://gepris.dfg.de/gepris/projekt/234587233",
-      "description": "Part of the DFG Collaborative Research Center 58, investigating fear and anxiety mechanisms and their clinical relevance.",
-      "funder": {
-        "@type": "Organization",
-        "name": "DFG CRC 58 Fear, Anxiety, Anxiety Disorders",
-        "url": "https://gepris.dfg.de/gepris/projekt/78148948"
-      },
-      "creator": {
-        "@type": "ResearchOrganization",
-        "name": "Lonsdorf Lab"
-      },
-      "contributor": [
-        { "@type": "Person", "name": "Maren Klingelhöfer-Jens" },
-        { "@type": "Person", "name": "Manuel Kuhn" },
-        { "@type": "Person", "name": "Robert Schafenort" }
-      ],
-      "keywords": ["fear", "anxiety", "clinical neuroscience"]
+      "@id": "https://lonsdorf-lab.github.io/projects/fear-anxiety-anxiety-disorders/",
+      "name": "Fear, Anxiety, Anxiety Disorders",
+      "description": "",
+      "url": "https://lonsdorf-lab.github.io/projects/fear-anxiety-anxiety-disorders/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "German Research Foundation (CRC 58 Fear, Anxiety, Anxiety Disorders)",
+          "url": "https://gepris.dfg.de/gepris/projekt/78148948"
+        }
+        
+      ]
+    },
+    
+    {
+      "@type": "ResearchProject",
+      "@id": "https://lonsdorf-lab.github.io/projects/fear-profiles/",
+      "name": "Fear Profiles",
+      "description": "The FEAR PROFILES projects suggests a paradigm shift in fear and anxiety research by focusing on individual differences—often overlooked as residual variance—as key to advancing mechanistic understanding. We use systematic, multi-method studies combining established experimental paradigms with a wide array of methods (fMRI, psychophysiology, VR, freezing platform) designed specifically to detect and analyze individual differences. This approach aims to identify distinct subgroups (“fear profiles”) and trajectories based on behavioral, neurobiological, and physiological responses, which are then further characterized through deep and digital phenotyping. Ultimately, our work aims to refine models of fear and anxiety, improve research methods on individual variability, and pave the way for targeted, mechanism-based interventions to better address anxiety disorders.
+",
+      "url": "https://lonsdorf-lab.github.io/projects/fear-profiles/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "DFG Emmy-Noether Independent Junior Research Group",
+          "url": "https://gepris.dfg.de/gepris/projekt/405663121?language=en"
+        }
+        
+      ]
+    },
+    
+    {
+      "@type": "ResearchProject",
+      "@id": "https://lonsdorf-lab.github.io/projects/fearbase/",
+      "name": "fearbase",
+      "description": "It is our vision to facilitate cumulative science in the field of human fear conditioning research by gathering datasets and hence generating new information while at the same time ensure sustainability of research investments.To achieve this aim, we are developing a cooperative, sustainable, living and dynamically growing database with living analyses and building up a community consortium. The database will initially be based on ‘open data’ and will be enriched with new data sets in the long term. To this end, we develop a data curation and metadata tool that will allow researchers to contribute datasets with minimal effort. The infrastructural tools are developed in collaboration with the Leibniz Institute for Psychology (ZPID, Trier) and are currently in a beta-testing phase. We expect community involvement to start by late summer 2025. First analyses will cover temporal dynamics and investigate the impact of procedural heterogeneity by using individual-participant meta-analytical approaches as well as computational modelling.
+",
+      "url": "https://lonsdorf-lab.github.io/projects/fearbase/",
+      "funder": [
+        
+        {
+          "@type": "Organization",
+          "name": "Volkswagen Stiftung, Profile Area "Understanding Research – Evaluation and Science Practice""
+        }
+        
+      ]
     }
+    
   ]
 }
 </script>
@@ -284,17 +210,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-  
 
   <!-- Google Fonts -->
 <!-- automatically get url from fonts used in theme file -->
@@ -741,331 +656,42 @@
   
 
   <section class="background" data-size="page">
-    <h1 id="projects">
-<i class="icon fa-solid fa-diagram-project"></i>Projects</h1>
+    <h1 id="-projects">
+<i class="icon fa-solid fa-diagram-project"></i> Projects</h1>
 
 <p>Get a glimpse into the work we do: from ongoing investigations to completed projects.</p>
 
-<div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-      <a href="/projects/?search=%22tag:%20resource%22" class="tag" data-tooltip='Show items with the tag "resource"'>
-        resource
-      </a>
-    
-      <a href="/projects/?search=%22tag:%20website%22" class="tag" data-tooltip='Show items with the tag "website"'>
-        website
-      </a>
-    
-  </div>
-
-<div class="search-info"></div>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
+<hr>
 
 <h2 id="current-projects">Current Projects</h2>
 
-<div class="card-horizontal" data-style="">
-  <a href="https://osf.io/preprints/psyarxiv/p84qz_v1" aria-label="Fear Profiles" class="card-image">
-    <img src="/images/icons/diagram-project_small.svg" alt="Fear Profiles" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
+<h3 id="associations-between-childhood-maltreatment-and-responding-to-signals-of-threat-and-safety-in-a-fear-conditioning-paradigm"><a href="/projects/associations-between-childhood-maltreatment-and-responding-to-signals-of-threat-and-safety-in-a-fear-conditioning-paradigm/">Associations between childhood maltreatment and responding to signals of threat and safety in a fear conditioning paradigm</a></h3>
 
-  <div class="card-text">
-    
-      <a href="https://osf.io/preprints/psyarxiv/p84qz_v1" class="card-title">
-        Fear Profiles
-    </a>
-    
+<p>This project investigates how early adversity—an important risk factor for a range of mental health disorders—affects fear learning, generalization and return of fear processes. While patients with anxiety disorders typically show heightened responses to safety cues, previous work suggests that individuals exposed to early adversity may instead be characterized by blunted responses to danger cues, leading to reduced discrimination between safety and threat (for a review see Ruge et al., 2024). In a large cohort (N=180), we combined psychophysiological (SCR, startle), neuroimaging (fMRI) while considering mental health diagnoses and the global assessment of functioning. Preliminary results confirm reduced fear discrimination driven by diminished CS+ responses in individuals exposed to early adversity, with no significant effect of lifetime mental health diagnoses was observed. In addition, we employed item-based content analyses exploring the item and hence content overlap across a wide range of questionnaires used to assess exposure to early adversity (Koppold, Ruge, Hecker &amp; Lonsdorf, 2024).</p>
 
-    
-      <span class="card-subtitle">Team - <a href="/members/alina_koppold.html">Alina Koppold</a>, <a href="/members/mana_ehlers.html">Mana Ehlers</a>, <a href="/members/lennart_wieser.html">Lennart Wieser</a>, <a href="/members/alexandros_kastrinogiannis.html">Alexandros Kastrinogiannis</a></span>
-    
-    
-    
-      <p>
-        The FEAR PROFILES projects suggests a paradigm shift in fear and anxiety research by focusing on individual differences—often overlooked as residual variance—as key to advancing mechanistic understanding. We use systematic, multi-method studies combining established experimental paradigms with a wide array of methods (fMRI, psychophysiology, VR, freezing platform) designed specifically to detect and analyze individual differences. This approach aims to identify distinct subgroups (“fear profiles”) and trajectories based on behavioral, neurobiological, and physiological responses, which are then further characterized through deep and digital phenotyping. Ultimately, our work aims to refine models of fear and anxiety, improve research methods on individual variability, and pave the way for targeted, mechanism-based interventions to better address anxiety disorders. <br> Funding - <a href="https://gepris.dfg.de/gepris/projekt/405663121?language=en">DFG Emmy-Noether Independent Junior Research Group</a>
+<h3 id="individual-differences-in-fear-conditioning-research"><a href="/projects/individual-differences-in-fear-conditioning-research/">Individual differences in Fear conditioning research</a></h3>
 
-      </p>
-    
+<h3 id="meta-science-in-fear-conditioning-research"><a href="/projects/meta-science-in-fear-conditioning-research/">Meta Science in Fear conditioning research</a></h3>
 
-    
-      
+<p>Dysregulated processing of fear and safety has been linked to anxiety symptoms and related traits, e.g., neuroticism, intolerance of uncertainty or negative emotionality. Yet, different studies focus on different aspects of fear acquisition and extinction, outcome measures, and anxiety-related traits, making an integrative approach to the association of anxiety-related traits and fear acquisition and extinction difficult. This limits effective translation of experimental insights on these etiology- and treatment-relevant processes to the clinic. To address this gap, a systematic literature search and meta-analysis of the associations between anxiety-related traits and fear acquisition and extinction will be conducted following PRISMA guidelines. A series of nested random effects models will be used to investigate associations between anxiety-related traits and frequently used outcome measures of fear acquisition and extinction (i.e., psychophysiological and self-reports). Different questionnaires used in these studies to assess anxiety-related traits will be further used as moderators to investigate whether identified associations between fear acquisition and extinction performance and traits are contingent on the specific questionnaire used. Furthermore, an item-based content analysis of the questionnaires used in the identified studies will be conducted to assess content overlap between the different anxiety-related traits. This analysis will help to evaluate the content-based similarities (or dissimilarities) between different anxiety-related traits as assessed through different questionnaires and hence further inform the interpretation of the meta-analytical results. <br> Funding - <a href="https://gepris.dfg.de/gepris/projekt/501533638">Individual Research Grant (1)</a> &amp; <a href="https://gepris.dfg.de/gepris/projekt/451328127">Individual Research Grant (2)</a></p>
 
+<h3 id="fear-profiles"><a href="/projects/fear-profiles/">Fear Profiles</a></h3>
 
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
+<p>The FEAR PROFILES projects suggests a paradigm shift in fear and anxiety research by focusing on individual differences—often overlooked as residual variance—as key to advancing mechanistic understanding. We use systematic, multi-method studies combining established experimental paradigms with a wide array of methods (fMRI, psychophysiology, VR, freezing platform) designed specifically to detect and analyze individual differences. This approach aims to identify distinct subgroups (“fear profiles”) and trajectories based on behavioral, neurobiological, and physiological responses, which are then further characterized through deep and digital phenotyping. Ultimately, our work aims to refine models of fear and anxiety, improve research methods on individual variability, and pave the way for targeted, mechanism-based interventions to better address anxiety disorders.</p>
 
+<h3 id="fearbase"><a href="/projects/fearbase/">fearbase</a></h3>
 
-    
-  </div>
-</div>
+<p>It is our vision to facilitate cumulative science in the field of human fear conditioning research by gathering datasets and hence generating new information while at the same time ensure sustainability of research investments.To achieve this aim, we are developing a cooperative, sustainable, living and dynamically growing database with living analyses and building up a community consortium. The database will initially be based on ‘open data’ and will be enriched with new data sets in the long term. To this end, we develop a data curation and metadata tool that will allow researchers to contribute datasets with minimal effort. The infrastructural tools are developed in collaboration with the Leibniz Institute for Psychology (ZPID, Trier) and are currently in a beta-testing phase. We expect community involvement to start by late summer 2025. First analyses will cover temporal dynamics and investigate the impact of procedural heterogeneity by using individual-participant meta-analytical approaches as well as computational modelling.</p>
 
-<div class="card-horizontal" data-style="">
-  <a href="https://elifesciences.org/articles/92700" aria-label="Associations between exposure to early adversity and fear learning processes" class="card-image">
-    <img src="/images/icons/diagram-project_small.svg" alt="Associations between exposure to early adversity and fear learning processes" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://elifesciences.org/articles/92700" class="card-title">
-        Associations between exposure to early adversity and fear learning processes
-    </a>
-    
-
-    
-      <span class="card-subtitle">Team - <a href="/members/julia_ruge.html">Julia Ruge</a>, <a href="/members/paul_pfaff.html">Paul Pfaff</a></span>
-    
-    
-    
-      <p>
-        This project investigates how early adversity—an important risk factor for a range of mental health disorders—affects fear learning, generalization and return of fear processes. While patients with anxiety disorders typically show heightened responses to safety cues, previous work suggests that individuals exposed to early adversity may instead be characterized by blunted responses to danger cues, leading to reduced discrimination between safety and threat (for a review see Ruge et al., 2024). In a large cohort (N=180), we combined psychophysiological (SCR, startle), neuroimaging (fMRI) while considering mental health diagnoses and the global assessment of functioning. Preliminary results confirm reduced fear discrimination driven by diminished CS+ responses in individuals exposed to early adversity, with no significant effect of lifetime mental health diagnoses was observed. In addition, we employed item-based content analyses exploring the item and hence content overlap across a wide range of questionnaires used to assess exposure to early adversity (Koppold, Ruge, Hecker &amp; Lonsdorf, 2024). <br> Funding - <a href="https://www.emotionalmemory.de/projects/">DFG, RTG „Emotional Learning and Memory“</a>
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card-horizontal" data-style="">
-  <a href="https://rdc-psychology.org/fearbase/en" aria-label="FEARBASE" class="card-image">
-    <img src="/images/projects/fearbase_square.jpg" alt="FEARBASE" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://rdc-psychology.org/fearbase/en" class="card-title">
-        FEARBASE
-    </a>
-    
-
-    
-      <span class="card-subtitle">Team - <a href="/members/annalena_witte.html">Annalena Witte</a>, <a href="/members/fritz_becker.html">Fritz Becker</a>, <a href="/members/maria_bruntsch.html">Maria Bruntsch</a>, <a href="/members/mana_ehlers.html">Mana Ehlers</a></span>
-    
-    
-    
-      <p>
-        It is our vision to facilitate cumulative science in the field of human fear conditioning research by gathering datasets and hence generating new information while at the same time ensure sustainability of research investments.To achieve this aim, we are developing a cooperative, sustainable, living and dynamically growing database with living analyses and building up a community consortium. The database will initially be based on ‘open data’ and will be enriched with new data sets in the long term. To this end, we develop a data curation and metadata tool that will allow researchers to contribute datasets with minimal effort. The infrastructural tools are developed in collaboration with the Leibniz Institute for Psychology (ZPID, Trier) and are currently in a beta-testing phase. We expect community involvement to start by late summer 2025. First analyses will cover temporal dynamics and investigate the impact of procedural heterogeneity by using individual-participant meta-analytical approaches as well as computational modelling. <br> Funding - Volkswagen Stiftung, Profile Area „Understanding Research – Evaluation and Science Practice “
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20ressource%22" class="tag" data-tooltip='Show items with the tag "ressource"'>
-        ressource
-      </a>
-    
-      <a href="/projects/?search=%22tag:%20database%22" class="tag" data-tooltip='Show items with the tag "database"'>
-        database
-      </a>
-    
-      <a href="/projects/?search=%22tag:%20living-analyses%22" class="tag" data-tooltip='Show items with the tag "living-analyses"'>
-        living-analyses
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card-horizontal" data-style="">
-  <a href="https://rr.peercommunityin.org/articles/rec?id=743" aria-label="Meta Science in Fear conditioning research 1 2" class="card-image">
-    <img src="/images/icons/diagram-project_small.svg" alt="Meta Science in Fear conditioning research 1 2" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://rr.peercommunityin.org/articles/rec?id=743" class="card-title">
-        Meta Science in Fear conditioning research (1 &amp; 2)
-    </a>
-    
-
-    
-      <span class="card-subtitle">Team - <a href="/members/maria_bruntsch.html">Maria Bruntsch (1)</a>, <a href="/members/maren_klingelhoefer.html">Maren Klingelhöfer-Jens</a></span>
-    
-    
-    
-      <p>
-        Dysregulated processing of fear and safety has been linked to anxiety symptoms and related traits, e.g., neuroticism, intolerance of uncertainty or negative emotionality. Yet, different studies focus on different aspects of fear acquisition and extinction, outcome measures, and anxiety-related traits, making an integrative approach to the association of anxiety-related traits and fear acquisition and extinction difficult. This limits effective translation of experimental insights on these etiology- and treatment-relevant processes to the clinic. To address this gap, a systematic literature search and meta-analysis of the associations between anxiety-related traits and fear acquisition and extinction will be conducted following PRISMA guidelines. A series of nested random effects models will be used to investigate associations between anxiety-related traits and frequently used outcome measures of fear acquisition and extinction (i.e., psychophysiological and self-reports). Different questionnaires used in these studies to assess anxiety-related traits will be further used as moderators to investigate whether identified associations between fear acquisition and extinction performance and traits are contingent on the specific questionnaire used. Furthermore, an item-based content analysis of the questionnaires used in the identified studies will be conducted to assess content overlap between the different anxiety-related traits. This analysis will help to evaluate the content-based similarities (or dissimilarities) between different anxiety-related traits as assessed through different questionnaires and hence further inform the interpretation of the meta-analytical results. <br> Funding - <a href="https://gepris.dfg.de/gepris/projekt/501533638">Individual Research Grant (1)</a> &amp; <a href="https://gepris.dfg.de/gepris/projekt/451328127">Individual Research Grant (2)</a>
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card-horizontal" data-style="">
-  <a aria-label="Individual differences in Fear conditioning research" class="card-image">
-    <img src="/images/projects/individual_differences_squared.jpg" alt="Individual differences in Fear conditioning research" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a class="card-title">
-        Individual differences in Fear conditioning research
-    </a>
-    
-
-    
-      <span class="card-subtitle">Team - <a href="/members/mana_ehlers.html">Mana Ehlers</a></span>
-    
-    
-    
-      <p>
-        Funding - University of Bielefeld
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-  </section>
-
-  
-  
-  
-
-  <section class="background" data-size="page">
-    <!--
-  <background></background>
-  <dark></dark>
-  <size></size>
--->
+<hr>
 
 <h2 id="past-projects">Past Projects</h2>
 
-<div class="card" data-style="small">
-  <a href="https://gepris.dfg.de/gepris/projekt/273022965" aria-label="EIFEL-ROF" class="card-image">
-    <img src="/images/projects/eifel-rof_square.jpg" alt="EIFEL-ROF" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
+<h3 id="eifel-rof"><a href="/projects/eifel-rof/">EIFEL-ROF</a></h3>
 
-  <div class="card-text">
-    
-      <a href="https://gepris.dfg.de/gepris/projekt/273022965" class="card-title">
-        EIFEL-ROF
-    </a>
-    
+<p>The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets.</p>
 
-    
-      <span class="card-subtitle">Team - Christian Merz, and the fear conditioning community</span>
-    
-
-    
-      <p>
-        The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets. <br> Funding - DFG Scientific network grant
-
-      </p>
-    
-
-    
-      
-
-
-  <div class="tags" data-link="/projects/">
-    
-      <a href="/projects/?search=%22tag:%20publication%22" class="tag" data-tooltip='Show items with the tag "publication"'>
-        publication
-      </a>
-    
-  </div>
-
-
-    
-  </div>
-</div>
-
-<div class="card" data-style="small">
-  <a href="https://gepris.dfg.de/gepris/projekt/234587233" aria-label="CRC 58 Fear Anxiety Anxiety Disorders" class="card-image">
-    <img src="/images/icons/diagram-project_small.svg" alt="CRC 58 Fear Anxiety Anxiety Disorders" loading="lazy" onerror="this.src = '/images/icons/fallback.svg'; this.onerror = null;">
-  </a>
-
-  <div class="card-text">
-    
-      <a href="https://gepris.dfg.de/gepris/projekt/234587233" class="card-title">
-        CRC 58 Fear Anxiety Anxiety Disorders
-    </a>
-    
-
-    
-      <span class="card-subtitle">Team - <a href="/members/maren_klingelhoefer.html">Maren Klingelhöfer-Jens</a>, <a href="/members/manuel_kuhn.html">Manuel Kuhn</a>, <a href="/members/robert_scharfenort.html">Robert Schafenort</a></span>
-    
-
-    
-      <p>
-        Funding - <a href="https://gepris.dfg.de/gepris/projekt/78148948">DFG CRC 58 Fear, Anxiety, Anxiety Disorders</a>
-
-      </p>
-    
-
-    
-  </div>
-</div>
+<h3 id="fear-anxiety-anxiety-disorders"><a href="/projects/fear-anxiety-anxiety-disorders/">Fear, Anxiety, Anxiety Disorders</a></h3>
   </section>
 
 
