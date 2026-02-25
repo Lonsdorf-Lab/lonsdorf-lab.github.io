@@ -4,7 +4,7 @@
 ------------------------------------------------------------
 {% endcomment %}
 
-{% assign filename = page.path | split: "/" | last | remove: ".html" %}
+{% assign filename = page.path | split: "/" | last | remove: ".html" | remove: ".md" %}
 
 {% if page.name and page.name != filename %}
   
