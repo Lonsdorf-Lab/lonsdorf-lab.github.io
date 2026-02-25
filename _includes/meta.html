@@ -6,7 +6,7 @@
 
 {% assign filename = page.path | split: "/" | last | remove: ".html" | remove: ".md" %}
 
-{% if page.name and page.name != filename %}
+{% if page.path contains "members/" and filename != "index" %}
   
   {% assign name_parts = filename | split: "_" %}
   {% assign membername = "" %}
