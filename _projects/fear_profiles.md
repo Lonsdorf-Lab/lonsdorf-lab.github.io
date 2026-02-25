@@ -13,10 +13,10 @@ funders:
     url: https://gepris.dfg.de/gepris/projekt/405663121?language=en
 
 members:
-  - alina-koppold
-  - mana-ehlers
-  - lennart-wieser
-  - alexandros-kastrinogiannis
+  - alina_koppold
+  - mana_ehlers
+  - lennart_wieser
+  - alexandros_kastrinogiannis
 
 tags:
   - publication

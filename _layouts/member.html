@@ -33,6 +33,7 @@ layout: default
 {% assign member_projects = site.projects | where_exp: "p", "p.members contains member_slug" %}
 
 {% if member_projects.size > 0 %}
+
 ## Projects
 
 <ul>
