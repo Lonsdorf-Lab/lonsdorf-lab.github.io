@@ -14,11 +14,9 @@ funders:
   - name: German Research Foundation (Individual Research Grant 2)
     type: Foundation
     url: https://gepris.dfg.de/gepris/projekt/451328127
-
 members:
   - maria_bruntsch
   - maren_klingelhoefer
-
 tags:
   - publication
 ---
