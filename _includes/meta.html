@@ -1,87 +1,92 @@
-{% assign filename = page.path | split: "/" | last %}
+{% comment %}
+------------------------------------------------------------
+1) Generate dynamic page title
+------------------------------------------------------------
+{% endcomment %}
+
+{% assign filename = page.path | split: "/" | last | remove: ".html" %}
+
 {% if page.name and page.name != filename %}
-  {% assign title = page.name %}
-{% elsif page.title %}
-  {% assign title = page.title %}
+  
+  {% assign name_parts = filename | split: "_" %}
+  {% assign membername = "" %}
+  
+  {% for part in name_parts %}
+    {% assign capitalized = part | downcase | capitalize %}
+    {% assign membername = membername | append: capitalized %}
+    {% unless forloop.last %}
+      {% assign membername = membername | append: " " %}
+    {% endunless %}
+  {% endfor %}
+  
+  {% assign dynamic_title = membername %}
+  
 {% else %}
-  {% assign title = nil %}
+  
+  {% assign dynamic_title = page.title | default: site.title %}
+  
 {% endif %}
 
-{% assign title = title | xml_escape %}
+{% assign full_title = dynamic_title | append: " | Lonsdorf Lab" %}
 
-{% assign fulltitle = "" | split: "," %}
-{% if title and title != "" %}
-  {% assign fulltitle = fulltitle | push: title %}
-{% endif %}
-{% if site.title and site.title != "" %}
-  {% assign fulltitle = fulltitle | push: site.title %}
-{% endif %}
-{% assign fulltitle = fulltitle | push: "Prof. Dr. Tina B. Lonsdorf" %}
-{% assign fulltitle = fulltitle | join: " | " %}
-
-{% assign subtitle = site.subtitle %}
+{% comment %}
+------------------------------------------------------------
+2) Basic Meta Setup
+------------------------------------------------------------
+{% endcomment %}
 
 {% assign description = page.description | default: site.description %}
-{% if site.subtitle %}
-  {% capture description -%}
-    {{ site.subtitle }}. {{ description }}
-  {%- endcapture %}
-{% endif %}
-{% capture url -%}
-  {{ site.url }}{{ site.baseurl }}
-{%- endcapture %}
-
 {% assign description = description | xml_escape %}
 
-{% assign png = "images/icon.png" | file_exists %}
-{% assign jpg = "images/icon.jpg" | file_exists %}
-{% assign icon = png | default: jpg | relative_url %}
-
-{% assign jpg = "images/misc/share.jpg" | file_exists %}
-{% assign png = "images/share.png" | file_exists %}
-{% assign share = jpg | default: png | relative_url %}
+{% capture url %}
+  {{ site.url }}{{ page.url }}
+{% endcapture %}
 
 {% assign published = page.date | date_to_xmlschema %}
 {% assign updated = page.last_modified_at | date_to_xmlschema %}
-
 {% assign feed = "feed.xml" | absolute_url %}
+
+{% comment %}
+------------------------------------------------------------
+3) Icons & Share Image
+------------------------------------------------------------
+{% endcomment %}
+
+{% assign icon = "images/icon.png" | relative_url %}
+{% assign share_image = "images/misc/share.jpg" | absolute_url %}
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="google-site-verification" content="k78aQDO6ffqptQUuq5E9VH4rf-kmM1NKk6qCA1hvTRA" /> 
+<meta name="google-site-verification" content="k78aQDO6ffqptQUuq5E9VH4rf-kmM1NKk6qCA1hvTRA" />
 <link rel="icon" href="{{ icon }}">
 
-<title>Lonsdorf Lab | Prof. Dr. Tina B. Lonsdorf</title>
+<title>{{ full_title }}</title>
 
-<meta name="title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
-<meta name="description" content="The Lonsdorf Lab investigates fear, anxiety, and their regulation using cognitive neuroscience, psychophysiology, and behavioral science to understand mental health.">
+<meta name="title" content="{{ full_title }}">
+<meta name="description" content="{{ description }}">
 
-<meta property="og:title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
+<meta property="og:title" content="{{ full_title }}">
 <meta property="og:site_name" content="Lonsdorf Lab">
-<meta property="og:description" content="The Lonsdorf Lab investigates fear, anxiety, and their regulation using cognitive neuroscience, psychophysiology, and behavioral science to understand mental health.">
-<meta property="og:url" content="https://lonsdorf-lab.github.io{{ page.url }}">
-<meta property="og:image" content="https://lonsdorf-lab.github.io/images/misc/share.jpg">
+<meta property="og:description" content="{{ description }}">
+<meta property="og:url" content="{{ url }}">
+<meta property="og:image" content="{{ share_image }}">
 <meta property="og:locale" content="en_US">
 
-<meta name="twitter:title" content="{{ page.title }} | - Prof. Dr. Tina B. Lonsdorf">
-<meta name="twitter:description" content="{{ page.description | default: site.description }}">
-<meta property="twitter:url" content="{{ url }}">
-<meta property="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://lonsdorf-lab.github.io/images/misc/share.jpg">
+<meta name="twitter:title" content="{{ full_title }}">
+<meta name="twitter:description" content="{{ description }}">
+<meta name="twitter:url" content="{{ url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ share_image }}">
 
 {% if page.author %}
   <meta name="author" content="{{ page.author | xml_escape }}">
-  <meta name="og:type" content="article">
-  <meta name="og:updated_time" content="{{ updated }}">
-  <meta name="article:published_time" content="{{ published }}">
-  <meta name="article:modified_time" content="{{ updated }}">
+  <meta property="og:type" content="article">
+  <meta property="og:updated_time" content="{{ updated }}">
+  <meta property="article:published_time" content="{{ published }}">
+  <meta property="article:modified_time" content="{{ updated }}">
   <meta name="revised" content="{{ updated }}">
 {% else %}
   <meta property="og:type" content="website">
 {% endif %}
 
 <link rel="alternate" type="application/rss+xml" href="{{ feed }}">
-
-
-<!-- <meta name="description" content="{{ description }}"> -->
-<!-- <meta property="og:description" content="{{ page.description | default: site.description }}"> -->
