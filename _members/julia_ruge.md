@@ -1,6 +1,7 @@
 ---
 group: member
 name: Julia Ruge
+id: julia_ruge
 image: images/members/ruge.jpeg
 role: phd
 affiliation: UKE Hamburg

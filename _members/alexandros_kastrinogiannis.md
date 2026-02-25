@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Alexandros Kastrinogiannis
+id: alexandros_kasstrinogiannis
 image: images/members/kastrinogiannis.jpg
 role: postdoc
 affiliation: Max Planck Institute for Human Cognitive and Brain Sciences

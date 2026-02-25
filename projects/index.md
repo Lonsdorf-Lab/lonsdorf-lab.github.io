@@ -12,7 +12,7 @@ nav:
 Get a glimpse into the work we do: from ongoing investigations to completed projects.
 
 
-## Current Projects
+## {% include icon.html icon="fa-solid fa-hourglass" %} Current Projects
 
 {% assign current_projects = site.projects | where: "group", "on-going" %}
 
@@ -25,7 +25,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ---
 
-## Past Projects
+## {% include icon.html icon="fa-solid fa-check" %} Past Projects
 
 {% assign past_projects = site.projects | where: "group", "finished" %}
 

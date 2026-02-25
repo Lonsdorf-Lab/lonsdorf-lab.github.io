@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Ondřej Zíka
+id: ondrej_zika
 image: images/members/zika.jpg
 role: assistant-professor
 affiliation: University College Dublin, Ireland

@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Sabrina Gado
+id: sabrina_gado
 image: images/misc/default_member_photo.jpg
 role: postdoc
 affiliation: University of Würzburg

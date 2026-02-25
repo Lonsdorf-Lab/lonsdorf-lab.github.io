@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Annalena Witte
+id: annalena_witte
 image: images/members/witte.jpg
 role: phd
 affiliation: Bielefeld University

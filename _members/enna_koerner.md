@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Enna Körner
+id: enna_koerner
 image: images/members/koerner.JPG
 role: undergrad
 affiliation: University Bielefeld

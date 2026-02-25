@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Rachel Sjouwerman
+id: rachel_sjouwerman
 image: images/misc/default_member_photo.jpg
 role: postdoc
 affiliation: University of Maastricht

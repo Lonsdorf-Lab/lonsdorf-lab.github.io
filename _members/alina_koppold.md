@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Alina Koppold
+id: alina_koppold
 image: images/members/koppold.jpeg
 role: postdoc
 affiliation: Bielefeld University

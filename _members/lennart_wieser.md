@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Lennart Wieser
+id: lennart_wieser
 image: images/members/wieser.png
 role: phd
 affiliation: Bielefeld University

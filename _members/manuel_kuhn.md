@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Manuel Kuhn
+id: manuel_kuhn
 image: images/misc/default_member_photo.jpg
 role: postdoc
 affiliation: Harvard Medical School

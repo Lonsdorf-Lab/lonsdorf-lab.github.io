@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Maria Bruntsch
+id: maria_bruntsch
 image: images/members/bruntsch.jpg
 role: phd
 affiliation: Bielefeld University

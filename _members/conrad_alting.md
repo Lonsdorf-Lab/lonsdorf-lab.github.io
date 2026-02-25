@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Conrad Alting
+id: conrad_alting
 image: images/members/alting.jpg
 role: lab-manager
 affiliation: Bielefeld University

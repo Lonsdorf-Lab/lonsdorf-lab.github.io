@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Julia Senfft
+id: julia_senfft
 image: images/members/senfft.png
 role: undergrad
 affiliation: Bielefeld University

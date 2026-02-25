@@ -20,18 +20,19 @@ layout: default
   {% if page.members %}
     <h2>Team</h2>
     <ul>
-      {% for slug in page.members %}
-        {% assign member = site.pages | where_exp: "p", "p.url contains slug" | first %}
+        {% for member_id in page.members %}
+        {% assign member = site.pages | where: "id", member_id | first %}
         {% if member %}
-          <li>
+            <li>
             <a href="{{ member.url | relative_url }}">
-              {{ member.name }}
+                {{ member.name }}
             </a>
-          </li>
+            </li>
         {% endif %}
-      {% endfor %}
+        {% endfor %}
     </ul>
   {% endif %}
+
 
 
   {% comment %}
