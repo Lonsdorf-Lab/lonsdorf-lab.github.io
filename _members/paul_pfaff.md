@@ -1,7 +1,7 @@
 ---
 group: member
 name: Paul Pfaff
-id: paul_pfaff
+member_id: paul_pfaff
 image: images/members/pfaff.jpeg
 role: phd
 affiliation: UKE Hamburg

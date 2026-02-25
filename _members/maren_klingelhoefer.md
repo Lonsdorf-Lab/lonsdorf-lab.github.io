@@ -1,7 +1,7 @@
 ---
 group: member
 name: Maren Klingelhöfer-Jens
-id: maren_klingelhoefer
+member_id: maren_klingelhoefer
 image: images/members/klingelhoefer.jpg
 role: postdoc
 affiliation: UKE Hamburg

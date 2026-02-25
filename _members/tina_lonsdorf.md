@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Tina Lonsdorf
+member_id: tina_lonsdorf
 image: images/members/lonsdorf.jpg
 role: principal-investigator
 affiliation: Bielefeld University

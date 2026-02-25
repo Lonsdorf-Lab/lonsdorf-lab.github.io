@@ -1,7 +1,7 @@
 ---
 group: alum
 name: Robert Scharfenort
-id: robert_scharfenort
+member_id: robert_scharfenort
 image: images/misc/default_member_photo.jpg
 role: postdoc
 ---
