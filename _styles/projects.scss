@@ -2,26 +2,31 @@
    Project – Funding Section Styling
 ============================================================ */
 
+/* Keep project title centered */
 .project h1 {
-  text-align: center;   /* keep title centered */
+  text-align: center;
 }
 
-.project .funders {
-  text-align: left;     /* only funding section left-aligned */
+/* Override global body centering ONLY for funding section */
+.project .funders,
+.project .funders * {
+  text-align: left !important;
 }
 
+/* Individual funder block spacing */
 .project .funder-block {
   margin-bottom: 1.2rem;
 }
 
+/* Funder name styling */
 .project .funder-name {
   font-weight: var(--bold);
 }
 
+/* Additional funder information */
 .project .funder-meta {
-  text-align: left;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: var(--gray);  /* neutral gray */
+  color: var(--gray);   /* theme gray variable */
   line-height: 1.4;
 }
