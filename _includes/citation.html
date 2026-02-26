@@ -36,7 +36,7 @@
       {% comment %}
       --- Authors (Alias-Based Member Linking + Highlight Current Member)
       {% endcomment %}
-          
+
       <div class="citation-member-authors">
       
         {% if citation.authors %}
@@ -123,13 +123,12 @@
           {{ citation.date | default: "[no date]" | date: "%d %b %Y" }}
         </span>
 
-        {% if citation.link %}
+        {% if citation.id %}
           &nbsp;·&nbsp;
-          <a href="{{ citation.link | relative_url | xml_escape }}" class="link-doi">
-            DOI
-          </a>
+          <span class="citation-member-doi">
+            doi: {{ citation.id | remove: "doi:" }}
+          </span>
         {% endif %}
-
       </div>
 
     </div>

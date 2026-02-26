@@ -24,7 +24,7 @@
 }
 
 .current-author .profile-link {
-  color: var(--primary);
+  color: var(--black);
 }
 
 /* Ensure all citation layouts are left-aligned */
@@ -33,4 +33,10 @@
 .citation-member,
 .citation-text {
   text-align: left;
+}
+
+.citation-member-doi {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-family: var(--code);
 }
