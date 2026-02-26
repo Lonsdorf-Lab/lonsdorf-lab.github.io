@@ -24,10 +24,13 @@ members:
 external_contributors:
   - name: Katharina Blask
     affiliation: Leibniz-Institut für Psychologie
-  - name: Joel Thomas
+    url: https://leibniz-psychology.org/profil-katarina-blask
+  - name: Joel Beckmann
     affiliation: Leibniz-Institut für Psychologie
-  - name: Thomas Wegener
+    url: https://leibniz-psychology.org/profil-joel-beckmann
+  - name: Thomas Wegner
     affiliation: Leibniz-Institut für Psychologie
+    url: https://leibniz-psychology.org/profil-thomas-wegner
 tags:
   - resource
   - database
