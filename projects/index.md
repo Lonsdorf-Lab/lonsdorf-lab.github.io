@@ -17,7 +17,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {% for project in current_projects %}
 
-### [{{ project.title }}]({{ project.url | relative_url }})
+#### [{{ project.title }}]({{ project.url | relative_url }})
 
 <div class="project-description">
 
@@ -38,7 +38,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {% for project in past_projects %}
 
-### [{{ project.title }}]({{ project.url | relative_url }})
+#### [{{ project.title }}]({{ project.url | relative_url }})
 
 <div class="project-description">
 
