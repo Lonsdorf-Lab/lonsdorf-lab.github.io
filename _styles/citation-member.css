@@ -1,0 +1,19 @@
+.citation-member {
+  margin-bottom: 1rem;
+}
+
+.citation-member-title {
+  font-weight: var(--semi-bold);
+}
+
+.citation-member-authors {
+  font-size: 0.95rem;
+  margin: 0.2rem 0;
+}
+
+.citation-member-details {
+  font-size: 0.85rem;
+  color: var(--gray);
+}
+
+/*# sourceMappingURL=citation-member.css.map */
