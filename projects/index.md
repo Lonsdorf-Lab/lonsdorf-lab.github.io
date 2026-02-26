@@ -19,16 +19,10 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ### [{{ project.title }}]({{ project.url | relative_url }})
 
-{% assign max_chars = 350 %}
-{% assign full_text = project.description | strip_html %}
-{% assign text_length = full_text | size %}
-
 <div class="project-description">
-  {% if text_length > max_chars %}
-    {{ full_text | truncate: max_chars, "…" }}
-  {% else %}
-    {{ full_text }}
-  {% endif %}
+
+  {{ full_text | truncatewords: 50 }}
+
   <a href="{{ project.url | relative_url }}" class="project-description-link">
     see more<span class="arrow">→</span>
   </a>
@@ -46,16 +40,10 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ### [{{ project.title }}]({{ project.url | relative_url }})
 
-{% assign max_chars = 350 %}
-{% assign full_text = project.description | strip_html %}
-{% assign text_length = full_text | size %}
-
 <div class="project-description">
-  {% if text_length > max_chars %}
-    {{ full_text | truncate: max_chars, "…" }}
-  {% else %}
-    {{ full_text }}
-  {% endif %}
+
+  {{ full_text | truncatewords: 50 }}
+
   <a href="{{ project.url | relative_url }}" class="project-description-link">
     see more<span class="arrow">→</span>
   </a>
