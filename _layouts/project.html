@@ -79,9 +79,7 @@ TEAM (Sorted by role, then last name)
         {% endif %}
 
         <li>
-          <a href="{{ member.url | relative_url }}">
-            {{ display_name }}
-          </a>
+          {% include profile_link.html url=member.url text=display_name %}
         </li>
 
       {% endif %}
@@ -102,9 +100,7 @@ TEAM (Sorted by role, then last name)
       {% for person in page.external_contributors %}
         <li>
           {% if person.url %}
-            <a href="{{ person.url }}" target="_blank" rel="noopener">
-              {{ person.name }}
-            </a>
+            {% include profile_link.html url=person.url text=person.name %}
           {% else %}
             {{ person.name }}
           {% endif %}

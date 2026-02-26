@@ -78,9 +78,7 @@
 
             {% if matched_member %}
               {% capture author_output %}
-                <a href="{{ matched_member.url | relative_url }}">
-                  {{ author }}
-                </a>
+                {% include profile_link.html url=matched_member.url text=author %}
               {% endcapture %}
             {% else %}
               {% assign author_output = author %}
