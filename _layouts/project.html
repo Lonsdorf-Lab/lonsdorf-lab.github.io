@@ -61,9 +61,10 @@ layout: default
     </ul>
   {% endif %}
 
-  {% comment %}
+
+{% comment %}
 ============================================================
-FUNDERS (Structured Block Layout)
+FUNDERS (Structured Block)
 ============================================================
 {% endcomment %}
 
@@ -73,13 +74,12 @@ FUNDERS (Structured Block Layout)
   <div class="funders">
 
     {% for funder in page.funders %}
-      <div class="funder-block" style="margin-bottom: 1.2rem;">
+      <div class="funder-block">
 
         {% comment %}
-        --- Funder Name (bold, linked if URL exists)
+        --- Funder Name (bold, optionally linked)
         {% endcomment %}
-
-        <div>
+        <div class="funder-name">
           {% if funder.url %}
             <strong>
               <a href="{{ funder.url }}" target="_blank" rel="noopener">
@@ -94,9 +94,8 @@ FUNDERS (Structured Block Layout)
         {% comment %}
         --- Identifier
         {% endcomment %}
-
         {% if funder.identifier %}
-          <div style="margin-left: 1rem;">
+          <div class="funder-meta">
             {{ funder.identifier }}
           </div>
         {% endif %}
@@ -104,9 +103,8 @@ FUNDERS (Structured Block Layout)
         {% comment %}
         --- Description
         {% endcomment %}
-
         {% if funder.description %}
-          <div style="margin-left: 1rem;">
+          <div class="funder-meta">
             {{ funder.description }}
           </div>
         {% endif %}
@@ -116,5 +114,6 @@ FUNDERS (Structured Block Layout)
 
   </div>
 {% endif %}
+
 
 </article>
