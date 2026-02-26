@@ -16,4 +16,20 @@
   color: var(--gray);
 }
 
+.current-author {
+  font-weight: var(--bold);
+}
+
+.current-author .profile-link {
+  color: var(--primary);
+}
+
+/* Ensure all citation layouts are left-aligned */
+.citation-container,
+.citation,
+.citation-member,
+.citation-text {
+  text-align: left;
+}
+
 /*# sourceMappingURL=citation-member.css.map */
