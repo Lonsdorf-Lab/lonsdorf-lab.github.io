@@ -30,30 +30,7 @@
 }
 
 .project-description {
-  display: inline;
-}
-
-.project-description-link {
-  margin-left: 0.4rem;
-  font-size: 0.9rem;
-  color: var(--gray);
-  text-decoration: none;
-  transition: color var(--transition);
-}
-
-.project-description-link .arrow {
-  margin-left: 0.2rem;
-  transition: transform var(--transition);
-}
-
-.project-description-link:hover {
-  color: var(--primary);
-}
-
-.project-description-link:hover .arrow {
-  transform: translateX(3px);
-}.project-description {
-  display: inline;
+  display: block;
 }
 
 .project-description-link {
