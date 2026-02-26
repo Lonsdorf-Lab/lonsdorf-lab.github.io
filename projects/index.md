@@ -21,9 +21,9 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {{ project.description | strip_html | truncatewords: 50 }}
 
-<a href="{{ project.url | relative_url }}" class="project-description-link">
-  see more
-</a>
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">→</span>
+  </a>
 
 {% endfor %}
 
@@ -39,8 +39,8 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 {{ project.description | strip_html | truncatewords: 50 }}
 
-<a href="{{ project.url | relative_url }}" class="project-description-link">
-  see more
-</a>
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">→</span>
+  </a>
 
 {% endfor %}
