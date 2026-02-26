@@ -46,17 +46,11 @@
       ============================================================
       {% endcomment %}
 
-      <div
-        class="citation-authors"
-        {% if citation.authors.size > 10 %}
-          data-tooltip="{{ citation.authors | join: ", " | xml_escape }}"
-        {% endif %}
-        tabindex="0"
-      >
+      <div class="citation-authors">
 
         {% if citation.authors %}
 
-          {% assign visible_authors = citation.authors | array_carve: 5 %}
+          {% assign visible_authors = citation.authors %}
           {% assign rendered_authors = "" | split: "" %}
 
           {% for author in visible_authors %}
@@ -97,10 +91,6 @@
           {% endfor %}
 
           {{ rendered_authors | join: ", " }}
-
-          {% if citation.authors.size > 5 %}
-            , …
-          {% endif %}
 
         {% else %}
           [no author info]
