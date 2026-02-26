@@ -62,35 +62,59 @@ layout: default
   {% endif %}
 
   {% comment %}
-  ============================================================
-  FUNDERS
-  ============================================================
-  {% endcomment %}
+============================================================
+FUNDERS (Structured Block Layout)
+============================================================
+{% endcomment %}
 
-  {% if page.funders %}
-    <h2>Funding</h2>
-    <ul>
-      {% for funder in page.funders %}
-        <li>
+{% if page.funders %}
+  <h2>Funding</h2>
+
+  <div class="funders">
+
+    {% for funder in page.funders %}
+      <div class="funder-block" style="margin-bottom: 1.2rem;">
+
+        {% comment %}
+        --- Funder Name (bold, linked if URL exists)
+        {% endcomment %}
+
+        <div>
           {% if funder.url %}
-            <a href="{{ funder.url }}" target="_blank" rel="noopener">
-              {{ funder.name }}
-            </a>
+            <strong>
+              <a href="{{ funder.url }}" target="_blank" rel="noopener">
+                {{ funder.name }}
+              </a>
+            </strong>
           {% else %}
-            {{ funder.name }}
+            <strong>{{ funder.name }}</strong>
           {% endif %}
+        </div>
 
-          {% if funder.identifier %}
-            ({{ funder.identifier }})
-          {% endif %}
+        {% comment %}
+        --- Identifier
+        {% endcomment %}
 
-          {% if funder.description %}
-            <br>
-            <small>{{ funder.description }}</small>
-          {% endif %}
-        </li>
-      {% endfor %}
-    </ul>
-  {% endif %}
+        {% if funder.identifier %}
+          <div style="margin-left: 1rem;">
+            {{ funder.identifier }}
+          </div>
+        {% endif %}
+
+        {% comment %}
+        --- Description
+        {% endcomment %}
+
+        {% if funder.description %}
+          <div style="margin-left: 1rem;">
+            {{ funder.description }}
+          </div>
+        {% endif %}
+
+      </div>
+    {% endfor %}
+
+  </div>
+{% endif %}
 
 </article>
