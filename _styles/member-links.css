@@ -1,24 +1,25 @@
-@charset "UTF-8";
 /* ============================================================
-   Member Page Links – Plain Text + External Arrow
+   Semantic Profile Links
 ============================================================ */
-/* Member links everywhere except team overview page */
-body:not(.team-page) a[href*="/members/"] {
+.profile-link {
   color: inherit;
   text-decoration: none;
   position: relative;
+  font-weight: inherit;
 }
 
-body:not(.team-page) a[href*="/members/"]::after {
-  content: "↗";
-  font-size: 0.75em;
+.profile-link::after {
+  content: "";
+  display: inline-block;
+  width: 0.6em;
+  height: 0.6em;
   margin-left: 0.25rem;
-  vertical-align: super;
-  opacity: 0.6;
-  transition: opacity var(--transition), transform var(--transition);
+  border-top: 1px solid currentColor;
+  border-right: 1px solid currentColor;
+  transform: rotate(45deg) translateY(-1px);
 }
 
-body:not(.team-page) a[href*="/members/"]:hover::after {
+.profile-link:hover::after {
   opacity: 1;
   transform: translateY(-1px);
 }
