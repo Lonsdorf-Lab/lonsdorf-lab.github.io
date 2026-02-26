@@ -1,11 +1,29 @@
 <!DOCTYPE html>
 <html lang="en" data-dark="false">
   {% include head.html %}
-  <body>
+
+  {% comment %}
+  ------------------------------------------------------------
+  Body classes:
+  - page-specific class based on slug
+  - special class for team overview page
+  ------------------------------------------------------------
+  {% endcomment %}
+
+  <body
+    class="
+      {% if page.url == '/team/' %}team-page{% endif %}
+      page-{{ page.slug | default: 'home' }}
+    "
+  >
+
     {% include header.html %}
+
     <main>
       {% include content.html content=content %}
     </main>
+
     {% include footer.html %}
+
   </body>
 </html>
