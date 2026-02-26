@@ -11,7 +11,7 @@ description: >
 funders:
   - name: German Research Foundation
     identifier: GRK 2753 - Emotional Learning and Memory
-    dfg_programme:  "Programme: Research Training Groups"
+    programme:  "Programme: Research Training Groups"
     project_number: Project number 449640848
     url: https://gepris.dfg.de/gepris/projekt/449640848
     type: Foundation

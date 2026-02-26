@@ -11,27 +11,48 @@ layout: default
     <p>{{ page.description }}</p>
   {% endif %}
 
-  {% comment %}
-  ============================================================
-  TEAM (Internal Members)
-  ============================================================
-  {% endcomment %}
+{% comment %}
+============================================================
+TEAM (Internal Members, prefixes in types.yaml)
+============================================================
+{% endcomment %}
 
-  {% if page.members %}
-    <h2>Team</h2>
-    <ul>
-        {% for member_id in page.members %}
-        {% assign member = site.members | where: "member_id", member_id | first %}
-        {% if member %}
-            <li>
-            <a href="{{ member.url | relative_url }}">
-                {{ member.name }}
-            </a>
-            </li>
+{% if page.members %}
+  <h2>Team</h2>
+  <ul>
+    {% for member_id in page.members %}
+
+      {% assign member = site.members | where: "member_id", member_id | first %}
+
+      {% if member %}
+
+        {% assign display_name = member.name %}
+
+        {% if member.role %}
+          {% assign role_data = site.data.types[member.role] %}
+          {% if role_data and role_data.prefix %}
+            {% assign display_name = role_data.prefix | append: " " | append: member.name %}
+          {% endif %}
         {% endif %}
-        {% endfor %}
-    </ul>
-  {% endif %}
+
+        <li>
+          <a href="{{ member.url | relative_url }}">
+            {{ display_name }}
+          </a>
+        </li>
+
+      {% else %}
+        {% comment %}
+        Debug fallback (optional)
+        {% endcomment %}
+        <li style="color: red;">
+          Missing member: {{ member_id }}
+        </li>
+      {% endif %}
+
+    {% endfor %}
+  </ul>
+{% endif %}
 
 
 
@@ -77,7 +98,7 @@ FUNDERS (Structured Block)
       <div class="funder-block">
 
         {% comment %}
-        --- Funder Name (bold, optionally linked)
+        --- 1 Funder Name (bold, optionally linked)
         {% endcomment %}
         <div class="funder-name">
           {% if funder.url %}
@@ -92,7 +113,7 @@ FUNDERS (Structured Block)
         </div>
 
         {% comment %}
-        --- Identifier
+        --- 2 Identifier
         {% endcomment %}
         {% if funder.identifier %}
           <div class="funder-meta">
@@ -101,7 +122,43 @@ FUNDERS (Structured Block)
         {% endif %}
 
         {% comment %}
-        --- Description
+        --- 3 Project
+        {% endcomment %}
+        {% if funder.project %}
+          <div class="funder-meta">
+            {{ funder.project }}
+          </div>
+        {% endif %}
+
+        {% comment %}
+        --- 4 Programme
+        {% endcomment %}
+        {% if funder.programme %}
+          <div class="funder-meta">
+            {{ funder.programme }}
+          </div>
+        {% endif %}
+
+        {% comment %}
+        --- 5 Project Number
+        {% endcomment %}
+        {% if funder.project_number %}
+          <div class="funder-meta">
+            {{ funder.project_number }}
+          </div>
+        {% endif %}
+
+        {% comment %}
+        --- 6 Funding Period
+        {% endcomment %}
+        {% if funder.funding_period %}
+          <div class="funder-meta">
+            {{ funder.funding_period }}
+          </div>
+        {% endif %}
+
+        {% comment %}
+        --- 7 Description (optional, last)
         {% endcomment %}
         {% if funder.description %}
           <div class="funder-meta">
@@ -114,6 +171,7 @@ FUNDERS (Structured Block)
 
   </div>
 {% endif %}
+
 
 
 </article>

@@ -4,18 +4,22 @@
 principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
+  prefix: "Prof. Dr."
 
 professor:
   icon: fa-solid fa-microscope
-  description: Professor / Head of department
+  description: Head of department
+  prefix: "Prof. Dr."
 
 assistant-professor:
   icon: fa-solid fa-microscope
   description: Assistant Professor
-
+  prefix: "Prof. Dr."
+  
 postdoc:
   icon: fa-solid fa-glasses
   description: Postdoctoral Researcher
+  prefix: "Dr."
 
 phd:
   icon: fa-solid fa-graduation-cap

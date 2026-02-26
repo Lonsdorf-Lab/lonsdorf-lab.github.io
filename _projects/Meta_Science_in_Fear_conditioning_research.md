@@ -10,14 +10,14 @@ description: >
 
 funders:
   - name: German Research Foundation
-    project: Project "Systematically estimating ‘replicability’ by using Fear Conditioning Research as a case example (FEAR-REP)"
+    project: 'Project "Systematically estimating ‘replicability’ by using Fear Conditioning Research as a case example (FEAR-REP)"'
     programme: "Programme:  Research Grants"
     url: https://gepris.dfg.de/gepris/projekt/501533638
     project_number: Project number 501533638
     funding_period: "Term: since 2022"
     type: Foundation
   - name: German Research Foundation
-    project: Project "Leveraging (dynamically growing) Individual Participant Data Meta-Analyses to Investigate Individual Differences, Learning Dynamics, and Key Outcome Measures in conditioned Responding across a large number of individual studies"
+    project: 'Project "Leveraging (dynamically growing) Individual Participant Data Meta-Analyses to Investigate Individual Differences, Learning Dynamics, and Key Outcome Measures in conditioned Responding across a large number of individual studies"'
     programme: "Programme:  Research Grants"
     url: https://gepris.dfg.de/gepris/projekt/451328127
     project_number: Project number 451328127
