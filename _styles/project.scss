@@ -3,30 +3,30 @@
 ============================================================ */
 
 /* Keep project title centered */
-.project h1 {
+section.background .project h1 {
   text-align: center;
 }
 
-/* Override global body centering ONLY for funding section */
-.project .funders,
-.project .funders * {
-  text-align: left !important;
+/* Override inherited body centering inside funding section */
+section.background .project .funders,
+section.background .project .funders * {
+  text-align: left;
 }
 
 /* Individual funder block spacing */
-.project .funder-block {
+section.background .project .funder-block {
   margin-bottom: 1.2rem;
 }
 
-/* Funder name styling */
-.project .funder-name {
+/* Funder name */
+section.background .project .funder-name {
   font-weight: var(--bold);
 }
 
-/* Additional funder information */
-.project .funder-meta {
+/* Additional funder info */
+section.background .project .funder-meta {
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: var(--gray);   /* theme gray variable */
+  color: var(--gray);
   line-height: 1.4;
 }
