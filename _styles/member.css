@@ -1,0 +1,11 @@
+/* Restrict section divider width to main content column */
+.member-main h2 {
+  border-bottom: 1px solid var(--light-gray);
+}
+
+/* Ensure float does not affect heading layout */
+.member-main {
+  overflow: hidden;
+}
+
+/*# sourceMappingURL=member.css.map */

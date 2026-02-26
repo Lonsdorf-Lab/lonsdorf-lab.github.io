@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["member.scss"],"names":[],"mappings":"AAAA;AAEA;EACE;;;AAGF;AAEA;EACE","sourcesContent":["/* Restrict section divider width to main content column */\n\n.member-main h2 {\n  border-bottom: 1px solid var(--light-gray);\n}\n\n/* Ensure float does not affect heading layout */\n\n.member-main {\n  overflow: hidden;\n}\n"],"file":"member.css"}
