@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* ============================================================
+   Project – Funding Section Styling
+============================================================ */
+.project h1 {
+  text-align: center;
+}
+
+.project .funders,
+.project .funders * {
+  text-align: left;
+}
+
+.project .funder-block {
+  margin-bottom: 1.2rem;
+}
+
+.project .funder-name {
+  font-weight: var(--bold);
+}
+
+.project .funder-meta {
+  margin-left: 1rem;
+  font-size: 0.9rem;
+  color: var(--gray);
+  line-height: 1.4;
+}
+
+/*# sourceMappingURL=project.css.map */
