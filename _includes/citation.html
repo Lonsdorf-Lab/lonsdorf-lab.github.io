@@ -40,6 +40,12 @@
         {{ citation.title | default: "[no title info]" }}
       </a>
 
+      {% comment %}
+      ============================================================
+      AUTHORS WITH ALIAS-BASED MEMBER LINKING
+      ============================================================
+      {% endcomment %}
+
       <div
         class="citation-authors"
         {% if citation.authors.size > 10 %}
@@ -47,33 +53,77 @@
         {% endif %}
         tabindex="0"
       >
-        {{
-          citation.authors
-          | join: ","
-          | split: ","
-          | array_carve: 5
-          | join: ", "
-          | markdownify
-          | remove: "<p>" | remove: "</p>"
-          | default: "[no author info]"
-        }}
+
+        {% if citation.authors %}
+
+          {% assign visible_authors = citation.authors | array_carve: 5 %}
+          {% assign rendered_authors = "" | split: "" %}
+
+          {% for author in visible_authors %}
+
+            {% assign matched_member = nil %}
+            {% assign author_clean = author | strip | remove: "." %}
+
+            {% for member in site.members %}
+
+              {% assign possible_names = member.aliases | default: member.name | join: "," | split: "," %}
+
+              {% for alias in possible_names %}
+                {% assign alias_clean = alias | strip | remove: "." %}
+                {% if alias_clean == author_clean %}
+                  {% assign matched_member = member %}
+                  {% break %}
+                {% endif %}
+              {% endfor %}
+
+              {% if matched_member %}
+                {% break %}
+              {% endif %}
+
+            {% endfor %}
+
+            {% if matched_member %}
+              {% capture author_output %}
+                <a href="{{ matched_member.url | relative_url }}">
+                  {{ author }}
+                </a>
+              {% endcapture %}
+            {% else %}
+              {% assign author_output = author %}
+            {% endif %}
+
+            {% assign rendered_authors = rendered_authors | push: author_output %}
+
+          {% endfor %}
+
+          {{ rendered_authors | join: ", " }}
+
+          {% if citation.authors.size > 5 %}
+            , …
+          {% endif %}
+
+        {% else %}
+          [no author info]
+        {% endif %}
+
       </div>
 
       <div class="citation-details">
         <span class="citation-publisher">
           {{- citation.publisher | default: "[no publisher info]" -}}
         </span>
-        &nbsp;·&nbsp;
+        &nbsp;&middot;&nbsp;
         <span class="citation-date">
           {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
         </span>
-        &nbsp;·&nbsp;
+        &nbsp;&middot;&nbsp;
         <span class="citation-id">
           {{- citation.id | default: "[no id info]" -}}
         </span>
       </div>
 
       {% if include.style == "rich" %}
+
         {% if citation.description %}
           <div class="citation-description">
             {{
@@ -88,8 +138,7 @@
         {% if citation.buttons.size > 0 %}
           <div class="citation-buttons">
             {% for button in citation.buttons %}
-              {%
-                include button.html
+              {% include button.html
                 type=button.type
                 icon=button.icon
                 text=button.text
@@ -103,6 +152,7 @@
         {% if citation.tags.size > 0 or citation.repo %}
           {% include tags.html tags=citation.tags repo=citation.repo %}
         {% endif %}
+
       {% endif %}
     </div>
   </div>
