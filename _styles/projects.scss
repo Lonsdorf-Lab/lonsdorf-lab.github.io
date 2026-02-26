@@ -15,12 +15,13 @@
 }
 
 .project .funder-name {
-  font-weight: 600;
+  font-weight: var(--bold);
 }
 
 .project .funder-meta {
+  text-align: left;
   margin-left: 1rem;
   font-size: 0.9rem;
-  color: #6b7280;  /* neutral gray */
+  color: var(--gray);  /* neutral gray */
   line-height: 1.4;
 }
