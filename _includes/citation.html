@@ -34,23 +34,25 @@
       </div>
 
       {% comment %}
-      --- Authors (Alias-Based Member Linking)
+      --- Authors (Alias-Based Member Linking + Highlight Current Member)
       {% endcomment %}
+          
       <div class="citation-member-authors">
-
+      
         {% if citation.authors %}
-
+      
           {% assign rendered_authors = "" | split: "" %}
-
+          {% assign current_member_id = page.member_id %}
+      
           {% for author in citation.authors %}
-
+      
             {% assign matched_member = nil %}
             {% assign author_clean = author | strip | remove: "." %}
-
+      
             {% for member in site.members %}
-
+      
               {% assign possible_names = member.aliases | default: member.name | join: "," | split: "," %}
-
+      
               {% for alias in possible_names %}
                 {% assign alias_clean = alias | strip | remove: "." %}
                 {% if alias_clean == author_clean %}
@@ -58,35 +60,53 @@
                   {% break %}
                 {% endif %}
               {% endfor %}
-
+      
               {% if matched_member %}
                 {% break %}
               {% endif %}
-
+      
             {% endfor %}
-
+      
             {% if matched_member %}
-              {% capture author_output %}
-                {% include profile_link.html
-                   url=matched_member.url
-                   text=author
-                %}
-              {% endcapture %}
+      
+              {% if matched_member.member_id == current_member_id %}
+      
+                {% capture author_output %}
+                  <span class="current-author">
+                    {% include profile_link.html
+                       url=matched_member.url
+                       text=author
+                    %}
+                  </span>
+                {% endcapture %}
+                
+              {% else %}
+                
+                {% capture author_output %}
+                  {% include profile_link.html
+                     url=matched_member.url
+                     text=author
+                  %}
+                {% endcapture %}
+                  
+              {% endif %}
+                  
             {% else %}
               {% assign author_output = author %}
             {% endif %}
-
+                  
             {% assign rendered_authors = rendered_authors | push: author_output %}
-
+                  
           {% endfor %}
-
+                  
           {{ rendered_authors | join: ", " }}
-
+                  
         {% else %}
           [no author info]
         {% endif %}
-
+                  
       </div>
+
 
       {% comment %}
       --- Journal · Date · DOI
