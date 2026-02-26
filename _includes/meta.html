@@ -8,14 +8,22 @@ Links         -> page.links (via site.data.types)
 ============================================================
 {% endcomment %}
 
+
+
 {% comment %}
 ------------------------------------------------------------
-1) DETERMINE PAGE TITLE
+1) DETERMINE PAGE TITLE (Collection-aware, strict)
 ------------------------------------------------------------
 {% endcomment %}
 
-{% if page.group %}
-  
+{% assign dynamic_title = nil %}
+
+{% comment %}
+--- Members (collection or group-based)
+{% endcomment %}
+
+{% if page.collection == "members" %}
+
   {% if page.group == "alum" %}
     {% assign dynamic_title = page.name | append: " (Alumni)" %}
   {% elsif page.group == "coming-soon" %}
@@ -24,11 +32,42 @@ Links         -> page.links (via site.data.types)
     {% assign dynamic_title = page.name %}
   {% endif %}
 
+
+{% comment %}
+--- Projects collection
+{% endcomment %}
+
+{% elsif page.collection == "projects" %}
+
+  {% assign dynamic_title = page.title %}
+
+
+{% comment %}
+--- Homepage
+{% endcomment %}
+
 {% elsif page.type == "home" %}
+
   {% assign dynamic_title = site.title %}
 
+
+{% comment %}
+--- Default pages
+{% endcomment %}
+
 {% else %}
-  {% assign dynamic_title = page.title | default: site.title %}
+
+  {% assign dynamic_title = page.title %}
+
+{% endif %}
+
+
+{% comment %}
+--- Final fallback safeguard (never use .md)
+{% endcomment %}
+
+{% if dynamic_title == nil or dynamic_title == "" %}
+  {% assign dynamic_title = page.basename | replace: "_", " " | replace: "-", " " %}
 {% endif %}
 
 {% assign brand = "Lonsdorf Lab" %}
@@ -39,6 +78,7 @@ Links         -> page.links (via site.data.types)
 
 {% assign share_image = "images/misc/share.jpg" | absolute_url %}
 {% assign icon = "images/icon.png" | relative_url %}
+
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">

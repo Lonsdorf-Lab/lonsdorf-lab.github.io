@@ -11,6 +11,7 @@ description: >
 funders:
   - name: Volkswagen Stiftung, Profile Area "Understanding Research – Evaluation and Science Practice"
     type: Foundation
+    url: https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem
 
 members:
   - annalena_witte
@@ -19,6 +20,13 @@ members:
   - mana_ehlers
   - conrad_alting
 
+external_contributors:
+  - name: Katharina Blask
+    affiliation: Leibniz-Institut für Psychologie
+  - name: Joel Thomas
+    affiliation: Leibniz-Institut für Psychologie
+  - name: Thomas Wegener
+    affiliation: Leibniz-Institut für Psychologie
 tags:
   - resource
   - database
