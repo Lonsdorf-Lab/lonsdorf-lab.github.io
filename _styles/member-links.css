@@ -2,16 +2,14 @@
 /* ============================================================
    Member Page Links – Plain Text + External Arrow
 ============================================================ */
-/* Target all links pointing to /members/ */
-a[href*="/members/"] {
-  color: inherit; /* Use surrounding text color */
-  text-decoration: none; /* Remove underline */
-  font-weight: inherit; /* Keep natural weight */
+/* Member links everywhere except team overview page */
+body:not(.team-page) a[href*="/members/"] {
+  color: inherit;
+  text-decoration: none;
   position: relative;
 }
 
-/* Add small ↗ arrow */
-a[href*="/members/"]::after {
+body:not(.team-page) a[href*="/members/"]::after {
   content: "↗";
   font-size: 0.75em;
   margin-left: 0.25rem;
@@ -20,8 +18,7 @@ a[href*="/members/"]::after {
   transition: opacity var(--transition), transform var(--transition);
 }
 
-/* Subtle hover effect */
-a[href*="/members/"]:hover::after {
+body:not(.team-page) a[href*="/members/"]:hover::after {
   opacity: 1;
   transform: translateY(-1px);
 }
