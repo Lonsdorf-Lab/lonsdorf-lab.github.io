@@ -23,13 +23,13 @@ members:
   - tina_lonsdorf
 
 external_contributors:
-  - name: Katharina Blask
+  - name: Dr. Katharina Blask
     affiliation: Leibniz-Institut für Psychologie
     url: https://leibniz-psychology.org/profil-katarina-blask
   - name: Joel Beckmann
     affiliation: Leibniz-Institut für Psychologie
     url: https://leibniz-psychology.org/profil-joel-beckmann
-  - name: Thomas Wegner
+  - name: Dr. Thomas Wegner
     affiliation: Leibniz-Institut für Psychologie
     url: https://leibniz-psychology.org/profil-thomas-wegner
 tags:

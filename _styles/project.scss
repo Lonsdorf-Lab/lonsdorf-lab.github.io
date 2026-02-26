@@ -28,3 +28,13 @@
   color: var(--gray);
   line-height: 1.4;
 }
+
+a[href*="/projects/"] {
+  font-size: 0.9rem;
+}
+
+.project-description-link {
+  font-size: 0.85rem;
+  color: var(--gray);
+  margin-left: 0.4rem;
+}

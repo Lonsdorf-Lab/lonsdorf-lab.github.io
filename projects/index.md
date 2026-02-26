@@ -19,7 +19,9 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ### [{{ project.title }}]({{ project.url | relative_url }})
 
-{{ project.description }}
+{{ project.description | strip_html | truncatewords: 50 }}
+
+[see more]({{ project.url | relative_url }})
 
 {% endfor %}
 
@@ -33,6 +35,8 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 
 ### [{{ project.title }}]({{ project.url | relative_url }})
 
-{{ project.description }}
+{{ project.description | strip_html | truncatewords: 50 }}
+
+[see more]({{ project.url | relative_url }})
 
 {% endfor %}
