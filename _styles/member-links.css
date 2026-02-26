@@ -1,0 +1,29 @@
+@charset "UTF-8";
+/* ============================================================
+   Member Page Links – Plain Text + External Arrow
+============================================================ */
+/* Target all links pointing to /members/ */
+a[href*="/members/"] {
+  color: inherit; /* Use surrounding text color */
+  text-decoration: none; /* Remove underline */
+  font-weight: inherit; /* Keep natural weight */
+  position: relative;
+}
+
+/* Add small ↗ arrow */
+a[href*="/members/"]::after {
+  content: "↗";
+  font-size: 0.75em;
+  margin-left: 0.25rem;
+  vertical-align: super;
+  opacity: 0.6;
+  transition: opacity var(--transition), transform var(--transition);
+}
+
+/* Subtle hover effect */
+a[href*="/members/"]:hover::after {
+  opacity: 1;
+  transform: translateY(-1px);
+}
+
+/*# sourceMappingURL=member-links.css.map */
