@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Julia Senfft
+last_name: Senfft
 member_id: julia_senfft
 image: images/members/senfft.png
 role: undergrad

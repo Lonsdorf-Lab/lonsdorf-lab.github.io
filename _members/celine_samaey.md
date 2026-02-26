@@ -1,6 +1,7 @@
 ---
 group: coming-soon
 name: Celine Samaey
+last_name: Samaey
 member_id: celine_samaey
 image: images/members/samaey.jpg
 role: postdoc

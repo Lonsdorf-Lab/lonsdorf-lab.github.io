@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Conrad Alting
+last_name: Alting
 member_id: conrad_alting
 image: images/members/alting.jpg
 role: lab-manager

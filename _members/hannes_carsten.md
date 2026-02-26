@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Hannes Carsten
+last_name: Carsten
 member_id: hannes_carsten
 image: images/misc/default_member_photo.jpg
 role: postdoc

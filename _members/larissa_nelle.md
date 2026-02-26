@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Larissa Marie Nelle
+last_name: Nelle
 member_id: larissa_nelle
 image: images/members/nelle.jpg
 role: undergrad

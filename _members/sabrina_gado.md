@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Sabrina Gado
+last_name: Gado
 member_id: sabrina_gado
 image: images/misc/default_member_photo.jpg
 role: postdoc

@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Maria Bruntsch
+last_name: Bruntsch
 member_id: maria_bruntsch
 image: images/members/bruntsch.jpg
 role: phd

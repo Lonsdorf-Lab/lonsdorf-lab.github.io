@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Claudia Massaccesi
+last_name: Massaccesi
 member_id: claudia_massaccesi
 image: images/members/massaccesi.jpeg
 role: postdoc

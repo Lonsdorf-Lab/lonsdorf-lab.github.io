@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Fritz Becker
+last_name: Becker
 member_id: fritz_becker
 image: images/members/becker.jpg
 role: postdoc

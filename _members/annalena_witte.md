@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Annalena Witte
+last_name: Witte
 member_id: annalena_witte
 image: images/members/witte.jpg
 role: phd

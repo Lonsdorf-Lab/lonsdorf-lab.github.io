@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Dilber Yildirim
+last_name: Yildirim
 member_id: dilber_yildirim
 image: images/members/yildirim.png
 role: team-coordinator

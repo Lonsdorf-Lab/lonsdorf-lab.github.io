@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Rachel Sjouwerman
+last_name: Sjouwerman
 member_id: rachel_sjouwerman
 image: images/misc/default_member_photo.jpg
 role: postdoc

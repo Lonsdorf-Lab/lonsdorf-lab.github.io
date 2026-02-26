@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Alina Koppold
+last_name: Koppold
 member_id: alina_koppold
 image: images/members/koppold.jpeg
 role: postdoc

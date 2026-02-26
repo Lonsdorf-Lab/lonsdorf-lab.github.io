@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Alexandros Kastrinogiannis
+last_name: Kastrinogiannis
 member_id: alexandros_kastrinogiannis
 image: images/members/kastrinogiannis.jpg
 role: postdoc

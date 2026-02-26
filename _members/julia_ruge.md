@@ -1,6 +1,7 @@
 ---
 group: member
 name: Julia Ruge
+last_name: Ruge
 member_id: julia_ruge
 image: images/members/ruge.jpeg
 role: phd

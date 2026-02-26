@@ -1,6 +1,7 @@
 ---
 group: alum
 name: Manuel Kuhn
+last_name: Kuhn
 member_id: manuel_kuhn
 image: images/misc/default_member_photo.jpg
 role: postdoc

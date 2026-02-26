@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Lennart Wieser
+last_name: Wieser
 member_id: lennart_wieser
 image: images/members/wieser.png
 role: phd

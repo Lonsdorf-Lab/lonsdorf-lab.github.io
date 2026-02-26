@@ -1,6 +1,7 @@
 ---
 group: member
 name: Maren Klingelhöfer-Jens
+last_name: Klingelhöfer-Jens
 member_id: maren_klingelhoefer
 image: images/members/klingelhoefer.jpg
 role: postdoc

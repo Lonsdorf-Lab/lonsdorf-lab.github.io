@@ -2,6 +2,7 @@
 group: member
 internal: true
 name: Mana Ehlers
+last_name: Ehlers
 member_id: mana_ehlers
 image: images/members/ehlers.JPG
 role: postdoc
