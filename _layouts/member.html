@@ -76,6 +76,82 @@ PROJECTS ASSOCIATED WITH MEMBER (Alphabetically Sorted, member_id-based)
 {% endif %}
 
 
+{% comment %}
+============================================================
+PUBLICATIONS ASSOCIATED WITH MEMBER
+============================================================
+{% endcomment %}
+
+{% assign member_names = page.aliases | default: page.name | join: "," | split: "," %}
+{% assign matched_citations = "" | split: "" %}
+
+{% for citation in site.data.citations %}
+
+  {% assign match_found = false %}
+
+  {% for author in citation.authors %}
+
+    {% assign author_clean = author | strip | remove: "." %}
+
+    {% for alias in member_names %}
+      {% assign alias_clean = alias | strip | remove: "." %}
+
+      {% if author_clean == alias_clean %}
+        {% assign match_found = true %}
+        {% break %}
+      {% endif %}
+
+    {% endfor %}
+
+    {% if match_found %}
+      {% break %}
+    {% endif %}
+
+  {% endfor %}
+
+  {% if match_found %}
+    {% assign matched_citations = matched_citations | push: citation %}
+  {% endif %}
+
+{% endfor %}
+
+{% if matched_citations.size > 0 %}
+
+  <h2>Publications</h2>
+
+  {% assign publications_by_year = matched_citations
+    | group_by_exp: "c", "c.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+
+  {% for year in publications_by_year %}
+    <h3>{{ year.name }}</h3>
+
+    {% assign year_items = year.items | sort: "date" | reverse %}
+
+    {% for citation in year_items %}
+      {% include citation.html
+        title=citation.title
+        authors=citation.authors
+        publisher=citation.publisher
+        date=citation.date
+        id=citation.id
+        link=citation.link
+        description=citation.description
+        buttons=citation.buttons
+        tags=citation.tags
+        repo=citation.repo
+        type=citation.type
+        style="rich"
+      %}
+    {% endfor %}
+
+  {% endfor %}
+
+{% endif %}
+
+
   {% comment %}
   ------------------------------------------------------------
   RESEARCH SEARCH LINK

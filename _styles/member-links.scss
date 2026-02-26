@@ -27,3 +27,17 @@
   opacity: 1;
   transform: translateY(-1px);
 }
+
+
+/* ============================================================
+   Disable profile-link styling on team overview page
+============================================================ */
+
+.page-team .profile-link {
+  color: var(--primary);       /* restore default link color */
+  text-decoration: underline;  /* restore underline */
+}
+
+.page-team .profile-link::after {
+  content: none;               /* remove arrow */
+}
