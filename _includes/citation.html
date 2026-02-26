@@ -9,51 +9,40 @@
 {% endif %}
 
 <div class="citation-container">
-  <div class="citation">
-    {% if include.style == "rich" %}
-      <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | uri_escape }}"
-        {% endif %}
-        class="citation-image"
-        aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
-      >
-        <img
-          src="{{ citation.image | relative_url | uri_escape }}"
-          alt="{{ citation.title | default: "citation image" | regex_strip }}"
-          loading="lazy"
-          {% include fallback.html %}
-        >
-      </a>
-    {% endif %}
 
-    <div class="citation-text">
-      {% assign type = site.data.types[citation.type] %}
-      {% include icon.html icon=type.icon %}
+  {% comment %}
+  ============================================================
+  MEMBER COMPACT LAYOUT
+  ============================================================
+  {% endcomment %}
 
-      <a
-        {% if citation.link %}
-          href="{{ citation.link | relative_url | xml_escape }}"
-        {% endif %}
-        class="citation-title"
-      >
-        {{ citation.title | default: "[no title info]" }}
-      </a>
+  {% if include.style == "member" %}
+
+    <div class="citation-member">
 
       {% comment %}
-      ============================================================
-      AUTHORS WITH ALIAS-BASED MEMBER LINKING
-      ============================================================
+      --- Title
       {% endcomment %}
+      <div class="citation-member-title">
+        {% if citation.link %}
+          <a href="{{ citation.link | relative_url | xml_escape }}" class="link-doi">
+            {{ citation.title | default: "[no title info]" }}
+          </a>
+        {% else %}
+          {{ citation.title | default: "[no title info]" }}
+        {% endif %}
+      </div>
 
-      <div class="citation-authors">
+      {% comment %}
+      --- Authors (Alias-Based Member Linking)
+      {% endcomment %}
+      <div class="citation-member-authors">
 
         {% if citation.authors %}
 
-          {% assign visible_authors = citation.authors %}
           {% assign rendered_authors = "" | split: "" %}
 
-          {% for author in visible_authors %}
+          {% for author in citation.authors %}
 
             {% assign matched_member = nil %}
             {% assign author_clean = author | strip | remove: "." %}
@@ -78,7 +67,10 @@
 
             {% if matched_member %}
               {% capture author_output %}
-                {% include profile_link.html url=matched_member.url text=author %}
+                {% include profile_link.html
+                   url=matched_member.url
+                   text=author
+                %}
               {% endcapture %}
             {% else %}
               {% assign author_output = author %}
@@ -96,52 +88,127 @@
 
       </div>
 
-      <div class="citation-details">
-        <span class="citation-publisher">
-          {{- citation.publisher | default: "[no publisher info]" -}}
+      {% comment %}
+      --- Journal · Date · DOI
+      {% endcomment %}
+      <div class="citation-member-details">
+
+        <span class="citation-member-journal">
+          {{ citation.publisher | default: "[no journal info]" }}
         </span>
-        &nbsp;&middot;&nbsp;
-        <span class="citation-date">
-          {{- citation.date | default: "[no date info]" | date: "%d %b %Y" -}}
+
+        &nbsp;·&nbsp;
+
+        <span class="citation-member-date">
+          {{ citation.date | default: "[no date]" | date: "%d %b %Y" }}
         </span>
-        &nbsp;&middot;&nbsp;
-        <span class="citation-id">
-          {{- citation.id | default: "[no id info]" -}}
-        </span>
+
+        {% if citation.link %}
+          &nbsp;·&nbsp;
+          <a href="{{ citation.link | relative_url | xml_escape }}" class="link-doi">
+            DOI
+          </a>
+        {% endif %}
+
       </div>
 
-      {% if include.style == "rich" %}
-
-        {% if citation.description %}
-          <div class="citation-description">
-            {{
-              citation.description
-              | markdownify
-              | remove: "<p>"
-              | remove: "</p>"
-            }}
-          </div>
-        {% endif %}
-
-        {% if citation.buttons.size > 0 %}
-          <div class="citation-buttons">
-            {% for button in citation.buttons %}
-              {% include button.html
-                type=button.type
-                icon=button.icon
-                text=button.text
-                link=button.link
-                style="bare"
-              %}
-            {% endfor %}
-          </div>
-        {% endif %}
-
-        {% if citation.tags.size > 0 or citation.repo %}
-          {% include tags.html tags=citation.tags repo=citation.repo %}
-        {% endif %}
-
-      {% endif %}
     </div>
-  </div>
+
+  {% comment %}
+  ============================================================
+  ORIGINAL RICH / DEFAULT LAYOUT
+  ============================================================
+  {% endcomment %}
+
+  {% else %}
+
+    <div class="citation">
+
+      {% if include.style == "rich" %}
+        <a
+          {% if citation.link %}
+            href="{{ citation.link | relative_url | uri_escape }}"
+          {% endif %}
+          class="citation-image"
+          aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
+        >
+          <img
+            src="{{ citation.image | relative_url | uri_escape }}"
+            alt="{{ citation.title | default: "citation image" | regex_strip }}"
+            loading="lazy"
+            {% include fallback.html %}
+          >
+        </a>
+      {% endif %}
+
+      <div class="citation-text">
+
+        {% assign type = site.data.types[citation.type] %}
+        {% include icon.html icon=type.icon %}
+
+        <a
+          {% if citation.link %}
+            href="{{ citation.link | relative_url | xml_escape }}"
+          {% endif %}
+          class="citation-title"
+        >
+          {{ citation.title | default: "[no title info]" }}
+        </a>
+
+        <div class="citation-authors">
+          {{ citation.authors | join: ", " | default: "[no author info]" }}
+        </div>
+
+        <div class="citation-details">
+          <span class="citation-publisher">
+            {{ citation.publisher | default: "[no publisher info]" }}
+          </span>
+          &nbsp;&middot;&nbsp;
+          <span class="citation-date">
+            {{ citation.date | default: "[no date info]" | date: "%d %b %Y" }}
+          </span>
+          &nbsp;&middot;&nbsp;
+          <span class="citation-id">
+            {{ citation.id | default: "[no id info]" }}
+          </span>
+        </div>
+
+        {% if include.style == "rich" %}
+
+          {% if citation.description %}
+            <div class="citation-description">
+              {{
+                citation.description
+                | markdownify
+                | remove: "<p>"
+                | remove: "</p>"
+              }}
+            </div>
+          {% endif %}
+
+          {% if citation.buttons.size > 0 %}
+            <div class="citation-buttons">
+              {% for button in citation.buttons %}
+                {% include button.html
+                  type=button.type
+                  icon=button.icon
+                  text=button.text
+                  link=button.link
+                  style="bare"
+                %}
+              {% endfor %}
+            </div>
+          {% endif %}
+
+          {% if citation.tags.size > 0 or citation.repo %}
+            {% include tags.html tags=citation.tags repo=citation.repo %}
+          {% endif %}
+
+        {% endif %}
+
+      </div>
+    </div>
+
+  {% endif %}
+
 </div>
