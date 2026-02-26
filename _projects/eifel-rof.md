@@ -10,6 +10,10 @@ description: >
 
 funders:
   - name: German Research Foundation
+    url: https://gepris.dfg.de/gepris/projekt/273022965
+    programme: "Programme:  Scientific Networks"
+    project_number: Project number 273022965
+    funding_period: "Term: from 2015-2021"
     type: Foundation
 
 members:

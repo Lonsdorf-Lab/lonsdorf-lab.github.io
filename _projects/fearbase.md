@@ -11,8 +11,8 @@ description: >
 funders:
   - name: Volkswagen Stiftung
     identifier: Profile Area "Understanding Research – Evaluation and Science Practice"
-    type: Foundation
     url: https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem
+    type: Foundation
 
 members:
   - annalena_witte
@@ -20,6 +20,7 @@ members:
   - maria_bruntsch
   - mana_ehlers
   - conrad_alting
+  - tina_lonsdorf
 
 external_contributors:
   - name: Katharina Blask
