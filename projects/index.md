@@ -34,6 +34,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
   </a>
 </div>
 
+{ % endfor % }
 
 ---
 
@@ -60,3 +61,4 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
   </a>
 </div>
 
+{ % endfor % }
