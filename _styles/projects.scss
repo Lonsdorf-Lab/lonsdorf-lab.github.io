@@ -1,17 +1,26 @@
 /* ============================================================
-   Project – Funding Section
+   Project – Funding Section Styling
 ============================================================ */
 
-.funder-block {
+.project h1 {
+  text-align: center;   /* keep title centered */
+}
+
+.project .funders {
+  text-align: left;     /* only funding section left-aligned */
+}
+
+.project .funder-block {
   margin-bottom: 1.2rem;
 }
 
-.funder-block strong {
+.project .funder-name {
   font-weight: 600;
 }
 
-.funder-meta {
+.project .funder-meta {
   margin-left: 1rem;
-  font-size: 0.95rem;
-  color: var(--text-muted-color, #666);
+  font-size: 0.9rem;
+  color: #6b7280;  /* neutral gray */
+  line-height: 1.4;
 }
