@@ -19,6 +19,12 @@
   color: var(--gray);
 }
 
+.citation-member-doi {
+  font-size: 0.85rem;
+  color: var(--gray);
+  font-family: inherit;
+}
+
 .current-author {
   font-weight: var(--bold);
 }
@@ -33,10 +39,4 @@
 .citation-member,
 .citation-text {
   text-align: left;
-}
-
-.citation-member-doi {
-  font-size: 0.85rem;
-  color: var(--gray);
-  font-family: inherit;
 }

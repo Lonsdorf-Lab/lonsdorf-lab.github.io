@@ -175,7 +175,55 @@
         </a>
 
         <div class="citation-authors">
-          {{ citation.authors | join: ", " | default: "[no author info]" }}
+
+          {% if citation.authors %}
+
+            {% assign rendered_authors = "" | split: "" %}
+
+            {% for author in citation.authors %}
+
+              {% assign matched_member = nil %}
+              {% assign author_clean = author | strip | remove: "." %}
+
+              {% for member in site.members %}
+
+                {% assign possible_names = member.aliases | default: member.name | join: "," | split: "," %}
+
+                {% for alias in possible_names %}
+                  {% assign alias_clean = alias | strip | remove: "." %}
+                  {% if alias_clean == author_clean %}
+                    {% assign matched_member = member %}
+                    {% break %}
+                  {% endif %}
+                {% endfor %}
+
+                {% if matched_member %}
+                  {% break %}
+                {% endif %}
+
+              {% endfor %}
+
+              {% if matched_member %}
+                {% capture author_output %}
+                  {% include profile_link.html
+                    url=matched_member.url
+                    text=author
+                  %}
+                {% endcapture %}
+              {% else %}
+                {% assign author_output = author %}
+              {% endif %}
+
+              {% assign rendered_authors = rendered_authors | push: author_output %}
+
+            {% endfor %}
+
+            {{ rendered_authors | join: ", " }}
+
+          {% else %}
+            [no author info]
+          {% endif %}
+
         </div>
 
         <div class="citation-details">
