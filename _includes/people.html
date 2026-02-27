@@ -1,3 +1,5 @@
+People passed in: {{ include.people | size }}
+
 {% assign sorted_entries = "" | split: "" %}
 
 {% if include.kind == "member" %}

@@ -16,7 +16,8 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 ## Current Lab Members
 
 {% assign current_members = site.members
-  | where_exp: "m", "m.role != 'undergrad' and (m.group == nil or (m.group != 'alum' and m.group != 'coming-soon'))"
+  | where: "group", "member"
+  | where_exp: "m", "m.role != 'undergrad'"
 %}
 
 {% include people.html
@@ -46,7 +47,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Student Assistants & Research Interns
 
-{% assign undergrads = site.members 
+{% assign undergrads = site.members
   | where: "group", "member"
   | where: "role", "undergrad"
 %}
@@ -62,7 +63,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Alumni
 
-{% assign alumni = site.members 
+{% assign alumni = site.members
   | where: "group", "alum"
 %}
 
