@@ -23,7 +23,7 @@
 }
 
 .current-author {
-  font-weight: var(--bold);
+  font-weight: var(--semi-bold);
 }
 
 .current-author .profile-link {
@@ -36,6 +36,10 @@
 .citation-member,
 .citation-text {
   text-align: left;
+}
+
+.lab-author .profile-link-text {
+  font-weight: var(--semi-bold);
 }
 
 /*# sourceMappingURL=citation-member.css.map */
