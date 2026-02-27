@@ -47,19 +47,11 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Student Assistants & Research Interns
 
-{% assign undergrads = site.members
-  | where: "group", "member"
-  | where: "role", "undergrad"
-%}
+{% assign team_page__coming_soon = site.members | where: "group", "coming-soon" %}
 
-{% include people.html
-    persons=undergrads
-    kind="member"
-    view="small"
-    role_priority=site.data.people.team_overview_role_priority
-%}
+SIZE BEFORE INCLUDE: {{ team_page__coming_soon | size }}
 
-{% include section.html %}
+{% include people.html persons=team_page__coming_soon kind="member" view="portrait" %}
 
 ## Alumni
 
