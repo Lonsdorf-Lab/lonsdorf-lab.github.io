@@ -6,10 +6,11 @@ layout: default
 
   <h1>{{ page.title }}</h1>
 
-  {% if page.description %}
+  {% if content != "" %}
     <h2>Project Description</h2>
-    <p>{{ page.description }}</p>
+    {{ content }}
   {% endif %}
+
 
 {% comment %}
 ============================================================
@@ -34,14 +35,16 @@ TEAM (Sorted by role, then last name)
     {% if member %}
 
       {% comment %}
-      Determine role rank
+      Determine role rank using priority list
       {% endcomment %}
-      {% assign role_rank = 3 %}
-      {% if member.role == "principal-investigator" %}
-        {% assign role_rank = 1 %}
-      {% elsif member.role == "postdoc" %}
-        {% assign role_rank = 2 %}
+
+      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc" | split: "," %}
+      {% assign role_rank = role_order | index_of: member.role %}
+
+      {% if role_rank == -1 %}
+        {% assign role_rank = 999 %}
       {% endif %}
+
 
       {% comment %}
       Extract last name (assumes "First Last")
