@@ -65,18 +65,6 @@
 # Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
-    - type: preprint
-      text: "Preprint v1"
-      link: https://doi.org/10.31234/osf.io/mubgv
-    - type: preprint
-      text: "Preprint v2"
-      link: https://doi.org/10.31234/osf.io/mubgv_v2
-    - type: preprint
-      text: "Preprint v3"
-      link: https://doi.org/10.31234/osf.io/mubgv_v3
-    - type: preprint
-      text: "Preprint v4"
-      link: https://doi.org/10.31234/osf.io/mubgv_v4
     - type: data
       text: "Data"
       link: https://doi.org/https://doi.org/10.5281/zenodo.15494050
@@ -85,59 +73,35 @@
 - id:  doi:10.15626/MP.2023.3958
   title: "The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research" 
   type: paper
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/m9abu
       
 # How adverse childhood experiences get under the skin
 - id: doi:10.7554/eLife.92700
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/nfpbj_v1
+  title: "How adverse childhood experiences get under the skin: A systematic review, integration and methodological discussion on threat and reward learning mechanisms"
+  type: paper
 
 # Systematically investigating the role of context on effect replicability in reinstatement of fear in humans
 - id:  doi:10.1016/j.brat.2023.104256
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/65njk
+  type: paper
 
 # Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity
 - id: doi:10.1111/psyp.14253
-  buttons:
-    type: preprint
-    text: "Preprint"
-    link: https://doi.org/10.31234/osf.io/wjeyg
+  type: paper
 
 # Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear
 - id: doi:10.7554/eLife.78717
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.1101/2022.03.15.484434
+  type: paper
 
 # A data multiverse analysis investigating non‐model based SCR quantification approaches 
 - id: doi:10.1111/psyp.14130
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/q24t8
+  type: paper
 
 # Multiverse analyses in fear conditioning research 
 - id: doi:10.1016/j.brat.2022.104072
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/2z6pd
+  type: paper
 
 # Navigating the garden of forking paths for data exclusions in fear conditioning research
 - id: doi:10.7554/eLife.52465
-  buttons:
-    - type: preprint
-      text: "Preprint"
-      link: https://doi.org/10.31234/osf.io/6m72g
+  type: paper
 
 # Revisiting potential associations between brain morphology, fear acquisition and extinction through new data and a literature review
 - id: doi:10.31234/osf.io/q2kyf

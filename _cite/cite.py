@@ -308,8 +308,42 @@ for index, source in enumerate(sources):
                 # discard source from citations
                 continue
 
-    # preserve fields from input source, overriding existing fields
+       # preserve fields from input source, overriding existing fields
     citation.update(source)
+
+    # --------------------------------------------------
+    # Determine publication type (preprint vs paper)
+    # --------------------------------------------------
+
+    # Load suppression config (same logic as suppression rules)
+    try:
+        config = load_data("_data/citation_config.yaml")
+        suppression_cfg = config.get("suppression", {})
+        preprint_publishers = suppression_cfg.get("preprint_publishers", [])
+        preprint_publishers = [p.lower() for p in preprint_publishers]
+    except Exception:
+        preprint_publishers = []
+
+    publisher = str(get_safe(citation, "publisher", "")).lower()
+
+    is_preprint = any(pattern in publisher for pattern in preprint_publishers)
+
+    publication_type = "preprint" if is_preprint else "paper"
+
+    # --------------------------------------------------
+    # Insert "type" directly after "title"
+    # --------------------------------------------------
+
+    if "title" in citation:
+        new_citation = {}
+        for key, value in citation.items():
+            new_citation[key] = value
+            if key == "title":
+                new_citation["type"] = publication_type
+        citation = new_citation
+    else:
+        # fallback (should not happen normally)
+        citation["type"] = publication_type
 
     # ensure date in proper format for correct date sorting
     if get_safe(citation, "date", ""):
@@ -317,6 +351,7 @@ for index, source in enumerate(sources):
 
     # add new citation to list
     citations.append(citation)
+
 
 
 log()
