@@ -22,7 +22,11 @@ external_contributors:
     title: Prof. Dr.
     affiliation: Ruhr University Bochum
     url: https://www.cog.psy.ruhr-uni-bochum.de/cog/team/merz.html.en
-  - name: Fear conditioning community
+  - first_name: Fear conditioning community
+    last_name: null
+    title: null
+    affiliation: null
+    url: null
 
 tags:
   - publication
