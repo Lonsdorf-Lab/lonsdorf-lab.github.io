@@ -15,33 +15,22 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Current Lab Members
 
-{% assign current_members = site.members
+{% assign team_current_members = site.members
   | where: "group", "member"
   | where_exp: "m", "m.role != 'undergrad'"
 %}
 
-{% include people.html
-    persons=current_members
-    kind="member"
-    view="portrait"
-    role_priority=site.data.people.team_overview_role_priority
-%}
-
+{% include people.html persons=team_current_members kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
 
 {% include section.html %}
 
 ## Coming Soon
 
-{% assign coming_soon = site.members
+{% assign team_coming_soon = site.members
   | where: "group", "coming-soon"
 %}
 
-{% include people.html
-    persons=coming_soon
-    kind="member"
-    view="portrait"
-    role_priority=site.data.people.team_overview_role_priority
-%}
+{% include people.html persons=team_coming_soon kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
 
 {% include section.html %}
 
@@ -55,16 +44,11 @@ SIZE BEFORE INCLUDE: {{ team_page__coming_soon | size }}
 
 ## Alumni
 
-{% assign alumni = site.members
+{% assign team_alumni = site.members
   | where: "group", "alum"
 %}
 
-{% include people.html
-    persons=alumni
-    kind="member"
-    view="small"
-    role_priority=site.data.people.team_overview_role_priority
-%}
+{% include people.html persons=team_alumni kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
 
 {% include section.html background="images/background.png" dark=false %}
 
