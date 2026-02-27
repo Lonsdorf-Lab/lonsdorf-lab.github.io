@@ -5,7 +5,7 @@ name: Tina Lonsdorf
 last_name: Lonsdorf
 member_id: tina_lonsdorf
 image: images/members/lonsdorf.jpg
-role: principal-investigator
+role: professor
 affiliation: Bielefeld University
 aliases:
   - T. Lonsdorf

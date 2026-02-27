@@ -7,7 +7,7 @@ principal-investigator:
   prefix: "Prof. Dr."
 
 professor:
-  icon: fa-solid fa-microscope
+  icon: images/icon/professor.svg
   description: Head of department
   prefix: "Prof. Dr."
 
