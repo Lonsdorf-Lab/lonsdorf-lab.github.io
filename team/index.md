@@ -20,7 +20,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
   | where_exp: "m", "m.role != 'undergrad'"
 %}
 
-{% include people.html persons=team_current_members kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
+{% include people.html persons=team_current_members kind="member" view="portrait" %}
 
 {% include section.html %}
 
@@ -30,7 +30,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
   | where: "group", "coming-soon"
 %}
 
-{% include people.html persons=team_coming_soon kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
+{% include people.html persons=team_coming_soon kind="member" view="portrait" %}
 
 {% include section.html %}
 
@@ -38,15 +38,13 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 {% assign team_page__coming_soon = site.members | where: "group", "coming-soon" %}
 
-SIZE BEFORE INCLUDE: {{ team_page__coming_soon | size }}
-
 {% include people.html persons=team_page__coming_soon kind="member" view="portrait" %}
 
 ## Alumni
 
 {% assign team_alumni = site.members | where: "group", "alum" %}
 
-{% include people.html persons=team_alumni kind="member" view="portrait" %}
+{% include people.html persons=team_alumni kind="member" view="small" %}
 
 {% include section.html background="images/background.png" dark=false %}
 
