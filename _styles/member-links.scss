@@ -8,22 +8,19 @@
 .profile-link {
   color: inherit;
   text-decoration: none;
-  position: relative;
-  font-weight: inherit;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.3rem;
 }
 
-.profile-link::after {
-  content: "";
-  display: inline-block;
-  width: 0.6em;
-  height: 0.6em;
-  margin-left: 0.25rem;
-  border-top: 1px solid currentColor;
-  border-right: 1px solid currentColor;
-  transform: rotate(45deg) translateY(-1px);
+.profile-link-icon {
+  font-size: 0.75em;
+  opacity: 0.6;
+  transition: opacity var(--transition),
+              transform var(--transition);
 }
 
-.profile-link:hover::after {
+.profile-link:hover .profile-link-icon {
   opacity: 1;
   transform: translateY(-1px);
 }
@@ -36,8 +33,4 @@
 .page-team .profile-link {
   color: var(--primary);       /* restore default link color */
   text-decoration: underline;  /* restore underline */
-}
-
-.page-team .profile-link::after {
-  content: none;               /* remove arrow */
 }
