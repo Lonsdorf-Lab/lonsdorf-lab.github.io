@@ -1,4 +1,4 @@
-People passed in: {{ include.people | size }}
+People passed in: {{ include.persons | size }}
 
 {% assign sorted_entries = "" | split: "" %}
 
@@ -10,7 +10,7 @@ People passed in: {{ include.people | size }}
     {% assign priority = site.data.people.member_role_priority %}
   {% endif %}
 
-  {% for person in include.people %}
+  {% for person in include.persons %}
 
     {% assign role_clean = person.role | downcase | strip %}
     {% assign rank = 999 %}
@@ -48,7 +48,7 @@ People passed in: {{ include.people | size }}
 
   {% assign priority = site.data.people.external_title_priority %}
 
-  {% for person in include.people %}
+  {% for person in include.persons %}
 
     {% assign title_clean = person.title | default: "" | strip %}
     {% assign rank = 999 %}
@@ -93,7 +93,7 @@ People passed in: {{ include.people | size }}
   {% for entry in sorted_entries %}
     {% assign parts = entry | split: "|" %}
     {% assign index = parts[2] | plus: 0 %}
-    {% assign person = include.people[index] %}
+    {% assign person = include.persons[index] %}
 
     {% assign style = include.view %}
 
@@ -111,7 +111,7 @@ People passed in: {{ include.people | size }}
   {% for entry in sorted_entries %}
     {% assign parts = entry | split: "|" %}
     {% assign index = parts[2] | plus: 0 %}
-    {% assign person = include.people[index] %}
+    {% assign person = include.persons[index] %}
 
     <li>
 
