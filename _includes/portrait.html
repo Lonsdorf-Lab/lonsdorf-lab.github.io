@@ -1,8 +1,10 @@
 {% if include.lookup %}
   {% assign member = site.members 
-    | where_exp: "member", "member.slug == include.lookup"
+    | where_exp: "m", "m.slug == include.lookup"
     | first
   %}
+{% elsif include.member %}
+  {% assign member = include.member %}
 {% else %}
   {% assign member = include %}
 {% endif %}
@@ -11,24 +13,27 @@
 
 <div class="portrait-wrapper">
   <a
-    {% if page.slug != member.slug %}
+    {% if page.slug != member.slug and member.url %}
       href="{{ member.url | relative_url | uri_escape }}"
     {% endif %}
     class="portrait"
     data-style="{{ include.style }}"
     aria-label="{{ member.name | default: 'member link' | regex_strip }}"
   >
+
     {% if type %}
       {% include icon.html icon=type.icon %}
     {% endif %}
 
-    <img
-      src="{{ member.image | relative_url | uri_escape }}"
-      class="portrait-image"
-      alt="member portrait"
-      loading="lazy"
-      {% include fallback.html %}
-    >
+    {% if member.image %}
+      <img
+        src="{{ member.image | relative_url | uri_escape }}"
+        class="portrait-image"
+        alt="member portrait"
+        loading="lazy"
+        {% include fallback.html %}
+      >
+    {% endif %}
 
     {% if member.name %}
       <span class="portrait-name">
@@ -47,5 +52,6 @@
         {{ member.affiliation }}
       </span>
     {% endif %}
+
   </a>
 </div>

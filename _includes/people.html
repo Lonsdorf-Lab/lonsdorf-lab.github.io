@@ -95,14 +95,12 @@
 
     {% assign style = include.view %}
 
-    {% include portrait.html
-      affiliation=person.affiliation
-      image=person.image
-      name=person.name
-      role=person.role
-      url=person.url
-      style=style
-    %}
+  {% include portrait.html
+    member=person
+    style=style
+  %}
+
+
   {% endfor %}
 
 {% elsif include.view == "list" %}

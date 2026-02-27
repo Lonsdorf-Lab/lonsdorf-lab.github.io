@@ -22,7 +22,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% include people.html
     people=current_members
     kind="member"
-    view="small"
+    view="portrait"
     role_priority=site.data.people.team_overview_role_priority
 %}
 
@@ -53,7 +53,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% include people.html
     people=undergrads
     kind="member"
-    view="portrait"
+    view="small"
     role_priority=site.data.people.team_overview_role_priority
 %}
 
