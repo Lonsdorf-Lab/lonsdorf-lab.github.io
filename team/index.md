@@ -16,7 +16,6 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 ## Current Lab Members
 
 {% assign team_current_members = "" | split: "" %}
-
 {% assign member_group = site.members | where: "group", "member" %}
 
 {% for m in member_group %}
@@ -26,22 +25,25 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% endfor %}
 
 {% include people.html persons=team_current_members kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
-
 {% include section.html %}
 
 ## Coming Soon
 
 {% assign team_coming_soon = site.members | where: "group", "coming-soon" %}
-
 {% include people.html persons=team_coming_soon kind="member" view="portrait" %}
-
 {% include section.html %}
 
 ## Student Assistants & Research Interns
 
-{% assign team_assistants = site.members | where: "group", "undergrad" %}
+{% assign team_assistants = "" | split: "" %}
 
-{% include people.html persons=team_assistants kind="member" view="portrait" %}
+{% for m in site.members %}
+  {% if m.group == "member" and m.role == "undergrad" %}
+    {% assign team_assistants = team_assistants | push: m %}
+  {% endif %}
+{% endfor %}
+
+{% include people.html persons=team_assistants kind="member" view="small" %}
 
 ## Alumni
 
