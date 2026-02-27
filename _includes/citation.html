@@ -162,7 +162,8 @@
 
       <div class="citation-text">
 
-        {% assign type = site.data.types[citation.type] %}
+        {% assign type_key = citation.type | downcase | strip %}
+        {% assign type = site.data.types[type_key] %}
         {% include icon.html icon=type.icon %}
 
         <a
