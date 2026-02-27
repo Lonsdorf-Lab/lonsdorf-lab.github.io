@@ -81,6 +81,10 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {{ alumni | size }}
 {{ site.members | first | inspect }}
 
+{% for m in site.members %}
+  {{ m.name }} → group: {{ m.group }} → data.group: {{ m.data.group }}
+{% endfor %}
+
 **Interested in joining the lab?**
 
 We always seek motivated postdoctoral researchers, PhD students and Master students as well as research interns. Candidates interested in joining the lab are strongly encouraged to apply for fellowships. Please contact us if you are interested.
