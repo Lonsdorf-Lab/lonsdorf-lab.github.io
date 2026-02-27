@@ -126,7 +126,7 @@
         {% if citation.id %}
           &nbsp;·&nbsp;
           <span class="citation-member-doi">
-            doi: {{ citation.id | remove: "doi:" }}
+            doi: {{ citation.link | remove: "doi:" }}
           </span>
         {% endif %}
       </div>

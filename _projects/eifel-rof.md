@@ -21,7 +21,7 @@ members:
   
 external_contributors:
   - name: Prof. Dr. Christian Merz
-    affiliation: Ruhr University Bochum
+    affiliation: " Ruhr University Bochum"
     url: https://www.cog.psy.ruhr-uni-bochum.de/cog/team/merz.html.en
   - name: Fear conditioning community
 
