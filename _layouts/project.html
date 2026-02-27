@@ -40,14 +40,16 @@ TEAM (Sorted by role, then last name)
 
 {% endif %}
 
-  {% comment %}
-  ============================================================
-  EXTERNAL CONTRIBUTORS
-  ============================================================
-  {% endcomment %}
+{% comment %}
+============================================================
+EXTERNAL CONTRIBUTORS
+============================================================
+{% endcomment %}
 
+{% if page.external_contributors %}
+  <h2>External Contributors</h2>
   {% include people_list.html people=page.external_contributors type="external" %}
-
+{% endif %}
 
 {% comment %}
 ============================================================
