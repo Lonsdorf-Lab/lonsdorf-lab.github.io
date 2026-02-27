@@ -13,3 +13,5 @@ yarn.lock
 node_modules
 lonsdorf-lab.code-workspace
 .vscode/settings.json
+_custom_scripts/update_sources_runner.R
+_data/Update_sources_yaml.bat

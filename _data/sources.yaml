@@ -138,3 +138,7 @@
     - type: preprint
       text: "Preprint"
       link: https://doi.org/10.31234/osf.io/6m72g
+
+# Revisiting potential associations between brain morphology, fear acquisition and extinction through new data and a literature review
+- id: doi:10.31234/osf.io/q2kyf
+  remove: true

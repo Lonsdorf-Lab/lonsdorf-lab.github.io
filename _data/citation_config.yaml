@@ -1,0 +1,14 @@
+suppression:
+  enabled: true
+
+  suppress_preprints_if_journal_exists: true
+  keep_latest_preprint_only: true
+
+  preprint_publishers:
+    - "Center for Open Science"
+    - "OSF Preprints"
+    - "PsyArXiv"
+    - "SocArXiv"
+    - "bioRxiv"
+    - "medRxiv"
+    - "arXiv"

@@ -7,6 +7,148 @@ from importlib import import_module
 from pathlib import Path
 from dotenv import load_dotenv
 from util import *
+import re
+import string
+from collections import defaultdict
+
+
+# custom function to include only latest publication
+def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
+    """
+    Apply suppression logic to compiled sources before citation generation.
+
+    Suppression logic:
+    1. If a journal (non-preprint) exists for a title → suppress all preprints.
+    2. If only preprints exist → keep newest preprint only.
+
+    Preprints are detected via configurable publisher list.
+    Modifies sources in-place by setting source["remove"] = True.
+    """
+
+    import string
+    import re
+    from collections import defaultdict
+
+    # ----------------------------
+    # Load Config
+    # ----------------------------
+
+    try:
+        config = load_data(config_path)
+    except Exception:
+        log("No citation_config.yaml found. Skipping suppression.", level="WARNING")
+        return sources
+
+    suppression_cfg = config.get("suppression", {})
+
+    if not suppression_cfg.get("enabled", False):
+        log("Suppression disabled via config.")
+        return sources
+
+    suppress_preprints_if_journal = suppression_cfg.get(
+        "suppress_preprints_if_journal_exists", True
+    )
+
+    keep_latest_preprint_only = suppression_cfg.get(
+        "keep_latest_preprint_only", True
+    )
+
+    preprint_publishers = suppression_cfg.get("preprint_publishers", [])
+
+    # Normalize publisher patterns for robust matching
+    preprint_publishers = [p.lower() for p in preprint_publishers]
+
+    # ----------------------------
+    # Helper Functions
+    # ----------------------------
+
+    def normalize_title(title):
+        if not title:
+            return ""
+        title = title.lower()
+        title = title.translate(str.maketrans("", "", string.punctuation))
+        return " ".join(title.split())
+
+    def is_preprint(source):
+        publisher = get_safe(source, "publisher", "")
+        publisher = str(publisher).lower()
+
+        if not publisher:
+            return False
+
+        return any(pattern in publisher for pattern in preprint_publishers)
+
+    def extract_version(doi):
+        match = re.search(r"_v(\d+)$", doi or "")
+        return int(match.group(1)) if match else None
+
+    # ----------------------------
+    # Group Sources by Normalized Title
+    # ----------------------------
+
+    log("Applying suppression rules")
+
+    grouped = defaultdict(list)
+
+    for idx, source in enumerate(sources):
+        title = get_safe(source, "title", "")
+        doi = get_safe(source, "id", "")
+        date = get_safe(source, "date", "")
+
+        norm = normalize_title(title)
+
+        grouped[norm].append({
+            "index": idx,
+            "doi": doi,
+            "date": date,
+            "is_preprint": is_preprint(source),
+            "version": extract_version(doi)
+        })
+
+    suppressed_count = 0
+
+    # ----------------------------
+    # Apply Suppression Logic
+    # ----------------------------
+
+    for norm_title, entries in grouped.items():
+
+        has_journal = any(not e["is_preprint"] for e in entries)
+
+        # Case 1: Journal exists → suppress all preprints
+        if has_journal and suppress_preprints_if_journal:
+            for e in entries:
+                if e["is_preprint"]:
+                    sources[e["index"]]["remove"] = True
+                    suppressed_count += 1
+
+        # Case 2: Only preprints exist → keep newest only
+        elif keep_latest_preprint_only:
+            preprints = [e for e in entries if e["is_preprint"]]
+
+            if len(preprints) <= 1:
+                continue
+
+            # Sort newest first
+            preprints.sort(
+                key=lambda x: (
+                    x["version"] if x["version"] is not None else -1,
+                    x["date"]
+                ),
+                reverse=True
+            )
+
+            keep_index = preprints[0]["index"]
+
+            for e in preprints:
+                if e["index"] != keep_index:
+                    sources[e["index"]]["remove"] = True
+                    suppressed_count += 1
+
+    log(f"{suppressed_count} source(s) suppressed by rules", level=1)
+
+    return sources
+
 
 
 # load environment variables
@@ -111,6 +253,12 @@ sources = [entry for entry in sources if entry]
 
 
 log(f"{len(sources)} total source(s) to cite")
+
+
+
+# Apply suppression rules before citation generation
+sources = apply_suppression_rules(sources)
+
 
 
 log()
