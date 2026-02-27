@@ -17,7 +17,9 @@ members:
   - tina_lonsdorf
   
 external_contributors:
-  - name: Prof. Dr. Christian Merz
+  - first_name: Christian
+    last_name: Merz
+    title: Prof. Dr.
     affiliation: Ruhr University Bochum
     url: https://www.cog.psy.ruhr-uni-bochum.de/cog/team/merz.html.en
   - name: Fear conditioning community
