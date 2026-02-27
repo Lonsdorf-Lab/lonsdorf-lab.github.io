@@ -1,3 +1,4 @@
+{% capture __people_render %}
 TOP SIZE: {{ include.persons | size }}
 
 {% assign sorted_entries = "" | split: "" %}
@@ -153,3 +154,6 @@ TOP SIZE: {{ include.persons | size }}
   </ul>
 
 {% endif %}
+
+{% endcapture %}
+{{ __people_render }}
