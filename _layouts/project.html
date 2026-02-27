@@ -34,28 +34,18 @@ TEAM (Sorted by role, then last name)
 
     {% if member %}
 
-      {% comment %}
-      Determine role rank using priority list
-      {% endcomment %}
+      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc" | split: "," %}
+      {% assign role_clean = member.role | downcase | strip %}
 
-      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc, pdh, lab-manager" | split: "," %}
-      {% assign role_rank = role_order | index_of: member.role %}
+      {% assign role_rank = 999 %}
 
-      {% if role_rank == -1 %}
-        {% assign role_rank = 999 %}
-      {% endif %}
+      {% for role in role_order %}
+        {% if role == role_clean %}
+          {% assign role_rank = forloop.index0 %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
 
-
-      {% comment %}
-      Extract last name (based on last_name front matter content)
-      {% endcomment %}
-      {% assign last_name = member.last_name | downcase %}
-
-      {{ member.name }} → {{ member.last_name}} → {{ member.role }} → {{ role_rank }}
-
-      {% comment %}
-      Create sortable string key: role_rank|lastname|member_id
-      {% endcomment %}
       {% capture rank_padded %}
         {% if role_rank < 10 %}
           00{{ role_rank }}
@@ -68,6 +58,8 @@ TEAM (Sorted by role, then last name)
 
       {% assign rank_padded = rank_padded | strip %}
 
+      {% assign last_name = member.name | split: " " | last | downcase %}
+
       {% assign sort_key = rank_padded | append: "|" | append: last_name | append: "|" | append: member.member_id %}
 
       {% assign team_members = team_members | push: sort_key %}
@@ -76,6 +68,7 @@ TEAM (Sorted by role, then last name)
   {% endfor %}
 
   {% assign team_members = team_members | sort %}
+
 
   <ul>
     {% for entry in team_members %}
