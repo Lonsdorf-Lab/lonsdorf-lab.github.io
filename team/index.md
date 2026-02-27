@@ -7,11 +7,6 @@ nav:
   tooltip: About our team
 ---
 
-{% assign test = site.members | where: "group", "coming-soon" %}
-Before include: {{ test | size }}
-
-{% include people.html persons=test kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
-
 # {% include icon.html icon="fa-solid fa-users" %} Team
 
 We are an interdisciplinary team with diverse expertise in psychology, philosophy, computer science, and the social, behavioral, and cognitive and computational neurosciences. Together, we investigate the neurobiological foundations of fear, anxiety, adversity, and stress-related processes. We are committed to open, transparent, and reproducible science — and we deeply value collaboration and teamwork.
