@@ -1,4 +1,12 @@
 ## Suppress citations via remove: true
+
+# How Temporal Predictability of Threat and Action Preparation Affect Defensive Freezing Responses 
+- id: doi:10.31234/osf.io/p84qz_v2
+  remove: true
+
+- id: doi:10.31234/osf.io/p84qz_v1
+  remove: true
+
 # Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.31234/osf.io/mubgv_v4
   remove: true
