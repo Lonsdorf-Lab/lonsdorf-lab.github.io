@@ -29,7 +29,7 @@ TEAM (Sorted by role, then last name)
     {% endif %}
   {% endfor %}
 
-  {% include people.html people=project_members kind="member" view="small" %}
+  {% include people.html persons=project_members kind="member" view="small" %}
 {% endif %}
 
 
@@ -41,7 +41,7 @@ EXTERNAL CONTRIBUTORS
 
 {% if page.external_contributors %}
   <h2>External Contributors</h2>
-  {% include people.html people=page.external_contributors kind="external" view="list" %}
+  {% include people.html persons=page.external_contributors kind="external" view="list" %}
 {% endif %}
 
 {% comment %}
