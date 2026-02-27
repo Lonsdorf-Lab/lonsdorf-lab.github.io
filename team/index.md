@@ -15,6 +15,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 # Current Lab Members
 
+{% include list.html data="members" component="portrait" filter="role == 'professor' and group != 'alum' and group != 'coming-soon'" %}
 {% include list.html data="members" component="portrait" filter="role == 'principal-investigator' and group != 'alum' and group != 'coming-soon'" %}
 {% include list.html data="members" component="portrait" filter="role == 'team-coordinator' and group != 'alum' and group != 'coming-soon'" %}
 {% include list.html data="members" component="portrait" filter="role == 'lab-manager' and group != 'alum' and group != 'coming-soon'" %}
