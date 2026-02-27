@@ -7,15 +7,10 @@ nav:
   tooltip: About our team
 ---
 
-Raw site.members: {{ site.members | size }}
+{% assign test = site.members | where: "group", "coming-soon" %}
+Before include: {{ test | size }}
 
-Filtered coming_soon: 
-{% assign test_cs = site.members | where: "group", "coming-soon" %}
-{{ test_cs | size }}
-
-Filtered alum:
-{% assign test_alum = site.members | where: "group", "alum" %}
-{{ test_alum | size }}
+{% include people.html persons=test %}
 
 # {% include icon.html icon="fa-solid fa-users" %} Team
 
