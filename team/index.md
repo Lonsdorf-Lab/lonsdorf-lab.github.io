@@ -44,11 +44,9 @@ SIZE BEFORE INCLUDE: {{ team_page__coming_soon | size }}
 
 ## Alumni
 
-{% assign team_alumni = site.members
-  | where: "group", "alum"
-%}
+{% assign team_alumni = site.members | where: "group", "alum" %}
 
-{% include people.html persons=team_alumni kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
+{% include people.html persons=team_alumni kind="member" view="portrait" %}
 
 {% include section.html background="images/background.png" dark=false %}
 
