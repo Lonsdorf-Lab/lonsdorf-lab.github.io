@@ -141,7 +141,7 @@
 
   {% else %}
 
-    <div class="citation">
+    <div class="citation citation-{{ citation.type | downcase | strip }}">
 
       {% if include.style == "rich" %}
         <a

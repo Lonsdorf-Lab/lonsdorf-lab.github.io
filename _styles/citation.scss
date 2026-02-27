@@ -46,6 +46,14 @@ $wrap: 800px;
   opacity: 0.8;
 }
 
+.citation-paper {
+  border-left: 4px solid rgb(168, 255, 200);
+}
+
+.citation-preprint {
+  border-left: 4px solid rgb(120, 120, 120);
+}
+
 .citation-text {
   position: relative;
   display: inline-flex;
@@ -114,4 +122,18 @@ $wrap: 800px;
     width: unset;
     height: $thumb-size;
   }
+}
+
+
+/* Dark mode adjustments */
+@media (prefers-color-scheme: dark) {
+
+  .citation-paper {
+    background-color: rgba(34, 197, 94, 0.08);
+  }
+
+  .citation-preprint {
+    background-color: rgba(255, 255, 255, 0.04);
+  }
+
 }
