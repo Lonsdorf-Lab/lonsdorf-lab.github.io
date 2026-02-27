@@ -1,19 +1,7 @@
-{% comment %}
-  Stable people include with role priority sorting.
-  Requires:
-    persons        → array of people
-    kind           → "member" or "external"
-    view           → "portrait", "small", or "list"
-    role_priority  → optional (array of role names in priority order)
-{% endcomment %}
-
 {% assign persons = include.persons %}
 
 {% if persons and persons.size > 0 %}
 
-  {% comment %}
-    MEMBER SORTING WITH ROLE PRIORITY
-  {% endcomment %}
   {% if include.kind == "member" %}
 
     {% if include.role_priority %}
@@ -22,108 +10,89 @@
       {% assign priority = site.data.people.member_role_priority %}
     {% endif %}
 
-    {% assign enriched = "" | split: "" %}
+    {% comment %}
+      Step 1: Sort alphabetically by name (base sort)
+    {% endcomment %}
+    {% assign alpha_sorted = persons | sort: "name" %}
 
-    {% for person in persons %}
+    {% comment %}
+      Step 2: Render by role priority order
+    {% endcomment %}
 
-      {% assign role_clean = person.role | downcase | strip %}
-      {% assign rank = 999 %}
+    {% assign rendered_ids = "" | split: "" %}
 
-      {% for r in priority %}
-        {% if r == role_clean %}
-          {% assign rank = forloop.index0 %}
-          {% break %}
+    {% for role_name in priority %}
+      {% for person in alpha_sorted %}
+        {% if person.role == role_name %}
+          {% assign rendered_ids = rendered_ids | push: person.member_id %}
         {% endif %}
       {% endfor %}
-
-      {% assign entry = 
-        person | 
-        merge: 
-          {
-            "__rank": rank
-          }
-      %}
-
-      {% assign enriched = enriched | push: entry %}
-
     {% endfor %}
 
     {% comment %}
-      Stable multi-level sort:
-      1. Alphabetical by name
-      2. By rank
+      Step 3: Append remaining roles not in priority list
     {% endcomment %}
-    {% assign sorted_persons = enriched | sort: "name" %}
-    {% assign sorted_persons = sorted_persons | sort: "__rank" %}
+    {% for person in alpha_sorted %}
+      {% unless rendered_ids contains person.member_id %}
+        {% assign rendered_ids = rendered_ids | push: person.member_id %}
+      {% endunless %}
+    {% endfor %}
+
+    {% comment %}
+      Step 4: Render portraits in that order
+    {% endcomment %}
+
+    {% if include.view == "portrait" or include.view == "small" %}
+
+      {% for id in rendered_ids %}
+        {% for person in alpha_sorted %}
+          {% if person.member_id == id %}
+            {% include portrait.html member=person style=include.view %}
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+
+    {% elsif include.view == "list" %}
+
+      <ul>
+      {% for id in rendered_ids %}
+        {% for person in alpha_sorted %}
+          {% if person.member_id == id %}
+            <li>
+              {% assign display_name = person.name %}
+              {% assign role_data = site.data.types[person.role] %}
+              {% if role_data and role_data.prefix %}
+                {% assign display_name = role_data.prefix | append: " " | append: person.name %}
+              {% endif %}
+
+              {% if person.url %}
+                {% include profile_link.html url=person.url text=display_name %}
+              {% else %}
+                {{ display_name }}
+              {% endif %}
+            </li>
+          {% endif %}
+        {% endfor %}
+      {% endfor %}
+      </ul>
+
+    {% endif %}
 
   {% elsif include.kind == "external" %}
 
     {% assign sorted_persons = persons | sort: "last_name" %}
 
-  {% else %}
-
-    {% assign sorted_persons = persons %}
-
-  {% endif %}
-
-
-  {% comment %}
-    RENDERING
-  {% endcomment %}
-
-  {% if include.view == "portrait" or include.view == "small" %}
-
-    {% for person in sorted_persons %}
-      {% include portrait.html
-        member=person
-        style=include.view
-      %}
-    {% endfor %}
-
-  {% elsif include.view == "list" %}
-
-    <ul>
-    {% for person in sorted_persons %}
-      <li>
-
-        {% if include.kind == "member" %}
-
-          {% assign display_name = person.name %}
-          {% assign role_data = site.data.types[person.role] %}
-
-          {% if role_data and role_data.prefix %}
-            {% assign display_name = role_data.prefix | append: " " | append: person.name %}
-          {% endif %}
-
-          {% if person.url %}
-            {% include profile_link.html url=person.url text=display_name %}
-          {% else %}
-            {{ display_name }}
-          {% endif %}
-
-        {% elsif include.kind == "external" %}
-
-          {% assign display_name = person.first_name | append: " " | append: person.last_name %}
-
-          {% if person.title %}
-            {% assign display_name = person.title | append: " " | append: display_name %}
-          {% endif %}
-
-          {% if person.url %}
-            {% include profile_link.html url=person.url text=display_name %}
-          {% else %}
-            {{ display_name }}
-          {% endif %}
-
-          {% if person.affiliation %}
-            ({{ person.affiliation }})
-          {% endif %}
-
-        {% endif %}
-
-      </li>
-    {% endfor %}
-    </ul>
+    {% if include.view == "portrait" or include.view == "small" %}
+      {% for person in sorted_persons %}
+        {% include portrait.html member=person style=include.view %}
+      {% endfor %}
+    {% elsif include.view == "list" %}
+      <ul>
+      {% for person in sorted_persons %}
+        <li>{{ person.first_name }} {{ person.last_name }}</li>
+      {% endfor %}
+      </ul>
+    {% endif %}
 
   {% endif %}
 

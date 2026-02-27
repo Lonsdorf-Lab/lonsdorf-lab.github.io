@@ -26,9 +26,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Coming Soon
 
-{% assign team_coming_soon = site.members
-  | where: "group", "coming-soon"
-%}
+{% assign team_coming_soon = site.members | where: "group", "coming-soon" %}
 
 {% include people.html persons=team_coming_soon kind="member" view="portrait" %}
 
@@ -36,9 +34,9 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Student Assistants & Research Interns
 
-{% assign team_page__coming_soon = site.members | where: "group", "coming-soon" %}
+{% assign team_assistants = site.members | where: "group", "undergrad" %}
 
-{% include people.html persons=team_page__coming_soon kind="member" view="portrait" %}
+{% include people.html persons=team_assistants kind="member" view="portrait" %}
 
 ## Alumni
 
