@@ -15,10 +15,15 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 
 ## Current Lab Members
 
-{% assign team_current_members = site.members
-  | where: "group", "member"
-  | where_exp: "m", "m.role != 'undergrad'"
-%}
+{% assign team_current_members = "" | split: "" %}
+
+{% assign member_group = site.members | where: "group", "member" %}
+
+{% for m in member_group %}
+  {% unless m.role == "undergrad" %}
+    {% assign team_current_members = team_current_members | push: m %}
+  {% endunless %}
+{% endfor %}
 
 {% include people.html persons=team_current_members kind="member" view="portrait" %}
 
