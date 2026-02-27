@@ -21,14 +21,7 @@ TEAM (Sorted by role, then last name)
 {% if page.members %}
   <h2>Team</h2>
 
-  {% comment %}
-  ------------------------------------------------------------
-  Build enriched member list
-  ------------------------------------------------------------
-  {% endcomment %}
-
   {% assign project_members = "" | split: "" %}
-
   {% for member_id in page.members %}
     {% assign member = site.members | where: "member_id", member_id | first %}
     {% if member %}
@@ -36,9 +29,9 @@ TEAM (Sorted by role, then last name)
     {% endif %}
   {% endfor %}
 
-  {% include people_list.html people=project_members type="members" %}
-
+  {% include people.html people=project_members kind="member" view="small" %}
 {% endif %}
+
 
 {% comment %}
 ============================================================
@@ -48,7 +41,7 @@ EXTERNAL CONTRIBUTORS
 
 {% if page.external_contributors %}
   <h2>External Contributors</h2>
-  {% include people_list.html people=page.external_contributors type="external" %}
+  {% include people.html people=page.external_contributors kind="external" view="list" %}
 {% endif %}
 
 {% comment %}

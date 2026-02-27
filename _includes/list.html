@@ -1,38 +1,89 @@
 {% assign emptyarray = "" | split: "," %}
+
 {% assign data = site.data[include.data]
   | default: site[include.data]
   | default: emptyarray
-  | data_filter: include.filter
 %}
 
-{% if include.data == "members" %}
-  {% assign role_order = "principal-investigator,team-coordinator,lab-manager,postdoc,phd,undergrad" | split: "," %}
+{% if include.filter %}
+  {% assign data = data | data_filter: include.filter %}
+{% endif %}
 
-  {% assign helper_string = "" %}
-  {% for d in data %}
-    {% assign lastname = d.name | split: " " | last | downcase %}
-    {% assign rank = role_order | index_of: d.role %}
-    {% if rank == -1 %}
-      {% assign rank = 999 %}
+{% if include.member_ids %}
+  {% assign id_list = include.member_ids %}
+  {% assign data = data | where_exp: "d", "id_list contains d.member_id" %}
+{% endif %}
+
+{% comment %}
+============================================================
+Generic Rendering Logic
+============================================================
+{% endcomment %}
+
+{% if include.group_by_year %}
+
+  {% assign years = data
+    | group_by_exp: "d", "d.date | date: '%Y'"
+    | sort: "name"
+    | reverse
+  %}
+
+  {% for year in years %}
+    {% assign year_data = year.items %}
+
+    {% if years.size > 1 %}
+      <h3 id="{{ year.name }}">{{ year.name }}</h3>
     {% endif %}
-    {% capture rank_padded %}
-      {% if rank < 10 %}00{{ rank }}{% elsif rank < 100 %}0{{ rank }}{% else %}{{ rank }}{% endif %}
-    {% endcapture %}
-    {% assign key = rank_padded | append: "_" | append: lastname | append: "_" | append: forloop.index0 %}
-    {% if forloop.first %}
-      {% assign helper_string = key %}
-    {% else %}
-      {% assign helper_string = helper_string | append: "," | append: key %}
-    {% endif %}
+
+    {% assign year_data = year_data | sort: "date" | reverse %}
+
+    {% for d in year_data %}
+      {% assign style = d.style | default: include.style %}
+
+      {% include {{ include.component | append: ".html" }}
+        affiliation=d.affiliation
+        author=d.author
+        authors=d.authors
+        buttons=d.buttons
+        caption=d.caption
+        content=d.content
+        date=d.date
+        description=d.description
+        excerpt=d.excerpt
+        height=d.height
+        icon=d.icon
+        id=d.id
+        image=d.image
+        last_modified_at=d.last_modified_at
+        link=d.link
+        lookup=d.lookup
+        name=d.name
+        publisher=d.publisher
+        repo=d.repo
+        role=d.role
+        slug=d.slug
+        style=style
+        subtitle=d.subtitle
+        tags=d.tags
+        text=d.text
+        title=d.title
+        tooltip=d.tooltip
+        type=d.type
+        url=d.url
+        width=d.width
+      %}
+    {% endfor %}
+
   {% endfor %}
 
-  {% assign helper = helper_string | split: "," | sort %}
+{% else %}
 
-  {% for key in helper %}
-    {% assign parts = key | split: "_" %}
-    {% assign index = parts | last | plus: 0 %}
-    {% assign d = data[index] %}
+  {% assign data = data | sort: include.sort | default: data %}
+
+  {% for d in data %}
+
     {% assign style = d.style | default: include.style %}
+
     {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
       author=d.author
@@ -65,110 +116,7 @@
       url=d.url
       width=d.width
     %}
+
   {% endfor %}
 
-  {% else %}
-  {% assign years = data
-    | group_by_exp: "d", "d.date | date: '%Y'"
-    | sort: "name"
-    | reverse
-  %}
-
-  {% for year in years %}
-    {% assign data = year.items %}
-    {% if years.size > 1 %}
-<h3 id="{{ year.name }}">{{ year.name }}</h3>
-      {% assign data = data | sort: "date" | reverse %}
-    {% endif %}
-
-    {% for d in data %}
-      {% assign style = d.style | default: include.style %}
-      {% include {{ include.component | append: ".html" }}
-        affiliation=d.affiliation
-        author=d.author
-        authors=d.authors
-        buttons=d.buttons
-        caption=d.caption
-        content=d.content
-        date=d.date
-        description=d.description
-        excerpt=d.excerpt
-        height=d.height
-        icon=d.icon
-        id=d.id
-        image=d.image
-        last_modified_at=d.last_modified_at
-        link=d.link
-        lookup=d.lookup
-        name=d.name
-        publisher=d.publisher
-        repo=d.repo
-        role=d.role
-        slug=d.slug
-        style=style
-        subtitle=d.subtitle
-        tags=d.tags
-        text=d.text
-        title=d.title
-        tooltip=d.tooltip
-        type=d.type
-        url=d.url
-        width=d.width
-      %}
-    {% endfor %}
-  {% endfor %}
-
-{% else %}
-  {%- comment -%}
-    Default behavior for non-member lists (e.g., publications)
-  {%- endcomment -%}
-  {% assign years = data
-    | group_by_exp: "d", "d.date | date: '%Y'"
-    | sort: "name"
-    | reverse
-  %}
-
-  {% for year in years %}
-    {% assign data = year.items %}
-    {% if years.size > 1 %}
-      <h3 id="{{ year.name }}">{{ year.name }}</h3>
-      {% assign data = data | sort: "date" | reverse %}
-    {% endif %}
-
-    {% for d in data %}
-      {% assign style = d.style | default: include.style %}
-      {% include {{ include.component | append: ".html" }}
-        affiliation=d.affiliation
-        author=d.author
-        authors=d.authors
-        buttons=d.buttons
-        caption=d.caption
-        content=d.content
-        date=d.date
-        description=d.description
-        excerpt=d.excerpt
-        height=d.height
-        icon=d.icon
-        id=d.id
-        image=d.image
-        last_modified_at=d.last_modified_at
-        link=d.link
-        lookup=d.lookup
-        name=d.name
-        publisher=d.publisher
-        repo=d.repo
-        role=d.role
-        slug=d.slug
-        style=style
-        subtitle=d.subtitle
-        tags=d.tags
-        text=d.text
-        title=d.title
-        tooltip=d.tooltip
-        type=d.type
-        url=d.url
-        width=d.width
-      %}
-    {% endfor %}
-  {% endfor %}
 {% endif %}

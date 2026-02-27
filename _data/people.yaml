@@ -9,6 +9,16 @@ member_role_priority:
   - team-coordinator
   - undergrad
 
+# Special ordering for team overview page
+team_overview_role_priority:
+  - professor
+  - principal-investigator
+  - team-coordinator
+  - lab-manager
+  - postdoc
+  - phd
+  - undergrad
+
 # Sorting priority for external contributors (by academic title)
 external_title_priority:
   - Prof. Dr.

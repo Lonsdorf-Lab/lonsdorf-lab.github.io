@@ -1,15 +1,19 @@
 {% assign sorted_entries = "" | split: "" %}
 
-{% if include.type == "members" %}
+{% if include.kind == "member" %}
 
-  {% assign role_priority = site.data.people.member_role_priority %}
+  {% if include.role_priority %}
+    {% assign priority = include.role_priority %}
+  {% else %}
+    {% assign priority = site.data.people.member_role_priority %}
+  {% endif %}
 
   {% for person in include.people %}
 
     {% assign role_clean = person.role | downcase | strip %}
     {% assign rank = 999 %}
 
-    {% for r in role_priority %}
+    {% for r in priority %}
       {% if r == role_clean %}
         {% assign rank = forloop.index0 %}
         {% break %}
@@ -38,9 +42,9 @@
 
   {% endfor %}
 
-{% elsif include.type == "external" %}
+{% elsif include.kind == "external" %}
 
-  {% assign title_priority = site.data.people.external_title_priority %}
+  {% assign priority = site.data.people.external_title_priority %}
 
   {% for person in include.people %}
 
@@ -48,7 +52,7 @@
     {% assign rank = 999 %}
 
     {% if title_clean != "" %}
-      {% for t in title_priority %}
+      {% for t in priority %}
         {% if t == title_clean %}
           {% assign rank = forloop.index0 %}
           {% break %}
@@ -82,7 +86,28 @@
 
 {% assign sorted_entries = sorted_entries | sort %}
 
-<ul>
+{% if include.view == "portrait" or include.view == "small" %}
+
+  {% for entry in sorted_entries %}
+    {% assign parts = entry | split: "|" %}
+    {% assign index = parts[2] | plus: 0 %}
+    {% assign person = include.people[index] %}
+
+    {% assign style = include.view %}
+
+    {% include portrait.html
+      affiliation=person.affiliation
+      image=person.image
+      name=person.name
+      role=person.role
+      url=person.url
+      style=style
+    %}
+  {% endfor %}
+
+{% elsif include.view == "list" %}
+
+  <ul>
   {% for entry in sorted_entries %}
     {% assign parts = entry | split: "|" %}
     {% assign index = parts[2] | plus: 0 %}
@@ -90,7 +115,7 @@
 
     <li>
 
-      {% if include.type == "members" %}
+      {% if include.kind == "member" %}
 
         {% assign display_name = person.name %}
         {% assign role_data = site.data.types[person.role] %}
@@ -98,9 +123,13 @@
           {% assign display_name = role_data.prefix | append: " " | append: person.name %}
         {% endif %}
 
-        {% include profile_link.html url=person.url text=display_name %}
+        {% if person.url %}
+          {% include profile_link.html url=person.url text=display_name %}
+        {% else %}
+          {{ display_name }}
+        {% endif %}
 
-      {% elsif include.type == "external" %}
+      {% elsif include.kind == "external" %}
 
         {% assign display_name = person.first_name | append: " " | append: person.last_name %}
         {% if person.title %}
@@ -120,6 +149,7 @@
       {% endif %}
 
     </li>
-
   {% endfor %}
-</ul>
+  </ul>
+
+{% endif %}
