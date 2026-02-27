@@ -151,12 +151,24 @@
           class="citation-image"
           aria-label="{{ citation.title | default: "citation link" | regex_strip }}"
         >
-          <img
-            src="{{ citation.image | relative_url | uri_escape }}"
-            alt="{{ citation.title | default: "citation image" | regex_strip }}"
-            loading="lazy"
-            {% include fallback.html %}
-          >
+          {% if citation.image %}
+            <img
+              src="{{ citation.image | relative_url | uri_escape }}"
+              alt="{{ citation.title | regex_strip }}"
+              loading="lazy"
+            >
+          {% else %}
+            {% assign type_key = citation.type | downcase | strip %}
+            {% assign type = site.data.types[type_key] %}
+            <div class="citation-image-fallback">
+              {% if type and type.icon %}
+                {% include icon.html icon=type.icon %}
+              {% else %}
+                {% include icon.html icon="fa-solid fa-scroll" %}
+              {% endif %}
+            </div>
+          {% endif %}
+
         </a>
       {% endif %}
 
