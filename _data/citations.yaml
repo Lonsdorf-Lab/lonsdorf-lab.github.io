@@ -541,22 +541,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.31234/osf.io/q2kyf
-  title: Revisiting potential associations between brain morphology, fear acquisition
-    and extinction through new data and a literature review
-  authors:
-  - Mana R Ehlers
-  - Janne Nold
-  - Manuel Kuhn
-  - "Maren Klingelh\xF6fer-Jens"
-  - Tina B Lonsdorf
-  publisher: Center for Open Science
-  date: '2020-07-01'
-  link: https://doi.org/hbb8nt
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.1111/psyp.13549
   title: "Experimental boundary conditions of reinstatement\u2010induced return of\
     \ fear in humans: Is reinstatement in humans what we think it is?"
