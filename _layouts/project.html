@@ -38,7 +38,7 @@ TEAM (Sorted by role, then last name)
       Determine role rank using priority list
       {% endcomment %}
 
-      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc" | split: "," %}
+      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc, pdh, lab-manager" | split: "," %}
       {% assign role_rank = role_order | index_of: member.role %}
 
       {% if role_rank == -1 %}
@@ -47,15 +47,26 @@ TEAM (Sorted by role, then last name)
 
 
       {% comment %}
-      Extract last name (assumes "First Last")
+      Extract last name (based on last_name front matter content)
       {% endcomment %}
-      {% assign name_parts = member.name | split: " " %}
       {% assign last_name = member.last_name | downcase %}
 
       {% comment %}
       Create sortable string key: role_rank|lastname|member_id
       {% endcomment %}
-      {% assign sort_key = role_rank | append: "|" | append: last_name | append: "|" | append: member.member_id %}
+      {% capture rank_padded %}
+        {% if role_rank < 10 %}
+          00{{ role_rank }}
+        {% elsif role_rank < 100 %}
+          0{{ role_rank }}
+        {% else %}
+          {{ role_rank }}
+        {% endif %}
+      {% endcapture %}
+
+      {% assign rank_padded = rank_padded | strip %}
+
+      {% assign sort_key = rank_padded | append: "|" | append: last_name | append: "|" | append: member.member_id %}
 
       {% assign team_members = team_members | push: sort_key %}
 
