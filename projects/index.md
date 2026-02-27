@@ -31,7 +31,6 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 {% endfor %}
 
 
-
 ## {% include icon.html icon="fa-solid fa-check" %} Past Projects
 
 {% assign past_projects = site.projects | where: "group", "finished" %}
