@@ -158,15 +158,16 @@
               loading="lazy"
             >
           {% else %}
-            {% assign type_key = citation.type | downcase | strip %}
-            {% assign type = site.data.types[type_key] %}
             <div class="citation-image-fallback">
+              {% assign type_key = citation.type | downcase | strip %}
+              {% assign type = site.data.types[type_key] %}
               {% if type and type.icon %}
                 {% include icon.html icon=type.icon %}
               {% else %}
                 {% include icon.html icon="fa-solid fa-scroll" %}
               {% endif %}
             </div>
+
           {% endif %}
 
         </a>
@@ -176,7 +177,6 @@
 
         {% assign type_key = citation.type | downcase | strip %}
         {% assign type = site.data.types[type_key] %}
-        {% include icon.html icon=type.icon %}
 
         <a
           {% if citation.link %}
