@@ -10,7 +10,7 @@ nav:
 {% assign test = site.members | where: "group", "coming-soon" %}
 Before include: {{ test | size }}
 
-{% include people.html persons=test %}
+{% include people.html persons=test view="portrait" %}
 
 # {% include icon.html icon="fa-solid fa-users" %} Team
 
