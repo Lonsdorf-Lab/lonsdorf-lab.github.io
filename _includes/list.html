@@ -78,7 +78,10 @@ Generic Rendering Logic
 
 {% else %}
 
-  {% assign data = data | sort: include.sort | default: data %}
+  {% if include.sort %}
+    {% assign data = data | sort: include.sort %}
+  {% endif %}
+
 
   {% for d in data %}
 
