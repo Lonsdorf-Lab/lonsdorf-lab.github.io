@@ -1,0 +1,15 @@
+# Sorting priority for internal members (by role)
+member_role_priority:
+  - professor
+  - assistant-professor
+  - principal-investigator
+  - postdoc
+  - phd
+  - lab-manager
+  - team-coordinator
+  - undergrad
+
+# Sorting priority for external contributors (by academic title)
+external_title_priority:
+  - Prof. Dr.
+  - Dr.

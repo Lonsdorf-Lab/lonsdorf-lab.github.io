@@ -1,0 +1,125 @@
+{% assign sorted_entries = "" | split: "" %}
+
+{% if include.type == "members" %}
+
+  {% assign role_priority = site.data.people.member_role_priority %}
+
+  {% for person in include.people %}
+
+    {% assign role_clean = person.role | downcase | strip %}
+    {% assign rank = 999 %}
+
+    {% for r in role_priority %}
+      {% if r == role_clean %}
+        {% assign rank = forloop.index0 %}
+        {% break %}
+      {% endif %}
+    {% endfor %}
+
+    {% capture rank_padded %}
+      {% if rank < 10 %}
+        00{{ rank }}
+      {% elsif rank < 100 %}
+        0{{ rank }}
+      {% else %}
+        {{ rank }}
+      {% endif %}
+    {% endcapture %}
+    {% assign rank_padded = rank_padded | strip %}
+
+    {% assign last_name = person.name | split: " " | last | downcase %}
+
+    {% capture sort_key %}
+      {{ rank_padded }}|{{ last_name }}|{{ forloop.index0 }}
+    {% endcapture %}
+    {% assign sort_key = sort_key | strip %}
+
+    {% assign sorted_entries = sorted_entries | push: sort_key %}
+
+  {% endfor %}
+
+{% elsif include.type == "external" %}
+
+  {% assign title_priority = site.data.people.external_title_priority %}
+
+  {% for person in include.people %}
+
+    {% assign title_clean = person.title | default: "" | strip %}
+    {% assign rank = 999 %}
+
+    {% if title_clean != "" %}
+      {% for t in title_priority %}
+        {% if t == title_clean %}
+          {% assign rank = forloop.index0 %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% capture rank_padded %}
+      {% if rank < 10 %}
+        00{{ rank }}
+      {% elsif rank < 100 %}
+        0{{ rank }}
+      {% else %}
+        {{ rank }}
+      {% endif %}
+    {% endcapture %}
+    {% assign rank_padded = rank_padded | strip %}
+
+    {% assign last_name = person.last_name | downcase | strip %}
+
+    {% capture sort_key %}
+      {{ rank_padded }}|{{ last_name }}|{{ forloop.index0 }}
+    {% endcapture %}
+    {% assign sort_key = sort_key | strip %}
+
+    {% assign sorted_entries = sorted_entries | push: sort_key %}
+
+  {% endfor %}
+
+{% endif %}
+
+{% assign sorted_entries = sorted_entries | sort %}
+
+<ul>
+  {% for entry in sorted_entries %}
+    {% assign parts = entry | split: "|" %}
+    {% assign index = parts[2] | plus: 0 %}
+    {% assign person = include.people[index] %}
+
+    <li>
+
+      {% if include.type == "members" %}
+
+        {% assign display_name = person.name %}
+        {% assign role_data = site.data.types[person.role] %}
+        {% if role_data and role_data.prefix %}
+          {% assign display_name = role_data.prefix | append: " " | append: person.name %}
+        {% endif %}
+
+        {% include profile_link.html url=person.url text=display_name %}
+
+      {% elsif include.type == "external" %}
+
+        {% assign display_name = person.first_name | append: " " | append: person.last_name %}
+        {% if person.title %}
+          {% assign display_name = person.title | append: " " | append: display_name %}
+        {% endif %}
+
+        {% if person.url %}
+          {% include profile_link.html url=person.url text=display_name %}
+        {% else %}
+          {{ display_name }}
+        {% endif %}
+
+        {% if person.affiliation %}
+          ({{ person.affiliation }})
+        {% endif %}
+
+      {% endif %}
+
+    </li>
+
+  {% endfor %}
+</ul>
