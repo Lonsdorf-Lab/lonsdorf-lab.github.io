@@ -5,7 +5,7 @@
   - filter out blank sections
 -->
 
-{% assign page_page_content = include.content %}
+{% assign page_content = include.content %}
 
 {% assign sections = page_content | split: "<!-- section break -->" | array_filter %}
 
