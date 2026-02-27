@@ -51,6 +51,8 @@ TEAM (Sorted by role, then last name)
       {% endcomment %}
       {% assign last_name = member.last_name | downcase %}
 
+      {{ member.name }} → {{ member.last_name}} → {{ member.role }} → {{ role_rank }}
+
       {% comment %}
       Create sortable string key: role_rank|lastname|member_id
       {% endcomment %}
