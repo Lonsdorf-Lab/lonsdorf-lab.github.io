@@ -34,7 +34,7 @@ TEAM (Sorted by role, then last name)
 
     {% if member %}
 
-      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc" | split: "," %}
+      {% assign role_order = "professor,assistant-professor,principal-investigator,postdoc,lab-manager" | split: "," %}
       {% assign role_clean = member.role | downcase | strip %}
 
       {% assign role_rank = 999 %}
@@ -105,8 +105,63 @@ TEAM (Sorted by role, then last name)
 
   {% if page.external_contributors %}
     <h2>External Contributors</h2>
+
+    {% assign sorted_people = "" | split: "" %}
+
+    {% for person in page.external_contributors %}
+
+      {% assign name_clean = person.name | strip %}
+
+      {% comment %}
+      Determine title rank
+      0 = Professor
+      1 = Doctor
+      2 = no academic title
+      {% endcomment %}
+
+      {% assign title_rank = 2 %}
+
+      {% if name_clean contains "Prof." %}
+        {% assign title_rank = 0 %}
+      {% elsif name_clean contains "Dr." %}
+        {% assign title_rank = 1 %}
+      {% endif %}
+
+      {% comment %}
+      Extract last name (assumes last token is surname)
+      {% endcomment %}
+      {% assign last_name = name_clean | split: " " | last | downcase %}
+
+      {% comment %}
+      Zero-pad rank for correct lexicographic sorting
+      {% endcomment %}
+      {% capture rank_padded %}
+        {% if title_rank < 10 %}
+          00{{ title_rank }}
+        {% else %}
+          {{ title_rank }}
+        {% endif %}
+      {% endcapture %}
+
+      {% assign rank_padded = rank_padded | strip %}
+
+      {% capture sort_key %}
+        {{ rank_padded }}|{{ last_name }}|{{ forloop.index0 }}
+      {% endcapture %}
+
+      {% assign sort_key = sort_key | strip %}
+      {% assign sorted_people = sorted_people | push: sort_key %}
+
+    {% endfor %}
+
+    {% assign sorted_people = sorted_people | sort %}
+
     <ul>
-      {% for person in page.external_contributors %}
+      {% for entry in sorted_people %}
+        {% assign parts = entry | split: "|" %}
+        {% assign index = parts[2] | plus: 0 %}
+        {% assign person = page.external_contributors[index] %}
+
         <li>
           {% if person.url %}
             {% include profile_link.html url=person.url text=person.name %}
@@ -119,7 +174,9 @@ TEAM (Sorted by role, then last name)
         </li>
       {% endfor %}
     </ul>
+
   {% endif %}
+
 
 
 {% comment %}
