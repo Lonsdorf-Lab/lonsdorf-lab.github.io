@@ -14,8 +14,11 @@
 }
 
 .profile-link-icon {
-  font-size: 0.75em;
+  font-size: 0.65em;
   opacity: 0.6;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-left: 0.25rem;
   transition: opacity var(--transition),
               transform var(--transition);
 }
