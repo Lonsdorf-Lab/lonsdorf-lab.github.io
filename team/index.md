@@ -73,7 +73,11 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 %}
 
 {% include section.html background="images/background.png" dark=false %}
-  
+
+{{ current_members | size }}
+{{ coming_soon | size }}
+{{ undergrads | size }}
+{{ alumni | size }}
 
 **Interested in joining the lab?**
 
