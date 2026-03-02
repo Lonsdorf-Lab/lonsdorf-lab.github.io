@@ -32,7 +32,9 @@ Generic Rendering Logic
     {% assign year_data = year.items %}
 
     {% if years.size > 1 %}
-      {{--}}<h3 id="{{ year.name }}">{{ year.name }}</h3>
+      
+      <h3 id="{{ year.name }}">{{ year.name }}</h3>
+      
     {% endif %}
 
     {% assign year_data = year_data | sort: "date" | reverse %}
