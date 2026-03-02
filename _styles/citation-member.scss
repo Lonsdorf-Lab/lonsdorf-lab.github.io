@@ -51,8 +51,10 @@
 
 /* styling for external contributors on project profile pages */
 .external-contributors {
-  list-style: none;
-  padding-left: 0;
+  list-style-type: disc;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  margin: 0 0 1rem 0;
 }
 
 .external-contributor {
@@ -60,5 +62,6 @@
 }
 
 .external-contributor .profile-link-text {
-  font-weight: var(--medium); // same as lab-author
+  font-weight: var(--medium);
 }
+
