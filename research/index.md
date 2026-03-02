@@ -19,4 +19,4 @@ Here you can find all our publications ordered by year. You can filter for speci
 
 {% include search-info.html %}
 
-{% include list.html data="citations" component="citation" style="rich" %}
+{% include list.html data="citations" component="citation" style="rich" group_by_year=true %}
