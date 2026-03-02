@@ -129,7 +129,9 @@
       {% endcapture %}
 
       <li class="external-contributor lab-author">
-        {% assign clean_text = display_text | strip %}
+        
+      {% assign clean_text = display_text | strip %}
+        
         {% if person.url %}
             {% include profile_link.html
               url=person.url
@@ -148,16 +150,3 @@
     </ul>
 
   {% endif %}
-
-
-- {% if person.url %}
-    [{{ with_affiliation | strip }}]({{ person.url }})
-  {% else %}
-    {{ with_affiliation | strip }}
-  {% endif %}
-
-    {% endfor %}
-
-  {% endif %}
-
-{% endif %}
