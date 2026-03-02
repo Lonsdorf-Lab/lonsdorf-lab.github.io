@@ -129,15 +129,15 @@
       {% endcapture %}
 
       <li class="external-contributor lab-author">
-
+        {% assign clean_text = display_text | strip %}
         {% if person.url %}
-          {% include profile_link.html
-            url=person.url
-            text=display_text | strip
-          %}
+            {% include profile_link.html
+              url=person.url
+              text=clean_text
+            %}
         {% else %}
           <span class="profile-link-text">
-            {{ display_text | strip }}
+            {{ clean_text }}
           </span>
         {% endif %}
 
