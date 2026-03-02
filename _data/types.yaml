@@ -1,14 +1,14 @@
 # map general type to default/fallback icon, text, etc.
 
 # team member roles
-principal-investigator:
-  icon: fa-solid fa-microscope
-  description: Principal Investigator
-  prefix: "Prof. Dr."
-
 professor:
   icon: icons/professor.svg
   description: Head of department
+  prefix: "Prof. Dr."
+
+principal-investigator:
+  icon: fa-solid fa-microscope
+  description: Principal Investigator
   prefix: "Prof. Dr."
 
 assistant-professor:

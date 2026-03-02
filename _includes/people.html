@@ -4,21 +4,23 @@
 
   {% if include.kind == "member" %}
 
+    {%- comment -%}
+    Determine role priority
+    {%- endcomment -%}
     {% if include.role_priority %}
       {% assign priority = include.role_priority %}
     {% else %}
       {% assign priority = site.data.people.member_role_priority %}
     {% endif %}
 
-    {% comment %}
-      Step 1: Sort alphabetically by name (base sort)
-    {% endcomment %}
-    {% assign alpha_sorted = persons | sort: "name" %}
+    {%- comment -%}
+    Step 1: Sort alphabetically by last_name (fallback to name)
+    {%- endcomment -%}
+    {% assign alpha_sorted = persons | sort: "last_name" %}
 
-    {% comment %}
-      Step 2: Render by role priority order
-    {% endcomment %}
-
+    {%- comment -%}
+    Step 2: Build ordered list of IDs by role priority
+    {%- endcomment -%}
     {% assign rendered_ids = "" | split: "" %}
 
     {% for role_name in priority %}
@@ -29,18 +31,18 @@
       {% endfor %}
     {% endfor %}
 
-    {% comment %}
-      Step 3: Append remaining roles not in priority list
-    {% endcomment %}
+    {%- comment -%}
+    Step 3: Append roles not defined in priority
+    {%- endcomment -%}
     {% for person in alpha_sorted %}
       {% unless rendered_ids contains person.member_id %}
         {% assign rendered_ids = rendered_ids | push: person.member_id %}
       {% endunless %}
     {% endfor %}
 
-    {% comment %}
-      Step 4: Render portraits in that order
-    {% endcomment %}
+    {%- comment -%}
+    Step 4: Render
+    {%- endcomment -%}
 
     {% if include.view == "portrait" or include.view == "small" %}
 
@@ -54,45 +56,93 @@
 
     {% elsif include.view == "list" %}
 
-      <ul>
       {% for id in rendered_ids %}
         {% for person in alpha_sorted %}
           {% if person.member_id == id %}
-            <li>
-              {% assign display_name = person.name %}
-              {% assign role_data = site.data.types[person.role] %}
-              {% if role_data and role_data.prefix %}
-                {% assign display_name = role_data.prefix | append: " " | append: person.name %}
-              {% endif %}
 
-              {% if person.url %}
-                {% include profile_link.html url=person.url text=display_name %}
-              {% else %}
-                {{ display_name }}
-              {% endif %}
-            </li>
+- {% assign display_name = person.name %}
+  {% assign role_data = site.data.types[person.role] %}
+  {% if role_data and role_data.prefix %}
+    {% assign display_name = role_data.prefix | append: " " | append: person.name %}
+  {% endif %}
+  {% if person.url %}
+    [{{ display_name }}]({{ person.url }})
+  {% else %}
+    {{ display_name }}
+  {% endif %}
+
           {% endif %}
         {% endfor %}
       {% endfor %}
-      </ul>
 
     {% endif %}
+
+
 
   {% elsif include.kind == "external" %}
 
-    {% assign sorted_persons = persons | sort: "last_name" %}
+    {%- comment -%}
+    External contributors sorting:
+    1. Title priority
+    2. Last name
+    {%- endcomment -%}
 
-    {% if include.view == "portrait" or include.view == "small" %}
-      {% for person in sorted_persons %}
-        {% include portrait.html member=person style=include.view %}
+    {% assign title_priority = site.data.people.external_title_priority %}
+
+    {%- comment -%}
+    First: alphabetical by last_name
+    {%- endcomment -%}
+    {% assign alpha_sorted = persons | sort: "last_name" %}
+
+    {%- comment -%}
+    Build ordered list by title priority
+    {%- endcomment -%}
+    {% assign ordered = "" | split: "" %}
+
+    {% for title in title_priority %}
+      {% for person in alpha_sorted %}
+        {% if person.title == title %}
+          {% assign ordered = ordered | push: person %}
+        {% endif %}
       {% endfor %}
-    {% elsif include.view == "list" %}
-      <ul>
-      {% for person in sorted_persons %}
-        <li>{{ person.first_name }} {{ person.last_name }}</li>
-      {% endfor %}
-      </ul>
-    {% endif %}
+    {% endfor %}
+
+    {%- comment -%}
+    Append persons without matching title priority
+    {%- endcomment -%}
+    {% for person in alpha_sorted %}
+      {% unless ordered contains person %}
+        {% assign ordered = ordered | push: person %}
+      {% endunless %}
+    {% endfor %}
+
+    {%- comment -%}
+    Render as:
+    [<title> <first_name> <last_name> (<affiliation>)](<url>)
+    {%- endcomment -%}
+
+    {% for person in ordered %}
+
+      {% capture full_name %}
+        {% if person.title %}{{ person.title }} {% endif %}
+        {% if person.first_name %}{{ person.first_name }} {% endif %}
+        {% if person.last_name %}{{ person.last_name }}{% endif %}
+      {% endcapture %}
+
+      {% capture with_affiliation %}
+        {{ full_name | strip }}
+        {% if person.affiliation %}
+          ({{ person.affiliation }})
+        {% endif %}
+      {% endcapture %}
+
+- {% if person.url %}
+    [{{ with_affiliation | strip }}]({{ person.url }})
+  {% else %}
+    {{ with_affiliation | strip }}
+  {% endif %}
+
+    {% endfor %}
 
   {% endif %}
 
