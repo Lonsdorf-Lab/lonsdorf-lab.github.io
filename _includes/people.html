@@ -88,17 +88,12 @@
     {%- endcomment -%}
 
     {% assign title_priority = site.data.people.external_title_priority %}
-
-    {%- comment -%}
-    First: alphabetical by last_name
-    {%- endcomment -%}
     {% assign alpha_sorted = persons | sort: "last_name" %}
-
-    {%- comment -%}
-    Build ordered list by title priority
-    {%- endcomment -%}
     {% assign ordered = "" | split: "" %}
 
+    {%- comment -%}
+    Order by title priority
+    {%- endcomment -%}
     {% for title in title_priority %}
       {% for person in alpha_sorted %}
         {% if person.title == title %}
@@ -108,7 +103,7 @@
     {% endfor %}
 
     {%- comment -%}
-    Append persons without matching title priority
+    Append persons without matching title
     {%- endcomment -%}
     {% for person in alpha_sorted %}
       {% unless ordered contains person %}
@@ -116,10 +111,7 @@
       {% endunless %}
     {% endfor %}
 
-    {%- comment -%}
-    Render as:
-    [<title> <first_name> <last_name> (<affiliation>)](<url>)
-    {%- endcomment -%}
+    <ul class="external-contributors">
 
     {% for person in ordered %}
 
@@ -129,12 +121,34 @@
         {% if person.last_name %}{{ person.last_name }}{% endif %}
       {% endcapture %}
 
-      {% capture with_affiliation %}
+      {% capture display_text %}
         {{ full_name | strip }}
         {% if person.affiliation %}
           ({{ person.affiliation }})
         {% endif %}
       {% endcapture %}
+
+      <li class="external-contributor lab-author">
+
+        {% if person.url %}
+          {% include profile_link.html
+            url=person.url
+            text=display_text | strip
+          %}
+        {% else %}
+          <span class="profile-link-text">
+            {{ display_text | strip }}
+          </span>
+        {% endif %}
+
+      </li>
+
+    {% endfor %}
+
+    </ul>
+
+  {% endif %}
+
 
 - {% if person.url %}
     [{{ with_affiliation | strip }}]({{ person.url }})

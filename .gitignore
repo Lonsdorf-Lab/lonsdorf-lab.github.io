@@ -15,7 +15,4 @@ lonsdorf-lab.code-workspace
 .vscode/settings.json
 _custom_scripts/update_sources_runner.R
 _data/Update_sources_yaml.bat
-_data/people.txt
-_data/types.txt
-team/index.txt
-_projects/eifel-rof.txt
+BIKI-files
