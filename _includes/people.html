@@ -60,16 +60,16 @@
         {% for person in alpha_sorted %}
           {% if person.member_id == id %}
 
-- {% assign display_name = person.name %}
-  {% assign role_data = site.data.types[person.role] %}
-  {% if role_data and role_data.prefix %}
-    {% assign display_name = role_data.prefix | append: " " | append: person.name %}
-  {% endif %}
-  {% if person.url %}
-    [{{ display_name }}]({{ person.url }})
-  {% else %}
-    {{ display_name }}
-  {% endif %}
+          - {% assign display_name = person.name %}
+            {% assign role_data = site.data.types[person.role] %}
+            {% if role_data and role_data.prefix %}
+              {% assign display_name = role_data.prefix | append: " " | append: person.name %}
+            {% endif %}
+            {% if person.url %}
+              [{{ display_name }}]({{ person.url }})
+            {% else %}
+              {{ display_name }}
+            {% endif %}
 
           {% endif %}
         {% endfor %}
@@ -150,3 +150,5 @@
     </ul>
 
   {% endif %}
+
+{% endif %}
