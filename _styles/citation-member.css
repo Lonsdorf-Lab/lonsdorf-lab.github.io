@@ -1,3 +1,4 @@
+/* Styling information for team member names in citations */
 .citation-member {
   margin-bottom: 1rem;
 }
@@ -22,14 +23,6 @@
   font-family: inherit;
 }
 
-.current-author {
-  font-weight: var(--medium);
-}
-
-.current-author .profile-link {
-  color: var(--black);
-}
-
 /* Ensure all citation layouts are left-aligned */
 .citation-container,
 .citation,
@@ -38,7 +31,31 @@
   text-align: left;
 }
 
+/* styling for the own name in a citation on a team member's profile page */
+.current-author {
+  font-weight: var(--medium);
+}
+
+.current-author .profile-link {
+  color: var(--black);
+}
+
+/* styling for lab authors' names in a citation  */
 .lab-author .profile-link-text {
+  font-weight: var(--medium);
+}
+
+/* styling for external contributors on project profile pages */
+.external-contributors {
+  list-style: none;
+  padding-left: 0;
+}
+
+.external-contributor {
+  margin-bottom: 0.4rem;
+}
+
+.external-contributor .profile-link-text {
   font-weight: var(--medium);
 }
 
