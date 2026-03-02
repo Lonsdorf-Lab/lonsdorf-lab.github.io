@@ -33,7 +33,9 @@ Generic Rendering Logic
 
     {% if years.size > 1 %}
       
-      <h3> {{ year.name }} </h3>
+      <div class="year-group">
+        <h3 id="{{ year.name }}"> {{ year.name }} </h3>
+      </div>
 
     {% endif %}
 
