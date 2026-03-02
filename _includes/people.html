@@ -91,9 +91,7 @@
     {% assign alpha_sorted = persons | sort: "last_name" %}
     {% assign ordered = "" | split: "" %}
 
-    {%- comment -%}
-    Order by title priority
-    {%- endcomment -%}
+    {%- comment -%} Order by title priority {%- endcomment -%}
     {% for title in title_priority %}
       {% for person in alpha_sorted %}
         {% if person.title == title %}
@@ -102,9 +100,7 @@
       {% endfor %}
     {% endfor %}
 
-    {%- comment -%}
-    Append persons without matching title
-    {%- endcomment -%}
+    {%- comment -%} Append persons without matching title {%- endcomment -%}
     {% for person in alpha_sorted %}
       {% unless ordered contains person %}
         {% assign ordered = ordered | push: person %}
@@ -112,41 +108,38 @@
     {% endfor %}
 
     <ul class="external-contributors">
+      {% for person in ordered %}
 
-    {% for person in ordered %}
+        {%- assign full_name = "" -%}
+        {%- if person.title -%}
+          {%- assign full_name = full_name | append: person.title | append: " " -%}
+        {%- endif -%}
+        {%- if person.first_name -%}
+          {%- assign full_name = full_name | append: person.first_name | append: " " -%}
+        {%- endif -%}
+        {%- if person.last_name -%}
+          {%- assign full_name = full_name | append: person.last_name -%}
+        {%- endif -%}
 
-      {% capture full_name %}
-        {% if person.title %}{{ person.title }} {% endif %}
-        {% if person.first_name %}{{ person.first_name }} {% endif %}
-        {% if person.last_name %}{{ person.last_name }}{% endif %}
-      {% endcapture %}
+        {%- assign display_text = full_name | strip -%}
+        {%- if person.affiliation -%}
+          {%- assign display_text = display_text | append: " (" | append: person.affiliation | append: ")" -%}
+        {%- endif -%}
 
-      {% capture display_text %}
-        {{ full_name | strip }}
-        {% if person.affiliation %}
-          ({{ person.affiliation }})
-        {% endif %}
-      {% endcapture %}
-
-      <li class="external-contributor lab-author">
-        
-      {% assign clean_text = display_text | strip %}
-        
-        {% if person.url %}
+        <li class="external-contributor lab-author">
+          {% if person.url %}
             {% include profile_link.html
               url=person.url
-              text=clean_text
+              text=display_text
             %}
-        {% else %}
-          <span class="profile-link-text">
-            {{ clean_text }}
-          </span>
-        {% endif %}
+          {% else %}
+            <span class="profile-link-text">
+              {{ display_text }}
+            </span>
+          {% endif %}
+        </li>
 
-      </li>
-
-    {% endfor %}
-
+      {% endfor %}
     </ul>
 
   {% endif %}
