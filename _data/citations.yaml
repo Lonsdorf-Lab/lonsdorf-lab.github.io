@@ -216,33 +216,6 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
-- id: doi:10.21203/rs.3.rs-3410491/v1
-  title: 'Bad days build better days: mental health improvement after the COVID-19
-    pandemic in individuals with psychosocial distress'
-  type: paper
-  authors:
-  - Mario Reutter
-  - Katharina Hutterer
-  - "Marthe Gr\xFCndahl"
-  - Dominik Gall
-  - Udo Dannlowski
-  - Katharina Domschke
-  - Elisabeth Leehr
-  - Tina Lonsdorf
-  - Ulrike Lueken
-  - Andreas Reif
-  - Miriam Schiele
-  - Peter Zwanzger
-  - Paul Pauli
-  - Grit Hein
-  - Matthias Gamer
-  publisher: Springer Science and Business Media LLC
-  date: '2023-10-11'
-  link: https://doi.org/g84qq3
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
 - id: doi:10.31234/osf.io/g6qku
   title: Within-subject reliability, occasion specificity, and validity of fluctuations
     of the Stroop and Go/No-Go tasks in ecological momentary assessment
@@ -1505,3 +1478,28 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1038/s41598-024-55839-3
+  title: Mental health improvement after the COVID-19 pandemic in individuals with
+    psychological distress
+  type: paper
+  authors:
+  - Mario Reutter
+  - Katharina Hutterer
+  - "Marthe Gr\xFCndahl"
+  - Dominik Gall
+  - Udo Dannlowski
+  - Katharina Domschke
+  - Elisabeth J. Leehr
+  - Tina B. Lonsdorf
+  - Ulrike Lueken
+  - Andreas Reif
+  - Miriam A. Schiele
+  - Peter Zwanzger
+  - Paul Pauli
+  - Grit Hein
+  - Matthias Gamer
+  publisher: Scientific Reports
+  date: '2024-03-07'
+  link: https://doi.org/10.1038/s41598-024-55839-3
+  plugin: sources.py
+  file: sources.yaml
