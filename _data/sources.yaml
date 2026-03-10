@@ -61,7 +61,6 @@
 - id: doi:10.31234/osf.io/6m72g
   remove: true
 
-## Add preprints as buttons for each of the citations with multiple entries per publication
 # Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
 - id: doi:10.1080/00223891.2025.2513936
   buttons:
@@ -106,3 +105,31 @@
 # Revisiting potential associations between brain morphology, fear acquisition and extinction through new data and a literature review
 - id: doi:10.31234/osf.io/q2kyf
   remove: true
+
+# Bad days build better days: mental health improvement after the COVID-19 pandemic in individuals with psychosocial distress
+# NOTE: Only preprint listed in Tina's ORCID --> manual removal of preprint and addition of journal publication
+- id: doi:10.21203/rs.3.rs-3410491/v1
+  remove: true
+
+- id: doi:10.1038/s41598-024-55839-3
+  title: Mental health improvement after the COVID-19 pandemic in individuals with psychological distress
+  type: paper
+  authors:
+    - Mario Reutter
+    - Katharina Hutterer
+    - Marthe Gründahl
+    - Dominik Gall
+    - Udo Dannlowski
+    - Katharina Domschke
+    - Elisabeth J. Leehr
+    - Tina B. Lonsdorf
+    - Ulrike Lueken
+    - Andreas Reif
+    - Miriam A. Schiele
+    - Peter Zwanzger
+    - Paul Pauli
+    - Grit Hein
+    - Matthias Gamer
+  publisher: Scientific Reports
+  date: '2024-03-07'
+  link: https://doi.org/10.1038/s41598-024-55839-3
