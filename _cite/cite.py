@@ -12,7 +12,7 @@ import string
 from collections import defaultdict
 
 
-# custom function to include only latest publication
+# Custom function to (optionally) exclude certain publications ----            
 def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
     """
     Apply suppression logic to compiled sources before citation generation.
@@ -30,7 +30,7 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
     from collections import defaultdict
 
     # ----------------------------
-    # Load Config
+    ## Load Config ----
     # ----------------------------
 
     try:
@@ -55,13 +55,14 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
 
     preprint_publishers = suppression_cfg.get("preprint_publishers", [])
 
-    # Normalize publisher patterns for robust matching
+    ## Normalize publisher patterns for robust matching ----
     preprint_publishers = [p.lower() for p in preprint_publishers]
 
     # ----------------------------
-    # Helper Functions
+    ## Helper Functions ----
     # ----------------------------
 
+    ### title normalization ----
     def normalize_title(title):
         if not title:
             return ""
@@ -69,6 +70,7 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
         title = title.translate(str.maketrans("", "", string.punctuation))
         return " ".join(title.split())
 
+    ### preprint status ----
     def is_preprint(source):
         publisher = get_safe(source, "publisher", "")
         publisher = str(publisher).lower()
@@ -82,9 +84,9 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
         match = re.search(r"_v(\d+)$", doi or "")
         return int(match.group(1)) if match else None
 
-    # ----------------------------
-    # Group Sources by Normalized Title
-    # ----------------------------
+    # ---------------------------------------
+    ## Group Sources by Normalized Title ----
+    # ---------------------------------------
 
     log("Applying suppression rules")
 
@@ -107,9 +109,9 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
 
     suppressed_count = 0
 
-    # ----------------------------
-    # Apply Suppression Logic
-    # ----------------------------
+    # -----------------------------
+    ## Apply Suppression Logic ----
+    # -----------------------------
 
     for norm_title, entries in grouped.items():
 
@@ -149,17 +151,141 @@ def apply_suppression_rules(sources, config_path="_data/citation_config.yaml"):
 
     return sources
 
+# Custom function to (optionally) replace metadata on a general (e.g., publisher) level ----
+def apply_metadata_replacements(sources, config_path="_data/citation_config.yaml"):
+    """
+    Apply configurable metadata replacement rules to compiled sources.
+
+    Supports:
+        - match_field: field to inspect
+        - target_field: field to modify
+        - match_type: exact | contains | regex
+        - replace: replacement value
+
+    Behavior:
+        - Rules are applied in order.
+        - Each rule may modify multiple sources.
+        - A rule modifies at most one target field per source.
+        - Safe failure if config missing or malformed.
+    """
+
+    import re
+
+    # ----------------------------
+    ## Load configuration --------
+    # ----------------------------
+
+    try:
+        config = load_data(config_path)
+    except Exception:
+        log("No citation_config.yaml found. Skipping metadata replacements.", level="WARNING")
+        return sources
+
+    replacement_cfg = config.get("metadata_replacements", {})
+
+    if not replacement_cfg.get("enabled", False):
+        log("Metadata replacement disabled via config.")
+        return sources
+
+    rules = replacement_cfg.get("rules", [])
+
+    if not isinstance(rules, list) or len(rules) == 0:
+        log("No metadata replacement rules defined.", level="WARNING")
+        return sources
+
+    log("Applying metadata replacement rules")
+
+    # ----------------------------
+    ## Helper: match logic -------
+    # ----------------------------
+
+    def matches(value, pattern, match_type):
+        if value is None:
+            return False
+
+        value = str(value)
+
+        if match_type == "exact":
+            return value == pattern
+
+        elif match_type == "contains":
+            return pattern.lower() in value.lower()
+
+        elif match_type == "regex":
+            try:
+                return re.search(pattern, value) is not None
+            except re.error as e:
+                log(f"Invalid regex pattern '{pattern}': {e}", level="ERROR")
+                return False
+
+        else:
+            log(f"Unknown match_type '{match_type}'", level="WARNING")
+            return False
+
+    # ----------------------------
+    ## Apply rules ---------------
+    # ----------------------------
+
+    total_replacements = 0
+
+    for rule_index, rule in enumerate(rules, start=1):
+
+        match_field = rule.get("match_field")
+        target_field = rule.get("target_field")
+        pattern = rule.get("match")
+        match_type = rule.get("match_type", "contains")
+        replacement = rule.get("replace")
+
+        ### Validate rule structure ----
+        if not all([match_field, target_field, pattern is not None, replacement is not None]):
+            log(
+                f"Malformed metadata replacement rule #{rule_index}: {rule}",
+                level="ERROR"
+            )
+            continue
+
+        log(
+            f"Rule #{rule_index}: if {match_field} {match_type} '{pattern}' "
+            f"→ set {target_field} = '{replacement}'",
+            level=2
+        )
+
+        for source in sources:
+
+            match_value = get_safe(source, match_field, None)
+
+            if not matches(match_value, pattern, match_type):
+                continue
+
+            original_value = get_safe(source, target_field, None)
+
+            ### Only replace if different (avoids unnecessary noise) ----
+            if original_value != replacement:
+
+                source[target_field] = replacement
+                total_replacements += 1
+
+                log(
+                    f"Replaced {target_field}: "
+                    f"'{original_value}' → '{replacement}' "
+                    f"(matched on {match_field})",
+                    level=3
+                )
+
+    log(f"{total_replacements} metadata field(s) replaced", level=1)
+
+    return sources
 
 
-# load environment variables
+# load environment variables ----
 load_dotenv()
 
 
-# save errors/warnings for reporting at end
+# save errors/warnings for reporting at end ----
 errors = []
 warnings = []
 
-# output citations file
+# output citations file ----
 output_file = "_data/citations.yaml"
 
 
@@ -167,30 +293,30 @@ log()
 
 log("Compiling sources")
 
-# compiled list of sources
+# compiled list of sources ----
 sources = []
 
-# in-order list of plugins to run
+# in-order list of plugins to run ----
 plugins = ["google-scholar", "pubmed", "orcid", "sources"]
 
-# loop through plugins
+# loop through plugins ----
 for plugin in plugins:
-    # convert into path object
+    ## convert into path object ----
     plugin = Path(f"plugins/{plugin}.py")
 
     log(f"Running {plugin.stem} plugin")
 
-    # get all data files to process with current plugin
+    ## get all data files to process with current plugin ----
     files = Path.cwd().glob(f"_data/{plugin.stem}*.*")
     files = list(filter(lambda p: p.suffix in [".yaml", ".yml", ".json"], files))
 
     log(f"Found {len(files)} {plugin.stem}* data file(s)", indent=1)
 
-    # loop through data files
+    ## loop through data files ----
     for file in files:
         log(f"Processing data file {file.name}", indent=1)
 
-        # load data from file
+        ### load data from file ----
         try:
             data = load_data(file)
             # check if file in correct format
@@ -201,7 +327,7 @@ for plugin in plugins:
             errors.append(e)
             continue
 
-        # loop through data entries
+        ### loop through data entries ----
         for index, entry in enumerate(data):
             log(f"Processing entry {index + 1} of {len(data)}, {label(entry)}", level=2)
 
@@ -238,7 +364,7 @@ for plugin in plugins:
 
 log("Merging sources by id")
 
-# merge sources with matching (non-blank) ids
+# merge sources with matching (non-blank) ids ----
 for a in range(0, len(sources)):
     a_id = get_safe(sources, f"{a}.id", "")
     if not a_id:
@@ -256,34 +382,36 @@ log(f"{len(sources)} total source(s) to cite")
 
 
 
-# Apply suppression rules before citation generation
+# Apply suppression rules before citation generation ----
 sources = apply_suppression_rules(sources)
 
+# Apply metadata replacement before citation generation ----
+sources = apply_metadata_replacements(sources)
 
 
 log()
 
 log("Generating citations")
 
-# list of new citations
+# list of new citations ----
 citations = []
 
 
-# loop through compiled sources
+# loop through compiled sources ----
 for index, source in enumerate(sources):
     log(f"Processing source {index + 1} of {len(sources)}, {label(source)}")
 
-    # if explicitly flagged, remove/ignore entry
+    ## if explicitly flagged, remove/ignore entry ----
     if get_safe(source, "remove", False) == True:
         continue
 
-    # new citation data for source
+    ## new citation data for source ----
     citation = {}
 
     # source id
     _id = get_safe(source, "id", "").strip()
 
-    # Manubot doesn't work without an id
+    ## Manubot doesn't work without an id ----
     if _id:
         log("Using Manubot to generate citation", indent=1)
 
@@ -311,11 +439,11 @@ for index, source in enumerate(sources):
        # preserve fields from input source, overriding existing fields
     citation.update(source)
 
-    # --------------------------------------------------
-    # Determine publication type (preprint vs paper)
-    # --------------------------------------------------
+    # ----------------------------------------------------
+    ## Determine publication type (preprint vs paper) ----
+    # ----------------------------------------------------
 
-    # Load suppression config (same logic as suppression rules)
+    ### Load suppression config (same logic as suppression rules) ----
     try:
         config = load_data("_data/citation_config.yaml")
         suppression_cfg = config.get("suppression", {})
@@ -331,7 +459,7 @@ for index, source in enumerate(sources):
     publication_type = "preprint" if is_preprint else "paper"
 
     # --------------------------------------------------
-    # Insert "type" directly after "title"
+    ### Insert "type" directly after "title" -----------
     # --------------------------------------------------
 
     if "title" in citation:
@@ -345,11 +473,11 @@ for index, source in enumerate(sources):
         # fallback (should not happen normally)
         citation["type"] = publication_type
 
-    # ensure date in proper format for correct date sorting
+    ### ensure date in proper format for correct date sorting ----
     if get_safe(citation, "date", ""):
         citation["date"] = format_date(get_safe(citation, "date", ""))
 
-    # add new citation to list
+    ### add new citation to list ----
     citations.append(citation)
 
 
@@ -359,7 +487,7 @@ log()
 log("Saving updated citations")
 
 
-# save new citations
+# save new citations ----
 try:
     save_data(output_file, citations)
 except Exception as e:
@@ -370,7 +498,7 @@ except Exception as e:
 log()
 
 
-# exit at end, so user can see all errors/warnings in one run
+# exit at end, so user can see all errors/warnings in one run ----
 if len(warnings):
     log(f"{len(warnings)} warning(s) occurred above", level="WARNING")
     for warning in warnings:

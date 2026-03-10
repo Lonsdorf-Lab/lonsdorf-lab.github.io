@@ -1,10 +1,17 @@
+################################################################################
+# This config file is loaded by _data/cite.py on push to main.                 #
+# Suppression of preprints is set under Suppression Config.                    #
+# Metadata replacements is set under Metadata Replcement Config.               #
+################################################################################
+
+# Suppresion Config ----
 suppression:
-  enabled: true
+  enabled: true                               # set to false to deactivate suppression
 
-  suppress_preprints_if_journal_exists: true
-  keep_latest_preprint_only: true
+  suppress_preprints_if_journal_exists: true  # set to false to list preprints for artciles that have been published 
+  keep_latest_preprint_only: true             # set ti false to keep all (not only the latest) preprint
 
-  preprint_publishers:
+  preprint_publishers:                        # define publisher / journal names that count as preprints
     - "Center for Open Science"
     - "OSF Preprints"
     - "PsyArXiv"
@@ -12,3 +19,22 @@ suppression:
     - "bioRxiv"
     - "medRxiv"
     - "arXiv"
+
+# Metadata Replacement Config ----
+metadata_replacements:
+  enabled: true
+
+  rules:
+    ## Rule 1 (OSF Publisher): Replace "Center for Open Science" with "PsyArXiv" for OSF preprints ----
+    - match_field: "id"
+      match: "osf\\.io"
+      match_type: "regex"
+      target_field: "publisher"
+      replace: "PsyArXiv"
+
+    ## Rule 2 (OSF Journal): Replace "Center for Open Science" with "PsyArXiv" for OSF preprints ----
+    - match_field: "id"
+      match: "osf\\.io"
+      match_type: "regex"
+      target_field: "journal"
+      replace: "PsyArXiv"
