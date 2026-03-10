@@ -16,8 +16,12 @@
   link: https://doi.org/hbqgvz
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: data
+    text: Data
+    link: https://doi.org/10.5281/zenodo.18713991
 - id: doi:10.31234/osf.io/dfx9k_v1
   title: 'The role of fear learning in the development of psychosis: An EEG study
     utilizing a differential fear conditioning paradigm in people with psychotic vulnerability.'
@@ -57,7 +61,7 @@
   file: sources.yaml
   buttons:
   - type: data
-    text: Data
+    text: Open Manuscript
     link: https://doi.org/10.5281/zenodo.15494050
 - id: doi:10.1111/psyp.70224
   title: Intraindividual Variability Matters for the Correspondence Between Subjective
@@ -74,8 +78,15 @@
   link: https://doi.org/hbkdrt
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: data
+    text: Data 1
+    link: https://doi.org/10.5281/zenodo.7514306
+  - type: data
+    text: Data 2
+    link: https://osf.io/79mhx/files/osfstorage
 - id: doi:10.31234/osf.io/tw3jf_v1
   title: 'Navigating the approach-avoidance matrix: A novel foraging task in virtual
     reality'
@@ -90,8 +101,12 @@
   link: https://doi.org/hbdnnq
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: data
+    text: Open Manuscript
+    link: https://zenodo.org/records/17781820
 - id: doi:10.31219/osf.io/rju75_v1
   title: "There is no research on a dead planet \u2013 Fostering ecologically sustainable\
     \ open science practices in neuroscience"
@@ -152,6 +167,10 @@
   tina_lonsdorf: true
   plugin: sources.py
   file: sources.yaml
+  buttons:
+  - type: data
+    text: Open Manuscript
+    link: https://osf.io/a47zk/
 - id: doi:10.7554/eLife.92700
   title: 'How adverse childhood experiences get under the skin: A systematic review,
     integration and methodological discussion on threat and reward learning mechanisms'
@@ -197,8 +216,12 @@
   link: https://doi.org/g84qq2
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: data
+    text: Open Code and Data
+    link: https://osf.io/4zsju/
 - id: doi:10.1111/psyp.14364
   title: "Recent advances in studying brain\u2010behavior interactions using functional\
     \ imaging: The primary startle response pathway and its affective modulation in\
