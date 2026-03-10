@@ -77,8 +77,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.31234/osf.io/tw3jf_v1
-  title: 'Navigating the approach-avoidance matrix: A novel task in a foraging task
-    in virtual reality'
+  title: 'Navigating the approach-avoidance matrix: A novel foraging task in virtual
+    reality'
   type: preprint
   authors:
   - Alexandros Kastrinogiannis
