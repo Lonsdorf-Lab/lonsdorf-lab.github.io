@@ -11,13 +11,14 @@
   - Felix H. Klaassen
   - Karin Roelofs
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2026-02-20'
   link: https://doi.org/hbqgvz
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31234/osf.io/dfx9k_v1
   title: 'The role of fear learning in the development of psychosis: An EEG study
     utilizing a differential fear conditioning paradigm in people with psychotic vulnerability.'
@@ -28,13 +29,14 @@
   - Anja Riesel
   - Tina B Lonsdorf
   - Tania Marie Lincoln
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2026-02-10'
   link: https://doi.org/hbpjrx
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1080/00223891.2025.2513936
   title: Assessing the Long-Term Stability of the Spielberger State-Trait Inventory
     Trait Scale over 3.5 Years
@@ -85,13 +87,14 @@
   - Alina Koppold
   - Mana R Ehlers
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2025-12-04'
   link: https://doi.org/hbdnnq
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31219/osf.io/rju75_v1
   title: "There is no research on a dead planet \u2013 Fostering ecologically sustainable\
     \ open science practices in neuroscience"
@@ -114,13 +117,14 @@
   - Laura Bechtold
   - Sebastian Ocklenburg
   - Helena Hartmann
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2025-04-08'
   link: https://doi.org/g9fdt7
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1038/s41380-024-02600-x
   title: 'Neuropsychobiology of fear-induced bradycardia in humans: progress and pitfalls'
   type: paper
@@ -192,13 +196,14 @@
   - Peter Zwanzger
   - Marta Andreatta
   - Matthias Gamer
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2024-05-17'
   link: https://doi.org/g84qq2
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1111/psyp.14364
   title: "Recent advances in studying brain\u2010behavior interactions using functional\
     \ imaging: The primary startle response pathway and its affective modulation in\
@@ -257,13 +262,14 @@
   - Hilmar G Zech
   - Lorenz Deserno
   - Sakari Lemola
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2023-09-18'
   link: https://doi.org/g84qq4
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1111/psyp.14253
   title: 'Watching with Argus eyes: Characterization of emotional and physiological
     responding in adults exposed to childhood maltreatment and/or recent adversity'
@@ -402,13 +408,14 @@
   authors:
   - Mana R Ehlers
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2022-07-22'
   link: https://doi.org/g84qrc
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1016/j.brat.2022.104072
   title: Multiverse analyses in fear conditioning research
   type: paper
@@ -434,13 +441,14 @@
   - Manuel Kuhn
   - Alfons O. Hamm
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2022-05-13'
   link: https://doi.org/g84qrd
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31234/osf.io/d2zvc
   title: 'Open and reproducible science practices in psychoneuroendocrinology: opportunities
     to foster scientific progress'
@@ -454,13 +462,14 @@
   - Maurizio Sicorello
   - Roman Linz
   - Lara Puhlmann
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2022-03-30'
   link: https://doi.org/g84qrh
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31234/osf.io/hj5gt
   title: Effects of intolerance of uncertainty on subjective and psychophysiological
     measures during fear acquisition and delayed extinction
@@ -469,13 +478,14 @@
   - "Maren Klingelh\xF6fer-Jens"
   - Jayne Morriss
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2021-11-25'
   link: https://doi.org/g84qrj
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31234/osf.io/cp52v
   title: "Mehr als nur fragw\xFCrdig: Reproduzierbarkeit und Open Science in der Lehre\
     \ aus Sicht der Biologischen Psychologie und Neuropsychologie"
@@ -488,13 +498,14 @@
   - Barbara Schmidt
   - Matthias F.J. Sperl
   - Gordon Feld
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2021-09-08'
   link: https://doi.org/g84qrm
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.31234/osf.io/9h2kd
   title: "Navigating the manifold of skin conductance response quantification approaches\
     \ \u2013 a direct comparison of Trough-to-Peak, Baseline-correction and model-based\
@@ -504,13 +515,14 @@
   - Manuel Kuhn
   - Anna Gerlicher
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2021-04-30'
   link: https://doi.org/g84qrp
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1038/s41598-020-76683-1
   title: Revisiting potential associations between brain morphology, fear acquisition
     and extinction through new data and a literature review
@@ -574,13 +586,14 @@
   authors:
   - Rachel Sjouwerman
   - Tina B Lonsdorf
-  publisher: Center for Open Science
+  publisher: PsyArXiv
   date: '2019-12-03'
   link: https://doi.org/g84qrs
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+  journal: PsyArXiv
 - id: doi:10.1038/s41398-019-0415-8
   title: 'Orexin in the anxiety spectrum: association of a HCRTR1 polymorphism with
     panic disorder/agoraphobia, CBT treatment response and fear-related intermediate
