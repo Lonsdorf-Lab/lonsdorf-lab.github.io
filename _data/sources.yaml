@@ -1,13 +1,52 @@
 ## Suppress citations via remove: true
 
-# How Temporal Predictability of Threat and Action Preparation Affect Defensive Freezing Responses 
+################################################################################
+# 2026 Paper ----                                                                   
+################################################################################
+
+## How Temporal Predictability of Threat and Action Preparation Affect Defensive Freezing Responses ----
 - id: doi:10.31234/osf.io/p84qz_v2
   remove: true
 
 - id: doi:10.31234/osf.io/p84qz_v1
   remove: true
 
-# Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
+- id: doi:10.31234/osf.io/p84qz_v3
+  buttons:
+    - type: data
+      text: "Data"
+      link: https://doi.org/10.5281/zenodo.18713991
+
+## Intraindividual Variability Matters for the Correspondence Between Subjective Arousal, Valence, and Physiological Responses ----
+- id: doi:10.1111/psyp.70224
+  buttons:
+  - type: data
+    text: "Data 1"
+    link: https://doi.org/10.5281/zenodo.7514306
+  - type: data
+    text: "Data 2"
+    link: https://osf.io/79mhx/files/osfstorage
+
+
+
+################################################################################
+# 2025 Paper ----                                                                   
+################################################################################
+
+## Navigating the approach-avoidance matrix: A novel foraging task in virtual reality 
+- id:  doi:10.31234/osf.io/tw3jf_v1
+  buttons:
+    - type: data
+      text: "Open Manuscript"
+      link: https://zenodo.org/records/17781820
+
+## Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years ----
+- id: doi:10.1080/00223891.2025.2513936
+  buttons:
+    - type: data
+      text: "Open Manuscript"
+      link: https://doi.org/10.5281/zenodo.15494050
+
 - id: doi:10.31234/osf.io/mubgv_v4
   remove: true
 
@@ -20,93 +59,40 @@
 - id: doi:10.31234/osf.io/mubgv
   remove: true
 
-# The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research
+
+################################################################################
+# 2024 Paper ----                                                                   
+################################################################################
+
+## The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research ----
+- id:  doi:10.15626/MP.2023.3958
+  title: "The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research" 
+  type: paper
+  buttons:
+    - type: data
+      text: "Open Manuscript"
+      link: https://osf.io/a47zk/
+
 - id: doi:10.31234/osf.io/m9abu
   remove: true
 
 - id: doi:10.31234/osf.io/m9abu_v1
   remove: true
 
-# How adverse childhood experiences get under the skin
+
+## How adverse childhood experiences get under the skin ----
+- id: doi:10.7554/eLife.92700
+  title: "How adverse childhood experiences get under the skin: A systematic review, integration and methodological discussion on threat and reward learning mechanisms"
+  type: paper
+
 - id: doi:10.31234/osf.io/nfpbj
   remove: true
 
 - id: doi:10.31234/osf.io/nfpbj_v1
   remove: true
 
-# Systematically investigating the role of context on effect replicability in reinstatement of fear in humans
-- id: doi:10.31234/osf.io/65njk
-  remove: true
 
-# Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity
-- id: doi:10.31234/osf.io/wjeyg
-  remove: true
-
-- id: doi:10.31234/osf.io/wjeyg_v1
-  remove: true
-
-# Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear
-- id: doi:10.1101/2022.03.15.484434
-  remove: true
-
-# A data multiverse analysis investigating non‐model based SCR quantification approaches
-- id: doi:10.31234/osf.io/q24t8
-  remove: true
-
-# Multiverse analyses in fear conditioning research 
-- id: doi:10.31234/osf.io/2z6pd
-  remove: true
-
-# Navigating the garden of forking paths for data exclusions in fear conditioning research
-- id: doi:10.31234/osf.io/6m72g
-  remove: true
-
-# Assessing the Long-Term Stability of the Spiegelberger State-Trait Inventory Trait Scale over 3.5 Years
-- id: doi:10.1080/00223891.2025.2513936
-  buttons:
-    - type: data
-      text: "Data"
-      link: https://doi.org/10.5281/zenodo.15494050
-
-# The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research
-- id:  doi:10.15626/MP.2023.3958
-  title: "The many faces of early life adversity - Content overlap in validated assessment instruments as well as in fear and reward learning research" 
-  type: paper
-      
-# How adverse childhood experiences get under the skin
-- id: doi:10.7554/eLife.92700
-  title: "How adverse childhood experiences get under the skin: A systematic review, integration and methodological discussion on threat and reward learning mechanisms"
-  type: paper
-
-# Systematically investigating the role of context on effect replicability in reinstatement of fear in humans
-- id:  doi:10.1016/j.brat.2023.104256
-  type: paper
-
-# Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity
-- id: doi:10.1111/psyp.14253
-  type: paper
-
-# Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear
-- id: doi:10.7554/eLife.78717
-  type: paper
-
-# A data multiverse analysis investigating non‐model based SCR quantification approaches 
-- id: doi:10.1111/psyp.14130
-  type: paper
-
-# Multiverse analyses in fear conditioning research 
-- id: doi:10.1016/j.brat.2022.104072
-  type: paper
-
-# Navigating the garden of forking paths for data exclusions in fear conditioning research
-- id: doi:10.7554/eLife.52465
-  type: paper
-
-# Revisiting potential associations between brain morphology, fear acquisition and extinction through new data and a literature review
-- id: doi:10.31234/osf.io/q2kyf
-  remove: true
-
-# Bad days build better days: mental health improvement after the COVID-19 pandemic in individuals with psychosocial distress
+## Bad days build better days: mental health improvement after the COVID-19 pandemic in individuals with psychosocial distress ----
 # NOTE: Only preprint listed in Tina's ORCID --> manual removal of preprint and addition of journal publication
 - id: doi:10.21203/rs.3.rs-3410491/v1
   remove: true
@@ -133,3 +119,84 @@
   publisher: Scientific Reports
   date: '2024-03-07'
   link: https://doi.org/10.1038/s41598-024-55839-3
+
+
+## How to Measure Fear Generalization? Reliability and Validity of Commonly Used Indices 
+- id: doi:10.31234/osf.io/fk26y
+  buttons:
+    - type: data
+      text: "Open Code and Data"
+      link: https://osf.io/4zsju/
+
+
+################################################################################
+# 2023 Paper ----                                                                   
+################################################################################
+
+## Watching with Argus eyes: Characterization of emotional and physiological responding in adults exposed to childhood maltreatment and/or recent adversity ----
+- id: doi:10.1111/psyp.14253
+  type: paper
+
+- id: doi:10.31234/osf.io/wjeyg
+  remove: true
+
+- id: doi:10.31234/osf.io/wjeyg_v1
+  remove: true
+
+
+## Systematically investigating the role of context on effect replicability in reinstatement of fear in humans ----
+- id:  doi:10.1016/j.brat.2023.104256
+  type: paper
+
+- id: doi:10.31234/osf.io/65njk
+  remove: true
+
+
+################################################################################
+# 2022 Paper ----                                                                   
+################################################################################
+
+## Robust group- but limited individual-level (longitudinal) reliability and insights into cross-phases response prediction of conditioned fear ----
+- id: doi:10.7554/eLife.78717
+  type: paper
+
+- id: doi:10.1101/2022.03.15.484434
+  remove: true
+
+
+## A data multiverse analysis investigating non‐model based SCR quantification approaches ----
+- id: doi:10.1111/psyp.14130
+  type: paper
+
+
+- id: doi:10.31234/osf.io/q24t8
+  remove: true
+
+
+## Multiverse analyses in fear conditioning research ----
+- id: doi:10.1016/j.brat.2022.104072
+  type: paper
+
+- id: doi:10.31234/osf.io/2z6pd
+  remove: true
+
+
+################################################################################
+# 2020 Paper ----                                                                   
+################################################################################
+
+## Revisiting potential associations between brain morphology, fear acquisition and extinction through new data and a literature review ----
+- id: doi:10.31234/osf.io/q2kyf
+  remove: true
+
+
+################################################################################
+# 2019 Paper ----                                                                   
+################################################################################
+
+## Navigating the garden of forking paths for data exclusions in fear conditioning research ----
+- id: doi:10.7554/eLife.52465
+  type: paper
+
+- id: doi:10.31234/osf.io/6m72g
+  remove: true
