@@ -29,6 +29,9 @@ button {
   vertical-align: middle;
   appearance: none;
   transition: background var(--transition), color var(--transition);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .button:hover {
