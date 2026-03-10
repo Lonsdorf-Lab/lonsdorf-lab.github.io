@@ -25,7 +25,7 @@ metadata_replacements:
   enabled: true
 
   rules:
-    ## Rule 1 (OSF Publisher): Replace "Center for Open Science" with "PsyArXiv" for OSF preprints ----
+    # Rule 1 (OSF Publisher): Replace "Center for Open Science" with "PsyArXiv" for OSF preprints ----
     - match_field: "id"
       match: "osf\\.io"
       match_type: "regex"
@@ -33,8 +33,8 @@ metadata_replacements:
       replace: "PsyArXiv"
 
     ## Rule 2 (OSF Journal): Replace "Center for Open Science" with "PsyArXiv" for OSF preprints ----
-    - match_field: "id"
-      match: "osf\\.io"
-      match_type: "regex"
-      target_field: "journal"
-      replace: "PsyArXiv"
+    # - match_field: "id"
+    #   match: "osf\\.io"
+    #   match_type: "regex"
+    #   target_field: "journal"
+    #   replace: "PsyArXiv"
