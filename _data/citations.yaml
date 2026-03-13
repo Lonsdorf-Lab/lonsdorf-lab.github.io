@@ -1,5 +1,23 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.31234/osf.io/28cqr_v1
+  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: Systematic
+    Umbrella Review and Future Vision'
+  type: preprint
+  authors:
+  - Maria Bruntsch
+  - Mana R Ehlers
+  - Annalena Witte
+  - Fritz Becker
+  - Samuel Emerson Cooper
+  - Tina B Lonsdorf
+  publisher: PsyArXiv
+  date: '2026-03-10'
+  link: https://doi.org/hbsgg8
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/p84qz_v3
   title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
     Freezing Responses
