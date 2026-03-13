@@ -10,6 +10,7 @@ affiliation: Bielefeld University
 aliases:
   - A. Witte
   - A Witte
+  - Annalena Witte
 links:
   email: annalena.witte@uni-bielefeld.de
 ---

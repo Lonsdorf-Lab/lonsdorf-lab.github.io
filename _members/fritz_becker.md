@@ -10,6 +10,7 @@ affiliation: Bielefeld University
 aliases:
   - F. Becker
   - F Becker
+  - Fritz Becker
 links:
   email: fritz.becker@uni-bielefeld.de
   bluesky: fritzbecker.bsky.social
