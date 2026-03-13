@@ -1519,6 +1519,19 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: https://doi.org/10.31234/osf.io/28cqr_v1
+  title: OSF
+  type: preprint
+  authors: []
+  publisher: PsyArXiv
+  date: ''
+  link: https://osf.io/28cqr_v1
+  buttons:
+  - type: data
+    text: Data
+    link: https://doi.org/10.5281/zenodo.18772079
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1038/s41598-024-55839-3
   title: Mental health improvement after the COVID-19 pandemic in individuals with
     psychological distress
