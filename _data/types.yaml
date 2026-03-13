@@ -161,7 +161,7 @@ osf:
   tooltip: OSF
   link: https://osf.io/$VALUE
 
-# alerts 
+# alerts
 tip:
   icon: fa-solid fa-lightbulb
   color: "#d946ef"
