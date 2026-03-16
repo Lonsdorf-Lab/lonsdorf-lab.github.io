@@ -46,13 +46,111 @@
 
     {% if include.view == "portrait" or include.view == "small" %}
 
-      {% for id in rendered_ids %}
-        {% for person in alpha_sorted %}
-          {% if person.member_id == id %}
-            {% include portrait.html member=person style=include.view %}
-          {% endif %}
+        {%- comment -%}
+        Determine role priority
+        {%- endcomment -%}
+
+        {% if include.role_priority %}
+            {% assign priority = include.role_priority %}
+        {% else %}
+            {% assign priority = site.data.people.member_role_priority %}
+        {% endif %}
+
+        {%- comment -%}
+        Alphabetical sorting within roles
+        {%- endcomment -%}
+
+        {% assign alpha_sorted = persons | sort: "last_name" %}
+
+        {%- comment -%}
+        Find index of lab-manager in priority list
+        This defines the boundary of the leadership block
+        {%- endcomment -%}
+
+        {% assign leadership_roles = "" | split: "" %}
+        {% assign post_leadership_roles = "" | split: "" %}
+        {% assign leadership_complete = false %}
+
+        {% for role_name in priority %}
+        
+            {% unless leadership_complete %}
+                {% assign leadership_roles = leadership_roles | push: role_name %}
+            {% endunless %}
+            
+            {% if role_name == "lab-manager" %}
+                {% assign leadership_complete = true %}
+            {% endif %}
+            
+            {% if leadership_complete and role_name != "lab-manager" %}
+                {% assign post_leadership_roles = post_leadership_roles | push: role_name %}
+            {% endif %}
+
         {% endfor %}
-      {% endfor %}
+
+        {%- comment -%}
+        Track already rendered IDs
+        {%- endcomment -%}
+
+        {% assign rendered_ids = "" | split: "" %}
+
+        {%- comment -%}
+        1️⃣ Leadership Block (ONE SINGLE ROW)
+        All roles up to lab-manager merged together
+        {%- endcomment -%}
+
+        {% assign leadership_members = "" | split: "" %}
+
+        {% for role_name in leadership_roles %}
+            {% assign role_group = alpha_sorted | where: "role", role_name %}
+            {% for person in role_group %}
+                {% assign leadership_members = leadership_members | push: person %}
+                {% assign rendered_ids = rendered_ids | push: person.member_id %}
+            {% endfor %}
+        {% endfor %}
+
+        {% if leadership_members.size > 0 %}
+            <div class="portrait-grid leadership-row">
+                {% for person in leadership_members %}
+                    {% include portrait.html member=person style=include.view %}
+                {% endfor %}
+            </div>
+        {% endif %}
+
+        {%- comment -%}
+        2️⃣ Remaining roles rendered separately
+        Each role gets its own grid (prevents row filling)
+        {%- endcomment -%}
+
+        {% for role_name in post_leadership_roles %}
+
+            {% assign role_group = alpha_sorted | where: "role", role_name %}
+
+            {% if role_group.size > 0 %}
+                <div class="portrait-grid role-{{ role_name }}">
+                {% for person in role_group %}
+                    {% unless rendered_ids contains person.member_id %}
+                        {% include portrait.html member=person style=include.view %}
+                        {% assign rendered_ids = rendered_ids | push: person.member_id %}
+                    {% endunless %}
+                {% endfor %}
+                </div>
+            {% endif %}
+
+        {% endfor %}
+
+        {%- comment -%}
+        3️⃣ Catch any roles not listed in priority
+        (robustness for future roles)
+        {%- endcomment -%}
+
+        {% for person in alpha_sorted %}
+            {% unless rendered_ids contains person.member_id %}
+                <div class="portrait-grid role-{{ person.role }}">
+                    {% include portrait.html member=person style=include.view %}
+                    {% assign rendered_ids = rendered_ids | push: person.member_id %}
+                </div>
+            {% endunless %}
+        {% endfor %}
 
     {% elsif include.view == "list" %}
 

@@ -77,3 +77,20 @@
     display: none;
   }
 }
+
+.portrait-grid + .portrait-grid {
+  position: relative;
+  margin-top: 3rem;
+  padding-top: 2rem;
+}
+
+.portrait-grid + .portrait-grid::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 25%;
+  width: 50%;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
