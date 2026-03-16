@@ -1,6 +1,6 @@
 ---
 layout: project
-title: EIFEL-ROF
+title: Research network for the (European) Interdisciplinary study of Fear and Extinction Learning as well as the Return of Fear (EIFEL-ROF)
 group: finished
 image: images/projects/eifel-rof_square.jpg
 external_url: https://gepris.dfg.de/gepris/projekt/273022965
@@ -32,4 +32,4 @@ tags:
   - publication
 ---
 
-The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets.
+The EIFEL-ROF network, for which Tina was the spokesperson, aimed to increase communication and coordination through tutorial/research guidelines papers, joint publication of review articles, coordination of cross-laboratory replication tests and data pooling. The discussion in the EIFEL-ROF network have generated many new (meta-) research ideas to answer questions on the methods we are using that we are hitherto unable to provide a clear answer to. The projects included for instance the impact of inclusion of startle probes on fear learning or the investigation of different operationalization of the “extinction retention index” in the literature and their empirical comparison in a number of datasets.
