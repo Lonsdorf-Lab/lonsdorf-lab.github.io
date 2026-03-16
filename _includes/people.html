@@ -126,14 +126,22 @@
             {% assign role_group = alpha_sorted | where: "role", role_name %}
 
             {% if role_group.size > 0 %}
-                <div class="portrait-grid role-{{ role_name }}">
+                
+              <div class="portrait-grid role-{{ role_name }}">
+                
                 {% for person in role_group %}
-                    {% unless rendered_ids contains person.member_id %}
+                    
+                  {% unless rendered_ids contains person.member_id %}
+                        
                         {% include portrait.html member=person style=include.view %}
                         {% assign rendered_ids = rendered_ids | push: person.member_id %}
-                    {% endunless %}
+                  
+                  {% endunless %}
+                
                 {% endfor %}
-                </div>
+              
+              </div>
+            
             {% endif %}
 
         {% endfor %}
