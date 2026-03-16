@@ -24,7 +24,10 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
   {% endunless %}
 {% endfor %}
 
+<div>
 {% include people.html persons=team_current_members kind="member" view="portrait" role_priority=site.data.people.team_overview_role_priority %}
+</div>
+
 {% include section.html %}
 
 ## Coming Soon
