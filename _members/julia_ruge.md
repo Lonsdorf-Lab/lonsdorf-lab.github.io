@@ -4,7 +4,7 @@ name: Julia Ruge
 last_name: Ruge
 member_id: julia_ruge
 image: images/members/ruge.jpeg
-role: phd
+role: postdoc
 affiliation: UKE Hamburg
 aliases:
   - J. Ruge
