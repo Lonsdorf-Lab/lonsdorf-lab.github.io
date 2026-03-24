@@ -1,5 +1,33 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1038/s41562-026-02426-3
+  title: Sustainable neuroscience through open science
+  type: paper
+  authors:
+  - Lara M. C. Puhlmann
+  - Alina Koppold
+  - Gordon B. Feld
+  - Tina B. Lonsdorf
+  - Kirsten Hilger
+  - Susanne Vogel
+  - "\xC7a\u011Fatay G\xFCrsoy"
+  - Alexandros Kastrinogiannis
+  - Louisa Kulke
+  - Alexander Lischke
+  - "Anett M\xFCller-Alcazar"
+  - Julian Packheiser
+  - Matthias F. J. Sperl
+  - Yu-Fang Yang
+  - Laura Bechtold
+  - Sebastian Ocklenburg
+  - Helena Hartmann
+  publisher: Nature Human Behaviour
+  date: '2026-03-23'
+  link: https://doi.org/hbtkc2
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/8u5wx_v1
   title: Neural and multimodal signatures of Threat Learning, Generalization, and
     Return of Fear linked to Adverse Childhood Experiences
@@ -40,6 +68,24 @@
   - type: data
     text: Data
     link: https://doi.org/10.5281/zenodo.18772079
+- id: doi:10.1111/psyp.70278
+  title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
+    Freezing Responses
+  type: paper
+  authors:
+  - Alina Koppold
+  - Mana R. Ehlers
+  - Alexandros Kastrinogiannis
+  - Felix H. Klaassen
+  - Karin Roelofs
+  - Tina B. Lonsdorf
+  publisher: Psychophysiology
+  date: '2026-03-01'
+  link: https://doi.org/hbtf4v
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.31234/osf.io/p84qz_v3
   title: How Temporal Predictability of Threat and Action Preparation Affect Defensive
     Freezing Responses
