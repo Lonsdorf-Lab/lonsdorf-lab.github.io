@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Fear Profiles
+title: "Fear Profiles: Identification and characterization of individual trajectories in fear and anxiety"
 group: on-going
 image: images/icons/diagram-project_small.svg
 external_url: https://osf.io/preprints/psyarxiv/p84qz_v1
