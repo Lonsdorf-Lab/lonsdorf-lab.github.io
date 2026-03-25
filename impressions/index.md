@@ -8,7 +8,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
-# PUG 2025
+## PUG 2025
 {% capture content %}
   {% include figure.html image="images/events/25pug/pic1.JPG" width = "100%"%}
   {% include figure.html image="images/events/25pug/pic2.JPG" width = "100%" %}
@@ -21,7 +21,7 @@ nav:
   style="rectangle"
 %}
 
-# EMHFC 2025
+## EMHFC 2025
 {% capture content %}
   {% include figure.html image="images/events/25emhfc/pic1.JPG" width = "100%"%}
   {% include figure.html image="images/events/25emhfc/pic2.JPG" width = "100%" %}
@@ -40,7 +40,7 @@ nav:
   style="rectangle"
 %}
 
-# PUG 2024
+## PUG 2024
 {% capture content %}
   {% include figure.html image="images/events/24pug/pic1.jpg" width = "100%"%}
   {% include figure.html image="images/events/24pug/pic2.jpg" width = "100%" %}
@@ -52,7 +52,7 @@ nav:
   style="rectangle"
 %}
 
-# EMHFC 2024
+## EMHFC 2024
 {% capture content %}
   {% include figure.html image="images/events/24emhfc/pic1.jpg" width = "100%"%}
   {% include figure.html image="images/events/24emhfc/pic2.jpg" width = "100%" %}
@@ -65,7 +65,7 @@ nav:
   style="rectangle"
 %}
 
-# Miscellaneous
+## Miscellaneous
 
 {% capture content %}
   {% include figure.html image='images/events/misc/impressions-team-01.jpg' width = '33%' %}
@@ -73,6 +73,6 @@ nav:
 
 {% include section.html %}
 
-# {% include icon.html icon="fa-solid fa-microscope" %}Impressions of the Lab
+## {% include icon.html icon="fa-solid fa-microscope" %}Impressions of the Lab
 
 This part is currently under construction.
