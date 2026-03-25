@@ -19,7 +19,7 @@ This year’s retreat was held in Hamburg and included a visit to the University
 The retreat was a great experience, bringing together early career researchers and their exciting research!
 <br>
 <br>  
-  
+
 {% capture retreat_caption %}
 Our team at YSR2025. From left to right:
 <a href="/members/lennart_wieser.html">Lennart</a>,
