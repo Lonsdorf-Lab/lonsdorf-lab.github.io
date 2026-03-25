@@ -68,8 +68,14 @@ nav:
 ## Miscellaneous
 
 {% capture content %}
-  {% include figure.html image='images/events/misc/impressions-team-01.jpg' width = '33%' %}
+  {% include figure.html image='images/events/misc/impressions-team-01.jpg' width = '100%' %}
 {% endcapture %}
+
+{%
+  include grid.html
+  content=content
+  style="rectangle"
+%}
 
 {% include section.html %}
 
