@@ -1,6 +1,6 @@
 ---
 title: Young Scientist Retreat 2025
-image: images\blog_posts\blog-post-ysr-header.png
+image: images/blog_posts/blog-post-ysr-header.png
 author: tina_lonsdorf
 last_modified_at: ""
 tags: 
@@ -20,6 +20,6 @@ The retreat was a great experience, bringing together early career researchers a
   
   
   
-![YSR-2025-Team](images\events\25ysr\young-scientist-retreat-2025.jpg)
+![YSR-2025-Team](images/events/25ysr/young-scientist-retreat-2025.jpg)
 
 From left to right: <a href="/members/lennart_wieser.html">Lennart</a>, <a href="/members/alexandros_kastrinogiannis.html">Alex</a>, <a href="/members/maria_bruntsch.html">Maria</a>, <a href="/members/maren_klingenlhoefer.html">Maren</a>, <a href="/members/annalena_witte.html">Annalena</a>, and <a href="/members/alina_koppold.html">Alina</a>
