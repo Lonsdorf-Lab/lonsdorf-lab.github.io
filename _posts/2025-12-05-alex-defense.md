@@ -16,4 +16,4 @@ Alex continues his career in science in [Dr. Michael Gaebler](https://www.cbs.mp
 
 We, the Lonsdorf Lab team, wish you all the best, Alex!
 
-{% include figure.html image=page.image height='33%' caption='Alex in high spirits' %}
+{% include figure.html image=page.image width='25%' caption='Alex in high spirits' %}
