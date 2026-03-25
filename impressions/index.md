@@ -69,7 +69,7 @@ nav:
 
 {% capture content %}
   {% include figure.html image='images/events/misc/impressions-team-01.jpg' width = '33%' %}
-{% endcapute %}
+{% endcapture %}
 
 {% include section.html %}
 
