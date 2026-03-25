@@ -65,7 +65,10 @@ nav:
   style="rectangle"
 %}
 
+# Miscellaneous
 
+{% capture content %}
+  {% include figure.html image='images/events/misc/impressions-team-01.jpg' width = '33%' %}
 
 {% include section.html %}
 
