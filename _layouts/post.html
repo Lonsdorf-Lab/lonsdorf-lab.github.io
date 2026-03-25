@@ -2,7 +2,12 @@
 layout: default
 ---
 
-{% include section.html background=page.image %}
+{% assign header_img = page.header_image | default: page.thumbnail | default: page.image %}
+
+{% if header_img %}
+  {% include section.html background=header_img %}
+{% endif %}
+
 
 <h1 class="center">{{ page.title }}</h1>
 

@@ -1,6 +1,6 @@
 ---
 title: Congratulations Alex!
-image: images/events/25alexdefense/Alex_PhD_Defense.jpeg
+thumbnail: images/events/25alexdefense/Alex_PhD_Defense.jpeg
 author: tina_lonsdorf
 last_modified_at: ""
 tags:
