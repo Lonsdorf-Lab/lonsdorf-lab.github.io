@@ -2,12 +2,11 @@
 layout: default
 ---
 
-{% assign header_img = page.header_image | default: page.thumbnail | default: page.image %}
-
-{% if header_img %}
-  {% include section.html background=header_img %}
+{% if page.header_image %}
+  {% include section.html background=page.header_image %}
+{% else %}
+  {% include section.html %}
 {% endif %}
-
 
 <h1 class="center">{{ page.title }}</h1>
 
@@ -27,3 +26,4 @@ layout: default
 {% include section.html %}
 
 {% include post-nav.html post=page %}
+
