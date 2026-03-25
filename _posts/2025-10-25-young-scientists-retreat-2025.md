@@ -1,6 +1,8 @@
 ---
 title: Young Scientist Retreat 2025
-image: images/blog_posts/blog-post-ysr-header.png
+thumbnail: images/blog_posts/blog-post-ysr-header.png
+header_image: images/blog_posts/blog-post-ysr-header.png
+image: 'images/events/25ysr/young-scientist-retreat-2025.jpg' 
 author: tina_lonsdorf
 last_modified_at: ""
 tags: 
@@ -31,7 +33,7 @@ and <a href="/members/alina_koppold.html">Alina</a>.
 {% endcapture %}
 
 {% include figure.html 
-  image='images/events/25ysr/young-scientist-retreat-2025.jpg' 
+  image=page.image 
   width='75%' 
   caption=retreat_caption
 %}
