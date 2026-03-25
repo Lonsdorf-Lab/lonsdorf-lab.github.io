@@ -1,6 +1,6 @@
 ---
 title: Congratulations Alex!
-thumbnail: images/events/25alexdefense/Alex_PhD_Defense.jpeg
+image: images/events/25alexdefense/Alex_PhD_Defense.jpeg
 author: tina_lonsdorf
 last_modified_at: ""
 tags:
@@ -16,4 +16,4 @@ Alex continues his career in science in [Dr. Michael Gaebler](https://www.cbs.mp
 
 We, the Lonsdorf Lab team, wish you all the best, Alex!
 
-{% include figure.html image=thumbnail width='75%' caption='Alex in high spirits' %}
+{% include figure.html image=image width='75%' caption='Alex in high spirits' %}
