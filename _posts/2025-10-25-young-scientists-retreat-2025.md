@@ -20,10 +20,8 @@ The retreat was a great experience, bringing together early career researchers a
 <br>
 <br>  
   
-**Our team at YSR2025**
-
 {% capture retreat_caption %}
-From left to right:
+Our team at YSR2025. From left to right:
 <a href="/members/lennart_wieser.html">Lennart</a>,
 <a href="/members/alexandros_kastrinogiannis.html">Alex</a>,
 <a href="/members/maria_bruntsch.html">Maria</a>,
