@@ -1,6 +1,7 @@
 ---
 title: We did it - our first fearbase hackathon!
 image: images/projects/fearbase_square.jpg
+header_image: images/projects/fearbase_square.jpg
 author: tina_lonsdorf
 last_modified_at: ""
 tags: 
