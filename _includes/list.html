@@ -44,6 +44,8 @@ Generic Rendering Logic
     {% for d in year_data %}
       {% assign style = d.style | default: include.style %}
 
+      {% assign preview_image = d.thumbnail | default: d.image %}
+
       {% include {{ include.component | append: ".html" }}
         affiliation=d.affiliation
         author=d.author
@@ -57,7 +59,7 @@ Generic Rendering Logic
         height=d.height
         icon=d.icon
         id=d.id
-        image=d.thumbnail | default: d.image
+        image=preview_image
         last_modified_at=d.last_modified_at
         link=d.link
         lookup=d.lookup
@@ -91,6 +93,8 @@ Generic Rendering Logic
 
     {% assign style = d.style | default: include.style %}
 
+    {% assign preview_image = d.thumbnail | default: d.image %}
+
     {% include {{ include.component | append: ".html" }}
       affiliation=d.affiliation
       author=d.author
@@ -104,7 +108,7 @@ Generic Rendering Logic
       height=d.height
       icon=d.icon
       id=d.id
-      image=d.image
+      image=preview_image
       last_modified_at=d.last_modified_at
       link=d.link
       lookup=d.lookup
