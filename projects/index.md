@@ -14,36 +14,29 @@ nav:
 {% for project in current_projects %}
   
   {% if project.project_level == "parent" %}
-    
-#### [{{ project.title }}]({{ project.url | relative_url }})
-    
-<div class="project-description">
-  
-  {{ project.content | strip_html | truncatewords: 50 }}
-  
-  <a href="{{ project.url | relative_url }}" class="project-description-link">
-    see more<span class="arrow">&rarr;</span>
-  </a>
-</div>
-  
-  {% if project.project_level == "sub" %}
-  <h4>{{ project.parent_project }}</h4>
-  <div style="margin-left: 20px;">
-    <h5>
-      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-    </h5>
-    <div class="project-description" style="margin-left: 20px;">
+    <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
+    <div class="project-description">
       {{ project.content | strip_html | truncatewords: 50 }}
       <a href="{{ project.url | relative_url }}" class="project-description-link">
         see more<span class="arrow">&rarr;</span>
       </a>
     </div>
-  </div>
-{% endif %}
-
-{% endif %}
-
+  {% elsif project.project_level == "sub" %}
+    <h4>{{ project.parent_project }}</h4>
+    <div style="margin-left: 20px;">
+      <h5>
+        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+      </h5>
+      <div class="project-description" style="margin-left: 20px;">
+        {{ project.content | strip_html | truncatewords: 50 }}
+        <a href="{{ project.url | relative_url }}" class="project-description-link">
+          see more<span class="arrow">&rarr;</span>
+        </a>
+      </div>
+    </div>
+  {% endif %}
 {% endfor %}
+
 
 ## {% include icon.html icon="fa-solid fa-check" %} Past Projects
 
