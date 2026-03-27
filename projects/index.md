@@ -14,31 +14,31 @@ nav:
 {% for project in current_projects %}
   {% if project.project_level == "parent" %}
     
-  #### [{{ project.title }}]({{ project.url | relative_url }})
+#### [{{ project.title }}]({{ project.url | relative_url }})
     
-  <div class="project-description">
-    {{ project.content | strip_html | truncatewords: 50 }}
-    <a href="{{ project.url | relative_url }}" class="project-description-link">
-      see more<span class="arrow">&rarr;</span>
-    </a>
-  </div>
+<div class="project-description">
+  {{ project.content | strip_html | truncatewords: 50 }}
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+</div>
   
   {% elsif project.project_level == "sub" %}
     {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
     
-  #### {{ parent_project.title }}
+#### {{ parent_project.title }}
     
-  <div style="margin-left: 20px;">
-    
-  ##### [{{ project.title }}]({{ project.url | relative_url }})
-    
-  <div class="project-description" style="margin-left: 20px;">
-    {{ project.content | strip_html | truncatewords: 50 }}
-    <a href="{{ project.url | relative_url }}" class="project-description-link">
-      see more<span class="arrow">&rarr;</span>
-    </a>
-  </div>
-  </div>
+<div style="margin-left: 20px;">
+  
+##### [{{ project.title }}]({{ project.url | relative_url }})
+  
+<div class="project-description" style="margin-left: 20px;">
+  {{ project.content | strip_html | truncatewords: 50 }}
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+</div>
+</div>
   {% endif %}
 {% endfor %}
 
@@ -49,31 +49,31 @@ nav:
 {% for project in past_projects %}
   {% if project.project_level == "parent" %}
     
-  #### [{{ project.title }}]({{ project.url | relative_url }})
+#### [{{ project.title }}]({{ project.url | relative_url }})
   
-  <div class="project-description">
-    {{ project.content | strip_html | truncatewords: 50 }}
-    <a href="{{ project.url | relative_url }}" class="project-description-link">
-      see more<span class="arrow">&rarr;</span>
-    </a>
-  </div>
+<div class="project-description">
+  {{ project.content | strip_html | truncatewords: 50 }}
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+</div>
   
   {% elsif project.project_level == "sub" %}
     {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
     
-  #### {{ parent_project.title }}
+#### {{ parent_project.title }}
+
+<div style="margin-left: 20px;">
   
-  <div style="margin-left: 20px;">
-    
-  ##### [{{ project.title }}]({{ project.url | relative_url }})
-  
-  <div class="project-description" style="margin-left: 20px;">
-    {{ project.content | strip_html | truncatewords: 50 }}
-    <a href="{{ project.url | relative_url }}" class="project-description-link">
-      see more<span class="arrow">&rarr;</span>
-    </a>
-  </div>
-  </div>
+##### [{{ project.title }}]({{ project.url | relative_url }})
+
+<div class="project-description" style="margin-left: 20px;">
+  {{ project.content | strip_html | truncatewords: 50 }}
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+</div>
+</div>
   {% endif %}
 {% endfor %}
 
