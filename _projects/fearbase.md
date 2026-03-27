@@ -7,6 +7,11 @@ image: images/projects/fearbase_square.jpg
 external_url: https://rdc-psychology.org/fearbase/en
 
 funders:
+  - name: German Research Foundation
+    programme: "Programme: Sachbeihilfen"
+    project_number: Project number 451328127
+    funding_period: "Term: from 2023"
+    url: https://gepris.dfg.de/gepris/projekt/451328127
   - name: Volkswagen Stiftung
     identifier: Profile Area "Understanding Research – Evaluation and Science Practice"
     url: https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem
