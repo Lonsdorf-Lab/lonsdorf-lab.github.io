@@ -33,7 +33,7 @@ nav:
   
   {% elsif project.project_level == "sub" %}
   
- {% if project.parent_project_url %}
+  {% if project.parent_project_url %}
   
   <h4 class="project-parent-title">
   
