@@ -11,5 +11,5 @@ tags:
 
 **Congratulations, Julia, on your successfull PhD defense!**
 
-Today on Mar 23rd, [Julia Ruge](member/julia_ruge) successfully defended her PhD thesis *  * as part of the project [Associations between Childhood Maltreatment and responding to signals of threat and safety in a fear conditioning paradigm](PROJECT LINK). 
+Today on Mar 23rd, [Julia Ruge](member/julia_ruge) successfully defended her PhD thesis *Threat Learning in Individuals with Adverse Childhood Experiences* as part of the project [Associations between Childhood Maltreatment and responding to signals of threat and safety in a fear conditioning paradigm](PROJECT LINK). 
 Julia remains at the [University Medical Centre Hamburg Eppendorf](https://www.uke.de/) to pursue her career in academic science - backed by funding from the XYZ grant.

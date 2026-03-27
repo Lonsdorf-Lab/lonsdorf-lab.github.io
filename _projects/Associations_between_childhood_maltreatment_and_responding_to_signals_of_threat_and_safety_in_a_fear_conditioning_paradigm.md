@@ -4,6 +4,7 @@ title: Associations between childhood maltreatment and responding to signals of 
 group: on-going
 project_level: sub
 parent_project: "GRK 2753: Emotional Leanring and Memory"
+parent_project_url: https://gepris.dfg.de/gepris/projekt/449640848?context=projekt&task=showDetail&id=449640848&
 image: images/icons/diagram-project_small.svg
 external_url: https://www.emotionalmemory.de/projects/#c82
 

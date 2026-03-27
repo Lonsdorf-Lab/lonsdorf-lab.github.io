@@ -29,7 +29,13 @@ nav:
   
   {% elsif project.project_level == "sub" %}
   
+ {% if project.parent_project_url %}
+  
+  <h4><a href="{{ project.parent_project_url }}" target="_blank" rel="noopener">{{ project.parent_project }}</a></h4>
+
+{% else %}
   <h4>{{ project.parent_project }}</h4>
+{% endif %}
   
   <div style="margin-left: 20px;">
     
