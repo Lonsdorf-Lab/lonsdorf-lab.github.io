@@ -2,6 +2,7 @@
 layout: project
 title: Fear, Anxiety, Anxiety Disorders
 group: finished
+project_level: parent
 image: images/icons/diagram-project_small.svg
 external_url: https://gepris.dfg.de/gepris/projekt/234587233
 

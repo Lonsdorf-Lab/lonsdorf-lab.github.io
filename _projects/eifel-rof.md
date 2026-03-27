@@ -2,6 +2,7 @@
 layout: project
 title: Research network for the (European) Interdisciplinary study of Fear and Extinction Learning as well as the Return of Fear (EIFEL-ROF)
 group: finished
+project_level: parent
 image: images/projects/eifel-rof_square.jpg
 external_url: https://gepris.dfg.de/gepris/projekt/273022965
 

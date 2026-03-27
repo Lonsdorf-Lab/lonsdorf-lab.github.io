@@ -2,6 +2,7 @@
 layout: project
 title: Long-term effects of childhood adversity on social processing
 group: on-going
+project_level: parent
 image:
 external_url:
 

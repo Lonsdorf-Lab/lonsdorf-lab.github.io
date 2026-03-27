@@ -2,6 +2,7 @@
 layout: project
 title: Meta Science in Fear conditioning research
 group: on-going
+project_level: parent
 image: images/icons/diagram-project_small.svg
 external_url: https://rr.peercommunityin.org/articles/rec?id=743
 

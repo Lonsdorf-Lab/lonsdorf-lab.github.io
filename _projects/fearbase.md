@@ -2,6 +2,7 @@
 layout: project
 title: fearbase
 group: on-going
+project_level: parent
 image: images/projects/fearbase_square.jpg
 external_url: https://rdc-psychology.org/fearbase/en
 

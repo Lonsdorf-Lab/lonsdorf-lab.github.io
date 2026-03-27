@@ -2,6 +2,8 @@
 layout: project
 title: Associations between childhood maltreatment and responding to signals of threat and safety in a fear conditioning paradigm
 group: on-going
+project_level: sub
+parent_project: "GRK 2753: Emotional Leanring and Memory"
 image: images/icons/diagram-project_small.svg
 external_url: https://www.emotionalmemory.de/projects/#c82
 
@@ -15,8 +17,8 @@ funders:
 
 members:
   - julia_ruge
-  - paul_pfaff
   - tina_lonsdorf
+  - maren_klingelhoefer
 
 tags:
   - publication
