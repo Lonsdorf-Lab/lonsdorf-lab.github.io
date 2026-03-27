@@ -15,7 +15,9 @@ nav:
   
   {% if project.project_level == "parent" %}
   
-  <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
+  <h4 class="project-parent-title">
+  <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+  </h4>
   
   <div class="project-description">
     
@@ -31,7 +33,9 @@ nav:
   
  {% if project.parent_project_url %}
   
-  <h4><a href="{{ project.parent_project_url }}" target="_blank" rel="noopener">{{ project.parent_project }}</a></h4>
+  <h4 class="project-parent-title">
+  <a href="{{ project.parent_project_url }}" target="_blank" rel="noopener">{{ project.parent_project }}</a>
+  </h4>
 
 {% else %}
   <h4>{{ project.parent_project }}</h4>
@@ -39,7 +43,7 @@ nav:
   
   <div style="margin-left: 20px;">
     
-  <h5>
+  <h5 class="project-sub-title">
     <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
   </h5>
   
