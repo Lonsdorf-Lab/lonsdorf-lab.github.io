@@ -18,6 +18,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 {% assign sub_projects = current_projects | where: "project_level", "sub" %}
 
 {% for project in parent_projects %}
+
 #### [{{ project.title }}]({{ project.url | relative_url }})
 
 <div class="project-description">
@@ -32,6 +33,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
   {% assign parent_subprojects = sub_projects | where: "parent_project", parent.title %}
   {% if parent_subprojects != empty %}
     {% for subproject in parent_subprojects %}
+
 #### [{{ subproject.title }}]({{ subproject.url | relative_url }})
 
 <div class="project-description" style="margin-left: 20px;">
@@ -51,6 +53,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
 {% assign sub_projects = past_projects | where: "project_level", "sub" %}
 
 {% for project in parent_projects %}
+
 #### [{{ project.title }}]({{ project.url | relative_url }})
 
 <div class="project-description">
@@ -65,6 +68,7 @@ Get a glimpse into the work we do: from ongoing investigations to completed proj
   {% assign parent_subprojects = sub_projects | where: "parent_project", parent.title %}
   {% if parent_subprojects != empty %}
     {% for subproject in parent_subprojects %}
+
 #### [{{ subproject.title }}]({{ subproject.url | relative_url }})
 
 <div class="project-description" style="margin-left: 20px;">
