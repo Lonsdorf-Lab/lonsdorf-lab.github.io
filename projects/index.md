@@ -7,7 +7,9 @@ nav:
   tooltip: Software, datasets, and more
 ---
 
-## {% include icon.html icon="fa-solid fa-hourglass" %} Current Projects
+<h2>
+  {% include icon.html icon="fa-solid fa-hourglass" %} Current Projects
+</h2>
 
 {%- assign current_parent_projects = site.projects | where: "group", "on-going" | where: "project_level", "parent" -%}
 
