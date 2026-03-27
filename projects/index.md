@@ -18,10 +18,13 @@ nav:
   <h4><a href="{{ project.url | relative_url }}">{{ project.title }}</a></h4>
   
   <div class="project-description">
+    
     {{ project.content | strip_html | truncatewords: 50 }}
-    <a href="{{ project.url | relative_url }}" class="project-description-link">
-      see more<span class="arrow">&rarr;</span>
-    </a>
+    
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+  
   </div>
   
   {% elsif project.project_level == "sub" %}
@@ -29,15 +32,20 @@ nav:
   <h4>{{ project.parent_project }}</h4>
   
   <div style="margin-left: 20px;">
-    <h5>
-      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-    </h5>
-    <div class="project-description" style="margin-left: 20px;">
-      {{ project.content | strip_html | truncatewords: 50 }}
-      <a href="{{ project.url | relative_url }}" class="project-description-link">
-        see more<span class="arrow">&rarr;</span>
-      </a>
-    </div>
+    
+  <h5>
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+  </h5>
+  
+  <div class="project-description">
+    
+    {{ project.content | strip_html | truncatewords: 50 }}
+    
+  <a href="{{ project.url | relative_url }}" class="project-description-link">
+    see more<span class="arrow">&rarr;</span>
+  </a>
+  
+  </div>
   </div>
   
   {% endif %}
