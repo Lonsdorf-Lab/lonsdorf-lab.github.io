@@ -15,7 +15,7 @@ nav:
   
   {% if project.project_level == "parent" %}
   
-  <h4 class="project-parent-title">
+  <h4>
   <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
   </h4>
   
