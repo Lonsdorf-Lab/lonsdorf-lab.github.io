@@ -13,7 +13,7 @@ nav:
 
 {% for project in current_projects %}
   
-{% if project.project_level == "parent" %}
+  {% if project.project_level == "parent" %}
     
 #### [{{ project.title }}]({{ project.url | relative_url }})
     
@@ -26,9 +26,12 @@ nav:
   </a>
 </div>
   
-{% elsif project.project_level == "sub" %}
-  {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
-  {% if parent_project %}
+  {% elsif project.project_level == "sub" %}
+    
+    {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
+    
+    {% if parent_project %}
+    
     <h4>{{ parent_project.title }}</h4>
     <div style="margin-left: 20px;">
       <h5>
@@ -41,10 +44,11 @@ nav:
         </a>
       </div>
     </div>
-  {% else %}
+    {% else %}
     <!-- parent project not found -->
-  {% endif %}
+    {% endif %}
 
+  {% endif %}
 
 {% endfor %}
 
