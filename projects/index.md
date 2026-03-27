@@ -26,29 +26,22 @@ nav:
   </a>
 </div>
   
-  {% elsif project.project_level == "sub" %}
-    
-    {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
-    
-    {% if parent_project %}
-    
-    <h4>{{ parent_project.title }}</h4>
-    <div style="margin-left: 20px;">
-      <h5>
-        <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-      </h5>
-      <div class="project-description" style="margin-left: 20px;">
-        {{ project.content | strip_html | truncatewords: 50 }}
-        <a href="{{ project.url | relative_url }}" class="project-description-link">
-          see more<span class="arrow">&rarr;</span>
-        </a>
-      </div>
+  {% if project.project_level == "sub" %}
+  <h4>{{ project.parent_project }}</h4>
+  <div style="margin-left: 20px;">
+    <h5>
+      <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    </h5>
+    <div class="project-description" style="margin-left: 20px;">
+      {{ project.content | strip_html | truncatewords: 50 }}
+      <a href="{{ project.url | relative_url }}" class="project-description-link">
+        see more<span class="arrow">&rarr;</span>
+      </a>
     </div>
-    {% else %}
-    <!-- parent project not found -->
-    {% endif %}
+  </div>
+{% endif %}
 
-  {% endif %}
+{% endif %}
 
 {% endfor %}
 
