@@ -13,7 +13,7 @@ nav:
 
 {% for project in current_projects %}
   
-  {% if project.project_level == "parent" %}
+{% if project.project_level == "parent" %}
     
 #### [{{ project.title }}]({{ project.url | relative_url }})
     
@@ -26,15 +26,15 @@ nav:
   </a>
 </div>
   
-  {% elsif project.project_level == "sub" %}
+{% elsif project.project_level == "sub" %}
     
-    {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
+{% assign parent_project = site.projects | where: "title", project.parent_project | first %}
     
-#### {{ parent_project.title | markdownify }}
+#### {{ parent_project.title }}
     
 <div style="margin-left: 20px;">
   
-##### [{{ project.title | markdownify }}]({{ project.url | relative_url }})
+##### [{{ project.title }}]({{ project.url | relative_url }})
   
 <div class="project-description" style="margin-left: 20px;">
   
@@ -46,7 +46,7 @@ nav:
 </div>
 </div>
   
-  {% endif %}
+{% endif %}
 
 {% endfor %}
 
@@ -56,7 +56,7 @@ nav:
 
 {% for project in past_projects %}
   
-  {% if project.project_level == "parent" %}
+{% if project.project_level == "parent" %}
     
 #### [{{ project.title }}]({{ project.url | relative_url }})
   
@@ -69,9 +69,9 @@ nav:
   </a>
 </div>
   
-  {% elsif project.project_level == "sub" %}
+{% elsif project.project_level == "sub" %}
     
-    {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
+{% assign parent_project = site.projects | where: "title", project.parent_project | first %}
     
 #### {{ parent_project.title }}
 
@@ -89,7 +89,6 @@ nav:
 </div>
 </div>
   
-  {% endif %}
+{% endif %}
 
 {% endfor %}
-
