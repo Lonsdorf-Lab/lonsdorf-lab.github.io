@@ -51,4 +51,13 @@
   transform: translateX(3px);
 }
 
+.project-parent-title {
+  margin-bottom: 0.1em;
+}
+
+.project-sub-title {
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+}
+
 /*# sourceMappingURL=project.css.map */
