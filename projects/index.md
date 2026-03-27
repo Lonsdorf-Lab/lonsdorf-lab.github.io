@@ -15,8 +15,10 @@ nav:
   
   {% if project.project_level == "parent" %}
   
-  <h4>
+  <h4 class="project-parent-title">
+
   <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+  
   </h4>
   
   <div class="project-description">
@@ -41,7 +43,7 @@ nav:
 
 {% else %}
   
-  <h4>{{ project.parent_project }}</h4>
+  <h4 class="project-parent-title">{{ project.parent_project }}</h4>
 
 {% endif %}
   
