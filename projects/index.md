@@ -30,11 +30,11 @@ nav:
     
     {% assign parent_project = site.projects | where: "title", project.parent_project | first %}
     
-#### {{ parent_project.title }}
+#### {{ parent_project.title | markdownify }}
     
 <div style="margin-left: 20px;">
   
-##### [{{ project.title }}]({{ project.url | relative_url }})
+##### [{{ project.title | markdownify }}]({{ project.url | relative_url }})
   
 <div class="project-description" style="margin-left: 20px;">
   
