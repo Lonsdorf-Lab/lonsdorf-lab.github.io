@@ -9,50 +9,63 @@ nav:
 
 ## {% include icon.html icon="fa-solid fa-hourglass" %} Current Projects
 
-{% assign current_projects = site.projects | where: "group", "on-going" %}
+{%- assign current_parent_projects = site.projects | where: "group", "on-going" | where: "project_level", "parent" -%}
+{%- assign current_subprojects = site.projects | where: "group", "on-going" | where: "project_level", "sub" -%}
 
-{% for project in current_projects %}
-  
-  {% if project.project_level == "parent" %}
+{%- for project in current_parent_projects -%}
   
   <h4 class="project-title">
-
-  <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
   
   </h4>
   
   <div class="project-description">
     
-    {{ project.content | strip_html | truncatewords: 50 }}
-    
+  {{ project.content | strip_html | truncatewords: 50 }}
+  
   <a href="{{ project.url | relative_url }}" class="project-description-link">
     see more<span class="arrow">&rarr;</span>
   </a>
   
   </div>
+
+{%- endfor -%}
+
+{%- assign parent_projects = "" | split: "" -%}
+
+{%- for project in current_subprojects -%}
   
-  {% elsif project.project_level == "sub" %}
+  {%- unless parent_projects contains project.parent_project -%}
+    
+    {%- assign parent_projects = parent_projects | push: project.parent_project -%}
   
-  {% if project.parent_project_url %}
+  {%- endunless -%}
+
+{%- endfor -%}
+
+{%- for parent in parent_projects -%}
   
+  {%- assign parent_subprojects = current_subprojects | where: "parent_project", parent -%}
+  {%- assign example_project = parent_subprojects[0] -%}
+  
+  {%- if example_project.parent_project_url -%}
+    
   <h4 class="project-parent-title">
-  
-  <a href="{{ project.parent_project_url }}" target="_blank" rel="noopener">{{ project.parent_project }}</a>
-  
+    <a href="{{ example_project.parent_project_url }}" target="_blank" rel="noopener">{{ parent }}</a>
   </h4>
-
-{% else %}
   
-  <h4 class="project-parent-title">{{ project.parent_project }}</h4>
-
-{% endif %}
+  {%- else -%}
+  
+  <h4 class="project-parent-title">{{ parent }}</h4>
+  
+  {%- endif -%}
+  
+  {%- for project in parent_subprojects -%}
   
   <div style="margin-left: 20px;">
     
   <h5 class="project-sub-title">
-    
-  <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
-  
+    <a href="{{ project.url | relative_url }}">{{ project.title }}</a>
   </h5>
   
   <div class="project-description">
@@ -60,15 +73,15 @@ nav:
     {{ project.content | strip_html | truncatewords: 50 }}
     
   <a href="{{ project.url | relative_url }}" class="project-description-link">
-    see more<span class="arrow">&rarr;</span>
+        see more<span class="arrow">&rarr;</span>
   </a>
-  
   </div>
   </div>
   
-  {% endif %}
+  {%- endfor -%}
 
-{% endfor %}
+{%- endfor -%}
+
 
 ## {% include icon.html icon="fa-solid fa-check" %} Past Projects
 
