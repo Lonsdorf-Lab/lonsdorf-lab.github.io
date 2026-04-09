@@ -8,13 +8,13 @@ image: images/misc/default_member_photo.jpg
 role: undergrad
 affiliation: Bielefeld University
 aliases:
-links:
-    email:
-    bluesky:
-    linkedin:
-    orcid:
-    google-scholar:
-    github:
-    researchgate:
-    osf:
+    - S. R. Thiele
+    - SR TRhiele
+    - Samuel Thiele
+    - Rasmus Thiele
+    - S. Thiele
+    - R. Thiele
+    - S R Thiele
+    - S Thiele
+    - R Thiele
 ---
