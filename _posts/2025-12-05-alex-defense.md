@@ -10,10 +10,10 @@ tags:
 
 **We got a new doctor in town! Congratulations, Alex!**
 
-Today, Dec. 05th, [Alexandros Kastrinogiannis](member/alexandros_kastrinogiannis) successfully defended his PhD thesis *A Multi-Level Investigation of Early Adversity, Physiological Processing, and Motivated Behavior in Gamified Virtual Reality*.  
+Today, Dec. 05th, [Alexandros Kastrinogiannis](member/alexandros_kastrinogiannis) successfully defended his PhD thesis *Bridging Lab and Reality: A Multi-Level Investigation of Early Adversity, Physiological Processing, and Motivated Behavior in Gamified Virtual Reality* (PDF accessible from [Stabi / ediss.sub.hamburg](https://ediss.sub.uni-hamburg.de/handle/ediss/12251)).  
 Alex continues his career in science in [Dr. Michael Gaebler](https://www.cbs.mpg.de/person/gaebler/138003)'s ["Mind-Body-Emotion"](https://www.cbs.mpg.de/departments/neurology/mind-body-emotion) research group in the [Department of Neurology](https://www.cbs.mpg.de/departments/neurology) at the [Max Planck Institute for Human Cognitive and Brain Sciences](https://www.cbs.mpg.de/en). His main research interests are immersive virtual reality, approach avoidance, 3D environments and face recognition.
 
 
 We, the Lonsdorf Lab team, wish you all the best, Alex!
 
-{% include figure.html image=page.image width='40%' caption='Alex in high spirits' %}
+{% include figure.html image=page.image width='40%' caption='Someone is in high spirits' %}
