@@ -1,6 +1,6 @@
 ---
-title: "Congratulations, Julia!"
-thumbnail: "images/blog_posts/thumbnails/julia-phd-defense.jpg"
+title: Congratulations, Julia!
+thumbnail: images/blog_posts/thumbnails/julia-phd-defense.jpg
 image: images/events/26juliadefense/julia-phd-defense.jpg
 author: tina_lonsdorf
 last_modified_at: ''
