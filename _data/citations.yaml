@@ -1587,6 +1587,28 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.brat.2026.105096
+  title: Discrimination training to reduce generalized conditioned defensive responses
+    in healthy individuals with high levels of anxiety
+  type: paper
+  authors:
+  - Katharina Hutterer
+  - Paul Pauli
+  - Udo Dannlowski
+  - "J\xFCrgen Deckert"
+  - Katharina Domschke
+  - Tina B. Lonsdorf
+  - Ulrike Lueken
+  - Andreas Reif
+  - Marcel Romanos
+  - Miriam A. Schiele
+  - Peter Zwanzger
+  - Marta Andreatta
+  publisher: Behaviour Research and Therapy
+  date: '2026-06-01'
+  link: https://doi.org/10.1016/j.brat.2026.105096
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1038/s41598-024-55839-3
   title: Mental health improvement after the COVID-19 pandemic in individuals with
     psychological distress
