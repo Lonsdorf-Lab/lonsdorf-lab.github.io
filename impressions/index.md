@@ -12,6 +12,10 @@ nav:
 
 {% capture content %}
   {% include figure.html image="images/events/26pug/pic1.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26pug/pic2.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26pug/pic3.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26pug/pic4.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26pug/pic5.jpg" width = "100%" %}
 {% endcapture %}
 
 {%
