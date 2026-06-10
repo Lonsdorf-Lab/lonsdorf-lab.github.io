@@ -1,5 +1,5 @@
 ---
-group: member
+group: alum
 internal: true
 name: Fritz Becker
 last_name: Becker
@@ -20,4 +20,4 @@ links:
   github: Fritz-theCat
 ---
 
-Fritz started in January 2025 as a Post-Doc on the [fearbase](fearbase.org) project funded by the [Volkswagen Stiftung](https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem). He supervises and works on the technical and academic execution of the project's goals. He studied in Mainz and received his PhD from the [University of Tübingen](https://uni-tuebingen.de/).
+Fritz worked from January 2025 until May 2026 as a Post-Doc and project lead on the [fearbase](fearbase.org) project funded by the [Volkswagen Stiftung](https://www.volkswagenstiftung.de/de/foerderung/foerderangebot/pioniervorhaben-impulse-fuer-das-wissenschaftssystem). He supervised and workd on the technical and academic execution of the project's goals. Previously, he studied in Mainz and received his PhD from the [University of Tübingen](https://uni-tuebingen.de/). He now works as a project manager in the private sector.
