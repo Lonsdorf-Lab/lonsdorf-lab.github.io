@@ -11,13 +11,13 @@ nav:
 ## PUG 2026
 
 {% capture content %}
-  {% include figure.html image="images/events/26pug/pic1.jpg" width = "100%"}
+  {% include figure.html image="images/events/26pug/pic1.jpg" width = "100%" %}
 {% endcapture %}
 
 ## EMHFC 2026
 
 {% capture content %}
-  {% include figure.html image="images/events/26emhfc/pic1.JPG" width = "100%"%}
+  {% include figure.html image="images/events/26emhfc/pic1.JPG" width = "100%" %}
   {% include figure.html image="images/events/26emhfc/pic2.JPG" width = "100%" %}
   {% include figure.html image="images/events/26emhfc/pic3.JPG" width = "100%" %}
   {% include figure.html image="images/events/26emhfc/pic4.JPG" width = "100%" %}
@@ -27,7 +27,7 @@ nav:
 ## PUG 2025
 
 {% capture content %}
-  {% include figure.html image="images/events/25pug/pic1.JPG" width = "100%"%}
+  {% include figure.html image="images/events/25pug/pic1.JPG" width = "100%" %}
   {% include figure.html image="images/events/25pug/pic2.JPG" width = "100%" %}
   {% include figure.html image="images/events/25pug/pic3.JPG" width = "100%" %}
 {% endcapture %}
@@ -40,13 +40,13 @@ nav:
 
 ## EMHFC 2025
 {% capture content %}
-  {% include figure.html image="images/events/25emhfc/pic1.JPG" width = "100%"%}
+  {% include figure.html image="images/events/25emhfc/pic1.JPG" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic2.JPG" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic3.jpg" width = "100%" %}
-  {% include figure.html image="images/events/25emhfc/pic4.JPG" width = "100%"%}
+  {% include figure.html image="images/events/25emhfc/pic4.JPG" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic5.JPG" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic6.JPG" width = "100%" %}
-  {% include figure.html image="images/events/25emhfc/pic7.jpg" width = "100%"%}
+  {% include figure.html image="images/events/25emhfc/pic7.jpg" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic8.JPG" width = "100%" %}
   {% include figure.html image="images/events/25emhfc/pic9.JPG" width = "100%" %}
 {% endcapture %}
@@ -59,7 +59,7 @@ nav:
 
 ## PUG 2024
 {% capture content %}
-  {% include figure.html image="images/events/24pug/pic1.jpg" width = "100%"%}
+  {% include figure.html image="images/events/24pug/pic1.jpg" width = "100%" %}
   {% include figure.html image="images/events/24pug/pic2.jpg" width = "100%" %}
 {% endcapture %}
 
@@ -71,7 +71,7 @@ nav:
 
 ## EMHFC 2024
 {% capture content %}
-  {% include figure.html image="images/events/24emhfc/pic1.jpg" width = "100%"%}
+  {% include figure.html image="images/events/24emhfc/pic1.jpg" width = "100%" %}
   {% include figure.html image="images/events/24emhfc/pic2.jpg" width = "100%" %}
   {% include figure.html image="images/events/24emhfc/pic3.jpg" width = "100%" %}
 {% endcapture %}
