@@ -23,11 +23,11 @@ nav:
 ## EMHFC 2026
 
 {% capture content %}
-  {% include figure.html image="images/events/26emhfc/pic1.JPG" width = "100%" %}
-  {% include figure.html image="images/events/26emhfc/pic2.JPG" width = "100%" %}
-  {% include figure.html image="images/events/26emhfc/pic3.JPG" width = "100%" %}
-  {% include figure.html image="images/events/26emhfc/pic4.JPG" width = "100%" %}
-  {% include figure.html image="images/events/26emhfc/pic5.JPG" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic1.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic2.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic3.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic4.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic5.jpg" width = "100%" %}
 {% endcapture %}
 
 {%
