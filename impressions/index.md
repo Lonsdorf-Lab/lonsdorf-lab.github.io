@@ -8,6 +8,22 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
+## PUG 2026
+
+{% capture content %}
+  {% include figure.html image="images/events/26pug/pic1.jpg", width = "100%"}
+{% endcapture %}
+
+## EMHFC 2026
+
+{% capture content %}
+  {% include figure.html image="images/events/26emhfc/pic1.JPG" width = "100%"%}
+  {% include figure.html image="images/events/26emhfc/pic2.JPG" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic3.JPG" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic4.JPG" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic5.JPG" width = "100%" %}
+{% endcapture %}
+
 ## PUG 2025
 {% capture content %}
   {% include figure.html image="images/events/25pug/pic1.JPG" width = "100%"%}
