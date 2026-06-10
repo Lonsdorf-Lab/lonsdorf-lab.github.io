@@ -8,6 +8,7 @@ nav:
 
 # {% include icon.html icon="fa-solid fa-users" %}Impressions of the Team
 
+
 ## PUG 2026
 
 {% capture content %}
