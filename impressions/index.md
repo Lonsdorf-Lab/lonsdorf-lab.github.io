@@ -32,6 +32,8 @@ nav:
   {% include figure.html image="images/events/26emhfc/pic3.jpg" width = "100%" %}
   {% include figure.html image="images/events/26emhfc/pic4.jpg" width = "100%" %}
   {% include figure.html image="images/events/26emhfc/pic5.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic6.jpg" width = "100%" %}
+  {% include figure.html image="images/events/26emhfc/pic7.jpg" width = "100%" %}
 {% endcapture %}
 
 {%
