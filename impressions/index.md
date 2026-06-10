@@ -11,7 +11,7 @@ nav:
 ## PUG 2026
 
 {% capture content %}
-  {% include figure.html image="images/events/26pug/pic1.jpg", width = "100%"}
+  {% include figure.html image="images/events/26pug/pic1.jpg" width = "100%"}
 {% endcapture %}
 
 ## EMHFC 2026
@@ -25,6 +25,7 @@ nav:
 {% endcapture %}
 
 ## PUG 2025
+
 {% capture content %}
   {% include figure.html image="images/events/25pug/pic1.JPG" width = "100%"%}
   {% include figure.html image="images/events/25pug/pic2.JPG" width = "100%" %}

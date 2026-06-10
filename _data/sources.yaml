@@ -2,6 +2,27 @@
 # 2026 Paper ----                                                                   
 ################################################################################
 
+# Discrimination training to reduce generalized conditioned defensive responses in healthy individuals with high levels of anxiety 
+- id: doi.org/10.1016/j.brat.2026.105096
+  title: "Discrimination training to reduce generalized conditioned defensive responses in healthy individuals with high levels of anxiety"
+  type: paper
+  authors:
+  - Katharina Hutterer
+  - Paul Pauli
+  - Udo Dannlowski
+  - Jürgen Deckert
+  - Katharina Domschke
+  - Tina B. Lonsdorf
+  - Ulrike Lueken
+  - Andreas Reif
+  - Marcel Romanos
+  - Miriam A. Schiele
+  - Peter Zwanzger
+  - Marta Andreatta
+  publisher: Behaviour Research and Therapy
+  date: '2026-06-01'
+  link: https://doi.org/10.1016/j.brat.2026.105096
+
 # Fear Conditioning Research Through the Lens of Meta-Analyses: Systematic Umbrella Review and Future Vision 
 - id: doi:10.31234/osf.io/28cqr_v1
   buttons:
