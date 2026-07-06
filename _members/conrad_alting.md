@@ -10,6 +10,7 @@ affiliation: Bielefeld University
 aliases:
   - C. Alting
   - C Alting
+  - Conrad Alting
 links:
   email: conrad.alting@uni-bielefeld.de
   orcid: 0009-0002-3287-4418
