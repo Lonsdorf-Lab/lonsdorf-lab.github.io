@@ -2,6 +2,27 @@
 # 2026 Paper ----                                                                   
 ################################################################################
 
+# The Fearbase: a dynamically growing database and collaborative consortium for experimental work on human fear conditioning research
+- id: doi.org/10.31234/osf.io/ebawx_v2
+  title: "The Fearbase: a dynamically growing database and collaborative consortium for experimental work on human fear conditioning research"
+  type: preprint
+  authors:
+  - Maria Bruntsch
+  - Tina B. Lonsdorf
+  - Fritz Becker
+  - Annalena Witte
+  - Conrad Alting
+  - Joel Beckmann
+  - Katarina Blask
+  - Mana R. Ehlers
+  - the Fearbase Consortium
+  date: '2026-06-25'
+  links: https://doi.org/10.31234/osf.io/ebawx_v2
+  buttons:
+    - type: data
+      text: "Supplementaal Materials"
+      link: https://osf.io/rkp3a
+
 # Discrimination training to reduce generalized conditioned defensive responses in healthy individuals with high levels of anxiety 
 - id: doi:10.1016/j.brat.2026.105096
   title: "Discrimination training to reduce generalized conditioned defensive responses in healthy individuals with high levels of anxiety"
