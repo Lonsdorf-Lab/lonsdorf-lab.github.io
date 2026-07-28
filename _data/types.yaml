@@ -9,7 +9,7 @@ professor:
 principal-investigator:
   icon: fa-solid fa-microscope
   description: Principal Investigator
-  prefix: "Prof. Dr."
+  prefix: "Dr."
 
 assistant-professor:
   icon: fa-solid fa-microscope
