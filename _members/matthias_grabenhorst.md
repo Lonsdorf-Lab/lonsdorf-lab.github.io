@@ -5,7 +5,7 @@ name: Matthias Grabenhorst
 last_name: Grabenhorst
 member_id: matthias_grabenhorst
 image: images\misc\default_member_photo.jpg
-role: postdoc
+role: principal-investigator
 affiliation: Bielefeld University
 links:
     email: matthias.grabenhorst@uni-bielefeld.de
