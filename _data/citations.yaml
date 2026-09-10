@@ -1,5 +1,46 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.21203/rs.3.rs-10905008/v1
+  title: Trait anxiety is associated with reduced coupling between physiological dynamics
+    and adaptive learning
+  type: paper
+  authors:
+  - Carlos Ventura-Bort
+  - "Maren Klingelh\xF6fer-Jens"
+  - "Ga\xEBtan Mertens"
+  - Alex Wong
+  - Yanfang Xia
+  - Elena Andres
+  - Manuel Kuhn
+  - Vera Bouwman
+  - Iris Engelhard
+  - Tina Lonsdorf
+  - Julia Wendt
+  - Mathias Weymar
+  publisher: Springer Science and Business Media LLC
+  date: '2026-09-04'
+  link: https://doi.org/hchtvt
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
+- id: doi:10.64898/2026.08.27.747474
+  title: "Anxiety-Related Traits Are Associated with Subjective Biases but not Altered\
+    \ Threat\u2013Safety Discrimination"
+  type: paper
+  authors:
+  - Mana R. Ehlers
+  - Hannah Stiffel
+  - Alexandros Kastrinogiannis
+  - Alina Koppold
+  - Tina B. Lonsdorf
+  publisher: openRxiv
+  date: '2026-09-01'
+  link: https://doi.org/hchtvv
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.64898/2026.07.21.739772
   title: 'Recent Adversity Shapes Autonomic and Neural Threat Learning and Retrieval
     Under Imminent Threat: A Prospective Longitudinal Study'
@@ -351,7 +392,7 @@
   file: orcid.yaml
 - id: doi:10.31234/osf.io/g6qku
   title: Within-subject reliability, occasion specificity, and validity of fluctuations
-    of the Stroop and Go/No-Go tasks in ecological momentary assessment
+    of the Stroop and go/no-go tasks in ecological momentary assessment
   type: preprint
   authors:
   - Justin Hachenberger
@@ -452,8 +493,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.1111/psyp.14130
-  title: "A data multiverse analysis investigating non\u2010model based <scp>SCR</scp>\
-    \ quantification approaches"
+  title: "A data multiverse analysis investigating non\u2010model based\n        \
+    \            <scp>SCR</scp>\n                    quantification approaches"
   type: paper
   authors:
   - Rachel Sjouwerman
