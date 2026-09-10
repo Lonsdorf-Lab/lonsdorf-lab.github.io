@@ -19,10 +19,10 @@ funders:
 
 members:
   - annalena_witte
-  - fritz_becker
   - maria_bruntsch
   - mana_ehlers
   - conrad_alting
+  - maren_klingelhoefer
   - tina_lonsdorf
 
 external_contributors:

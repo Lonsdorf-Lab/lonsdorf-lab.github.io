@@ -9,6 +9,8 @@ affiliation: UKE Hamburg
 aliases:
   - M. Klingelhöfer-Jens
   - Maren Klingelhöfer-Jens
+  - M. Klingelhoefer-Jens
+  - Maren Klingelhoefer-Jens
 links:
   email: m.klingelhoefer-jens@uke.de
   bluesky: mklingelhoeferj.bsky.social
@@ -18,4 +20,4 @@ links:
   github: m-klingelhoefer-j
 ---
 
-Maren has been a PhD student in our team as part of the transregional CRC “Fear, Anxiety, Anxiety Disorders”. Maren is now a post-doctoral researcher in the Hamburg team working on meta-science projects as well as on longitudinal projects focusing on life adversity and childhood adversity.
+Maren has been a PhD student in our team as part of the transregional CRC “Fear, Anxiety, Anxiety Disorders”. Maren worked as a post-doctoral researcher in the Hamburg team on meta-science projects as well as on longitudinal projects focusing on life adversity and childhood adversity. Since August 2026 Maren is the team lead in the [fearbase](https://lonsdorf-lab.github.io/projects/fearbase/) project.
