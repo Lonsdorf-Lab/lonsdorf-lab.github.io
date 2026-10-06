@@ -8,6 +8,7 @@ member_role_priority:
   - lab-manager
   - team-coordinator
   - undergrad
+  - intern
 
 # Special ordering for team overview page
 team_overview_role_priority:
@@ -18,6 +19,7 @@ team_overview_role_priority:
   - postdoc
   - phd
   - undergrad
+  - intern
 
 # Sorting priority for external contributors (by academic title)
 external_title_priority:
