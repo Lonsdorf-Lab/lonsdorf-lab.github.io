@@ -130,8 +130,8 @@
   plugin: orcid.py
   file: orcid.yaml
 - id: doi:10.31234/osf.io/28cqr_v1
-  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: Systematic
-    Umbrella Review and Future Vision'
+  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: A Systematic
+    Methodological Review'
   type: preprint
   authors:
   - Maria Bruntsch
