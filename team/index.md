@@ -19,7 +19,7 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% assign member_group = site.members | where: "group", "member" %}
 
 {% for m in member_group %}
-  {% unless m.role == "undergrad" %}
+  {% unless m.role == "undergrad" or m.role == "intern" %}
     {% assign team_current_members = team_current_members | push: m %}
   {% endunless %}
 {% endfor %}
@@ -45,8 +45,10 @@ We are an interdisciplinary team with diverse expertise in psychology, philosoph
 {% assign team_assistants = "" | split: "" %}
 
 {% for m in site.members %}
-  {% if m.group == "member" and m.role == "undergrad" %}
-    {% assign team_assistants = team_assistants | push: m %}
+  {% if m.group == "member" %}
+    {% if m.role == "undergrad" or m.role == "intern" %}
+      {% assign team_assistants = team_assistants | push: m %}
+    {% endif %}
   {% endif %}
 {% endfor %}
 
