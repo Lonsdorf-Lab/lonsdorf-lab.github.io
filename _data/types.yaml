@@ -117,6 +117,12 @@ github:
   tooltip: GitHub
   link: https://github.com/$VALUE
 
+github-portfolio:
+  icon: fa-solid fa-briefcase
+  text: Portfolio
+  tooltip: Portfolio
+  link: $VALUE.github.io
+
 twitter:
   icon: fa-brands fa-twitter
   text: Twitter
