@@ -121,7 +121,7 @@ github-portfolio:
   icon: fa-solid fa-briefcase
   text: Portfolio
   tooltip: Portfolio
-  link: $VALUE.github.io
+  link: https://$VALUE.github.io
 
 twitter:
   icon: fa-brands fa-twitter

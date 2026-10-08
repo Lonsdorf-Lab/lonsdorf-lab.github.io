@@ -11,6 +11,7 @@ links:
     email: zoeb.khan@uni-bielefeld.de
     linkedin: zoeb-ali-khan
     github: zoeb7184
+    github-portfolio: zoeb7184
 ---
 
 Zoeb is a Master’s student in [Data Science](https://www.uni-bielefeld.de/fakultaeten/wirtschaftswissenschaften/studium-und-lehre/studieninteressierte/master_ds/) at [Bielefeld University](www.uni-bielefeld.de). He previously studied [Artificial Intelligence & Data Science](https://eng.rizvi.edu.in/ainds) at [Rizvi College of Engineering](https://eng.rizvi.edu.in) in Mumbai. He enjoys discovering the stories hidden in data and making them easy to see. He explored this in a project on how white storks behave during migration, using GPS tracking data collected at the [Max Planck Institute of Animal Behavior](https://www.ab.mpg.de/).  
