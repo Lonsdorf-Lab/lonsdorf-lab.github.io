@@ -52,8 +52,8 @@
   date: '2026-06-01'
   link: https://doi.org/10.1016/j.brat.2026.105096
 
-# Fear Conditioning Research Through the Lens of Meta-Analyses: Systematic Umbrella Review and Future Vision 
-- id: doi:10.31234/osf.io/28cqr_v1
+# Fear Conditioning Research Through the Lens of Meta-Analyses: A Systematic Methodological Review
+- id: doi:10.1016/j.brat.2026.105176
   buttons:
     - type: data
       text: "Data"
