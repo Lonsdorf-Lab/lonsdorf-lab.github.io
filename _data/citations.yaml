@@ -1670,6 +1670,26 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.1016/j.brat.2026.105188
+  title: 'Imagery-based fear conditioning and extinction learning in individuals with
+    psychotic liability: an EEG study'
+  type: paper
+  authors:
+  - Nilay E. Ahrens-Demirdal
+  - "Metin \xD6zyagcilar"
+  - Erik M. Mueller
+  - Anja Riesel
+  - Tina B. Lonsdorf
+  - Tania M. Lincoln
+  publisher: Behaviour Research and Therapy
+  date: '2026-11-01'
+  link: https://doi.org/hcrwp9
+  buttons:
+  - type: data
+    text: Data
+    link: https://osf.io/smv4r/overview
+  plugin: sources.py
+  file: sources.yaml
 - id: doi:10.1026/0033-3042/a000767
   title: 'KI aus Sicht der biologischen Psychologie und Neuropsychologie: Grundlagen,           Anwendungen,
     Grenzen'
