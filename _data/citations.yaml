@@ -1,5 +1,45 @@
 # DO NOT EDIT, GENERATED AUTOMATICALLY
 
+- id: doi:10.1016/j.brat.2026.105176
+  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: A Systematic
+    Methodological Review'
+  type: paper
+  authors:
+  - Maria Bruntsch
+  - Mana R. Ehlers
+  - Annalena Witte
+  - Fritz Becker
+  - Samuel E. Cooper
+  - Tina B. Lonsdorf
+  publisher: Behaviour Research and Therapy
+  date: '2026-10-01'
+  link: https://doi.org/hcn9nm
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: sources.py
+  file: sources.yaml
+  buttons:
+  - type: data
+    text: Data
+    link: https://doi.org/10.5281/zenodo.18772079
+- id: doi:10.21203/rs.3.rs-10775353/v1
+  title: Neural and Multimodal Signatures of Threat Learning, Generalization, and
+    Return of Fear linked to Adverse Childhood Experiences
+  type: paper
+  authors:
+  - Julia Ruge
+  - Mana Ehlers
+  - Tobias Sommer
+  - Anja Riesel
+  - Tania M. Lincoln
+  - Tina Lonsdorf
+  publisher: Springer Science and Business Media LLC
+  date: '2026-10-20'
+  link: https://doi.org/hcpvwn
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: orcid.py
+  file: orcid.yaml
 - id: doi:10.21203/rs.3.rs-10905008/v1
   title: Trait anxiety is associated with reduced coupling between physiological dynamics
     and adaptive learning
@@ -46,7 +86,7 @@
     Under Imminent Threat: A Prospective Longitudinal Study'
   type: paper
   authors:
-  - Maren Klingelhoefer-Jens
+  - "Maren Klingelh\xF6fer-Jens"
   - Manuel Kuhn
   - Tobias Sommer
   - Tina B. Lonsdorf
@@ -57,6 +97,32 @@
   tina_lonsdorf: true
   plugin: orcid.py
   file: orcid.yaml
+- id: doi:10.31234/osf.io/ebawx_v2
+  title: 'The Fearbase: a dynamically growing database and collaborative consortium
+    for experimental work on human fear conditioning research'
+  type: preprint
+  authors:
+  - Maria Bruntsch
+  - Tina B. Lonsdorf
+  - Fritz Becker
+  - Annalena Witte
+  - Conrad Alting
+  - Joel Beckmann
+  - Katarina Blask
+  - Mana R. Ehlers
+  - the Fearbase Consortium
+  publisher: PsyArXiv
+  date: '2026-06-25'
+  link: https://doi.org/hb9kcf
+  orcid: 0000-0003-1501-4846
+  tina_lonsdorf: true
+  plugin: sources.py
+  file: sources.yaml
+  links: https://doi.org/10.31234/osf.io/ebawx_v2
+  buttons:
+  - type: data
+    text: Supplementaal Materials
+    link: https://osf.io/rkp3a
 - id: doi:10.1038/s41562-026-02426-3
   title: Sustainable neuroscience through open science
   type: paper
@@ -99,24 +165,6 @@
   publisher: PsyArXiv
   date: '2026-03-15'
   link: https://doi.org/hbsppw
-  orcid: 0000-0003-1501-4846
-  tina_lonsdorf: true
-  plugin: orcid.py
-  file: orcid.yaml
-- id: doi:10.31234/osf.io/28cqr_v1
-  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: A Systematic
-    Methodological Review'
-  type: preprint
-  authors:
-  - Maria Bruntsch
-  - Mana R Ehlers
-  - Annalena Witte
-  - Fritz Becker
-  - Samuel Emerson Cooper
-  - Tina B Lonsdorf
-  publisher: PsyArXiv
-  date: '2026-03-10'
-  link: https://doi.org/hbsgg8
   orcid: 0000-0003-1501-4846
   tina_lonsdorf: true
   plugin: orcid.py
@@ -1689,26 +1737,6 @@
   publisher: Behaviour Research and Therapy
   date: '2026-06-01'
   link: https://doi.org/10.1016/j.brat.2026.105096
-  plugin: sources.py
-  file: sources.yaml
-- id: doi:10.1016/j.brat.2026.105176
-  title: 'Fear Conditioning Research Through the Lens of Meta-Analyses: A Systematic
-    Methodological Review'
-  type: paper
-  authors:
-  - Maria Bruntsch
-  - Mana R. Ehlers
-  - Annalena Witte
-  - Fritz Becker
-  - Samuel E. Cooper
-  - Tina B. Lonsdorf
-  publisher: Behaviour Research and Therapy
-  date: '2026-10-01'
-  link: https://doi.org/hcn9nm
-  buttons:
-  - type: data
-    text: Data
-    link: https://doi.org/10.5281/zenodo.18772079
   plugin: sources.py
   file: sources.yaml
 - id: doi:10.1038/s41598-024-55839-3
