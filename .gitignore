@@ -16,3 +16,5 @@ lonsdorf-lab.code-workspace
 _custom_scripts/update_sources_runner.R
 _data/Update_sources_yaml.bat
 BIKI-files
+_members/former/thurid_gebhardt.md
+former/*
